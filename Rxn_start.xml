@@ -38,7 +38,8 @@
   <Specie name="ISObAR" id="ISObAR" kdiff="0" kdiffunit="mu2/s" />
   <Specie name="ISObARGs" id="ISObARGs" kdiff="0"
 	  kdiffunit="mu2/s" />
-
+  <Specie name="PKAcISObARGs" id="PKAcLRGs" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="pISObARGs" id="pLRGs" kdiff="0" kdiffunit="mu2/s"/>
   <Specie name="GsbAR" id="GsbAR" kdiff="0" kdiffunit="mu2/s" />
   <Specie name="GasGTP" id="GasGTP" kdiff="0" kdiffunit="mu2/s" />
   <Specie name="GasGDP" id="GasGDP" kdiff="0" kdiffunit="mu2/s" />
@@ -384,6 +385,38 @@
     <reverseRate>0</reverseRate>
     <Q10>0.2</Q10>
   </Reaction>
+
+<!--1a. PKAc + LRGs -> PKAcLRGs  Km=120 nM -->
+    <Reaction name = "LRGs phosp1" id="phospLRGs1">
+        <Reactant specieID="PKAc"                   />
+        <Reactant specieID="ISObARGs"                  />
+        <Product  specieID="PKAcISObARGs"              />
+
+        <forwardRate> 0.00125e-03    </forwardRate>
+        <reverseRate> 0.16e-03    </reverseRate>
+        <Q10>         0.2           </Q10>
+    </Reaction>
+    <!--2a. PKAcLRGs -> PKAc + pLRGs -->
+    <Reaction name = "LRGs phosp2" id="phospLRGs2">
+        <Reactant specieID="PKAcISObARGs"              />
+        <Product  specieID="pISObARGs"                 />
+        <Product  specieID="PKAc"                   />
+
+        <forwardRate> 0.04e-03    </forwardRate>
+        <reverseRate> 0             </reverseRate>
+        <Q10>         0.2           </Q10>
+    </Reaction>
+
+    <!--3. pLRGs -> LRGs -->
+    <Reaction name = "dephosD1R" id="dphospD1R">
+        <Reactant specieID="pISObARGs"              />
+        <Product  specieID="ISObARGs"               />
+
+        <forwardRate>  0.003e-03    </forwardRate>
+        <reverseRate>  0            </reverseRate>
+        <Q10>          0.2          </Q10>
+    </Reaction>
+  
   <!--II. *********** Gs coupled receptor, from GS RXN FILE *************-->
   <!--0a. Injected DaDbuf dissociates to Dbuf (external) and Da: DaDbuf -> Da + Dbuf  -->
   <Reaction name="DaDbuf--Da+Dbuf" id="DaDbuf--Da+Dbuf">
