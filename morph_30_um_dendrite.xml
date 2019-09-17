@@ -5,7 +5,7 @@
 
    <SpineType id="spineA">
 	<Section width="0.2" at="0.0" regionClass="neck"/>
-	<Section width="0.2" at="0.2" regionClass="neck"/>
+	<Section width="0.2" at="0.8" regionClass="neck"/>
 	<Section width="0.2" at="1.0" regionClass="head"/>
 	<Section width="0.6" at="1.1" regionClass="head"/>  
 	<Section width="0.6" at="1.2" regionClass="PSD"/>
@@ -21,6 +21,66 @@
 
     <Segment id="seg1" region="dendrite">
 	<start x="1.0" y="1.0" z="0.0" r="0.3"/>
+	<end x="3.0" y="1.0" z="0.0" r="0.3"/>
+    </Segment>
+    <Segment id="seg2" region="dendrite">
+	<start on="seg1" at="end" />
+	<end x="5.0" y="1.0" z="0.0" r="0.3"/>
+    </Segment>
+    <Segment id="seg3" region="dendrite">
+	<start on="seg2" at="end" />
+	<end x="7.0" y="1.0" z="0.0" r="0.3"/>
+    </Segment>
+    <Segment id="seg4" region="dendrite">
+	<start on="seg3" at="end" />
+	<end x="9.0" y="1.0" z="0.0" r="0.3"/>
+    </Segment>
+    <Segment id="seg5" region="dendrite">
+	<start on="seg4" at="end" />
+	<end x="11.0" y="1.0" z="0.0" r="0.3"/>
+    </Segment>
+    <Segment id="seg6" region="dendrite">
+	<start on="seg5" at="end" />
+	<end x="13.0" y="1.0" z="0.0" r="0.3"/>
+    </Segment>
+    <Segment id="seg7" region="dendrite">
+	<start on="seg6" at="end" />
+	<end x="15.0" y="1.0" z="0.0" r="0.3"/>
+    </Segment>
+    <Segment id="seg8" region="dendrite">
+	<start on="seg7" at="end" />
+	<end x="17.0" y="1.0" z="0.0" r="0.3"/>
+    </Segment>
+    <Segment id="seg9" region="dendrite">
+	<start on="seg8" at="end" />
+	<end x="19.0" y="1.0" z="0.0" r="0.3"/>
+    </Segment>
+    <Segment id="seg10" region="dendrite">
+	<start on="seg9" at="end" />
+	<end x="20.0" y="1.0" z="0.0" r="0.3"/>
+    </Segment>
+    <Segment id="seg11" region="dendrite">
+	<start on="seg10" at="end" />
+	<end x="21.0" y="1.0" z="0.0" r="0.3"/>
+    </Segment>
+    <Segment id="seg12" region="dendrite">
+	<start on="seg11" at="end" />
+	<end x="23.0" y="1.0" z="0.0" r="0.3"/>
+    </Segment>
+    <Segment id="seg13" region="dendrite">
+	<start on="seg12" at="end" />
+	<end x="25.0" y="1.0" z="0.0" r="0.3"/>
+    </Segment>
+    <Segment id="seg14" region="dendrite">
+	<start on="seg13" at="end" />
+	<end x="27.0" y="1.0" z="0.0" r="0.3"/>
+    </Segment>
+    <Segment id="seg15" region="dendrite">
+	<start on="seg14" at="end" />
+	<end x="29.0" y="1.0" z="0.0" r="0.3"/>
+    </Segment>
+    <Segment id="seg16" region="dendrite">
+	<start on="seg15" at="end" />
 	<end x="31.0" y="1.0" z="0.0" r="0.3"/>
     </Segment>
 
