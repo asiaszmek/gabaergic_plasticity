@@ -488,6 +488,25 @@
     <forwardRate>0.15e-03</forwardRate>
     <reverseRate>0.0</reverseRate>
   </Reaction>
+
+
+  <!-- 6a) GasGTP -> GasGDP    -->
+<Reaction name="GasGTP_disso" id="GasGTP_disso">
+  <Reactant specieID="GasGTP" />
+  <Product specieID="GasGDP" />
+  <forwardRate>10e-3</forwardRate>
+  <reverseRate>0</reverseRate>
+  <Q10>0.2</Q10>
+</Reaction>
+<!-- 7a) GasGDP + Gbg -> Gs    -->
+<Reaction name="Gs_form" id="Gs_form">
+  <Reactant specieID="GasGDP" />
+  <Reactant specieID="Gsbg" />
+  <Product specieID="Gs" />
+  <forwardRate>100e-3</forwardRate>
+  <reverseRate>0</reverseRate>
+  <Q10>0.2</Q10>
+</Reaction>
   <!--Fine, but I in future would like to compare above to Linderman who studies G proteins.  Above is old from Destexhe-->
   <!-- AC part:AC1 & AC8 activation through CaMCa4  -->
   <!-- Add 1 more reaction(11) for AC1 bound CaMCa4 form binds Gsa-->
