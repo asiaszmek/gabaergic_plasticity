@@ -45,7 +45,7 @@ results (also, 3D may not work yet...)  -->
     <!-- the tolerace is not used yet -->
     <tolerance>0.006</tolerance>
 
-    <outputInterval>5000</outputInterval>
+    <outputInterval>1000</outputInterval>
 
 
 
