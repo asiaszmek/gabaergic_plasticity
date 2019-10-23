@@ -43,7 +43,6 @@
     <OutputSpecie name="GluR1_CKCaM" />
     <OutputSpecie name="GluR1_CKpCaM"/>
     <OutputSpecie name="GluR1_S831" />
-    <OutputSpecie name="GluR1_S567" />
     <OutputSpecie name="GluR1_S831_PP1" />
     <OutputSpecie name="GluR1_PKAc" />
     <OutputSpecie name="GluR1_S831_PKAc" />
@@ -56,6 +55,8 @@
     <OutputSpecie name="GluR1_S845_S831" />
     <OutputSpecie name="GluR1_S845_S831_PP2B" />
     <OutputSpecie name="GluR1_S845_S831_PP1" />
+    <OutputSpecie name="GluR1_S845_S831_PP1_2" />
+
   </OutputSet>
 
 </OutputScheme>
