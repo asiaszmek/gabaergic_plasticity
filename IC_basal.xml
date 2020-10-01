@@ -2,6 +2,8 @@
   <ConcentrationSet>
     <NanoMolarity specieID="Ca" value="75"/>
     <NanoMolarity specieID="CaOut" value="2000000"/>
+    <NanoMolarity specieID="GluOut" value="1000000"/>
+
     <!-- total calbindin = 160 uM -->
     <NanoMolarity specieID="Calbin" value="150000"/>
     <NanoMolarity specieID="CalbinC" value="15000"/>
@@ -9,7 +11,7 @@
     <NanoMolarity specieID="ISOOut" value="2000000"/>
     <NanoMolarity specieID="DaOut"  value="4000000" /> 
     <NanoMolarity specieID="Da" value="20" />
-    <NanoMolarity specieID="Dbuf"            value="0" />
+    <NanoMolarity specieID="Dbuf"      value="0" />
     <NanoMolarity specieID="DaDbuf" value="0" />
     <NanoMolarity specieID="fixedbuffer" value="2000000"/>
     <NanoMolarity specieID="fixedbufferCa" value="3000"/>
@@ -80,7 +82,12 @@
     <NanoMolarity specieID="GasGDP" value="0"/>
     <NanoMolarity specieID="GasGTP" value="200"/>
     <NanoMolarity specieID="Gsbg" value="4400"/>
+    <NanoMolarity specieID="Gqabg" value="300000"/>
+
+
     <NanoMolarity specieID="GsD1R" value="3000" />
+
+
     <NanoMolarity specieID="DaD1RGs" value="100" />
 
     <NanoMolarity specieID="AC1" value="5000"/>
@@ -98,6 +105,15 @@
     <NanoMolarity specieID="PKAcAMP2" value="4000"/>
     <NanoMolarity specieID="PKAcAMP4" value="2000"/>
 
+    <NanoMolarity  specieID="PLC"   value="1000"   />
+    <NanoMolarity  specieID="Pip2"  value="48000"  />
+    <NanoMolarity  specieID="Ip3degrad"   value="1200"   />
+    <NanoMolarity  specieID="Ip3degPIk"   value="800"    />
+    <NanoMolarity  specieID="PIkinase"    value="600"    />
+    <NanoMolarity  specieID="MGluR"  value="5e03"  />
+    <NanoMolarity  specieID="DAG"   value="2400"  />
+    <NanoMolarity  specieID="CaDGL" value="400"   />
+    <NanoMolarity  specieID="DAGK"  value="1400"  />
   </ConcentrationSet>
 
  
@@ -121,6 +137,18 @@
     <PicoSD specieID="GsbAR" value="500"/>
     <PicoSD specieID="ISObARGs" value="20"/>
     <PicoSD specieID="Gs" value="10000"/>
+    <PicoSD specieID="Gqabg" value="10000"/>
+
+
+    <PicoSD  specieID="PLC"  value="200"    />
+    <PicoSD  specieID="Pip2" value="9600"  />
+    <PicoSD  specieID="Ip3degrad"  value="240"  />
+    <PicoSD  specieID="Ip3degPIk"  value="160"  />
+    <PicoSD  specieID="MGluR" value="1e03"  />
+    <PicoSD  specieID="DAG"  value="720"  />
+    <PicoSD  specieID="CaDGL"  value="120"  />
+    <PicoSD  specieID="PIkinase"   value="120"  />
+    <PicoSD  specieID="DAGK" value="280"  />
     <PicoSD specieID="GasGTP" value="0"/>
     <PicoSD specieID="GasGDP" value="0"/>
     <PicoSD specieID="GsD1R" value="580" />
@@ -139,11 +167,5 @@
     <PicoSD specieID="PKAcAMP2" value="20"/>
     <PicoSD specieID="PKAcAMP4" value="5"/>
   </SurfaceDensitySet>
-  <!--
-      <ConcentrationSet region="dendrite">
-   <NanoMolarity specieID="PDE4" value="250"/>
-   <NanoMolarity specieID="pPDE4" value="80"/>
-   
- </ConcentrationSet>
- -->
+
 </InitialConditions>

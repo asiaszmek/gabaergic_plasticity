@@ -185,6 +185,50 @@
 	  kdiffunit="mu2/s" />
   
 
+
+  <!-- Add mGluRs from Tuomo's model -->
+ <Specie name="Glu"          id="Glu"                kdiff="100"    kdiffunit = "mu2/s"/> <!--Dhpg-->
+<Specie name="MGluR"        id="MGluR"              kdiff="0"      kdiffunit="mu2/s"/>
+<Specie name="MGluR_Glu"    id="MGluR_Glu"          kdiff="0"      kdiffunit="mu2/s"/>
+<Specie name="MGluR_Glu_desens" id="MGluR_Glu_desens" kdiff="0"    kdiffunit="mu2/s"/>
+<Specie name="MGluR_Gqabg_Glu"  id="MGluR_Gqabg_Glu"  kdiff="0"    kdiffunit="mu2/s"/>
+<Specie name="GluOut"       id="GluOut"             kdiff="100"    kdiffunit = "mu2/s"/> <!--DhpgOut-->
+
+<Specie name="Gqabg"           id="Gqabg"           kdiff="0"    kdiffunit = "mu2/s"/>
+<Specie name="GqaGTP"          id="GqaGTP"          kdiff="0"    kdiffunit = "mu2/s"/>
+<Specie name="GqaGDP"          id="GqaGDP"          kdiff="0"    kdiffunit = "mu2/s"/>
+
+<Specie name="PLC"             id="PLC"             kdiff="0"    kdiffunit = "mu2/s"/>
+<Specie name="PLCCa"           id="PLCCa"           kdiff="0"    kdiffunit = "mu2/s"/>
+<Specie name="PLCCaGqaGTP"     id="PLCCaGqaGTP"     kdiff="0"    kdiffunit = "mu2/s"/>
+<Specie name="PLCGqaGTP"       id="PLCGqaGTP"       kdiff="0"    kdiffunit = "mu2/s"/>
+<Specie name="Pip2"            id="Pip2"            kdiff="0"    kdiffunit = "mu2/s"/>
+<Specie name="PLCCaPip2"       id="PLCCaPip2"       kdiff="0"    kdiffunit = "mu2/s"/>
+<Specie name="PLCCaGqaGTPPip2" id="PLCCaGqaGTPPip2"  kdiff="0"    kdiffunit = "mu2/s"/>
+<Specie name="Ip3"             id="Ip3"             kdiff="10.6"    kdiffunit = "mu2/s"/>
+<Specie name="PLCCaDAG"        id="PLCCaDAG"        kdiff="0"    kdiffunit = "mu2/s"/>
+<Specie name="PLCCaGqaGTPDAG"  id="PLCCaGqaGTPDAG"  kdiff="0"    kdiffunit = "mu2/s"/>
+
+<Specie name="PIkinase"      id="PIkinase"      kdiff="0"    kdiffunit = "mu2/s"/>
+<Specie name="Ip3degPIk"     id="Ip3degPIk"   kdiff="0"    kdiffunit = "mu2/s"/>
+
+<Specie name="PKC"           id="PKC"   kdiff="14"    kdiffunit = "mu2/s"/>
+<Specie name="PKCCa"         id="PKCCa"   kdiff="14"    kdiffunit = "mu2/s"/>
+<Specie name="PKCt"          id="PKCt"   kdiff="0"    kdiffunit = "mu2/s"/>
+<Specie name="PKCp"     id="PKCp"      kdiff="0"      kdiffunit = "mu2/s"/> <!-- Tuomo: Added from Jeanette et al. 2002 -->
+<Specie name="DAG"           id="DAG"           kdiff="0"    kdiffunit = "mu2/s"/>
+<Specie name="DAGK"          id="DAGK"          kdiff="0"    kdiffunit = "mu2/s"/>
+<Specie name="DAGKdag"       id="DAGKdag"      kdiff="0"    kdiffunit = "mu2/s"/>
+<Specie name="PA"            id="PA"           kdiff="0"    kdiffunit = "mu2/s"/>
+
+<Specie name="DGL"           id="DGL"           kdiff="0"    kdiffunit = "mu2/s"/>
+<Specie name="CaDGL"         id="CaDGL"         kdiff="0"    kdiffunit = "mu2/s"/>
+<Specie name="DAGCaDGL"      id="DAGCaDGL"      kdiff="0"    kdiffunit = "mu2/s"/>
+<Specie name="2AG"           id="2AG"           kdiff="88.6"    kdiffunit = "mu2/s"/>
+
+<Specie name="2AGdegrad"     id="2AGdegrad"           kdiff="88.6"    kdiffunit = "mu2/s"/>
+<Specie name="Ip3degrad"     id="Ip3degrad"           kdiff="10.6"    kdiffunit = "mu2/s"/>
+
   <!--*************************************************************************
   Now, the reactions themselves   SAME means params are same in both files
   **************************************************************************-->
@@ -1390,5 +1434,377 @@
   <reverseRate>2.5500000000000003e-05</reverseRate>
   <Q10>0.2</Q10>
 </Reaction>
+
+<!-- Added by Tuomo -->
+<!-- The following reactions from https://senselab.med.yale.edu/modeldb/showmodel.cshtml?model=154967&file=%2fkimetal2013%2fmglu_2AG_reac12mar20desens025bapta.xml#tabs-2 -->
+<!-- "Dhpg" replaced by Glu, G-proteins added the "q" to distinguish from above G-proteins. MGluR reactions moved to the end -->
+   <!-- GluOut    Glu <-> GluOut>  -->
+  <Reaction name = "Glu--GluOut" id="Glu--GluOut">
+<Reactant specieID="Glu"/>
+  <Product specieID="GluOut"/>
+
+  <forwardRate>5e-4</forwardRate>
+  <reverseRate>2e-10</reverseRate>
+  <Q10>0.2</Q10>
+  </Reaction>
+  
+<!-- check thermodynamic equilibrium of next four reactions: NO GOOD.  Decrease affinity of PLC-GaGTP for Ca to 500 -->
+<!-- PLC + Ca    <->   PLCCa  6000 nM-->
+<!--AB: this is REALLY fast - as fast as Cam binding to calcium.  Might want to slow down both calcium binding steps?
+Yes, by 5x (no change affinity) Nov 30.  Keep affinity of PLC for Ca = 6 uM (low) -->
+<Reaction name = "PLC+Ca--PLCCa" id="PLC+Ca--PLCCa">
+    <Reactant specieID="Ca"           />
+    <Reactant specieID="PLC"              />
+    <Product  specieID="PLCCa"               />
+
+    <forwardRate> 0.0004e-03   </forwardRate>
+    <reverseRate> 1e-03        </reverseRate>
+    <Q10>         0.2           </Q10>
+</Reaction>
+ 
+<!-- PLC + GqaGTP    <->   PLCGqaGTP 1200 nM -->
+<!--AB: Falkenburger 2010 uses 0.71e-3 for reverse rate --> 
+<!--Kf is 10x lower for PLC - GqaGTP than Jan31 reac -->
+<Reaction name = "PLC+GqaGTP--PLCGqaGTP" id="PLC+GqaGTP--PLCGqaGTP">
+    <Reactant specieID="GqaGTP"           />
+    <Reactant specieID="PLC"              />
+    <Product  specieID="PLCGqaGTP"               />
+
+    <forwardRate> 0.0007e-03   </forwardRate>
+    <reverseRate> 0.7e-03        </reverseRate>
+    <Q10>         0.2           </Q10>
+</Reaction>
+
+<!-- PLCGqaGTP + Ca    <->   PLCCaGqaGTP  500 nM-->
+<Reaction name = "PLCGqaGTP+Ca--PLCCaGqaGTP" id="PLCGqaGTP+Ca--PLCCaGqaGTP">
+    <Reactant specieID="Ca"           />
+    <Reactant specieID="PLCGqaGTP"              />
+    <Product  specieID="PLCCaGqaGTP"               />
+
+    <forwardRate> 0.08e-03   </forwardRate>
+    <reverseRate> 40e-03        </reverseRate>
+    <Q10>         0.2           </Q10>
+</Reaction>
+
+<!-- PLCCa + GqaGTP    <->   PLCCaGqaGTP  100 nM-->
+<!--decrease these rates Nov 30 (same affinity) by 3x -->
+<!--Kf is 10x lower for PLC - GqaGTP than Jan31 reac --> <!--Tuomo: used rates from Kim et al. 2013-->
+<Reaction name = "PLCCa+GqaGTP--PLCCaGqaGTP" id="PLCCa+GqaGTP--PLCCaGqaGTP">
+    <Reactant specieID="GqaGTP"           />
+    <Reactant specieID="PLCCa"              />
+    <Product  specieID="PLCCaGqaGTP"               />
+
+    <forwardRate> 0.1e-03   </forwardRate>
+    <reverseRate> 10e-03        </reverseRate>
+    <Q10>         0.2           </Q10>
+</Reaction>
+ 
+   <!-- PLCCa + Pip2    <-> PLCCaPip2    -->
+<!--No affinities for Pip2 are found in literature.  ALso, backward rate is very low compared to kcat
+This will initiall have small effect on Km, but might slow down IP3 production.
+Incraese Kb by 5x to decrease Ip3 production-->
+<!-- Decrease Kf by 10x to compensate for 10x inc in Pip2-->
+<!-- decrease the next two set of rates 5x overall since too much Pip2 is being hydrolyzed at basal calcium Nov 30 -->
+<Reaction name = "PLCCa+Pip2--PLCCaPip2" id="PLCCa+Pip2--PLCCaPip2">
+    <Reactant specieID="PLCCa"               />
+    <Reactant specieID="Pip2"             />
+    <Product  specieID="PLCCaPip2"            />
+
+    <forwardRate> 0.03e-06   </forwardRate>
+    <reverseRate> 0.01   </reverseRate>
+    <Q10>         0.2           </Q10>
+</Reaction>
+  
+
+<!-- PLCCaPip2      <-> PLCCaDAG + Ip3 -->  <!--Tuomo: used rate from Blackwell et al. 2018-->
+<Reaction name = "PLCCaPip2--PLCCaDAG+Ip3" id="PLCCaPip2--PLCCaDAG+Ip3">
+    <Reactant specieID="PLCCaPip2"            />
+    <Product  specieID="PLCCaDAG"               />
+    <Product  specieID="Ip3"            />
+
+    <forwardRate> 0.3e-03     </forwardRate>
+    <reverseRate> 0e-03    </reverseRate>
+    <Q10>         0.2           </Q10>
+</Reaction>
+  
+<!-- PLCCaDAG       <->  PLCCa + DAG -->
+<Reaction name = "PLCCaDAG--PLCCa+DAG" id="PLCCaDAG--PLCCa+DAG">
+    <Reactant specieID="PLCCaDAG"            />
+    <Product  specieID="PLCCa"               />
+    <Product  specieID="DAG"            />
+
+    <forwardRate> 200e-03     </forwardRate>
+    <reverseRate> 0e-03    </reverseRate>
+    <Q10>         0.2           </Q10>
+</Reaction>
+
+   <!-- PLCCaGqaGTP + Pip2    <-> PLCCaGqaGTPPip2    -->
+<!-- Decrease Kf by 10x to compensate for 10x inc in Pip2-->
+<!-- Decrease rates by 2x to maintain 10x enhancement by GqaGTP Nov 30
+Increse Kb by 5x to decrease Ip3 production-->
+<Reaction name = "PLCCaGqaGTP+Pip2--PLCCaGqaGTPPip2" id="PLCCaGqaGTP+Pip2--PLCCaGqaGTPPip2">
+    <Reactant specieID="PLCCaGqaGTP"               />
+    <Reactant specieID="Pip2"             />
+    <Product  specieID="PLCCaGqaGTPPip2"            />
+
+    <forwardRate>  15e-06   </forwardRate>
+    <reverseRate>  75e-03   </reverseRate>
+    <Q10>         0.2           </Q10>
+</Reaction>
+  
+<!-- PLCCaGqaGTPPip2       <-> PLCCaGqaGTPDAG + Ip3 -->
+<Reaction name = "PLCCaGqaGTPPip2--PLCCaGqaGTPDAG+Ip3" id="PLCCaGqaGTPPip2--PLCCaGqaGTPDAG+Ip3">
+    <Reactant specieID="PLCCaGqaGTPPip2"            />
+    <Product  specieID="PLCCaGqaGTPDAG"               />
+    <Product  specieID="Ip3"            />
+
+    <forwardRate> 250e-03     </forwardRate>
+    <reverseRate> 0e-03    </reverseRate>
+    <Q10>         0.2           </Q10>
+</Reaction>
+  
+<!-- PLCCaGqaGTPDAG       <->  PLCCaGqaGTPTp + DAG -->
+<Reaction name = "PLCCaGqaGTPDAG--PLCCaGqaGTPTp+DAG" id="PLCCaGqaGTPDAG--PLCCaGqaGTPTp+DAG">
+    <Reactant specieID="PLCCaGqaGTPDAG"            />
+    <Product  specieID="PLCCaGqaGTP"               />
+    <Product  specieID="DAG"            />
+
+    <forwardRate> 1000e-03     </forwardRate>
+    <reverseRate> 0e-03    </reverseRate>
+    <Q10>         0.2           </Q10>
+</Reaction>    
+
+<!--  What if PIP2 can only be regenerated from degraded IP3 by membrane molecule.
+Thus, initialize PIkinase in the membrane only. 
+No idea what these rates should be.  Try different values to obtain equilibirum at basal
+These rates interact with PIkinase quantity. Affinity started at 1 uM
+Discovered mistake!!! specified PIkinase as product, not reactant!-->
+   <Reaction name = "Ip3degrad + PIkinase -- Ip3degPIkinase" id="PIkinase1">
+    <Reactant specieID="Ip3degrad"            />   
+    <Reactant specieID="PIkinase"               />
+    <Product  specieID="Ip3degPIk"            />
+
+    <forwardRate> 2.0e-6    </forwardRate>
+    <reverseRate> 1e-03    </reverseRate>
+    <Q10>         0.2           </Q10>
+</Reaction>
+
+<!-- Initial rate from PI5kinase from Falkenburger, increased to compensate for lower reactant quantity -->
+   <Reaction name = "Ip3degPIkinase -- PIP2 + PIkinase" id="PIkinase2">
+    <Reactant specieID="Ip3degPIk"            />
+    <Product  specieID="PIkinase"               />
+    <Product  specieID="Pip2"            />
+
+    <forwardRate> 1e-3  </forwardRate>
+    <reverseRate> 0e-03    </reverseRate>
+    <Q10>         0.2           </Q10>
+</Reaction>    
+
+<!-- GAP activity - only with PLC bound neither to calcium nor PIP2 -->
+<!-- PLCGqaGTP       <-> PLC + Gqabg -->
+<!-- When PLC hydrolyzes GqaGTP, the GqaGDP immediately binds to Gbg to regenerate Gqabg
+	 This saves two reactions: not only the rebinding, but also Gbg dissociating from the mGluR after GqaGTP
+	 Given the speed of the rebinding and dissociation in previous models, this is a wise choice
+	 However, it prevents depletion of Gqabg! -->
+<Reaction name = "PLCGqaGTP--PLC+GqaGDP" id="PLCGqaGTP--PLC+GqaGDP">
+    <Reactant specieID="PLCGqaGTP"            />
+    <Product  specieID="PLC"               />
+    <Product  specieID="GqaGDP"            />
+
+    <forwardRate>   12e-03   </forwardRate>
+    <reverseRate>   0  </reverseRate>
+    <Q10>         0.2           </Q10>
+</Reaction>
+
+<!-- Gqap activity of PLCCa -->
+<Reaction name = "PLCCaGqaGTP--PLCCa+GqaGDP" id="PLCCaGqaGTP--PLC+GqaGDP">
+    <Reactant specieID="PLCCaGqaGTP"            />
+    <Product  specieID="PLCCa"               />
+    <Product  specieID="GqaGDP"            />
+
+    <forwardRate>   12e-03   </forwardRate>
+    <reverseRate>   0  </reverseRate>
+    <Q10>         0.2           </Q10>
+</Reaction>
+
+<!-- Hydrolysis of GqaGTP - slower than GAP activity-->
+<Reaction name = "GqaGTP--GqaGDP" id="GqaGTP--GqaGDP">
+    <Reactant specieID="GqaGTP"            />
+    <Product  specieID="GqaGDP"            />
+
+    <forwardRate>   1e-03   </forwardRate>
+    <reverseRate>   0  </reverseRate>
+    <Q10>         0.2           </Q10>
+</Reaction>
+
+<!-- 1st order regeneration of Gqabg 
+avoids the need to generate Gbg, and have them react-->
+<Reaction name = "GqaGDP--Gqabg" id="GqaGDP--Gqabg">
+    <Reactant specieID="GqaGDP"            />
+    <Product  specieID="Gqabg"            />
+
+    <forwardRate>   10e-03   </forwardRate>
+    <reverseRate>   0  </reverseRate>
+    <Q10>         0.2           </Q10>
+</Reaction>
+
+<!-- Ca + DGL <-> CaDGL   DGL is DAG lipase, which produces 2AG -->
+<!-- no source for rates.  Make slower, and also 400 nM affinity -->
+<Reaction name = "Ca+Dlg--CaDGL" id="Ca+Dlg--CaDGL">
+    <Reactant specieID="Ca"            />
+    <Reactant specieID="DGL"               />
+    <Product  specieID="CaDGL"            />
+
+    <forwardRate> 0.125e-03     </forwardRate>
+    <reverseRate> 50e-03    </reverseRate>
+    <Q10>         0.2           </Q10>
+</Reaction>
+ 
+<!-- DAG + CaDGL <-> DAGCaDGL -->
+<!--affinity = 1010 nM IS there are publication on this? 
+So far only 1 found: Bisogno J Cell Biol 2003
+lists affinity of 75 uM or 154 uM "within the range found in tissue" -->
+<Reaction name = "DAG+CaDlg--DAGCaDGL" id="DAG+CaDlg--DAGCaDGL">
+    <Reactant specieID="DAG"            />
+    <Reactant specieID="CaDGL"               />
+    <Product  specieID="DAGCaDGL"            />
+
+    <forwardRate> 0.0005e-03     </forwardRate>
+    <reverseRate> 1.0e-03    </reverseRate>
+    <Q10>         0.2           </Q10>
+</Reaction>
+
+<!-- raise kb to 1.5e-3 to create 1 uM affinity
+also make all rates even (4x) slower to saturate at lower DAG? -->
+<!-- DAGCaDGL <-> CaDGL + 2AG -->
+<Reaction name = "DAGCaDGL--CaDGL+2AG" id="DAGCaDGL--CaDGL+2AG">
+    <Reactant specieID="DAGCaDGL"            />
+    <Product  specieID="CaDGL"               />
+    <Product  specieID="2AG"            />
+
+    <forwardRate> 0.25e-03     </forwardRate>
+    <reverseRate> 0e-03    </reverseRate>
+    <Q10>         0.2           </Q10>
+</Reaction>
+
+
+<!-- ************* degradation of IP3 and 2AG, implementing the enzymes? -->
+<!--  Ip3    <-> Ip3degrad          Degraded IP3-->
+<Reaction name = "Ip3--Ip3degrad" id="Ip3--Ip3degrad">
+     <Reactant specieID="Ip3"            />
+    <Product  specieID="Ip3degrad"        />
+
+    <forwardRate> 10e-03      </forwardRate>
+    <reverseRate> 0.0e-03      </reverseRate>
+    <Q10>         0.2           </Q10>
+</Reaction>
+
+<!--  2AG    <-> 2AGdegrad       Degraded 2AG   -->
+<Reaction name = "2AG--2AGdegrad" id="2AG--2AGdegrad">
+     <Reactant specieID="2AG"            />
+    <Product  specieID="2AGdegrad"        />
+
+    <forwardRate> 5e-03      </forwardRate>
+    <reverseRate> 0.0e-03      </reverseRate>
+    <Q10>         0.2           </Q10>
+</Reaction>
+
+<!-- ************* degradation of  DAG by DAG kinase -->
+ <!--  DAG   + DAGK <-> DAGKdag -> PA  step 1  (0.07 mM Km - What is pub for this?) -->
+<Reaction name = "DAGKdag1" id="DAGKdag1">
+     <Reactant specieID="DAG"            />
+     <Reactant specieID="DAGK"            />
+    <Product  specieID="DAGKdag"        />
+
+    <forwardRate> 0.00007e-03      </forwardRate>
+    <reverseRate> 0.8e-3         </reverseRate>
+    <Q10>         0.2           </Q10>
+</Reaction>
+
+<!--  DAG   + DAGK <-> DAGKdag -> DAGK + PA   step 2 (Kcat is on the high side, could be half the rate)-->
+<Reaction name = "DAGKdag1" id="DAGKdag1">
+     <Reactant specieID="DAGKdag"            />
+    <Product  specieID="DAGK"        />
+    <Product  specieID="PA"        />
+
+    <forwardRate> 0.2e-03      </forwardRate>
+    <reverseRate> 0.0e-03      </reverseRate>
+    <Q10>         0.2           </Q10>
+</Reaction>
+
+
+<!-- THese are values from Hellgren Kotaleski PKC paper. 2.5 uM affinity -->
+<!-- PKC + Ca    <->   PKCCa  -->
+<Reaction name = "PKC+Ca--PKCCa" id="PKC+Ca--PKCCa">
+    <Reactant specieID="Ca"           />
+    <Reactant specieID="PKC"              />
+    <Product  specieID="PKCCa"               />
+
+    <forwardRate> 13.3e-06   </forwardRate>
+    <reverseRate> 50e-03        </reverseRate>
+    <Q10>         0.2           </Q10>
+</Reaction>
+ 
+<!-- THese are values from Hellgren Kotaleski PKC paper. 10 uM affinity
+MUCH slower binding compared to CaDGL  -->
+   <!-- PKCCa + DAG    <-> PKCt    -->
+<Reaction name = "PKCCa+DAG--PKCt" id="PKCCa+DAG--PKCt">
+    <Reactant specieID="PKCCa"               />
+    <Reactant specieID="DAG"             />
+    <Product  specieID="PKCt"            />
+
+    <forwardRate> 0.015e-06   </forwardRate>
+    <reverseRate>  0.15e-03   </reverseRate>
+    <Q10>         0.2           </Q10>
+</Reaction>
+
+    
+<!-- GluR reactions with Glutamate and Gq-proteins -->
+   <!-- Glu + MGluR <==> MGluR_Glu  -->
+  <Reaction name = "Glu+MGluR--MGluR_Glu" id="Glu+MGluR--MGluR_Glu">
+    <Reactant specieID="Glu"              />
+    <Reactant specieID="MGluR"              />
+    <Product  specieID="MGluR_Glu"         />
+
+    <forwardRate> 1.68e-8 </forwardRate> <!-- originally 0.001e-03 -->
+    <reverseRate> 0.1e-03      </reverseRate>
+    <Q10>         0.2          </Q10>
+</Reaction>
+
+   <!-- MGluR_Glu <==> Desensitized -->
+  <Reaction name = "Glu+MGluR--MGluR_Glu_desens" id="Glu+MGluR--MGluR_Glu_desens">
+    <Reactant specieID="MGluR_Glu"              />
+    <Product  specieID="MGluR_Glu_desens"         />
+
+    <forwardRate> 0.0625e-03 </forwardRate>
+    <reverseRate> 0.001e-03      </reverseRate>
+    <Q10>         0.2          </Q10>
+</Reaction>
+
+   <!-- Gqabg + MGluR_Glu    <-> MGluR_Gqabg_Glu    -->
+<Reaction name = "Gqabg+MGluR_Glu--MGluR_Gqabg_Glu" id="Gqabg+MGluR_Glu--MGluR_Gqabg_Glu">
+    <Reactant specieID="Gqabg"               />
+    <Reactant specieID="MGluR_Glu"             />
+    <Product  specieID="MGluR_Gqabg_Glu"            />
+
+    <forwardRate>  0.009e-03  </forwardRate>
+    <reverseRate>   1.36e-03  </reverseRate>
+    <Q10>         0.2           </Q10>
+</Reaction>
+
+   <!-- MGluR_Gqabg_Glu    <-> GqaGTP + MGluR_Glu    -->
+<Reaction name = "MGluR_Gqabg_Glu--GqaGTP+MGluR_Glu" id="MGluR_Gqabg_Glu--GqaGTP+MGluR_Glu">
+    <Reactant specieID="MGluR_Gqabg_Glu"               />
+    <Product specieID="GqaGTP"             />
+    <Product  specieID="MGluR_Glu"            />
+
+    <forwardRate>  1.5e-03 </forwardRate>
+    <reverseRate>   0  </reverseRate>
+    <Q10>         0.2           </Q10>
+</Reaction>
+
+
+
+
 
 </ReactionScheme>
