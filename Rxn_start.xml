@@ -3,7 +3,7 @@
   <!-- you can specify the units of the diffusion constant. If they are not specified they are assumed to be micron^2/second, (microns written "mu" here) it should understand microns, mm, and m for distances and seconds and ms for times -->
   <!-- This code is implemented CaMKII_bimols Rns -0.44, 0.28, 0.088. Fix 3 products 2rxns break down to 2nd order rxn : LbARG/Ip35P1P2 -->
   <!-- last rxn of Ip35p1p2 was wrong reactant:fixed on Aug,8th,2008
-       Chosen katp=1 sec(not 10 sec) is enough   -->
+   Chosen katp=1 sec(not 10 sec) is enough   -->
   <!-- Suggested by avrama Ca kdiff=600 for helping fast decay on Feb.24th 2009-->
 
   <!--TODO add bAR desensitization!-->
@@ -13,7 +13,9 @@
 	  kdiffunit="mu2/s" />
   <Specie name="CaCbuf" id="CaCbuf" kdiff="10" kdiffunit="mu2/s"/>
   <Specie name="Cbuf" id="Cbuf" kdiff="10" kdiffunit="mu2/s"/>
-  
+  <Specie name="fixedbuffer" id="fixedbuffer" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="fixedbufferCa" id="fixedbufferCa" kdiff="0" kdiffunit="mu2/s"/>
+
   <Specie name="Leak" id="Leak" kdiff="0" kdiffunit="mu2/s" />
   <Specie name="Calbin" id="Calbin" kdiff="9.3" kdiffunit="mu2/s" />
   <Specie name="CalbinC" id="CalbinC" kdiff="9.3" kdiffunit="mu2/s" />
@@ -186,8 +188,8 @@
   
 
   <!--*************************************************************************
-      Now, the reactions themselves   SAME means params are same in both files
-      **************************************************************************-->
+  Now, the reactions themselves   SAME means params are same in both files
+  **************************************************************************-->
   <!--I. *********** Ca pump and buffer rxns  ************* -->
   <!-- i: Ca pump high affinity -    Ca + pmca <-> pmcaCa  SAME-->
   <Reaction name = "Ca_pump1a" id="Ca_pump1a">
@@ -195,8 +197,8 @@
     <Reactant specieID="pmca"/>
     <Product specieID="pmcaCa"/>
     
-    <forwardRate>0.05e-3</forwardRate>
-    <reverseRate>9e-3</reverseRate>
+    <forwardRate>0.5e-4</forwardRate>
+    <reverseRate>0.007</reverseRate>
   </Reaction>
 
   <!-- ii: Ca pump high affinity -    pmcaCa <-> pmca + CaOut   SAME-->
@@ -205,7 +207,7 @@
     <Product specieID="pmca"/>
     <Product specieID="CaOut"/>
     
-    <forwardRate>3.0e-3</forwardRate>
+    <forwardRate>0.0035</forwardRate>
     <reverseRate>0</reverseRate>
   </Reaction>
 
@@ -215,8 +217,8 @@
     <Reactant specieID="ncx"/>
     <Product specieID="ncxCa"/>
     
-    <forwardRate>0.011e-3</forwardRate>
-    <reverseRate>11.2e-3</reverseRate>
+    <forwardRate>1.68e-5</forwardRate>
+    <reverseRate>0.0112</reverseRate>
   </Reaction>
   
   <!-- iv: Ca pump low affinity -    ncxCa <-> ncx + CaOut   SAME-->
@@ -225,7 +227,7 @@
     <Product specieID="ncx"/>
     <Product specieID="CaOut"/>
     
-    <forwardRate>5.6e-3</forwardRate>
+    <forwardRate>0.0056</forwardRate>
     <reverseRate>0</reverseRate>
   </Reaction>
   <!-- v: Ca leak -    CaOut + Leak <-> CaOutLeak  GQ RXN FILE, Leak is sm only-->
@@ -234,7 +236,7 @@
     <Reactant specieID="Leak"/>
     <Product specieID="CaOutLeak"/>
     
-    <forwardRate>0.01e-6</forwardRate>
+    <forwardRate>1.5e-6</forwardRate>
     <reverseRate>1.1e-3</reverseRate>
   </Reaction>
 
@@ -254,10 +256,18 @@
     <Reactant specieID="Calbin"/>
     <Product specieID="CalbinC"/>
     
-    <forwardRate>0.028e-3</forwardRate>
-    <reverseRate>19.6</reverseRate>
+    <forwardRate>2.8e-5</forwardRate>
+    <reverseRate>0.0196</reverseRate>
   </Reaction>
-  
+   <!-- fixed immobile buffer-->
+    <Reaction name = "Ca_fixedbuffer" id="Ca_fixedBuffer">
+    <Reactant specieID="Ca"/>
+    <Reactant specieID="fixedbuffer"/>
+    <Product specieID="fixedbufferCa"/>
+    <forwardRate>0.004e-1</forwardRate>
+    <reverseRate>20.0</reverseRate>
+    <Q10>0.2</Q10>
+    </Reaction>
   
   <!-- Irreversible IC Ca Buffer    Ca + CaB <-> CaBCa -->
   <Reaction name = "CaIn_buffer" id="CaIn_buffer">
