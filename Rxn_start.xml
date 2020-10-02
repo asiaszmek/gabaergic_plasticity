@@ -867,8 +867,8 @@ than previously-->
   <Reactant specieID="PP1"    />
   <Product  specieID="CKpCaMCa4PP1"   />
   
-  <forwardRate> 0.0005e-06  </forwardRate>
-  <reverseRate> 0.09e-03   </reverseRate>
+  <forwardRate> 0.01e-06  </forwardRate>
+  <reverseRate> 0.9e-03   </reverseRate>
 </Reaction>
 
 <!--Dephos of CKpCaMCa4 by PP1 -->
