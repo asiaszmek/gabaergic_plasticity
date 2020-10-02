@@ -1735,7 +1735,7 @@ also make all rates even (4x) slower to saturate at lower DAG? -->
 
     
 <!-- GluR reactions with Glutamate and Gq-proteins -->
-   <!-- Glu + MGluR <==> MGluR_Glu  -->
+   <!-- Glu + MGluR <==> MGluR_Glu  --> <!-- 6uM-->
   <Reaction name = "Glu+MGluR--MGluR_Glu" id="Glu+MGluR--MGluR_Glu">
     <Reactant specieID="Glu"              />
     <Reactant specieID="MGluR"              />
