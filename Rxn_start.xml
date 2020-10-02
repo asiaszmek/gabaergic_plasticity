@@ -1494,7 +1494,7 @@ Yes, by 5x (no change affinity) Nov 30.  Keep affinity of PLC for Ca = 6 uM (low
     <Product  specieID="PLCCaGqaGTP"               />
 
     <forwardRate> 0.1e-03   </forwardRate>
-    <reverseRate> 10e-03        </reverseRate>
+    <reverseRate> 20e-03        </reverseRate>
     <Q10>         0.2           </Q10>
 </Reaction>
  
