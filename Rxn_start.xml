@@ -440,8 +440,8 @@ than previously-->
 <Product  specieID="pbARGs" />
 <Product  specieID="ISO"   />
 
-<forwardRate> 0.02e-03    </forwardRate>
-<reverseRate> 0 </reverseRate>
+<forwardRate> 0.1    </forwardRate>
+<reverseRate> 0.1e-3 </reverseRate>
 <Q10>     0.2   </Q10>
 </Reaction>
 
@@ -451,7 +451,7 @@ than previously-->
 <Reactant specieID="pbARGs"  />
 <Product  specieID="GsbAR"   />
 
-<forwardRate>  0.003e-03    </forwardRate>
+<forwardRate>  0.03e-03    </forwardRate>
 <reverseRate>  0    </reverseRate>
 <Q10>  0.2  </Q10>
 </Reaction>
