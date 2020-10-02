@@ -1,5 +1,21 @@
 <?xml version="1.0"?>
 <ReactionScheme>
+
+  
+  <!-- IP3R Model based on Fraiman D, Dawson SP (2004) A model of IP3 receptor with a luminal
+       calcium binding site: stochastic simulations and analysis. Cell
+       Calcium 35: 403-413, 2004 -->
+  
+  <!-- Receptor States:
+       IP3R  state
+       IP3RO  state
+       IP3RIP3  bound IP3R
+       IP3RC  bound IP3R
+       IP3RC2
+       IP3RC3
+       IP3RC4
+       
+  -->
   <!-- you can specify the units of the diffusion constant. If they are not specified they are assumed to be micron^2/second, (microns written "mu" here) it should understand microns, mm, and m for distances and seconds and ms for times -->
   <!-- This code is implemented CaMKII_bimols Rns -0.44, 0.28, 0.088. Fix 3 products 2rxns break down to 2nd order rxn : LbARG/Ip35P1P2 -->
   <!-- last rxn of Ip35p1p2 was wrong reactant:fixed on Aug,8th,2008
@@ -226,6 +242,37 @@
 <Specie name="2AGdegrad"     id="2AGdegrad"           kdiff="88.6"    kdiffunit = "mu2/s"/>
 <Specie name="Ip3degrad"     id="Ip3degrad"           kdiff="10.6"    kdiffunit = "mu2/s"/>
 
+  <Specie name="InfluxER" id="InfluxER" kdiff="0"
+	  kdiffunit="mu2/s"/>
+  <Specie name="CaOutInfluxER" id="CaOutInfluxER" kdiff="0" kdiffunit="mu2/s"/>
+ 
+  <Specie name="S000"      id="S000"     kdiff="0"    kdiffunit="mu2/s"/>
+  <Specie name="S100"      id="S100"     kdiff="0"    kdiffunit="mu2/s"/>
+  <Specie name="S110"      id="S110"     kdiff="0"    kdiffunit="mu2/s"/>
+  <Specie name="S101"      id="S101"     kdiff="0"    kdiffunit="mu2/s"/>
+  <Specie name="S011"      id="S011"     kdiff="0"    kdiffunit="mu2/s"/>
+  <Specie name="S010"      id="S010"     kdiff="0"    kdiffunit="mu2/s"/>
+  <Specie name="S001"      id="S001"     kdiff="0"    kdiffunit="mu2/s"/>
+  <Specie name="S111"      id="S111"     kdiff="0"    kdiffunit="mu2/s"/>
+  
+ <Specie name="CaER" id="CaER" kdiff="0." kdiffunit="mu2/s"/>
+  
+  <Specie name="CaERLeak" id="CaERLeak" kdiff="0" kdiffunit="mu2/s"/>
+
+  <Specie name="LeakER" id="LeakER" kdiff="0" kdiffunit="mu2/s"/>
+
+  <Specie name="SERCA" id="SERCA" kdiff="0" kdiffunit="mu2/s"/>
+
+  <Specie name="SERCACa2" id="SERCACa2" kdiff="0" kdiffunit="mu2/s"/>
+  <!--calreticulin-->
+  <Specie name="CRT" id="CRT" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="CRTP" id="CRTP" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="IP3"            id="IP3"           kdiff="10."
+	  kdiffunit="mu2/s"/> <!--Hindered cytoplasmic diffusion of
+	  inositol trisphosphate restricts its cellular range of
+	  action     George D. Dickinson1,*, Kyle L. Ellefsen1,
+	  Silvina Ponce Dawson2, John E. Pearson3, and Ian Parker1,4
+	  Sci signalling -->
   <!--*************************************************************************
   Now, the reactions themselves   SAME means params are same in both files
   **************************************************************************-->
@@ -1779,6 +1826,220 @@ also make all rates even (4x) slower to saturate at lower DAG? -->
 </Reaction>
 
 
+<!--Add endoplasmic reticulum and IP3R from the never used growth cone model-->
+
+    <!-- Ca leak -    CaOut + Leak <-> CaOutLeak -->
+  <Reaction name = "Ca_influxER" id="Ca_cainfluxa">
+    <Reactant specieID="CaOut"/>
+    <Reactant specieID="InfluxER"/>
+    <Product specieID="CaOutInfluxER"/>
+    
+    <forwardRate>1.5e-7</forwardRate>
+    <reverseRate>1.1e-3</reverseRate>
+    <Q10>0.2</Q10>
+  </Reaction>
+  
+  <!-- Ca leak -    CaOutLeak <-> Ca + Leak -->
+  <Reaction name = "Ca_influxER" id="Ca_influxb">
+    <Reactant specieID="CaOutInfluxER"/>
+    <Product specieID="CaER"/>
+    <Product specieID="InfluxER"/>
+    
+    <forwardRate>1.1e-4</forwardRate>
+    <reverseRate>0</reverseRate>
+    <Q10>0.2</Q10>
+ </Reaction>
+  <!-- Serca -->
+  <Reaction name = "SERCA_1a" id="SERCA_1a">
+    <Reactant specieID="Ca" n="2"/>
+    <Reactant specieID="SERCA"/>
+    <Product specieID="SERCACa2"/>
+    
+    <forwardRate>0.0001</forwardRate>
+    <reverseRate>0.001</reverseRate>
+    <Q10>0.2</Q10>
+  </Reaction>
+  
+  <!-- Ca pump high affinity -    pmcaCa <-> pmca + CaOut -->
+  <Reaction name = "SERCA_1b" id="SERCA_1b">
+    <Reactant specieID="SERCACa2"/>
+    <Product specieID="SERCA"/>
+    <Product specieID="CaER" n="2"/>
+    
+    <forwardRate>0.01</forwardRate>
+    <reverseRate>0</reverseRate>
+    <Q10>0.2</Q10>
+  </Reaction>
+  
+ <!-- ER Ca leak -    CaER+ LeakER <-> CaERLeak-->
+  <Reaction name = "Ca_leakER" id="Ca_leakaER">
+    <Reactant specieID="CaER"/>
+    <Reactant specieID="LeakER"/>
+    <Product specieID="CaERLeak"/>
+    
+    <forwardRate>7.e-7</forwardRate>
+    <reverseRate>1.1e-3</reverseRate>
+    <Q10>0.2</Q10>
+  </Reaction>
+    
+<!--  ER Ca leak -    CaERLeak <-> Ca + LeakER-->
+  <Reaction name = "Ca_leakER" id="Ca_leakbER">
+    <Reactant specieID="CaERLeak"/>
+    <Product specieID="Ca"/>
+    <Product specieID="LeakER"/>
+    
+    <forwardRate>2.5e-3</forwardRate>
+    <reverseRate>0</reverseRate>
+    <Q10>0.2</Q10>
+  </Reaction>
+
+     <Reaction name = "CRTP_bind" id="CRTP_bind">
+    <Reactant specieID="CRT"/>
+    <Reactant specieID="CaER"/>
+    <Product specieID="CRTP"/>
+    
+    <forwardRate>1e-6</forwardRate>
+    <reverseRate>0.001</reverseRate>
+    </Reaction>
+
+     <Reaction name = "S000+IP3->S100" id="S000+IP3->S100">
+    <Reactant specieID="S000"           />
+    <Reactant specieID="IP3"              />
+    <Product  specieID="S100"               />	
+    
+    <forwardRate> 400e-6   </forwardRate>
+    <reverseRate> 0.052       </reverseRate>
+    <Q10>         0.2           </Q10>
+  </Reaction>
+
+  <Reaction name = "S100+Ca->S101" id="S100+Ca->S101">
+    <Reactant specieID="S100"           />
+    <Reactant specieID="Ca"              />
+    <Product  specieID="S101"               />	
+    
+    <forwardRate> 0.2e-6  </forwardRate>
+    <reverseRate>  0.00028179999999999997    </reverseRate>
+    <Q10>         0.2           </Q10>
+  </Reaction>
+
+  <Reaction name = "S101->S001+IP3" id="S101->S001+IP3">
+    <Reactant specieID="S001"           />
+    <Reactant specieID="IP3"              />
+    <Product  specieID="S101"               />	
+    
+    <forwardRate>400e-6  </forwardRate>
+    <reverseRate> 0.37736000000000003     </reverseRate>
+    <Q10>         0.2           </Q10>
+  </Reaction>
+   
+<Reaction name = "S000+Ca->S001" id="S000+Ca->S001">
+    <Reactant specieID="S000"           />
+    <Reactant specieID="Ca"              />
+    <Product  specieID="S001"               />	
+    
+    <forwardRate> 0.2e-6  </forwardRate>
+    <reverseRate> 2.8899999999999998e-05     </reverseRate>
+    <Q10>         0.2           </Q10>
+</Reaction>
+
+<!-- -->
+
+    
+  <Reaction name = "S010+IP3->S110" id="S010+IP3->S110">
+    <Reactant specieID="S010"           />
+    <Reactant specieID="IP3"              />
+    <Product  specieID="S110"               />	
+    
+    <forwardRate> 400e-6   </forwardRate>
+    <reverseRate> 0.052       </reverseRate>
+    <Q10>         0.2           </Q10>
+  </Reaction>
+
+  <Reaction name = "S110+Ca->S111" id="S110+Ca->S111">
+    <Reactant specieID="S110"           />
+    <Reactant specieID="Ca"              />
+    <Product  specieID="S111"               />	
+    
+    <forwardRate> 0.2e-6  </forwardRate>
+    <reverseRate>  0.00028179999999999997    </reverseRate>
+    <Q10>         0.2           </Q10>
+  </Reaction>
+
+  <Reaction name = "S111->S011+IP3" id="S111->S011+IP3">
+    <Reactant specieID="S011"           />
+    <Reactant specieID="IP3"              />
+    <Product  specieID="S111"               />	
+    
+    <forwardRate>400e-6  </forwardRate>
+    <reverseRate> 0.37736000000000003      </reverseRate>
+    <Q10>         0.2           </Q10>
+  </Reaction>
+   
+<Reaction name = "S010+Ca->S011" id="S010+Ca->S011">
+    <Reactant specieID="S010"           />
+    <Reactant specieID="Ca"              />
+    <Product  specieID="S011"               />	
+    
+    <forwardRate> 0.2e-6  </forwardRate>
+    <reverseRate> 2.8899999999999998e-05     </reverseRate>
+    <Q10>         0.2           </Q10>
+</Reaction>
+
+<!-- -->
+
+
+<Reaction name = "S000+Ca->S010" id="S000+Ca->S010">
+    <Reactant specieID="S000"           />
+    <Reactant specieID="Ca"              />
+    <Product  specieID="S010"               />	
+    
+    <forwardRate> 20e-6  </forwardRate>
+    <reverseRate> 0.0016468000000000001     </reverseRate>
+    <Q10>         0.2           </Q10>
+</Reaction> 
+
+
+<Reaction name = "S100+Ca->S110" id="S100+Ca->S110">
+    <Reactant specieID="S100"           />
+    <Reactant specieID="Ca"              />
+    <Product  specieID="S110"               />	
+    
+    <forwardRate> 20e-6  </forwardRate>
+    <reverseRate> 0.0016468000000000001     </reverseRate>
+    <Q10>         0.2           </Q10>
+</Reaction>
+
+<Reaction name = "S101+Ca->S111" id="S101+Ca->S111">
+    <Reactant specieID="S101"           />
+    <Reactant specieID="Ca"              />
+    <Product  specieID="S111"               />	
+    
+    <forwardRate> 20e-6  </forwardRate>
+    <reverseRate> 0.0016468000000000001     </reverseRate>
+    <Q10>         0.2           </Q10>
+</Reaction> 
+
+
+<Reaction name = "S001+Ca->S011" id="S001+Ca->S011">
+    <Reactant specieID="S001"           />
+    <Reactant specieID="Ca"              />
+    <Product  specieID="S011"               />	
+    
+    <forwardRate> 20e-6  </forwardRate>
+    <reverseRate> 0.0016468000000000001     </reverseRate>
+    <Q10>         0.2           </Q10>
+</Reaction> 
+
+<Reaction name = "EROutflux" id="EROutflux">
+    <Reactant specieID="S110"          n="3" />
+    <Reactant specieID="CaER"              />
+    <Product  specieID="S110"          n="3"     />	
+    <Product specieID="Ca"              />
+    
+    <forwardRate> 800e-7  </forwardRate>
+    <reverseRate> 0.0016468000000000001     </reverseRate>
+    <Q10>         0.2           </Q10>
+</Reaction> 
 
 
 

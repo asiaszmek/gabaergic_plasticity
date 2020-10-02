@@ -126,7 +126,7 @@
     <NanoMolarity specieID="ncxCa" value="1000"/>
   </ConcentrationSet>
 
-  <SurfaceDensitySet region="dendrite">
+  <SurfaceDensitySet region="dend">
     <PicoSD specieID="Leak" value="0"/>
     <PicoSD specieID="CaOutLeak" value="6000"/>
     <PicoSD specieID="pmca" value="600"/>
@@ -167,5 +167,108 @@
     <PicoSD specieID="PKAcAMP2" value="20"/>
     <PicoSD specieID="PKAcAMP4" value="5"/>
   </SurfaceDensitySet>
+  <ConcentrationSet region="ERmembrane11">
+    <NanoMolarity specieID="CaER"         value="6e5"     />
+    <NanoMolarity       specieID="S000"      value="352"     />
+   <NanoMolarity specieID="CaERLeak" value="4000"/>
+    <NanoMolarity       specieID="SERCACa2"       value="1000"     />
+    <NanoMolarity       specieID="SERCA"       value="1000"     />
+    <NanoMolarity       specieID="CRT"  value="4.5e+06"     />
+    <NanoMolarity       specieID="CRTP" value="2.548312956658917246e+05"     />
+  </ConcentrationSet>
+  
+  <ConcentrationSet region="ERmembrane12">
+    <NanoMolarity specieID="CaER"         value="6e5"     />
+    <NanoMolarity       specieID="S000"      value="352"     />
+   <NanoMolarity specieID="CaERLeak" value="4000"/>
+    <NanoMolarity       specieID="SERCACa2"       value="1000"     />
+    <NanoMolarity       specieID="SERCA"       value="1000"     />
+    <NanoMolarity       specieID="CRT"  value="4.5e+06"     />
+    <NanoMolarity       specieID="CRTP" value="2.548312956658917246e+05"     />
+ </ConcentrationSet>
+
+   <SurfaceDensitySet region="ERmembrane11">
+    <PicoSD specieID="Leak" value="0"/>
+    <PicoSD specieID="CaOutLeak" value="6000"/>
+    <PicoSD specieID="pmca" value="600"/>
+    <PicoSD specieID="pmcaCa" value="0"/>
+    <PicoSD specieID="ncx" value="13500"/>
+    <PicoSD specieID="ncxCa" value="1500"/>
+
+    <PicoSD specieID="GsbAR" value="500"/>
+    <PicoSD specieID="ISObARGs" value="20"/>
+    <PicoSD specieID="Gs" value="10000"/>
+    <PicoSD specieID="Gqabg" value="10000"/>
+
+
+    <PicoSD  specieID="PLC"  value="200"    />
+    <PicoSD  specieID="Pip2" value="9600"  />
+    <PicoSD  specieID="Ip3degrad"  value="240"  />
+    <PicoSD  specieID="Ip3degPIk"  value="160"  />
+    <PicoSD  specieID="MGluR" value="1e03"  />
+    <PicoSD  specieID="DAG"  value="720"  />
+    <PicoSD  specieID="CaDGL"  value="120"  />
+    <PicoSD  specieID="PIkinase"   value="120"  />
+    <PicoSD  specieID="DAGK" value="280"  />
+    <PicoSD specieID="GasGTP" value="0"/>
+    <PicoSD specieID="GasGDP" value="0"/>
+    <PicoSD specieID="GsD1R" value="580" />
+    <PicoSD specieID="DaD1RGs" value="20" />
+    
+    <PicoSD specieID="AC1" value="211"/>
+    <PicoSD specieID="AC1CaMCa4ATP" value="23"/>
+    <PicoSD specieID="AC1GasGTP" value="120"/>
+    <PicoSD specieID="AC1GasGTPCaMCa4ATP" value="10"/>
+    <PicoSD specieID="AC8" value="1000"/>
+    <PicoSD specieID="AC8CaMCa4" value="0"/>
+    <PicoSD specieID="AC8CaMCa4ATP" value="20"/>
+    
+    <PicoSD specieID="PKA" value="500"/>
+    <PicoSD specieID="PKAr" value="0"/>
+    <PicoSD specieID="PKAcAMP2" value="20"/>
+    <PicoSD specieID="PKAcAMP4" value="5"/>
+   </SurfaceDensitySet>
+   <SurfaceDensitySet region="ERmembrane12">
+    <PicoSD specieID="Leak" value="0"/>
+    <PicoSD specieID="CaOutLeak" value="6000"/>
+    <PicoSD specieID="pmca" value="600"/>
+    <PicoSD specieID="pmcaCa" value="0"/>
+    <PicoSD specieID="ncx" value="13500"/>
+    <PicoSD specieID="ncxCa" value="1500"/>
+
+    <PicoSD specieID="GsbAR" value="500"/>
+    <PicoSD specieID="ISObARGs" value="20"/>
+    <PicoSD specieID="Gs" value="10000"/>
+    <PicoSD specieID="Gqabg" value="10000"/>
+
+
+    <PicoSD  specieID="PLC"  value="200"    />
+    <PicoSD  specieID="Pip2" value="9600"  />
+    <PicoSD  specieID="Ip3degrad"  value="240"  />
+    <PicoSD  specieID="Ip3degPIk"  value="160"  />
+    <PicoSD  specieID="MGluR" value="1e03"  />
+    <PicoSD  specieID="DAG"  value="720"  />
+    <PicoSD  specieID="CaDGL"  value="120"  />
+    <PicoSD  specieID="PIkinase"   value="120"  />
+    <PicoSD  specieID="DAGK" value="280"  />
+    <PicoSD specieID="GasGTP" value="0"/>
+    <PicoSD specieID="GasGDP" value="0"/>
+    <PicoSD specieID="GsD1R" value="580" />
+    <PicoSD specieID="DaD1RGs" value="20" />
+    
+    <PicoSD specieID="AC1" value="211"/>
+    <PicoSD specieID="AC1CaMCa4ATP" value="23"/>
+    <PicoSD specieID="AC1GasGTP" value="120"/>
+    <PicoSD specieID="AC1GasGTPCaMCa4ATP" value="10"/>
+    <PicoSD specieID="AC8" value="1000"/>
+    <PicoSD specieID="AC8CaMCa4" value="0"/>
+    <PicoSD specieID="AC8CaMCa4ATP" value="20"/>
+    
+    <PicoSD specieID="PKA" value="500"/>
+    <PicoSD specieID="PKAr" value="0"/>
+    <PicoSD specieID="PKAcAMP2" value="20"/>
+    <PicoSD specieID="PKAcAMP4" value="5"/>
+  </SurfaceDensitySet>
+ 
 
 </InitialConditions>
