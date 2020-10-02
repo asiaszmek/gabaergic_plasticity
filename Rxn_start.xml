@@ -212,10 +212,7 @@
 <Specie name="PIkinase"      id="PIkinase"      kdiff="0"    kdiffunit = "mu2/s"/>
 <Specie name="Ip3degPIk"     id="Ip3degPIk"   kdiff="0"    kdiffunit = "mu2/s"/>
 
-<Specie name="PKC"           id="PKC"   kdiff="14"    kdiffunit = "mu2/s"/>
-<Specie name="PKCCa"         id="PKCCa"   kdiff="14"    kdiffunit = "mu2/s"/>
-<Specie name="PKCt"          id="PKCt"   kdiff="0"    kdiffunit = "mu2/s"/>
-<Specie name="PKCp"     id="PKCp"      kdiff="0"      kdiffunit = "mu2/s"/> <!-- Tuomo: Added from Jeanette et al. 2002 -->
+<!-- Tuomo: Added from Jeanette et al. 2002 -->
 <Specie name="DAG"           id="DAG"           kdiff="0"    kdiffunit = "mu2/s"/>
 <Specie name="DAGK"          id="DAGK"          kdiff="0"    kdiffunit = "mu2/s"/>
 <Specie name="DAGKdag"       id="DAGKdag"      kdiff="0"    kdiffunit = "mu2/s"/>
@@ -1735,30 +1732,6 @@ also make all rates even (4x) slower to saturate at lower DAG? -->
 </Reaction>
 
 
-<!-- THese are values from Hellgren Kotaleski PKC paper. 2.5 uM affinity -->
-<!-- PKC + Ca    <->   PKCCa  -->
-<Reaction name = "PKC+Ca--PKCCa" id="PKC+Ca--PKCCa">
-    <Reactant specieID="Ca"           />
-    <Reactant specieID="PKC"              />
-    <Product  specieID="PKCCa"               />
-
-    <forwardRate> 13.3e-06   </forwardRate>
-    <reverseRate> 50e-03        </reverseRate>
-    <Q10>         0.2           </Q10>
-</Reaction>
- 
-<!-- THese are values from Hellgren Kotaleski PKC paper. 10 uM affinity
-MUCH slower binding compared to CaDGL  -->
-   <!-- PKCCa + DAG    <-> PKCt    -->
-<Reaction name = "PKCCa+DAG--PKCt" id="PKCCa+DAG--PKCt">
-    <Reactant specieID="PKCCa"               />
-    <Reactant specieID="DAG"             />
-    <Product  specieID="PKCt"            />
-
-    <forwardRate> 0.015e-06   </forwardRate>
-    <reverseRate>  0.15e-03   </reverseRate>
-    <Q10>         0.2           </Q10>
-</Reaction>
 
     
 <!-- GluR reactions with Glutamate and Gq-proteins -->
