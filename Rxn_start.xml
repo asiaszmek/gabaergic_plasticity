@@ -27,21 +27,39 @@
   <Specie name="CaOut" id="CaOut" kdiff="3." kdiffunit="mu2/s" />
   <Specie name="CaOutLeak" id="CaOutLeak" kdiff="0"
 	  kdiffunit="mu2/s" />
-  <Specie name="CaCbuf" id="CaCbuf" kdiff="10" kdiffunit="mu2/s"/>
-  <Specie name="Cbuf" id="Cbuf" kdiff="10" kdiffunit="mu2/s"/>
+  <Specie name="Leak" id="Leak" kdiff="0" kdiffunit="mu2/s" />
+
   <Specie name="fixedbuffer" id="fixedbuffer" kdiff="0" kdiffunit="mu2/s"/>
   <Specie name="fixedbufferCa" id="fixedbufferCa" kdiff="0" kdiffunit="mu2/s"/>
-
-  <Specie name="Leak" id="Leak" kdiff="0" kdiffunit="mu2/s" />
   <Specie name="Calbin" id="Calbin" kdiff="9.3" kdiffunit="mu2/s" />
   <Specie name="CalbinC" id="CalbinC" kdiff="9.3" kdiffunit="mu2/s" />
-  <Specie name="CaBCa" id="CaBCa" kdiff="10" kdiffunit="mu2/s"/>
-  <Specie name="CaB" id="CaB" kdiff="10" kdiffunit="mu2/s"/>
+  
   <Specie name="pmca" id="pmca" kdiff="0" kdiffunit="mu2/s" />
   <Specie name="ncx" id="ncx" kdiff="0" kdiffunit="mu2/s" />
   <Specie name="pmcaCa" id="pmcaCa" kdiff="0" kdiffunit="mu2/s" />
   <Specie name="ncxCa" id="ncxCa" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="InfluxER" id="InfluxER" kdiff="0"
+	  kdiffunit="mu2/s"/>
+  <Specie name="CaOutInfluxER" id="CaOutInfluxER" kdiff="0" kdiffunit="mu2/s"/>
  
+ <Specie name="CaER" id="CaER" kdiff="0." kdiffunit="mu2/s"/>
+  
+  <Specie name="CaERLeak" id="CaERLeak" kdiff="0" kdiffunit="mu2/s"/>
+
+  <Specie name="LeakER" id="LeakER" kdiff="0" kdiffunit="mu2/s"/>
+
+  <Specie name="SERCA" id="SERCA" kdiff="0" kdiffunit="mu2/s"/>
+
+  <Specie name="SERCACa2" id="SERCACa2" kdiff="0" kdiffunit="mu2/s"/>
+  <!--calreticulin-->
+  <Specie name="CRT" id="CRT" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="CRTP" id="CRTP" kdiff="0" kdiffunit="mu2/s"/>
+
+  <Specie name="CaCbuf" id="CaCbuf" kdiff="10" kdiffunit="mu2/s"/>
+  <Specie name="Cbuf" id="Cbuf" kdiff="10" kdiffunit="mu2/s"/>
+  <Specie name="CaBCa" id="CaBCa" kdiff="10" kdiffunit="mu2/s"/>
+  <Specie name="CaB" id="CaB" kdiff="10" kdiffunit="mu2/s"/>
+
   <Specie name="ISOOut" id="ISOOut" kdiff="10." kdiffunit="mu2/s" />
   <Specie name="Ibuf" id="Ibuf" kdiff="1" kdiffunit="mu2/s" />
   <Specie name="ISOIbuf" id="ISOIbuf" kdiff="0" kdiffunit="mu2/s" />
@@ -203,7 +221,7 @@
 
 
   <!-- Add mGluRs from Tuomo's model -->
- <Specie name="Glu"          id="Glu"                kdiff="100"    kdiffunit = "mu2/s"/> <!--Dhpg-->
+  <Specie name="Glu"   id="Glu"   kdiff="100"    kdiffunit = "mu2/s"/> <!--Dhpg-->
 <Specie name="MGluR"        id="MGluR"              kdiff="0"      kdiffunit="mu2/s"/>
 <Specie name="MGluR_Glu"    id="MGluR_Glu"          kdiff="0"      kdiffunit="mu2/s"/>
 <Specie name="MGluR_Glu_desens" id="MGluR_Glu_desens" kdiff="0"    kdiffunit="mu2/s"/>
@@ -241,9 +259,6 @@
 <Specie name="2AGdegrad"     id="2AGdegrad"           kdiff="88.6"    kdiffunit = "mu2/s"/>
 <Specie name="Ip3degrad"     id="Ip3degrad"           kdiff="10.6"    kdiffunit = "mu2/s"/>
 
-  <Specie name="InfluxER" id="InfluxER" kdiff="0"
-	  kdiffunit="mu2/s"/>
-  <Specie name="CaOutInfluxER" id="CaOutInfluxER" kdiff="0" kdiffunit="mu2/s"/>
  
   <Specie name="S000"      id="S000"     kdiff="0"    kdiffunit="mu2/s"/>
   <Specie name="S100"      id="S100"     kdiff="0"    kdiffunit="mu2/s"/>
@@ -254,18 +269,6 @@
   <Specie name="S001"      id="S001"     kdiff="0"    kdiffunit="mu2/s"/>
   <Specie name="S111"      id="S111"     kdiff="0"    kdiffunit="mu2/s"/>
   
- <Specie name="CaER" id="CaER" kdiff="0." kdiffunit="mu2/s"/>
-  
-  <Specie name="CaERLeak" id="CaERLeak" kdiff="0" kdiffunit="mu2/s"/>
-
-  <Specie name="LeakER" id="LeakER" kdiff="0" kdiffunit="mu2/s"/>
-
-  <Specie name="SERCA" id="SERCA" kdiff="0" kdiffunit="mu2/s"/>
-
-  <Specie name="SERCACa2" id="SERCACa2" kdiff="0" kdiffunit="mu2/s"/>
-  <!--calreticulin-->
-  <Specie name="CRT" id="CRT" kdiff="0" kdiffunit="mu2/s"/>
-  <Specie name="CRTP" id="CRTP" kdiff="0" kdiffunit="mu2/s"/>
   <Specie name="IP3"            id="IP3"           kdiff="10."
 	  kdiffunit="mu2/s"/> <!--Hindered cytoplasmic diffusion of
 	  inositol trisphosphate restricts its cellular range of
@@ -1482,21 +1485,13 @@ than previously-->
 
 <!-- Added by Tuomo -->
 <!-- The following reactions from https://senselab.med.yale.edu/modeldb/showmodel.cshtml?model=154967&file=%2fkimetal2013%2fmglu_2AG_reac12mar20desens025bapta.xml#tabs-2 -->
-<!-- "Dhpg" replaced by Glu, G-proteins added the "q" to distinguish from above G-proteins. MGluR reactions moved to the end -->
-   <!-- GluOut    Glu <-> GluOut>  -->
-  <Reaction name = "Glu--GluOut" id="Glu--GluOut">
-<Reactant specieID="Glu"/>
-  <Product specieID="GluOut"/>
 
-  <forwardRate>5e-4</forwardRate>
-  <reverseRate>2e-10</reverseRate>
-  <Q10>0.2</Q10>
-  </Reaction>
-  
 <!-- check thermodynamic equilibrium of next four reactions: NO GOOD.  Decrease affinity of PLC-GaGTP for Ca to 500 -->
 <!-- PLC + Ca    <->   PLCCa  6000 nM-->
 <!--AB: this is REALLY fast - as fast as Cam binding to calcium.  Might want to slow down both calcium binding steps?
-Yes, by 5x (no change affinity) Nov 30.  Keep affinity of PLC for Ca = 6 uM (low) -->
+    Yes, by 5x (no change affinity) Nov 30.  Keep affinity of PLC for Ca = 6 uM (low) -->
+
+<!-- CA, PLC, Gq reactions are thermodynamically balanced JJS -->
 <Reaction name = "PLC+Ca--PLCCa" id="PLC+Ca--PLCCa">
     <Reactant specieID="Ca"           />
     <Reactant specieID="PLC"              />
@@ -1806,6 +1801,17 @@ also make all rates even (4x) slower to saturate at lower DAG? -->
     <Q10>         0.2           </Q10>
 </Reaction>
 
+<!-- "Dhpg" replaced by Glu, G-proteins added the "q" to distinguish from above G-proteins. MGluR reactions moved to the end -->
+   <!-- GluOut    Glu <-> GluOut>  -->
+  <Reaction name = "Glu--GluOut" id="Glu--GluOut">
+<Reactant specieID="Glu"/>
+  <Product specieID="GluOut"/>
+
+  <forwardRate>5e-4</forwardRate>
+  <reverseRate>2e-10</reverseRate>
+  <Q10>0.2</Q10>
+  </Reaction>
+  
 
 <!--Add endoplasmic reticulum and IP3R from the never used growth cone model-->
 
