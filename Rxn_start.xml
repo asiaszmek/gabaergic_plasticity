@@ -221,7 +221,6 @@
 <Specie name="Pip2"            id="Pip2"            kdiff="0"    kdiffunit = "mu2/s"/>
 <Specie name="PLCCaPip2"       id="PLCCaPip2"       kdiff="0"    kdiffunit = "mu2/s"/>
 <Specie name="PLCCaGqaGTPPip2" id="PLCCaGqaGTPPip2"  kdiff="0"    kdiffunit = "mu2/s"/>
-<Specie name="Ip3"             id="Ip3"             kdiff="10.6"    kdiffunit = "mu2/s"/>
 <Specie name="PLCCaDAG"        id="PLCCaDAG"        kdiff="0"    kdiffunit = "mu2/s"/>
 <Specie name="PLCCaGqaGTPDAG"  id="PLCCaGqaGTPDAG"  kdiff="0"    kdiffunit = "mu2/s"/>
 
@@ -1565,24 +1564,15 @@ Incraese Kb by 5x to decrease Ip3 production-->
 <!-- PLCCaPip2      <-> PLCCaDAG + Ip3 -->  <!--Tuomo: used rate from Blackwell et al. 2018-->
 <Reaction name = "PLCCaPip2--PLCCaDAG+Ip3" id="PLCCaPip2--PLCCaDAG+Ip3">
     <Reactant specieID="PLCCaPip2"            />
-    <Product  specieID="PLCCaDAG"               />
-    <Product  specieID="Ip3"            />
+    <Product  specieID="PLCCa"               />
+    <Product  specieID="IP3"            />
+    <Product  specieID="DAG"            />
 
-    <forwardRate> 0.3e-03     </forwardRate>
+    <forwardRate> 0.45e-03     </forwardRate>
     <reverseRate> 0e-03    </reverseRate>
     <Q10>         0.2           </Q10>
 </Reaction>
   
-<!-- PLCCaDAG       <->  PLCCa + DAG -->
-<Reaction name = "PLCCaDAG--PLCCa+DAG" id="PLCCaDAG--PLCCa+DAG">
-    <Reactant specieID="PLCCaDAG"            />
-    <Product  specieID="PLCCa"               />
-    <Product  specieID="DAG"            />
-
-    <forwardRate> 200e-03     </forwardRate>
-    <reverseRate> 0e-03    </reverseRate>
-    <Q10>         0.2           </Q10>
-</Reaction>
 
    <!-- PLCCaGqaGTP + Pip2    <-> PLCCaGqaGTPPip2    -->
 <!-- Decrease Kf by 10x to compensate for 10x inc in Pip2-->
@@ -1601,30 +1591,30 @@ Increse Kb by 5x to decrease Ip3 production-->
 <!-- PLCCaGqaGTPPip2       <-> PLCCaGqaGTPDAG + Ip3 -->
 <Reaction name = "PLCCaGqaGTPPip2--PLCCaGqaGTPDAG+Ip3" id="PLCCaGqaGTPPip2--PLCCaGqaGTPDAG+Ip3">
     <Reactant specieID="PLCCaGqaGTPPip2"            />
-    <Product  specieID="PLCCaGqaGTPDAG"               />
-    <Product  specieID="Ip3"            />
-
-    <forwardRate> 250e-03     </forwardRate>
-    <reverseRate> 0e-03    </reverseRate>
-    <Q10>         0.2           </Q10>
-</Reaction>
-  
-<!-- PLCCaGqaGTPDAG       <->  PLCCaGqaGTPTp + DAG -->
-<Reaction name = "PLCCaGqaGTPDAG--PLCCaGqaGTPTp+DAG" id="PLCCaGqaGTPDAG--PLCCaGqaGTPTp+DAG">
-    <Reactant specieID="PLCCaGqaGTPDAG"            />
     <Product  specieID="PLCCaGqaGTP"               />
     <Product  specieID="DAG"            />
+    <Product  specieID="IP3"            />
 
-    <forwardRate> 1000e-03     </forwardRate>
+    <forwardRate> 30e-03     </forwardRate>
     <reverseRate> 0e-03    </reverseRate>
-    <Q10>         0.2           </Q10>
-</Reaction>    
-
+</Reaction>
+  
 <!--  What if PIP2 can only be regenerated from degraded IP3 by membrane molecule.
 Thus, initialize PIkinase in the membrane only. 
 No idea what these rates should be.  Try different values to obtain equilibirum at basal
 These rates interact with PIkinase quantity. Affinity started at 1 uM
 Discovered mistake!!! specified PIkinase as product, not reactant!-->
+
+<!--  Ip3    <-> Ip3degrad          Degraded IP3-->
+<Reaction name = "Ip3--Ip3degrad" id="Ip3--Ip3degrad">
+     <Reactant specieID="IP3"            />
+    <Product  specieID="Ip3degrad"        />
+
+    <forwardRate> 1e-03      </forwardRate>
+    <reverseRate> 0.0e-03      </reverseRate>
+    <Q10>         0.2           </Q10>
+</Reaction>
+
    <Reaction name = "Ip3degrad + PIkinase -- Ip3degPIkinase" id="PIkinase1">
     <Reactant specieID="Ip3degrad"            />   
     <Reactant specieID="PIkinase"               />
@@ -1735,15 +1725,6 @@ also make all rates even (4x) slower to saturate at lower DAG? -->
 
 
 <!-- ************* degradation of IP3 and 2AG, implementing the enzymes? -->
-<!--  Ip3    <-> Ip3degrad          Degraded IP3-->
-<Reaction name = "Ip3--Ip3degrad" id="Ip3--Ip3degrad">
-     <Reactant specieID="Ip3"            />
-    <Product  specieID="Ip3degrad"        />
-
-    <forwardRate> 10e-03      </forwardRate>
-    <reverseRate> 0.0e-03      </reverseRate>
-    <Q10>         0.2           </Q10>
-</Reaction>
 
 <!--  2AG    <-> 2AGdegrad       Degraded 2AG   -->
 <Reaction name = "2AG--2AGdegrad" id="2AG--2AGdegrad">
