@@ -166,6 +166,7 @@
     <PicoSD specieID="PKAr" value="0"/>
     <PicoSD specieID="PKAcAMP2" value="20"/>
     <PicoSD specieID="PKAcAMP4" value="5"/>
+    <PicoSD specieID="CaOutInfluxER" value="24.0"/>
   </SurfaceDensitySet>
   <ConcentrationSet region="dend">
     <NanoMolarity specieID="CaER"         value="1.8e5"     />
