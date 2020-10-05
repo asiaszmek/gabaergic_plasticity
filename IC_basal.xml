@@ -170,7 +170,7 @@
   </SurfaceDensitySet>
   <ConcentrationSet region="dend">
     <NanoMolarity specieID="CaER"         value="1.8e5"     />
-    <NanoMolarity       specieID="S000"      value="106"     />
+    <NanoMolarity       specieID="IP3R"      value="106"     />
    <NanoMolarity specieID="CaERLeak" value="1200"/>
     <NanoMolarity       specieID="SERCACa2"       value="100"     />
     <NanoMolarity       specieID="SERCA"       value="100"     />
