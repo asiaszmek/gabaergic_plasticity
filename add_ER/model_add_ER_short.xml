@@ -3,7 +3,7 @@
     <!-- this file defines a single run of the calculation, using morphology and
 -	 reaction data brought in from other files --> 
     <xi:include href="Rxn_start_ER.xml" />
-    <xi:include href="../morph_dend_single_spine.xml" />
+    <xi:include href="morph_dend.xml" />
     <xi:include href="IC_basal_ER.xml" />
 
     <!--2D means the morphology is interpreted like a flatworm, 3D for
