@@ -27,20 +27,19 @@
     <PicoSD specieID="pmcaCa" value="0"/>
     <PicoSD specieID="ncx" value="13500"/>
     <PicoSD specieID="ncxCa" value="1500"/>
+    <PicoSD  specieID="Gqabg"  value="300000"    />
 
     <PicoSD  specieID="PLC"  value="220"    />
     <PicoSD  specieID="Pip2" value="10000"  />
-    <PicoSD  specieID="Ip3degrad"  value="264"  />
-    <PicoSD  specieID="Ip3degPIk"  value="176"  />
     <PicoSD  specieID="MGluR" value="1.1e03"  />
-    <PicoSD  specieID="PIkinase"   value="132"  />
+    <PicoSD  specieID="PIkinase"   value="300"  />
     <PicoSD specieID="CaOutInfluxER" value="26.0"/>
   </SurfaceDensitySet>
   <ConcentrationSet region="dend">
     <NanoMolarity specieID="CaER"         value="1.8e5"     />
     <NanoMolarity       specieID="IP3R"      value="106"     />
     <NanoMolarity specieID="CaERLeak" value="1200"/>
-    <NanoMolarity       specieID="SERCACa2"       value="100"     />
+    <NanoMolarity       specieID="SERCACa2"       value="200"     />
     <NanoMolarity       specieID="SERCA"       value="100"     />
     <NanoMolarity       specieID="CRTP" value="1.4e+6"/>
   </ConcentrationSet>
