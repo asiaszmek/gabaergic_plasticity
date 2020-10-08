@@ -42,7 +42,7 @@
 	  kdiffunit="mu2/s"/>
   <Specie name="CaOutInfluxER" id="CaOutInfluxER" kdiff="0" kdiffunit="mu2/s"/>
  
- <Specie name="CaER" id="CaER" kdiff="0." kdiffunit="mu2/s"/>
+  <Specie name="CaER" id="CaER" kdiff="0." kdiffunit="mu2/s"/>
   
   <Specie name="CaERLeak" id="CaERLeak" kdiff="0" kdiffunit="mu2/s"/>
 
@@ -247,16 +247,16 @@
 
 <!-- Tuomo: Added from Jeanette et al. 2002 -->
 <Specie name="DAG"           id="DAG"           kdiff="0"    kdiffunit = "mu2/s"/>
-<Specie name="DAGK"          id="DAGK"          kdiff="0"    kdiffunit = "mu2/s"/>
-<Specie name="DAGKdag"       id="DAGKdag"      kdiff="0"    kdiffunit = "mu2/s"/>
-<Specie name="PA"            id="PA"           kdiff="0"    kdiffunit = "mu2/s"/>
+<!-- <Specie name="DAGK"          id="DAGK"          kdiff="0"    kdiffunit = "mu2/s"/> -->
+<!-- <Specie name="DAGKdag"       id="DAGKdag"      kdiff="0"    kdiffunit = "mu2/s"/> -->
+<!-- <Specie name="PA"            id="PA"           kdiff="0"    kdiffunit = "mu2/s"/> -->
 
-<Specie name="DGL"           id="DGL"           kdiff="0"    kdiffunit = "mu2/s"/>
-<Specie name="CaDGL"         id="CaDGL"         kdiff="0"    kdiffunit = "mu2/s"/>
-<Specie name="DAGCaDGL"      id="DAGCaDGL"      kdiff="0"    kdiffunit = "mu2/s"/>
-<Specie name="2AG"           id="2AG"           kdiff="88.6"    kdiffunit = "mu2/s"/>
+<!-- <Specie name="DGL"           id="DGL"           kdiff="0"    kdiffunit = "mu2/s"/> -->
+<!-- <Specie name="CaDGL"         id="CaDGL"         kdiff="0"    kdiffunit = "mu2/s"/> -->
+<!-- <Specie name="DAGCaDGL"      id="DAGCaDGL"      kdiff="0"    kdiffunit = "mu2/s"/> -->
+<!-- <Specie name="2AG"           id="2AG"           kdiff="88.6"    kdiffunit = "mu2/s"/> -->
 
-<Specie name="2AGdegrad"     id="2AGdegrad"           kdiff="88.6"    kdiffunit = "mu2/s"/>
+<!-- <Specie name="2AGdegrad"     id="2AGdegrad"           kdiff="88.6"    kdiffunit = "mu2/s"/> -->
 <Specie name="Ip3degrad"     id="Ip3degrad"           kdiff="10.6"    kdiffunit = "mu2/s"/>
 
   <Specie name="IP3R"          id="IP3R"          kdiff="0"     kdiffunit="mu2/s"/>
@@ -1682,85 +1682,85 @@ avoids the need to generate Gbg, and have them react-->
     <Reactant specieID="GqaGDP"            />
     <Product  specieID="Gqabg"            />
 
-    <forwardRate>   10e-03   </forwardRate>
+   <forwardRate>   10e-03   </forwardRate>
     <reverseRate>   0  </reverseRate>
     <Q10>         0.2           </Q10>
 </Reaction>
 
-<!-- Ca + DGL <-> CaDGL   DGL is DAG lipase, which produces 2AG -->
-<!-- no source for rates.  Make slower, and also 400 nM affinity -->
-<Reaction name = "Ca+Dlg--CaDGL" id="Ca+Dlg--CaDGL">
-    <Reactant specieID="Ca"            />
-    <Reactant specieID="DGL"               />
-    <Product  specieID="CaDGL"            />
+<!-- <!-\- Ca + DGL <-> CaDGL   DGL is DAG lipase, which produces 2AG -\-> -->
+<!-- <!-\- no source for rates.  Make slower, and also 400 nM affinity -\-> -->
+<!-- <Reaction name = "Ca+Dlg-\-CaDGL" id="Ca+Dlg-\-CaDGL"> -->
+<!--     <Reactant specieID="Ca"            /> -->
+<!--     <Reactant specieID="DGL"               /> -->
+<!--     <Product  specieID="CaDGL"            /> -->
 
-    <forwardRate> 0.125e-03     </forwardRate>
-    <reverseRate> 50e-03    </reverseRate>
-    <Q10>         0.2           </Q10>
-</Reaction>
+<!--     <forwardRate> 0.125e-03     </forwardRate> -->
+<!--     <reverseRate> 50e-03    </reverseRate> -->
+<!--     <Q10>         0.2           </Q10> -->
+<!-- </Reaction> -->
  
-<!-- DAG + CaDGL <-> DAGCaDGL -->
-<!--affinity = 1010 nM IS there are publication on this? 
-So far only 1 found: Bisogno J Cell Biol 2003
-lists affinity of 75 uM or 154 uM "within the range found in tissue" -->
-<Reaction name = "DAG+CaDlg--DAGCaDGL" id="DAG+CaDlg--DAGCaDGL">
-    <Reactant specieID="DAG"            />
-    <Reactant specieID="CaDGL"               />
-    <Product  specieID="DAGCaDGL"            />
+<!-- <!-\- DAG + CaDGL <-> DAGCaDGL -\-> -->
+<!-- <!-\-affinity = 1010 nM IS there are publication on this?  -->
+<!-- So far only 1 found: Bisogno J Cell Biol 2003 -->
+<!-- lists affinity of 75 uM or 154 uM "within the range found in tissue" -\-> -->
+<!-- <Reaction name = "DAG+CaDlg-\-DAGCaDGL" id="DAG+CaDlg-\-DAGCaDGL"> -->
+<!--     <Reactant specieID="DAG"            /> -->
+<!--     <Reactant specieID="CaDGL"               /> -->
+<!--     <Product  specieID="DAGCaDGL"            /> -->
 
-    <forwardRate> 0.0005e-03     </forwardRate>
-    <reverseRate> 1.0e-03    </reverseRate>
-    <Q10>         0.2           </Q10>
-</Reaction>
+<!--     <forwardRate> 0.0005e-03     </forwardRate> -->
+<!--     <reverseRate> 1.0e-03    </reverseRate> -->
+<!--     <Q10>         0.2           </Q10> -->
+<!-- </Reaction> -->
 
-<!-- raise kb to 1.5e-3 to create 1 uM affinity
-also make all rates even (4x) slower to saturate at lower DAG? -->
-<!-- DAGCaDGL <-> CaDGL + 2AG -->
-<Reaction name = "DAGCaDGL--CaDGL+2AG" id="DAGCaDGL--CaDGL+2AG">
-    <Reactant specieID="DAGCaDGL"            />
-    <Product  specieID="CaDGL"               />
-    <Product  specieID="2AG"            />
+<!-- <!-\- raise kb to 1.5e-3 to create 1 uM affinity -->
+<!-- also make all rates even (4x) slower to saturate at lower DAG? -\-> -->
+<!-- <!-\- DAGCaDGL <-> CaDGL + 2AG -\-> -->
+<!-- <Reaction name = "DAGCaDGL-\-CaDGL+2AG" id="DAGCaDGL-\-CaDGL+2AG"> -->
+<!--     <Reactant specieID="DAGCaDGL"            /> -->
+<!--     <Product  specieID="CaDGL"               /> -->
+<!--     <Product  specieID="2AG"            /> -->
 
-    <forwardRate> 0.25e-03     </forwardRate>
-    <reverseRate> 0e-03    </reverseRate>
-    <Q10>         0.2           </Q10>
-</Reaction>
+<!--     <forwardRate> 0.25e-03     </forwardRate> -->
+<!--     <reverseRate> 0e-03    </reverseRate> -->
+<!--     <Q10>         0.2           </Q10> -->
+<!-- </Reaction> -->
 
 
-<!-- ************* degradation of IP3 and 2AG, implementing the enzymes? -->
+<!-- <!-\- ************* degradation of IP3 and 2AG, implementing the enzymes? -\-> -->
 
-<!--  2AG    <-> 2AGdegrad       Degraded 2AG   -->
-<Reaction name = "2AG--2AGdegrad" id="2AG--2AGdegrad">
-     <Reactant specieID="2AG"            />
-    <Product  specieID="2AGdegrad"        />
+<!-- <!-\-  2AG    <-> 2AGdegrad       Degraded 2AG   -\-> -->
+<!-- <Reaction name = "2AG-\-2AGdegrad" id="2AG-\-2AGdegrad"> -->
+<!--      <Reactant specieID="2AG"            /> -->
+<!--     <Product  specieID="2AGdegrad"        /> -->
 
-    <forwardRate> 5e-03      </forwardRate>
-    <reverseRate> 0.0e-03      </reverseRate>
-    <Q10>         0.2           </Q10>
-</Reaction>
+<!--     <forwardRate> 5e-03      </forwardRate> -->
+<!--     <reverseRate> 0.0e-03      </reverseRate> -->
+<!--     <Q10>         0.2           </Q10> -->
+<!-- </Reaction> -->
 
-<!-- ************* degradation of  DAG by DAG kinase -->
- <!--  DAG   + DAGK <-> DAGKdag -> PA  step 1  (0.07 mM Km - What is pub for this?) -->
-<Reaction name = "DAGKdag1" id="DAGKdag1">
-     <Reactant specieID="DAG"            />
-     <Reactant specieID="DAGK"            />
-    <Product  specieID="DAGKdag"        />
+<!-- <!-\- ************* degradation of  DAG by DAG kinase -\-> -->
+<!--  <!-\-  DAG   + DAGK <-> DAGKdag -> PA  step 1  (0.07 mM Km - What is pub for this?) -\-> -->
+<!-- <Reaction name = "DAGKdag1" id="DAGKdag1"> -->
+<!--      <Reactant specieID="DAG"            /> -->
+<!--      <Reactant specieID="DAGK"            /> -->
+<!--     <Product  specieID="DAGKdag"        /> -->
 
-    <forwardRate> 0.00007e-03      </forwardRate>
-    <reverseRate> 0.8e-3         </reverseRate>
-    <Q10>         0.2           </Q10>
-</Reaction>
+<!--     <forwardRate> 0.00007e-03      </forwardRate> -->
+<!--     <reverseRate> 0.8e-3         </reverseRate> -->
+<!--     <Q10>         0.2           </Q10> -->
+<!-- </Reaction> -->
 
-<!--  DAG   + DAGK <-> DAGKdag -> DAGK + PA   step 2 (Kcat is on the high side, could be half the rate)-->
-<Reaction name = "DAGKdag1" id="DAGKdag1">
-     <Reactant specieID="DAGKdag"            />
-    <Product  specieID="DAGK"        />
-    <Product  specieID="PA"        />
+<!-- <!-\-  DAG   + DAGK <-> DAGKdag -> DAGK + PA   step 2 (Kcat is on the high side, could be half the rate)-\-> -->
+<!-- <Reaction name = "DAGKdag1" id="DAGKdag1"> -->
+<!--      <Reactant specieID="DAGKdag"            /> -->
+<!--     <Product  specieID="DAGK"        /> -->
+<!--     <Product  specieID="PA"        /> -->
 
-    <forwardRate> 0.2e-03      </forwardRate>
-    <reverseRate> 0.0e-03      </reverseRate>
-    <Q10>         0.2           </Q10>
-</Reaction>
+<!--     <forwardRate> 0.2e-03      </forwardRate> -->
+<!--     <reverseRate> 0.0e-03      </reverseRate> -->
+<!--     <Q10>         0.2           </Q10> -->
+<!-- </Reaction> -->
 
 
 

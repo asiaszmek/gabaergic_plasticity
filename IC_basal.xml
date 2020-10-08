@@ -111,9 +111,9 @@
     <NanoMolarity  specieID="Ip3degPIk"   value="800"    />
     <NanoMolarity  specieID="PIkinase"    value="600"    />
     <NanoMolarity  specieID="MGluR"  value="5e03"  />
-    <NanoMolarity  specieID="DAG"   value="2400"  />
-    <NanoMolarity  specieID="CaDGL" value="400"   />
-    <NanoMolarity  specieID="DAGK"  value="1400"  />
+    <!-- <NanoMolarity  specieID="DAG"   value="2400"  /> -->
+    <!-- <NanoMolarity  specieID="CaDGL" value="400"   /> -->
+    <!-- <NanoMolarity  specieID="DAGK"  value="1400"  /> -->
   </ConcentrationSet>
 
  
@@ -145,10 +145,10 @@
     <PicoSD  specieID="Ip3degrad"  value="240"  />
     <PicoSD  specieID="Ip3degPIk"  value="160"  />
     <PicoSD  specieID="MGluR" value="1e03"  />
-    <PicoSD  specieID="DAG"  value="720"  />
-    <PicoSD  specieID="CaDGL"  value="120"  />
+    <!-- <PicoSD  specieID="DAG"  value="720"  /> -->
+    <!-- <PicoSD  specieID="CaDGL"  value="120"  /> -->
     <PicoSD  specieID="PIkinase"   value="120"  />
-    <PicoSD  specieID="DAGK" value="280"  />
+    <!-- <PicoSD  specieID="DAGK" value="280"  /> -->
     <PicoSD specieID="GasGTP" value="0"/>
     <PicoSD specieID="GasGDP" value="0"/>
     <PicoSD specieID="GsD1R" value="580" />
