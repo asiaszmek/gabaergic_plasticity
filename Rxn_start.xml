@@ -1766,7 +1766,9 @@ avoids the need to generate Gbg, and have them react-->
 
     
 <!-- GluR reactions with Glutamate and Gq-proteins -->
-   <!-- Glu + MGluR <==> MGluR_Glu  --> <!-- 6uM-->
+<!-- Glu + MGluR <==> MGluR_Glu  --> <!-- 6uM-->
+<!-- CA1 neurons express mostly mGluR5 Lujan, Nusser, Roberts, Shigemoto, Somogyi et al 1996, although see (Ferraguti et al., 1998) -->
+<!-- Kd between 3 and 10 muM, doi: 10.1016/s0014-2999(99)00258-7. -->
   <Reaction name = "Glu+MGluR--MGluR_Glu" id="Glu+MGluR--MGluR_Glu">
     <Reactant specieID="Glu"              />
     <Reactant specieID="MGluR"              />
