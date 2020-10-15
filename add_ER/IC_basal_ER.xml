@@ -2,7 +2,6 @@
   <ConcentrationSet>
     <NanoMolarity specieID="Ca" value="75"/>
     <NanoMolarity specieID="CaOut" value="2000000"/>
-    <NanoMolarity specieID="GluOut" value="1000000"/>
 
     <!-- total calbindin = 160 uM -->
     <NanoMolarity specieID="Calbin" value="150000"/>
@@ -27,11 +26,9 @@
     <PicoSD specieID="pmcaCa" value="0"/>
     <PicoSD specieID="ncx" value="13500"/>
     <PicoSD specieID="ncxCa" value="1500"/>
-    <PicoSD  specieID="Gqabg"  value="300000"    />
 
     <PicoSD  specieID="PLC"  value="220"    />
     <PicoSD  specieID="Pip2" value="10000"  />
-    <PicoSD  specieID="MGluR" value="2e02"  />
     <PicoSD  specieID="PIkinase"   value="300"  />
     <PicoSD specieID="CaOutInfluxER" value="100.0"/>
   </SurfaceDensitySet>

@@ -67,32 +67,6 @@
   <!-- 4 Ca bound Calmodulin-->
   <!-- -->
 
-  <!-- Add mGluRs from Tuomo's model -->
-  <Specie name="Glu"   id="Glu"   kdiff="100"    kdiffunit = "mu2/s"/> <!--Dhpg-->
-  <Specie name="MGluR"        id="MGluR"              kdiff="0"      kdiffunit="mu2/s"/>
-  <Specie name="MGluR_Glu"    id="MGluR_Glu"          kdiff="0"      kdiffunit="mu2/s"/>
-  <Specie name="MGluR_Glu_desens" id="MGluR_Glu_desens" kdiff="0"    kdiffunit="mu2/s"/>
-  <Specie name="MGluR_Gqabg_Glu"  id="MGluR_Gqabg_Glu"  kdiff="0"    kdiffunit="mu2/s"/>
-  <Specie name="GluOut"       id="GluOut"             kdiff="100"    kdiffunit = "mu2/s"/> <!--DhpgOut-->
-
-  <Specie name="Gqabg"           id="Gqabg"           kdiff="0"    kdiffunit = "mu2/s"/>
-  <Specie name="GqaGTP"          id="GqaGTP"          kdiff="0"    kdiffunit = "mu2/s"/>
-  <Specie name="GqaGDP"          id="GqaGDP"          kdiff="0"    kdiffunit = "mu2/s"/>
-
-  <Specie name="PLC"             id="PLC"             kdiff="0"    kdiffunit = "mu2/s"/>
-  <Specie name="PLCCa"           id="PLCCa"           kdiff="0"    kdiffunit = "mu2/s"/>
-  <Specie name="PLCCaGqaGTP"     id="PLCCaGqaGTP"     kdiff="0"    kdiffunit = "mu2/s"/>
-  <Specie name="PLCGqaGTP"       id="PLCGqaGTP"       kdiff="0"    kdiffunit = "mu2/s"/>
-  <Specie name="Pip2"            id="Pip2"            kdiff="0"    kdiffunit = "mu2/s"/>
-  <Specie name="PLCCaPip2"       id="PLCCaPip2"       kdiff="0"    kdiffunit = "mu2/s"/>
-  <Specie name="PLCCaGqaGTPPip2" id="PLCCaGqaGTPPip2"  kdiff="0"    kdiffunit = "mu2/s"/>
-  <Specie name="PLCCaDAG"        id="PLCCaDAG"        kdiff="0"    kdiffunit = "mu2/s"/>
-  <Specie name="PLCCaGqaGTPDAG"  id="PLCCaGqaGTPDAG"  kdiff="0"    kdiffunit = "mu2/s"/>
-  
-  <Specie name="PIkinase"      id="PIkinase"      kdiff="0"    kdiffunit = "mu2/s"/>
-  <Specie name="Ip3degPIk"     id="Ip3degPIk"   kdiff="0"    kdiffunit = "mu2/s"/>
-  
-  <Specie name="Ip3degrad"     id="Ip3degrad"           kdiff="10.6"    kdiffunit = "mu2/s"/>
   
   <Specie name="IP3R"          id="IP3R"          kdiff="0"     kdiffunit="mu2/s"/>
   <Specie name="IP3RIP3"          id="IP3RIP3"          kdiff="0"     kdiffunit="mu2/s"/>
@@ -103,6 +77,18 @@
 
   <Specie name="IP3RC4"          id="IP3RC4"          kdiff="0"     kdiffunit="mu2/s"/>
 
+  <!-- Add mGluRs from Tuomo's model -->
+
+  <Specie name="PLC"             id="PLC"             kdiff="0"    kdiffunit = "mu2/s"/>
+  <Specie name="PLCCa"           id="PLCCa"           kdiff="0"    kdiffunit = "mu2/s"/>
+  <Specie name="Pip2"            id="Pip2"            kdiff="0"    kdiffunit = "mu2/s"/>
+  <Specie name="PLCCaPip2"       id="PLCCaPip2"       kdiff="0"    kdiffunit = "mu2/s"/>
+  <Specie name="PLCCaDAG"        id="PLCCaDAG"        kdiff="0"    kdiffunit = "mu2/s"/>
+  
+  <Specie name="PIkinase"      id="PIkinase"      kdiff="0"    kdiffunit = "mu2/s"/>
+  <Specie name="Ip3degPIk"     id="Ip3degPIk"   kdiff="0"    kdiffunit = "mu2/s"/>
+  
+  <Specie name="Ip3degrad"     id="Ip3degrad"           kdiff="10.6"    kdiffunit = "mu2/s"/>
   
   <Specie name="IP3"            id="IP3"           kdiff="10."
 	  kdiffunit="mu2/s"/>
@@ -250,42 +236,7 @@
     <Q10>         0.2           </Q10>
 </Reaction>
  
-<!-- PLC + GqaGTP    <->   PLCGqaGTP 1200 nM -->
-<!--AB: Falkenburger 2010 uses 0.71e-3 for reverse rate --> 
-<!--Kf is 10x lower for PLC - GqaGTP than Jan31 reac -->
-<Reaction name = "PLC+GqaGTP--PLCGqaGTP" id="PLC+GqaGTP--PLCGqaGTP">
-    <Reactant specieID="GqaGTP"           />
-    <Reactant specieID="PLC"              />
-    <Product  specieID="PLCGqaGTP"               />
 
-    <forwardRate> 0.0007e-03   </forwardRate>
-    <reverseRate> 0.7e-03        </reverseRate>
-    <Q10>         0.2           </Q10>
-</Reaction>
-
-<!-- PLCGqaGTP + Ca    <->   PLCCaGqaGTP  500 nM-->
-<Reaction name = "PLCGqaGTP+Ca--PLCCaGqaGTP" id="PLCGqaGTP+Ca--PLCCaGqaGTP">
-    <Reactant specieID="Ca"           />
-    <Reactant specieID="PLCGqaGTP"              />
-    <Product  specieID="PLCCaGqaGTP"               />
-
-    <forwardRate> 0.08e-03   </forwardRate>
-    <reverseRate> 40e-03        </reverseRate>
-    <Q10>         0.2           </Q10>
-</Reaction>
-
-<!-- PLCCa + GqaGTP    <->   PLCCaGqaGTP  100 nM-->
-<!--decrease these rates Nov 30 (same affinity) by 3x -->
-<!--Kf is 10x lower for PLC - GqaGTP than Jan31 reac --> <!--Tuomo: used rates from Kim et al. 2013-->
-<Reaction name = "PLCCa+GqaGTP--PLCCaGqaGTP" id="PLCCa+GqaGTP--PLCCaGqaGTP">
-    <Reactant specieID="GqaGTP"           />
-    <Reactant specieID="PLCCa"              />
-    <Product  specieID="PLCCaGqaGTP"               />
-
-    <forwardRate> 0.1e-03   </forwardRate>
-    <reverseRate> 20e-03        </reverseRate>
-    <Q10>         0.2           </Q10>
-</Reaction>
  
    <!-- PLCCa + Pip2    <-> PLCCaPip2    -->
 <!--No affinities for Pip2 are found in literature.  ALso, backward rate is very low compared to kcat
@@ -317,30 +268,6 @@ Incraese Kb by 5x to decrease Ip3 production-->
 </Reaction>
   
 
-   <!-- PLCCaGqaGTP + Pip2    <-> PLCCaGqaGTPPip2    -->
-<!-- Decrease Kf by 10x to compensate for 10x inc in Pip2-->
-<!-- Decrease rates by 2x to maintain 10x enhancement by GqaGTP Nov 30
-Increse Kb by 5x to decrease Ip3 production-->
-<Reaction name = "PLCCaGqaGTP+Pip2--PLCCaGqaGTPPip2" id="PLCCaGqaGTP+Pip2--PLCCaGqaGTPPip2">
-    <Reactant specieID="PLCCaGqaGTP"               />
-    <Reactant specieID="Pip2"             />
-    <Product  specieID="PLCCaGqaGTPPip2"            />
-
-    <forwardRate>  15e-06   </forwardRate>
-    <reverseRate>  75e-03   </reverseRate>
-    <Q10>         0.2           </Q10>
-</Reaction>
-  
-<!-- PLCCaGqaGTPPip2       <-> PLCCaGqaGTPDAG + Ip3 -->
-<Reaction name = "PLCCaGqaGTPPip2--PLCCaGqaGTPDAG+Ip3" id="PLCCaGqaGTPPip2--PLCCaGqaGTPDAG+Ip3">
-    <Reactant specieID="PLCCaGqaGTPPip2"            />
-    <Product  specieID="PLCCaGqaGTP"               />
-    <Product  specieID="DAG"            />
-    <Product  specieID="IP3"            />
-
-    <forwardRate> 30e-03     </forwardRate>
-    <reverseRate> 0e-03    </reverseRate>
-</Reaction>
   
 <!--  What if PIP2 can only be regenerated from degraded IP3 by membrane molecule.
 Thus, initialize PIkinase in the membrane only. 
@@ -374,7 +301,7 @@ Discovered mistake!!! specified PIkinase as product, not reactant!-->
     <Product  specieID="PIkinase"               />
     <Product  specieID="Pip2"            />
 
-    <forwardRate> 1e-3  </forwardRate>
+    <forwardRate> 0.1e-3  </forwardRate>
     <reverseRate> 0e-03    </reverseRate>
     <Q10>         0.2           </Q10>
 </Reaction>    
@@ -385,104 +312,7 @@ Discovered mistake!!! specified PIkinase as product, not reactant!-->
 	 This saves two reactions: not only the rebinding, but also Gbg dissociating from the mGluR after GqaGTP
 	 Given the speed of the rebinding and dissociation in previous models, this is a wise choice
 	 However, it prevents depletion of Gqabg! -->
-<Reaction name = "PLCGqaGTP--PLC+GqaGDP" id="PLCGqaGTP--PLC+GqaGDP">
-    <Reactant specieID="PLCGqaGTP"            />
-    <Product  specieID="PLC"               />
-    <Product  specieID="GqaGDP"            />
 
-    <forwardRate>   12e-03   </forwardRate>
-    <reverseRate>   0  </reverseRate>
-    <Q10>         0.2           </Q10>
-</Reaction>
-
-<!-- Gqap activity of PLCCa -->
-<Reaction name = "PLCCaGqaGTP--PLCCa+GqaGDP" id="PLCCaGqaGTP--PLC+GqaGDP">
-    <Reactant specieID="PLCCaGqaGTP"            />
-    <Product  specieID="PLCCa"               />
-    <Product  specieID="GqaGDP"            />
-
-    <forwardRate>   12e-03   </forwardRate>
-    <reverseRate>   0  </reverseRate>
-    <Q10>         0.2           </Q10>
-</Reaction>
-
-<!-- Hydrolysis of GqaGTP - slower than GAP activity-->
-<Reaction name = "GqaGTP--GqaGDP" id="GqaGTP--GqaGDP">
-    <Reactant specieID="GqaGTP"            />
-    <Product  specieID="GqaGDP"            />
-
-    <forwardRate>   1e-03   </forwardRate>
-    <reverseRate>   0  </reverseRate>
-    <Q10>         0.2           </Q10>
-</Reaction>
-
-<!-- 1st order regeneration of Gqabg 
-avoids the need to generate Gbg, and have them react-->
-<Reaction name = "GqaGDP--Gqabg" id="GqaGDP--Gqabg">
-    <Reactant specieID="GqaGDP"            />
-    <Product  specieID="Gqabg"            />
-
-   <forwardRate>   10e-03   </forwardRate>
-    <reverseRate>   0  </reverseRate>
-    <Q10>         0.2           </Q10>
-</Reaction>
-
-    
-<!-- GluR reactions with Glutamate and Gq-proteins -->
-   <!-- Glu + MGluR <==> MGluR_Glu  --> <!-- 6uM-->
-  <Reaction name = "Glu+MGluR--MGluR_Glu" id="Glu+MGluR--MGluR_Glu">
-    <Reactant specieID="Glu"              />
-    <Reactant specieID="MGluR"              />
-    <Product  specieID="MGluR_Glu"         />
-
-    <forwardRate> 1.68e-8 </forwardRate> <!-- originally 0.001e-03 -->
-    <reverseRate> 0.1e-03      </reverseRate>
-    <Q10>         0.2          </Q10>
-</Reaction>
-
-   <!-- MGluR_Glu <==> Desensitized -->
-  <Reaction name = "Glu+MGluR--MGluR_Glu_desens" id="Glu+MGluR--MGluR_Glu_desens">
-    <Reactant specieID="MGluR_Glu"              />
-    <Product  specieID="MGluR_Glu_desens"         />
-
-    <forwardRate> 0.0625e-03 </forwardRate>
-    <reverseRate> 0.001e-03      </reverseRate>
-    <Q10>         0.2          </Q10>
-</Reaction>
-
-   <!-- Gqabg + MGluR_Glu    <-> MGluR_Gqabg_Glu    -->
-<Reaction name = "Gqabg+MGluR_Glu--MGluR_Gqabg_Glu" id="Gqabg+MGluR_Glu--MGluR_Gqabg_Glu">
-    <Reactant specieID="Gqabg"               />
-    <Reactant specieID="MGluR_Glu"             />
-    <Product  specieID="MGluR_Gqabg_Glu"            />
-
-    <forwardRate>  0.009e-03  </forwardRate>
-    <reverseRate>   1.36e-03  </reverseRate>
-    <Q10>         0.2           </Q10>
-</Reaction>
-
-   <!-- MGluR_Gqabg_Glu    <-> GqaGTP + MGluR_Glu    -->
-<Reaction name = "MGluR_Gqabg_Glu--GqaGTP+MGluR_Glu" id="MGluR_Gqabg_Glu--GqaGTP+MGluR_Glu">
-    <Reactant specieID="MGluR_Gqabg_Glu"               />
-    <Product specieID="GqaGTP"             />
-    <Product  specieID="MGluR_Glu"            />
-
-    <forwardRate>  1.5e-03 </forwardRate>
-    <reverseRate>   0  </reverseRate>
-    <Q10>         0.2           </Q10>
-</Reaction>
-
-<!-- "Dhpg" replaced by Glu, G-proteins added the "q" to distinguish from above G-proteins. MGluR reactions moved to the end -->
-   <!-- GluOut    Glu <-> GluOut>  -->
-  <Reaction name = "Glu--GluOut" id="Glu--GluOut">
-<Reactant specieID="Glu"/>
-  <Product specieID="GluOut"/>
-
-  <forwardRate>5e-4</forwardRate>
-  <reverseRate>2e-10</reverseRate>
-  <Q10>0.2</Q10>
-  </Reaction>
-  
 
 <!--Add endoplasmic reticulum and IP3R from the never used growth cone model-->
 
