@@ -166,13 +166,13 @@
     <PicoSD specieID="PKAr" value="0"/>
     <PicoSD specieID="PKAcAMP2" value="20"/>
     <PicoSD specieID="PKAcAMP4" value="5"/>
-    <PicoSD specieID="CaOutInfluxER" value="24.0"/>
+    <PicoSD specieID="CaOutInfluxER" value="80.0"/>
   </SurfaceDensitySet>
   <ConcentrationSet region="dend">
     <NanoMolarity specieID="CaER"         value="1.8e5"     />
     <NanoMolarity       specieID="IP3R"      value="106"     />
    <NanoMolarity specieID="CaERLeak" value="1200"/>
-    <NanoMolarity       specieID="SERCACa2"       value="100"     />
+    <NanoMolarity       specieID="SERCACa2"       value="200"     />
     <NanoMolarity       specieID="SERCA"       value="100"     />
     <NanoMolarity       specieID="CRTP" value="1.4e+6"/>
   </ConcentrationSet>
