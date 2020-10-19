@@ -140,14 +140,12 @@
     <PicoSD specieID="Gqabg" value="10000"/>
 
 
-    <PicoSD  specieID="PLC"  value="200"    />
-    <PicoSD  specieID="Pip2" value="9600"  />
-    <PicoSD  specieID="Ip3degrad"  value="240"  />
-    <PicoSD  specieID="Ip3degPIk"  value="160"  />
+    <PicoSD  specieID="PLC"  value="220"    />
+    <PicoSD  specieID="Pip2" value="10000"  />
     <PicoSD  specieID="MGluR" value="1e03"  />
     <!-- <PicoSD  specieID="DAG"  value="720"  /> -->
     <!-- <PicoSD  specieID="CaDGL"  value="120"  /> -->
-    <PicoSD  specieID="PIkinase"   value="120"  />
+    <PicoSD  specieID="PIkinase"   value="300"  />
     <!-- <PicoSD  specieID="DAGK" value="280"  /> -->
     <PicoSD specieID="GasGTP" value="0"/>
     <PicoSD specieID="GasGDP" value="0"/>
@@ -166,14 +164,14 @@
     <PicoSD specieID="PKAr" value="0"/>
     <PicoSD specieID="PKAcAMP2" value="20"/>
     <PicoSD specieID="PKAcAMP4" value="5"/>
-    <PicoSD specieID="CaOutInfluxER" value="80.0"/>
+    <PicoSD specieID="CaOutInfluxER" value="100.0"/>
   </SurfaceDensitySet>
   <ConcentrationSet region="dend">
     <NanoMolarity specieID="CaER"         value="1.8e5"     />
     <NanoMolarity       specieID="IP3R"      value="106"     />
-   <NanoMolarity specieID="CaERLeak" value="1200"/>
+    <NanoMolarity specieID="CaERLeak" value="300"/>
     <NanoMolarity       specieID="SERCACa2"       value="200"     />
-    <NanoMolarity       specieID="SERCA"       value="100"     />
+    <NanoMolarity       specieID="SERCA"       value="200"     />
     <NanoMolarity       specieID="CRTP" value="1.4e+6"/>
   </ConcentrationSet>
   
