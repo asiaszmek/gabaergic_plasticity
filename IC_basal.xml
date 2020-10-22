@@ -133,19 +133,22 @@
     <PicoSD specieID="pmcaCa" value="0"/>
     <PicoSD specieID="ncx" value="13500"/>
     <PicoSD specieID="ncxCa" value="1500"/>
+    <PicoSD specieID="CaOutInfluxER" value="100.0"/>
 
     <PicoSD specieID="GsbAR" value="500"/>
     <PicoSD specieID="ISObARGs" value="20"/>
     <PicoSD specieID="Gs" value="10000"/>
-    <PicoSD specieID="Gqabg" value="10000"/>
 
 
     <PicoSD  specieID="PLC"  value="220"    />
     <PicoSD  specieID="Pip2" value="10000"  />
+    <PicoSD  specieID="PIkinase"   value="300"  />
     <PicoSD  specieID="MGluR" value="1e03"  />
+    <PicoSD specieID="Gqabg" value="10000"/>
+
     <!-- <PicoSD  specieID="DAG"  value="720"  /> -->
     <!-- <PicoSD  specieID="CaDGL"  value="120"  /> -->
-    <PicoSD  specieID="PIkinase"   value="300"  />
+    
     <!-- <PicoSD  specieID="DAGK" value="280"  /> -->
     <PicoSD specieID="GasGTP" value="0"/>
     <PicoSD specieID="GasGDP" value="0"/>
@@ -164,7 +167,6 @@
     <PicoSD specieID="PKAr" value="0"/>
     <PicoSD specieID="PKAcAMP2" value="20"/>
     <PicoSD specieID="PKAcAMP4" value="5"/>
-    <PicoSD specieID="CaOutInfluxER" value="100.0"/>
   </SurfaceDensitySet>
   <ConcentrationSet region="dend">
     <NanoMolarity specieID="CaER"         value="1.8e5"     />
