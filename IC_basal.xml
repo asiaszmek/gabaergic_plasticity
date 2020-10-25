@@ -172,9 +172,11 @@
     <NanoMolarity specieID="CaER"         value="1.8e5"     />
     <NanoMolarity       specieID="IP3R"      value="106"     />
     <NanoMolarity specieID="CaERLeak" value="300"/>
-    <NanoMolarity       specieID="SERCACa2"       value="200"     />
+    <NanoMolarity       specieID="SERCACa2"       value="450"     />
     <NanoMolarity       specieID="SERCA"       value="200"     />
-    <NanoMolarity       specieID="CRTP" value="1.4e+6"/>
+    <NanoMolarity       specieID="CRTP" value="1.3e+6"/>
+    <NanoMolarity       specieID="CRTP" value="1.e+5"/>
+
   </ConcentrationSet>
   
 
