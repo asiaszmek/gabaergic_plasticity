@@ -907,8 +907,8 @@ than previously-->
         <Reactant specieID="PP1"                    />
         <Product  specieID="CKpPP1"                 />
 
-        <forwardRate> 0.009e-06   </forwardRate>
-        <reverseRate> 0.08e-03    </reverseRate>
+        <forwardRate> 0.045e-06   </forwardRate>
+        <reverseRate> 0.8e-03    </reverseRate>
     </Reaction>
  
     <!-- CKpPP1 -> PP1 + CK -->
@@ -917,7 +917,7 @@ than previously-->
         <Product specieID="PP1"                     />
         <Product specieID="CK"                      />
 
-        <forwardRate> 0.019e-03   </forwardRate>
+        <forwardRate> 0.01e-03   </forwardRate>
         <reverseRate> 0.0         </reverseRate>
     </Reaction>
 
@@ -927,8 +927,8 @@ than previously-->
         <Reactant specieID="PP1"                    />
         <Product  specieID="CKpCaMCa4PP1"           />
 
-        <forwardRate> 0.0045e-06  </forwardRate>
-        <reverseRate> 0.04e-03   </reverseRate>
+        <forwardRate> 0.01e-06  </forwardRate>
+        <reverseRate> 0.9e-03   </reverseRate>
     </Reaction>
 
 <!--Dephos of CKpCaMCa4 by PP1 -->
@@ -938,7 +938,7 @@ than previously-->
         <Product  specieID="PP1"                    />
         <Product  specieID="CKCaMCa4"               />
 
-        <forwardRate> 0.0095e-3    </forwardRate>
+        <forwardRate> 0.0045e-3    </forwardRate>
         <reverseRate> 0.0         </reverseRate>
     </Reaction>
 
