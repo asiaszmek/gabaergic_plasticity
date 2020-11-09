@@ -24,8 +24,10 @@ results (also, 3D may not work yet...)  -->
     <spineSeed>123</spineSeed>
 
     <discretization>
+      <defaultMaxElementSide>0.2</defaultMaxElementSide>
+      <MaxElementSide region="dend">0.12</MaxElementSide>
+
 	<!-- default largest size for elements in bulk volumes (dendrites), microns -->	
-	<defaultMaxElementSide>0.125</defaultMaxElementSide>
 
 	<spineDeltaX>0.1</spineDeltaX>
 

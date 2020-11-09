@@ -175,7 +175,7 @@
     <NanoMolarity       specieID="SERCACa2"       value="500"     />
     <NanoMolarity       specieID="SERCA"       value="300"     />
     <NanoMolarity       specieID="CRTP" value="1.3e+6"/>
-    <NanoMolarity       specieID="CRTP" value="1.e+5"/>
+    <NanoMolarity       specieID="CRT" value="1.e+5"/>
 
   </ConcentrationSet>
   
