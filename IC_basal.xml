@@ -133,7 +133,7 @@
     <PicoSD specieID="pmcaCa" value="0"/>
     <PicoSD specieID="ncx" value="13500"/>
     <PicoSD specieID="ncxCa" value="1500"/>
-    <PicoSD specieID="CaOutInfluxER" value="100.0"/>
+    <PicoSD specieID="CaOutInfluxER" value="150.0"/>
 
     <PicoSD specieID="GsbAR" value="500"/>
     <PicoSD specieID="ISObARGs" value="20"/>
