@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <InitialConditions>
   <ConcentrationSet>
     <NanoMolarity specieID="Ca" value="75"/>
@@ -45,6 +46,7 @@
     <NanoMolarity specieID="Ip35PP1" value="500"/>
     <NanoMolarity specieID="PDE4" value="1400"/>
     <NanoMolarity specieID="pPDE4" value="800"/>
+    <NanoMolarity specieID="IP3" value="20"/>
 
     </ConcentrationSet>
 
@@ -129,8 +131,8 @@
   <SurfaceDensitySet region="dend">
     <PicoSD specieID="Leak" value="0"/>
     <PicoSD specieID="CaOutLeak" value="6000"/>
-    <PicoSD specieID="pmca" value="600"/>
-    <PicoSD specieID="pmcaCa" value="0"/>
+    <PicoSD specieID="pmca" value="420"/>
+    <PicoSD specieID="pmcaCa" value="180"/>
     <PicoSD specieID="ncx" value="13500"/>
     <PicoSD specieID="ncxCa" value="1500"/>
     <PicoSD specieID="CaOutInfluxER" value="150.0"/>
