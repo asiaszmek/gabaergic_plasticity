@@ -1852,14 +1852,14 @@ avoids the need to generate Gbg, and have them react-->
     <reverseRate>0</reverseRate>
     <Q10>0.2</Q10>
  </Reaction>
-  <!-- Serca -->
+  <!-- Serca   DOI: 10.1161/01.RES.0000069032.81501.98  -->
   <Reaction name = "SERCA_1a" id="SERCA_1a">
-    <Reactant specieID="Ca" n="2"/>
+    <Reactant specieID="Ca" power="2"/>
     <Reactant specieID="SERCA"/>
     <Product specieID="SERCACa2"/>
     
-    <forwardRate>0.0001</forwardRate>
-    <reverseRate>0.001</reverseRate>
+    <forwardRate>0.004</forwardRate>
+    <reverseRate>0.8</reverseRate>
     <Q10>0.2</Q10>
   </Reaction>
   
@@ -1867,9 +1867,9 @@ avoids the need to generate Gbg, and have them react-->
   <Reaction name = "SERCA_1b" id="SERCA_1b">
     <Reactant specieID="SERCACa2"/>
     <Product specieID="SERCA"/>
-    <Product specieID="CaER" n="2"/>
+    <Product specieID="CaER" power="2"/>
     
-    <forwardRate>0.01</forwardRate>
+    <forwardRate>1e3</forwardRate>
     <reverseRate>0</reverseRate>
     <Q10>0.2</Q10>
   </Reaction>
