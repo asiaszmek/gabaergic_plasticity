@@ -38,9 +38,6 @@
   <Specie name="ncx" id="ncx" kdiff="0" kdiffunit="mu2/s" />
   <Specie name="pmcaCa" id="pmcaCa" kdiff="0" kdiffunit="mu2/s" />
   <Specie name="ncxCa" id="ncxCa" kdiff="0" kdiffunit="mu2/s" />
-  <Specie name="InfluxER" id="InfluxER" kdiff="0"
-	  kdiffunit="mu2/s"/>
-  <Specie name="CaOutInfluxER" id="CaOutInfluxER" kdiff="0" kdiffunit="mu2/s"/>
  
   <Specie name="CaER" id="CaER" kdiff="0." kdiffunit="mu2/s"/>
   
@@ -1831,27 +1828,6 @@ avoids the need to generate Gbg, and have them react-->
 
 <!--Add endoplasmic reticulum and IP3R from the never used growth cone model-->
 
-    <!-- Ca leak -    CaOut + Leak <-> CaOutLeak -->
-  <Reaction name = "Ca_influxER" id="Ca_cainfluxa">
-    <Reactant specieID="CaOut"/>
-    <Reactant specieID="InfluxER"/>
-    <Product specieID="CaOutInfluxER"/>
-    
-    <forwardRate>1.5e-7</forwardRate>
-    <reverseRate>1.1e-3</reverseRate>
-    <Q10>0.2</Q10>
-  </Reaction>
-  
-  <!-- Ca leak -    CaOutLeak <-> Ca + Leak -->
-  <Reaction name = "Ca_influxER" id="Ca_influxb">
-    <Reactant specieID="CaOutInfluxER"/>
-    <Product specieID="CaER"/>
-    <Product specieID="InfluxER"/>
-    
-    <forwardRate>1.1e-4</forwardRate>
-    <reverseRate>0</reverseRate>
-    <Q10>0.2</Q10>
- </Reaction>
   <!-- Serca   DOI: 10.1161/01.RES.0000069032.81501.98  -->
   <Reaction name = "SERCA_1a" id="SERCA_1a">
     <Reactant specieID="Ca" power="2"/>

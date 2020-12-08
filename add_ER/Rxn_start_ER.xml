@@ -38,9 +38,6 @@
   <Specie name="ncx" id="ncx" kdiff="0" kdiffunit="mu2/s" />
   <Specie name="pmcaCa" id="pmcaCa" kdiff="0" kdiffunit="mu2/s" />
   <Specie name="ncxCa" id="ncxCa" kdiff="0" kdiffunit="mu2/s" />
-  <Specie name="InfluxER" id="InfluxER" kdiff="0"
-	  kdiffunit="mu2/s"/>
-  <Specie name="CaOutInfluxER" id="CaOutInfluxER" kdiff="0" kdiffunit="mu2/s"/>
  
   <Specie name="CaER" id="CaER" kdiff="0." kdiffunit="mu2/s"/>
   
