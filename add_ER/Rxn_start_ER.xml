@@ -496,8 +496,8 @@ avoids the need to generate Gbg, and have them react-->
     <Reactant specieID="SERCA"/>
     <Product specieID="SERCACa2"/>
     
-    <forwardRate>0.002</forwardRate>
-    <reverseRate>0.8</reverseRate>
+    <forwardRate>4e-6</forwardRate>
+    <reverseRate>0.64</reverseRate>
     <Q10>0.2</Q10>
   </Reaction>
   
@@ -507,7 +507,7 @@ avoids the need to generate Gbg, and have them react-->
     <Product specieID="SERCA"/>
     <Product specieID="CaER" power="2"/>
     
-    <forwardRate>0.5e3</forwardRate>
+    <forwardRate>.5e3</forwardRate>
     <reverseRate>0</reverseRate>
     <Q10>0.2</Q10>
   </Reaction>
