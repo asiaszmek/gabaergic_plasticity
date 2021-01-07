@@ -48,6 +48,10 @@
   <Specie name="SERCA" id="SERCA" kdiff="0" kdiffunit="mu2/s"/>
 
   <Specie name="SERCACa2" id="SERCACa2" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="SERCAconfCa2" id="SERCAconfCa2" kdiff="0" kdiffunit="mu2/s"/>
+
+  <Specie name="SERCAconf" id="SERCAconf" kdiff="0" kdiffunit="mu2/s"/>
+
   <!--calreticulin-->
   <Specie name="CRT" id="CRT" kdiff="0" kdiffunit="mu2/s"/>
   <Specie name="CRTP" id="CRTP" kdiff="0" kdiffunit="mu2/s"/>
@@ -488,7 +492,7 @@ avoids the need to generate Gbg, and have them react-->
   
 
 <!--Add endoplasmic reticulum and IP3R from the never used growth cone model-->
-
+<!-- try out sneyd's model-->
     <!-- Ca leak -    CaOut + Leak <-> CaOutLeak -->
   <!-- Serca -->
   <Reaction name = "SERCA_1a" id="SERCA_1a">
@@ -496,22 +500,40 @@ avoids the need to generate Gbg, and have them react-->
     <Reactant specieID="SERCA"/>
     <Product specieID="SERCACa2"/>
     
-    <forwardRate>4e-6</forwardRate>
-    <reverseRate>0.64</reverseRate>
+    <forwardRate>2e-7</forwardRate>
+    <reverseRate>0.14</reverseRate>
     <Q10>0.2</Q10>
   </Reaction>
   
   <!-- Ca pump high affinity -    pmcaCa <-> pmca + CaOut -->
   <Reaction name = "SERCA_1b" id="SERCA_1b">
     <Reactant specieID="SERCACa2"/>
-    <Product specieID="SERCA"/>
-    <Product specieID="CaER" power="2"/>
+    <Product specieID="SERCAconfCa2"/>
     
-    <forwardRate>.5e3</forwardRate>
-    <reverseRate>0</reverseRate>
+    <forwardRate>0.6e-3</forwardRate>
+    <reverseRate>0.097e-3</reverseRate>
     <Q10>0.2</Q10>
   </Reaction>
-  
+
+
+  <Reaction name = "SERCA_1c" id="SERCA_1c">
+    <Reactant specieID="SERCAconf"/>
+    <Reactant specieID="CaER" power="2"/>
+    <Product specieID="SERCAconfCa2"/>
+    <forwardRate>2e-12</forwardRate>
+    <reverseRate>0.18</reverseRate>
+    <Q10>0.2</Q10>
+  </Reaction>
+
+
+   <Reaction name = "SERCA_1d" id="SERCA_1d">
+    <Reactant specieID="SERCAconf"/>
+    <Product specieID="SERCA"/>
+    <forwardRate>0.4e-3</forwardRate>
+    <reverseRate>1.2e-6</reverseRate>
+    <Q10>0.2</Q10>
+  </Reaction>
+
  <!-- ER Ca leak -    CaER+ LeakER <-> CaERLeak-->
   <Reaction name = "Ca_leakER" id="Ca_leakaER">
     <Reactant specieID="CaER"/>
