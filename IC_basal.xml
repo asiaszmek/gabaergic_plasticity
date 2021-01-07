@@ -2,7 +2,7 @@
 <InitialConditions>
   <ConcentrationSet>
     <NanoMolarity specieID="Ca" value="75"/>
-    <NanoMolarity specieID="CaOut" value="2000000"/>
+    <NanoMolarity specieID="CaOut" value="2100000"/>
     <NanoMolarity specieID="GluOut" value="1000000"/>
 
     <!-- total calbindin = 160 uM -->
@@ -35,17 +35,17 @@
     <NanoMolarity specieID="PP2B" value="0"/>
     <NanoMolarity specieID="CK" value="22200"/>
     <NanoMolarity specieID="CKCaMCa4" value="350"/>
-    <NanoMolarity specieID="CKpCaMCa4" value="700"/>
-    <NanoMolarity specieID="CKp" value="20"/>
+    <NanoMolarity specieID="CKpCaMCa4" value="600"/>
+    <NanoMolarity specieID="CKp" value="100"/>
     <NanoMolarity specieID="CKpPP1" value="0"/>
 
-    <NanoMolarity specieID="I1" value="1100"/> <!-- I1 conc 1.5 muM -->
+    <NanoMolarity specieID="I1" value="750"/> <!-- I1 conc 1.5 muM -->
     <NanoMolarity specieID="I1PKAc" value="0"/>
     <NanoMolarity specieID="Ip35" value="10"/>
-    <NanoMolarity specieID="PP1" value="1100"/>
-    <NanoMolarity specieID="Ip35PP1" value="500"/>
-    <NanoMolarity specieID="PDE4" value="1400"/>
-    <NanoMolarity specieID="pPDE4" value="800"/>
+    <NanoMolarity specieID="PP1" value="750"/>
+    <NanoMolarity specieID="Ip35PP1" value="850"/>
+    <NanoMolarity specieID="PDE4" value="1200"/>
+    <NanoMolarity specieID="pPDE4" value="600"/>
     <NanoMolarity specieID="IP3" value="20"/>
 
     </ConcentrationSet>
