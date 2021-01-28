@@ -80,22 +80,33 @@ if __name__ == '__main__':
         sys.exit('No filename given')
     for fname in sys.argv[1:]:
         my_file = h5py.File(fname, 'r')
-        
+        conc_dict = {}
+        time_dict = {}
         for trial in my_file.keys():
             if trial == "model":
                 continue
             conc, voxels = get_dynamics_in_region(my_file,
                                                   specie_list,
                                                   "dend", trial, "__main__")
+            conc_dict[trial] = conc
             time = get_times(my_file, trial, "__main__")
-                                 
+            time_dict[trial] = time
+        vmax = 0
+
+        for key in conc_dict:
+            new_max = conc_dict[key].max()
+            if new_max > vmax:
+                vmax = new_max
+        for key in conc_dict:
             fig, ax = plt.subplots(1, 1)
-            im = ax.imshow(conc.T, aspect="auto", interpolation="none",
+            time = time_dict[key]
+            im = ax.imshow(conc_dict[key].T, aspect="auto",
+                           interpolation="none",
                            origin="lower", extent = [time[0]*1e-3,
                                                      time[-1]*1e-3,
                                                      voxels[0],
                                                      voxels[-1]],
-                           cmap=plt.get_cmap("Reds"))
+                           cmap=plt.get_cmap("Reds"), vmin=0, vmax=vmax)
             fig.colorbar(im)
             ax.set_title("%s %s" % (specie, trial))
     plt.show()
