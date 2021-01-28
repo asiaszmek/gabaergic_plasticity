@@ -17,69 +17,69 @@
 <!--PointI as in point of injection-->
     <!-- lengthDensity means you set the number per micron along the segment -->
 
-    <SpineAllocation id="sa1" spineType="spineA" region="dendrite" lengthDensity="0.4"/>
+    <SpineAllocation id="sa1" spineType="spineA" region="dend" lengthDensity="0.4"/>
 
-    <Segment id="seg1" region="dendrite">
+    <Segment id="seg1" region="dend">
 	<start x="1.0" y="1.0" z="0.0" r="0.3"/>
 	<end x="3.0" y="1.0" z="0.0" r="0.3"/>
     </Segment>
-    <Segment id="seg2" region="dendrite">
+    <Segment id="seg2" region="dend">
 	<start on="seg1" at="end" />
 	<end x="5.0" y="1.0" z="0.0" r="0.3"/>
     </Segment>
-    <Segment id="seg3" region="dendrite">
+    <Segment id="seg3" region="dend">
 	<start on="seg2" at="end" />
 	<end x="7.0" y="1.0" z="0.0" r="0.3"/>
     </Segment>
-    <Segment id="seg4" region="dendrite">
+    <Segment id="seg4" region="dend">
 	<start on="seg3" at="end" />
 	<end x="9.0" y="1.0" z="0.0" r="0.3"/>
     </Segment>
-    <Segment id="seg5" region="dendrite">
+    <Segment id="seg5" region="dend">
 	<start on="seg4" at="end" />
 	<end x="11.0" y="1.0" z="0.0" r="0.3"/>
     </Segment>
-    <Segment id="seg6" region="dendrite">
+    <Segment id="seg6" region="dend">
 	<start on="seg5" at="end" />
 	<end x="13.0" y="1.0" z="0.0" r="0.3"/>
     </Segment>
-    <Segment id="seg7" region="dendrite">
+    <Segment id="seg7" region="dend">
 	<start on="seg6" at="end" />
 	<end x="15.0" y="1.0" z="0.0" r="0.3"/>
     </Segment>
-    <Segment id="seg8" region="dendrite">
+    <Segment id="seg8" region="dend">
 	<start on="seg7" at="end" />
 	<end x="17.0" y="1.0" z="0.0" r="0.3"/>
     </Segment>
-    <Segment id="seg9" region="dendrite">
+    <Segment id="seg9" region="dend">
 	<start on="seg8" at="end" />
 	<end x="19.0" y="1.0" z="0.0" r="0.3"/>
     </Segment>
-    <Segment id="seg10" region="dendrite">
+    <Segment id="seg10" region="dend">
 	<start on="seg9" at="end" />
 	<end x="20.0" y="1.0" z="0.0" r="0.3"/>
     </Segment>
-    <Segment id="seg11" region="dendrite">
+    <Segment id="seg11" region="dend">
 	<start on="seg10" at="end" />
 	<end x="21.0" y="1.0" z="0.0" r="0.3"/>
     </Segment>
-    <Segment id="seg12" region="dendrite">
+    <Segment id="seg12" region="dend">
 	<start on="seg11" at="end" />
 	<end x="23.0" y="1.0" z="0.0" r="0.3"/>
     </Segment>
-    <Segment id="seg13" region="dendrite">
+    <Segment id="seg13" region="dend">
 	<start on="seg12" at="end" />
 	<end x="25.0" y="1.0" z="0.0" r="0.3"/>
     </Segment>
-    <Segment id="seg14" region="dendrite">
+    <Segment id="seg14" region="dend">
 	<start on="seg13" at="end" />
 	<end x="27.0" y="1.0" z="0.0" r="0.3"/>
     </Segment>
-    <Segment id="seg15" region="dendrite">
+    <Segment id="seg15" region="dend">
 	<start on="seg14" at="end" />
 	<end x="29.0" y="1.0" z="0.0" r="0.3"/>
     </Segment>
-    <Segment id="seg16" region="dendrite">
+    <Segment id="seg16" region="dend">
 	<start on="seg15" at="end" />
 	<end x="31.0" y="1.0" z="0.0" r="0.3"/>
     </Segment>
