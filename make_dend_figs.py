@@ -74,6 +74,7 @@ def get_dynamics_in_region(my_file, specie, region, trial,
 
 
 if __name__ == '__main__':
+    specie_list = ["Ca"]
     specie = "Ca"
     if len(sys.argv) == 1:
         sys.exit('No filename given')
@@ -84,7 +85,7 @@ if __name__ == '__main__':
             if trial == "model":
                 continue
             conc, voxels = get_dynamics_in_region(my_file,
-                                                  specie,
+                                                  specie_list,
                                                   "dend", trial, "__main__")
             time = get_times(my_file, trial, "__main__")
                                  
@@ -94,8 +95,8 @@ if __name__ == '__main__':
                                                      time[-1]*1e-3,
                                                      voxels[0],
                                                      voxels[-1]],
-                           cmap=plt.get_cmap("Greens"))
+                           cmap=plt.get_cmap("Reds"))
             fig.colorbar(im)
-            ax.set_title("%s %s" % ("Ca", trial))
+            ax.set_title("%s %s" % (specie, trial))
     plt.show()
                           
