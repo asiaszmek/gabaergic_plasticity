@@ -1,6 +1,12 @@
 <OutputScheme>
   <OutputSet filename = "int_all"  dt="200.0">
     <OutputSpecie name="Ca"/>
+    <OutputSpecie name="CaER"/>
+    <OutputSpecie name="CaOut"/>
+    <OutputSpecie name="SERCA"/>
+    <OutputSpecie name="SERCAconf"/>
+    <OutputSpecie name="SERCAconfCa2"/>
+    <OutputSpecie name="SERCACa2"/>
     <OutputSpecie name="cAMP"/>
     <OutputSpecie name="Epac1cAMP"/>
     <OutputSpecie name="Epac1"/>
