@@ -33,30 +33,32 @@
     <OutputSpecie name="pPDE4" />
     <OutputSpecie name="PKAr" />
   </OutputSet>
-  <OutputSet filename = "int_PSD" region="PSD" dt="200.0">
-     <OutputSpecie name="NMDAR" />
-    <OutputSpecie name="PKAcNMDAR" />
-    <OutputSpecie name="pNMDAR" />
-    <OutputSpecie name="PP2BpNMDAR" />
-    <OutputSpecie name="GluR1" />
-    <OutputSpecie name="GluR1_CKp" />
-    <OutputSpecie name="GluR1_CKCaM" />
-    <OutputSpecie name="GluR1_CKpCaM"/>
-    <OutputSpecie name="GluR1_S831" />
-    <OutputSpecie name="GluR1_S831_PP1" />
-    <OutputSpecie name="GluR1_PKAc" />
-    <OutputSpecie name="GluR1_S831_PKAc" />
-    <OutputSpecie name="GluR1_S845" />
-    <OutputSpecie name="GluR1_S845_CKCaM" />
-    <OutputSpecie name="GluR1_S845_CKp" />
-    <OutputSpecie name="GluR1_S845_CKpCaM" />
-    <OutputSpecie name="GluR1_S845_PP1" />
-    <OutputSpecie name="GluR1_S845_PP2B" />
-    <OutputSpecie name="GluR1_S845_S831" />
-    <OutputSpecie name="GluR1_S845_S831_PP2B" />
-    <OutputSpecie name="GluR1_S845_S831_PP1" />
-    <OutputSpecie name="GluR1_S845_S831_PP1_2" />
 
-  </OutputSet>
+  <!-- <OutputSet filename = "int_PSD" region="PSD" dt="200.0"> -->
+  <!--    <OutputSpecie name="NMDAR" /> -->
+  <!--   <OutputSpecie name="PKAcNMDAR" /> -->
+  <!--   <OutputSpecie name="pNMDAR" /> -->
+  <!--   <OutputSpecie name="PP2BpNMDAR" /> -->
+  <!--   <OutputSpecie name="GluR1" /> -->
+  <!--   <OutputSpecie name="GluR1_CKp" /> -->
+  <!--   <OutputSpecie name="GluR1_CKCaM" /> -->
+  <!--   <OutputSpecie name="GluR1_CKpCaM"/> -->
+  <!--   <OutputSpecie name="GluR1_S831" /> -->
+  <!--   <OutputSpecie name="GluR1_S831_PP1" /> -->
+  <!--   <OutputSpecie name="GluR1_PKAc" /> -->
+  <!--   <OutputSpecie name="GluR1_S831_PKAc" /> -->
+  <!--   <OutputSpecie name="GluR1_S845" /> -->
+  <!--   <OutputSpecie name="GluR1_S845_CKCaM" /> -->
+  <!--   <OutputSpecie name="GluR1_S845_CKp" /> -->
+  <!--   <OutputSpecie name="GluR1_S845_CKpCaM" /> -->
+  <!--   <OutputSpecie name="GluR1_S845_PP1" /> -->
+  <!--   <OutputSpecie name="GluR1_S845_PP2B" /> -->
+  <!--   <OutputSpecie name="GluR1_S845_S831" /> -->
+  <!--   <OutputSpecie name="GluR1_S845_S831_PP2B" /> -->
+  <!--   <OutputSpecie name="GluR1_S845_S831_PP1" /> -->
+  <!--   <OutputSpecie name="GluR1_S845_S831_PP1_2" /> -->
+
+  <!-- </OutputSet> -->
+  
 
 </OutputScheme>
