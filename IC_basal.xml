@@ -12,8 +12,6 @@
     <NanoMolarity specieID="ISOOut" value="2000000"/>
     <NanoMolarity specieID="DaOut"  value="4000000" /> 
     <NanoMolarity specieID="Da" value="20" />
-    <NanoMolarity specieID="Dbuf"      value="0" />
-    <NanoMolarity specieID="DaDbuf" value="0" />
     <NanoMolarity specieID="fixedbuffer" value="2000000"/>
     <NanoMolarity specieID="fixedbufferCa" value="3000"/>
     <NanoMolarity specieID="cAMP" value="58"/>
