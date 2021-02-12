@@ -83,7 +83,6 @@
   <Specie name="GsbAR" id="GsbAR" kdiff="0" kdiffunit="mu2/s" />
   <Specie name="GasGTP" id="GasGTP" kdiff="0" kdiffunit="mu2/s" />
   <Specie name="GasGDP" id="GasGDP" kdiff="0" kdiffunit="mu2/s" />
-  <Specie name="Gsbg" id="Gsbg" kdiff="0" kdiffunit="mu2/s" />
   <Specie name="Da" id="Da" kdiff="10" kdiffunit="mu2/s" />
   <!-- <Specie name="Dbuf" id="Dbuf" kdiff="1" kdiffunit="mu2/s" /> -->
   <!-- <Specie name="DaDbuf" id="DaDbuf" kdiff="0" kdiffunit="mu2/s" /> -->
@@ -445,7 +444,6 @@ than previously-->
 <Reactant specieID="ISObARGs" />
 <Product specieID="ISObAR" />
 <Product specieID="GasGTP" />
-<Product specieID="Gsbg" />
 <forwardRate>0.75e-3</forwardRate>
 <reverseRate>0</reverseRate>
 <Q10>0.2</Q10>
@@ -561,7 +559,6 @@ than previously-->
 <Reactant specieID="DaD1RGs" />
 <Product specieID="DaD1R" />
 <Product specieID="GasGTP" />
-<Product specieID="Gsbg" />
 <forwardRate>0.6e-03</forwardRate>
 <reverseRate>0.0</reverseRate>
   </Reaction>
@@ -629,7 +626,6 @@ than previously-->
 <!-- 7a) GasGDP + Gbg -> Gs    -->
 <Reaction name="Gs_form" id="Gs_form">
   <Reactant specieID="GasGDP" />
-  <Reactant specieID="Gsbg" />
   <Product specieID="Gs" />
   <forwardRate>100e-3</forwardRate>
   <reverseRate>0</reverseRate>

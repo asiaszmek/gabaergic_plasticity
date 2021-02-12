@@ -81,7 +81,6 @@
     <NanoMolarity specieID="Gs" value="300000"/>
     <NanoMolarity specieID="GasGDP" value="0"/>
     <NanoMolarity specieID="GasGTP" value="200"/>
-    <NanoMolarity specieID="Gsbg" value="4400"/>
     <NanoMolarity specieID="Gqabg" value="30000"/>
 
 
