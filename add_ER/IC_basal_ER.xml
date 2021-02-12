@@ -32,8 +32,10 @@
     <PicoSD  specieID="PLC"  value="220"    />
     <PicoSD  specieID="Pip2" value="10000"  />
     <PicoSD  specieID="PIkinase"   value="300"  />
-    <PicoSD  specieID="MgluR" value="0.5e03"  />
-    <PicoSD specieID="Gqabg" value="1000"/>
+    <PicoSD  specieID="MgluR" value="0.32e03"  />
+    <PicoSD specieID="Gqabg" value="820"/>
+    <PicoSD specieID="GluMgluRdesens" value="20"/>
+    <PicoSD specieID="MgluRGq" value="180"/>
 
   </SurfaceDensitySet>
   <ConcentrationSet region="dend">
