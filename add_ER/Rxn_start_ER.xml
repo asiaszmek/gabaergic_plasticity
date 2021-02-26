@@ -356,7 +356,7 @@ Discovered mistake!!! specified PIkinase as product, not reactant!-->
      <Reactant specieID="IP3"            />
     <Product  specieID="Ip3degrad"        />
 
-    <forwardRate> 1e-03      </forwardRate>
+    <forwardRate> 0.66e-03      </forwardRate>
     <reverseRate> 0.0e-03      </reverseRate>
     <Q10>         0.2           </Q10>
 </Reaction>
