@@ -29,6 +29,10 @@
 	  kdiffunit="mu2/s" />
   <Specie name="Leak" id="Leak" kdiff="0" kdiffunit="mu2/s" />
 
+  <Specie name="CaOutERLeak" id="CaOutERLeak" kdiff="0"
+	  kdiffunit="mu2/s" />
+  <Specie name="LeakToER" id="LeakToER" kdiff="0" kdiffunit="mu2/s" />
+
   <Specie name="fixedbuffer" id="fixedbuffer" kdiff="0" kdiffunit="mu2/s"/>
   <Specie name="fixedbufferCa" id="fixedbufferCa" kdiff="0" kdiffunit="mu2/s"/>
   <Specie name="Calbin" id="Calbin" kdiff="9.3" kdiffunit="mu2/s" />
@@ -45,13 +49,13 @@
 
   <Specie name="LeakER" id="LeakER" kdiff="0" kdiffunit="mu2/s"/>
 
-  <Specie name="SERCA" id="SERCA" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="SERCA_CYT" id="SERCA_CYT" kdiff="0" kdiffunit="mu2/s"/>
 
-  <Specie name="SERCACa2" id="SERCACa2" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="SERCA_CYT_Ca2" id="SERCA_CYT_Ca2" kdiff="0" kdiffunit="mu2/s"/>
 
-  <Specie name="SERCAconfCa2" id="SERCAconfCa2" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="SERCA_ER_Ca2" id="SERCA_ER_Ca2" kdiff="0" kdiffunit="mu2/s"/>
 
-  <Specie name="SERCAconf" id="SERCAconf" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="SERCA_ER" id="SERCA_ER" kdiff="0" kdiffunit="mu2/s"/>
 
 
   <!--calreticulin-->
@@ -311,7 +315,7 @@
 <reverseRate>0</reverseRate>
   </Reaction>
   <!-- v: Ca leak -    CaOut + Leak <-> CaOutLeak  GQ RXN FILE, Leak is sm only-->
-  <Reaction name = "Ca_leak" id="Ca_leak">
+  <Reaction name = "Ca_leak1" id="Ca_leak1">
 <Reactant specieID="CaOut"/>
 <Reactant specieID="Leak"/>
 <Product specieID="CaOutLeak"/>
@@ -321,10 +325,30 @@
   </Reaction>
 
   <!-- vi: Ca leak -    CaOutLeak <-> Ca (inside) + Leak  -->
-  <Reaction name = "Ca_leak" id="Ca_leak">
+  <Reaction name = "Ca_leak2" id="Ca_leak2">
 <Reactant specieID="CaOutLeak"/>
 <Product specieID="Ca"/>
 <Product specieID="Leak"/>
+
+<forwardRate>1.1e-3</forwardRate>
+<reverseRate>0</reverseRate>
+  </Reaction>
+
+
+   <Reaction name = "Ca_leak_toER" id="Ca_leak_toER">
+<Reactant specieID="CaOut"/>
+<Reactant specieID="LeakToER"/>
+<Product specieID="CaOutERLeak"/>
+
+<forwardRate>1.5e-8</forwardRate>
+<reverseRate>1.1e-3</reverseRate>
+  </Reaction>
+
+  <!-- vi: Ca leak -    CaOutLeak <-> Ca (inside) + Leak  -->
+  <Reaction name = "Ca_leak_toER2" id="Ca_leak_toER2">
+<Reactant specieID="CaOutERLeak"/>
+<Product specieID="CaER"/>
+<Product specieID="LeakToER"/>
 
 <forwardRate>1.1e-3</forwardRate>
 <reverseRate>0</reverseRate>
@@ -1765,43 +1789,41 @@ avoids the need to generate Gqbg, and have them react-->
   
 
 <!--Add endoplasmic reticulum and IP3R from the never used growth cone model-->
-<!-- try out sneyd's model-->
-    <!-- Ca leak -    CaOut + Leak <-> CaOutLeak -->
-  <!-- Serca -->
+  <!-- Serca   DOI: 10.1161/01.RES.0000069032.81501.98  -->
   <Reaction name = "SERCA_1a" id="SERCA_1a">
     <Reactant specieID="Ca" power="2"/>
-    <Reactant specieID="SERCA"/>
-    <Product specieID="SERCACa2"/>
+    <Reactant specieID="SERCA_CYT"/>
+    <Product specieID="SERCA_CYT_Ca2"/>
     
-    <forwardRate>2e-7</forwardRate>
-    <reverseRate>0.14</reverseRate>
+    <forwardRate>2.57143e-09</forwardRate>
+    <reverseRate>0.0018</reverseRate>
     <Q10>0.2</Q10>
   </Reaction>
   
   <!-- Ca pump high affinity -    pmcaCa <-> pmca + CaOut -->
   <Reaction name = "SERCA_1b" id="SERCA_1b">
-    <Reactant specieID="SERCACa2"/>
-    <Product specieID="SERCAconfCa2"/>
+    <Reactant specieID="SERCA_CYT_Ca2"/>
+    <Product specieID="SERCA_ER_Ca2"/>
     
     <forwardRate>0.6e-3</forwardRate>
-    <reverseRate>0.097e-3</reverseRate>
+    <reverseRate>0.97e-3</reverseRate>
     <Q10>0.2</Q10>
   </Reaction>
 
 
   <Reaction name = "SERCA_1c" id="SERCA_1c">
-    <Reactant specieID="SERCAconf"/>
+    <Reactant specieID="SERCA_ER"/>
     <Reactant specieID="CaER" power="2"/>
-    <Product specieID="SERCAconfCa2"/>
-    <forwardRate>2e-13</forwardRate>
-    <reverseRate>0.018</reverseRate>
+    <Product specieID="SERCA_ER_Ca2"/>
+    <forwardRate>5.30191e-9</forwardRate>
+    <reverseRate>1.8e-5</reverseRate>
     <Q10>0.2</Q10>
   </Reaction>
 
 
    <Reaction name = "SERCA_1d" id="SERCA_1d">
-    <Reactant specieID="SERCAconf"/>
-    <Product specieID="SERCA"/>
+    <Reactant specieID="SERCA_ER"/>
+    <Product specieID="SERCA_CYT"/>
     <forwardRate>0.4e-3</forwardRate>
     <reverseRate>1.2e-6</reverseRate>
     <Q10>0.2</Q10>
