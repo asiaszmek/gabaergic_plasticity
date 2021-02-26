@@ -311,7 +311,7 @@
 <reverseRate>0</reverseRate>
   </Reaction>
   <!-- v: Ca leak -    CaOut + Leak <-> CaOutLeak  GQ RXN FILE, Leak is sm only-->
-  <Reaction name = "Ca_leak" id="Ca_leak">
+  <Reaction name = "Ca_leak1" id="Ca_leak1">
 <Reactant specieID="CaOut"/>
 <Reactant specieID="Leak"/>
 <Product specieID="CaOutLeak"/>
@@ -321,7 +321,7 @@
   </Reaction>
 
   <!-- vi: Ca leak -    CaOutLeak <-> Ca (inside) + Leak  -->
-  <Reaction name = "Ca_leak" id="Ca_leak">
+  <Reaction name = "Ca_leak2" id="Ca_leak2">
 <Reactant specieID="CaOutLeak"/>
 <Product specieID="Ca"/>
 <Product specieID="Leak"/>
