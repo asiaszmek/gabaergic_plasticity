@@ -29,6 +29,10 @@
 	  kdiffunit="mu2/s" />
   <Specie name="Leak" id="Leak" kdiff="0" kdiffunit="mu2/s" />
 
+  <Specie name="CaOutERLeak" id="CaOutERLeak" kdiff="0"
+	  kdiffunit="mu2/s" />
+  <Specie name="LeakToER" id="LeakToER" kdiff="0" kdiffunit="mu2/s" />
+
   <Specie name="fixedbuffer" id="fixedbuffer" kdiff="0" kdiffunit="mu2/s"/>
   <Specie name="fixedbufferCa" id="fixedbufferCa" kdiff="0" kdiffunit="mu2/s"/>
   <Specie name="Calbin" id="Calbin" kdiff="9.3" kdiffunit="mu2/s" />
@@ -325,6 +329,26 @@
 <Reactant specieID="CaOutLeak"/>
 <Product specieID="Ca"/>
 <Product specieID="Leak"/>
+
+<forwardRate>1.1e-3</forwardRate>
+<reverseRate>0</reverseRate>
+  </Reaction>
+
+
+   <Reaction name = "Ca_leak_toER" id="Ca_leak_toER">
+<Reactant specieID="CaOut"/>
+<Reactant specieID="LeakToER"/>
+<Product specieID="CaOutERLeak"/>
+
+<forwardRate>1.5e-8</forwardRate>
+<reverseRate>1.1e-3</reverseRate>
+  </Reaction>
+
+  <!-- vi: Ca leak -    CaOutLeak <-> Ca (inside) + Leak  -->
+  <Reaction name = "Ca_leak_toER2" id="Ca_leak_toER2">
+<Reactant specieID="CaOutERLeak"/>
+<Product specieID="CaER"/>
+<Product specieID="LeakToER"/>
 
 <forwardRate>1.1e-3</forwardRate>
 <reverseRate>0</reverseRate>
