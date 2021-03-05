@@ -4,9 +4,9 @@
     <OutputSpecie name="CaER"/>
     <OutputSpecie name="CaOut"/>
     <OutputSpecie name="SERCA"/>
-    <OutputSpecie name="SERCAconf"/>
-    <OutputSpecie name="SERCAconfCa2"/>
-    <OutputSpecie name="SERCACa2"/>
+    <OutputSpecie name="SERCA"/>
+    <OutputSpecie name="SERCA_Ca2"/>
+    <OutputSpecie name="SERCA_Ca"/>
     <OutputSpecie name="cAMP"/>
     <OutputSpecie name="Epac1cAMP"/>
     <OutputSpecie name="Epac1"/>
