@@ -49,13 +49,11 @@
 
   <Specie name="LeakER" id="LeakER" kdiff="0" kdiffunit="mu2/s"/>
 
-  <Specie name="SERCA_CYT" id="SERCA_CYT" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="SERCA" id="SERCA" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="SERCA_Ca" id="SERCA_Ca" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="SERCA_Ca2" id="SERCA_Ca2" kdiff="0" kdiffunit="mu2/s"/>
 
-  <Specie name="SERCA_CYT_Ca2" id="SERCA_CYT_Ca2" kdiff="0" kdiffunit="mu2/s"/>
-  <Specie name="SERCA_ER_Ca2" id="SERCA_ER_Ca2" kdiff="0" kdiffunit="mu2/s"/>
-
-  <Specie name="SERCA_ER" id="SERCA_ER" kdiff="0" kdiffunit="mu2/s"/>
-
+  
   <!--calreticulin-->
   <Specie name="CRT" id="CRT" kdiff="0" kdiffunit="mu2/s"/>
   <Specie name="CRTP" id="CRTP" kdiff="0" kdiffunit="mu2/s"/>
@@ -73,7 +71,7 @@
   <!-- -->
   <Specie name="GluBuf" id="GluBuf" kdiff="1" kdiffunit="mu2/s" />
 
-  <!-- Add mGluRs from Tuomo's model -->
+  <!-- Add mGluRs from Blackwell's model -->
   <Specie name="Glu"            id="Glu"           kdiff="100"   kdiffunit="mu2/s"/>
   <Specie name="GluOut"         id="GluOut"        kdiff="100"   kdiffunit="mu2/s"/>
   <Specie name="MgluR"          id="MgluR"         kdiff="0"     kdiffunit="mu2/s"/>
@@ -544,47 +542,44 @@ avoids the need to generate Gqbg, and have them react-->
   
 
 <!--Add endoplasmic reticulum and IP3R from the never used growth cone model-->
-<!-- try out sneyd's model-->
+<!-- try out sneyd's model - not appropriate, does not pump, just buffers-->
+     <!--https://pubmed.ncbi.nlm.nih.gov/6244305/ -->
+     
     <!-- Ca leak -    CaOut + Leak <-> CaOutLeak -->
   <!-- Serca -->
   <Reaction name = "SERCA_1a" id="SERCA_1a">
-    <Reactant specieID="Ca" power="2"/>
-    <Reactant specieID="SERCA_CYT"/>
-    <Product specieID="SERCA_CYT_Ca2"/>
+    <Reactant specieID="Ca" />
+    <Reactant specieID="SERCA"/>
+    <Product specieID="SERCA_Ca"/>
     
-    <forwardRate>2.57143e-09</forwardRate>
-    <reverseRate>0.0018</reverseRate>
+    <forwardRate>2e-3</forwardRate>
+    <reverseRate>0.04</reverseRate>
     <Q10>0.2</Q10>
   </Reaction>
+
+
   
-  <!-- Ca pump high affinity -    pmcaCa <-> pmca + CaOut -->
-  <Reaction name = "SERCA_1b" id="SERCA_1b">
-    <Reactant specieID="SERCA_CYT_Ca2"/>
-    <Product specieID="SERCA_ER_Ca2"/>
+    <Reaction name = "SERCA_1b" id="SERCA_1b">
+    <Reactant specieID="Ca" />
+    <Reactant specieID="SERCA_Ca"/>
+    <Product specieID="SERCA_Ca2"/>
     
-    <forwardRate>0.6e-3</forwardRate>
-    <reverseRate>0.97e-3</reverseRate>
+    <forwardRate>2.5e-7</forwardRate>
+    <reverseRate>25e-4</reverseRate>
     <Q10>0.2</Q10>
   </Reaction>
 
 
   <Reaction name = "SERCA_1c" id="SERCA_1c">
-    <Reactant specieID="SERCA_ER"/>
-    <Reactant specieID="CaER" power="2"/>
-    <Product specieID="SERCA_ER_Ca2"/>
-    <forwardRate>5.30191e-9</forwardRate>
-    <reverseRate>1.8e-5</reverseRate>
+    <Reactant specieID="SERCA_Ca2"/>
+    <Product specieID="CaER" power="2" />
+    <Product specieID="SERCA"/>
+    <forwardRate>7.5e-3</forwardRate>
     <Q10>0.2</Q10>
   </Reaction>
 
 
-   <Reaction name = "SERCA_1d" id="SERCA_1d">
-    <Reactant specieID="SERCA_ER"/>
-    <Product specieID="SERCA_CYT"/>
-    <forwardRate>0.4e-3</forwardRate>
-    <reverseRate>1.2e-6</reverseRate>
-    <Q10>0.2</Q10>
-  </Reaction>
+
 
  <!-- ER Ca leak -    CaER+ LeakER <-> CaERLeak-->
   <Reaction name = "Ca_leakER" id="Ca_leakaER">
@@ -592,7 +587,7 @@ avoids the need to generate Gqbg, and have them react-->
     <Reactant specieID="LeakER"/>
     <Product specieID="CaERLeak"/>
     
-    <forwardRate>7.e-7</forwardRate>
+    <forwardRate>7.e-8</forwardRate>
     <reverseRate>1.1e-3</reverseRate>
     <Q10>0.2</Q10>
   </Reaction>

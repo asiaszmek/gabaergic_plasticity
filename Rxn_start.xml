@@ -28,6 +28,10 @@
   <Specie name="CaOutLeak" id="CaOutLeak" kdiff="0"
 	  kdiffunit="mu2/s" />
   <Specie name="Leak" id="Leak" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="CaOutERLeak" id="CaOutERLeak" kdiff="0"
+	  kdiffunit="mu2/s" />
+  <Specie name="LeakToER" id="LeakToER" kdiff="0" kdiffunit="mu2/s" />
+
 
   <Specie name="CaOutERLeak" id="CaOutERLeak" kdiff="0"
 	  kdiffunit="mu2/s" />
@@ -51,12 +55,9 @@
 
   <Specie name="SERCA_CYT" id="SERCA_CYT" kdiff="0" kdiffunit="mu2/s"/>
 
-  <Specie name="SERCA_CYT_Ca2" id="SERCA_CYT_Ca2" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="SERCA_Ca" id="SERCA_Ca" kdiff="0" kdiffunit="mu2/s"/>
 
-  <Specie name="SERCA_ER_Ca2" id="SERCA_ER_Ca2" kdiff="0" kdiffunit="mu2/s"/>
-
-  <Specie name="SERCA_ER" id="SERCA_ER" kdiff="0" kdiffunit="mu2/s"/>
-
+  <Specie name="SERCA_Ca2" id="SERCA_Ca2" kdiff="0" kdiffunit="mu2/s"/>
 
   <!--calreticulin-->
   <Specie name="CRT" id="CRT" kdiff="0" kdiffunit="mu2/s"/>
@@ -334,8 +335,7 @@
 <reverseRate>0</reverseRate>
   </Reaction>
 
-
-   <Reaction name = "Ca_leak_toER" id="Ca_leak_toER">
+  <Reaction name = "Ca_leak_toER" id="Ca_leak_toER">
 <Reactant specieID="CaOut"/>
 <Reactant specieID="LeakToER"/>
 <Product specieID="CaOutERLeak"/>
@@ -353,7 +353,7 @@
 <forwardRate>1.1e-3</forwardRate>
 <reverseRate>0</reverseRate>
   </Reaction>
-
+  
   <!-- vii: Ca Buffer    Ca + Calbindin <-> calbinC  SAME-->
   <Reaction name = "Ca_buffer" id="Ca_Buffer">
 <Reactant specieID="Ca"/>
@@ -1510,6 +1510,8 @@ than previously-->
 <!--AB: this is REALLY fast - as fast as Cam binding to calcium.  Might want to slow down both calcium binding steps?
     Yes, by 5x (no change affinity) Nov 30.  Keep affinity of PLC for Ca = 6 uM (low) -->
 
+
+<!-- CA, PLC, Gq reactions are thermodynamically balanced JJS -->
 <Reaction name = "PLC+Ca--PLCCa" id="PLC+Ca--PLCCa">
     <Reactant specieID="Ca"           />
     <Reactant specieID="PLC"              />
@@ -1532,6 +1534,8 @@ than previously-->
     <reverseRate> 0.7e-03        </reverseRate>
     <Q10>         0.2           </Q10>
 </Reaction>
+
+
 
 <!-- PLCGqaGTP + Ca    <->   PLCCaGqaGTP  500 nM-->
 <Reaction name = "PLCGqaGTP+Ca--PLCCaGqaGTP" id="PLCGqaGTP+Ca--PLCCaGqaGTP">
@@ -1789,45 +1793,39 @@ avoids the need to generate Gqbg, and have them react-->
   
 
 <!--Add endoplasmic reticulum and IP3R from the never used growth cone model-->
-  <!-- Serca   DOI: 10.1161/01.RES.0000069032.81501.98  -->
+<!-- try out sneyd's model - not appropriate, does not pump, just buffers-->
+<!--https://pubmed.ncbi.nlm.nih.gov/6244305/ -->
+
+<!-- Ca leak -    CaOut + Leak <-> CaOutLeak -->
+<!-- Serca -->
   <Reaction name = "SERCA_1a" id="SERCA_1a">
-    <Reactant specieID="Ca" power="2"/>
-    <Reactant specieID="SERCA_CYT"/>
-    <Product specieID="SERCA_CYT_Ca2"/>
+    <Reactant specieID="Ca" />
+    <Reactant specieID="SERCA"/>
+    <Product specieID="SERCA_Ca"/>
     
-    <forwardRate>2.57143e-09</forwardRate>
-    <reverseRate>0.0018</reverseRate>
-    <Q10>0.2</Q10>
-  </Reaction>
-  
-  <!-- Ca pump high affinity -    pmcaCa <-> pmca + CaOut -->
-  <Reaction name = "SERCA_1b" id="SERCA_1b">
-    <Reactant specieID="SERCA_CYT_Ca2"/>
-    <Product specieID="SERCA_ER_Ca2"/>
-    
-    <forwardRate>0.6e-3</forwardRate>
-    <reverseRate>0.97e-3</reverseRate>
+    <forwardRate>2e-3</forwardRate>
+    <reverseRate>0.04</reverseRate>
     <Q10>0.2</Q10>
   </Reaction>
 
+  <Reaction name = "SERCA_1b" id="SERCA_1b">
+    <Reactant specieID="Ca" />
+    <Reactant specieID="SERCA_Ca"/>
+    <Product specieID="SERCA_Ca2"/>
+    
+    <forwardRate>2.5e-7</forwardRate>
+    <reverseRate>25e-4</reverseRate>
+    <Q10>0.2</Q10>
+  </Reaction>
 
   <Reaction name = "SERCA_1c" id="SERCA_1c">
-    <Reactant specieID="SERCA_ER"/>
-    <Reactant specieID="CaER" power="2"/>
-    <Product specieID="SERCA_ER_Ca2"/>
-    <forwardRate>5.30191e-9</forwardRate>
-    <reverseRate>1.8e-5</reverseRate>
+    <Reactant specieID="SERCA_Ca2"/>
+    <Product specieID="CaER" power="2"/>
+    <Product specieID="SERCA"/>
+    <forwardRate>7.5e-3</forwardRate>
     <Q10>0.2</Q10>
   </Reaction>
 
-
-   <Reaction name = "SERCA_1d" id="SERCA_1d">
-    <Reactant specieID="SERCA_ER"/>
-    <Product specieID="SERCA_CYT"/>
-    <forwardRate>0.4e-3</forwardRate>
-    <reverseRate>1.2e-6</reverseRate>
-    <Q10>0.2</Q10>
-  </Reaction>
 
  <!-- ER Ca leak -    CaER+ LeakER <-> CaERLeak-->
   <Reaction name = "Ca_leakER" id="Ca_leakaER">
@@ -1835,7 +1833,7 @@ avoids the need to generate Gqbg, and have them react-->
     <Reactant specieID="LeakER"/>
     <Product specieID="CaERLeak"/>
     
-    <forwardRate>7.e-7</forwardRate>
+    <forwardRate>7.e-8</forwardRate>
     <reverseRate>1.1e-3</reverseRate>
     <Q10>0.2</Q10>
   </Reaction>
