@@ -7,20 +7,20 @@
 <!-- Train I -->
 
 <InjectionStim specieID="Glu" injectionSite="dend:submembrane">
-        <onset>10000</onset>
+        <onset>100000</onset>
 	<duration>60000</duration>
 	<rate>12</rate>
         
-        <end>70000</end> 
+        <end>160000</end> 
        
   </InjectionStim>
 
  <InjectionStim specieID="GluBuf" injectionSite="dend:submembrane">
-        <onset>80000</onset>
+        <onset>160000</onset>
 	<duration>6000</duration>
 	<rate>120</rate>
         
-        <end>86000</end> 
+        <end>166000</end> 
        
   </InjectionStim>
 
