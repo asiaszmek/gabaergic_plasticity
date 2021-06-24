@@ -1,0 +1,17 @@
+<StimulationSet>
+  <InjectionStim injectionSite="sa1[0].pointA" specieID="CaCbuf">
+    <onset>10000</onset>
+    <duration>3</duration>
+    <rate>300.77</rate>
+    <period>30</period>
+    <end>60000</end>
+  </InjectionStim>
+
+  <InjectionStim injectionSite="dend:submembrane" specieID="CaCbuf">
+    <onset>10000</onset>
+    <period>10</period>
+    <rate>400</rate>
+    <duration>3</duration>
+    <end>60000</end>
+  </InjectionStim>
+</StimulationSet>
