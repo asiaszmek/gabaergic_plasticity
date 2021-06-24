@@ -309,7 +309,7 @@
     <end>11000</end>
     <period>10</period>
     <onset>10000</onset>
-    <rate>20</rate>
+    <rate>200</rate>
     <duration>3</duration>
   </InjectionStim>
 
@@ -623,7 +623,7 @@
     <end>21000</end>
     <period>10</period>
     <onset>20000</onset>
-    <rate>20</rate>
+    <rate>200</rate>
     <duration>3</duration>
   </InjectionStim>
   <InjectionStim injectionSite="sa1[0].pointA" specieID="CaB">
