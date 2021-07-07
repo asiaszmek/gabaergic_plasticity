@@ -6,8 +6,11 @@ parser = argparse.ArgumentParser()
 parser.add_argument('input', nargs='+',
                         help='input files')
 parser.add_argument("--stim_start", help="Stimulus onset (ms)",
-                    type=float)
-specie = "Fluo3Ca"
+                    type=float, default=100000)
+parser.add_argument("--specie", help="Specie to visualize",
+                    type=str, default="Fluo3Ca")
+parser.add_argument("--percentage", help="visualize percentage increase",
+                    type=int, default=True)
 
 if __name__ == "__main__":
 
@@ -18,7 +21,10 @@ if __name__ == "__main__":
         files.append(name)
     if not files:
         sys.exit('Do specify at least one totals filename')
+
     t_stim = args.stim_start
+    specie = args.specie
+    fluo = args.percentage
     for fname in files:
         f = open(fname, "r")
         header = f.readline().split()
@@ -32,13 +38,19 @@ if __name__ == "__main__":
         out[:len(d), i] = np.array(d)
     mean_signal = out.mean(axis=1)
     dt = time[1] - time[0]
-
-    mean_fluo = mean_signal[0:int(t_stim//dt)].mean()
-
+    print(fluo)
+    mean_fluo = mean_signal[int(50/dt):int(t_stim//dt)].mean()
+    print(mean_fluo)
+    time = np.arange(time[0], len(mean_signal)*dt ,dt)
     fig, ax = plt.subplots(1, 1)
-    ax.plot(time/1000, (mean_signal-mean_fluo)/mean_fluo)
-    ax.set_xlabel("time (sec)")
-    ax.set_ylabel("% Fluorescence")
+    if fluo:
+        ax.plot(time/1000, (mean_signal-mean_fluo)/mean_fluo)
+        ax.set_xlabel("time (sec)")
+        ax.set_ylabel("%s Fluorescence" % specie)
+    else:
+        ax.plot(time/1000, mean_signal)
+        ax.set_xlabel("time (sec)")
+        ax.set_ylabel("%s (nM)" % specie)
     plt.show()
     
         
