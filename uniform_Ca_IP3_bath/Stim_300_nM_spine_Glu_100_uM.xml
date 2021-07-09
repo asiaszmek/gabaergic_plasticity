@@ -1,9 +1,22 @@
 <StimulationSet>
   <InjectionStim injectionSite="sa1[0].pointA" specieID="CaCbuf">
     <onset>100000</onset>
+    <rate>1.3</rate>
+    <duration>10000</duration>
+    <end>110000</end>
+  </InjectionStim>
+  <InjectionStim injectionSite="sa1[0].pointA" specieID="CaCbuf">
+    <onset>110000</onset>
+    <rate>3.3</rate>
+    <duration>10000</duration>
+    <end>120000</end>
+  </InjectionStim>
+
+  <InjectionStim injectionSite="sa1[0].pointA" specieID="CaCbuf">
+    <onset>120000</onset>
     <rate>5</rate>
-    <end>60000</end>
-    <duration>160000</duration>
+    <duration>40000</duration>
+    <end>160000</end>
   </InjectionStim>
 
 

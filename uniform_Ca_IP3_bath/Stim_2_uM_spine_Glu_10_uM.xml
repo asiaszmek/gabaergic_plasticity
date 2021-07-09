@@ -2,22 +2,21 @@
   <InjectionStim injectionSite="sa1[0].pointA" specieID="CaCbuf">
     <onset>20000</onset>
     <rate>10</rate>
-    <end>60000</end>
-    <duration>80000</duration>
+    <duration>60000</duration>
+    <end>80000</end>
   </InjectionStim>
 
   <InjectionStim injectionSite="dend:submembrane" specieID="CaCbuf">
     <onset>20000</onset>
     <rate>0.75</rate>
-    <end>60000</end>
-    <duration>80000</duration>
+    <duration>60000</duration>
+    <end>80000</end>
   </InjectionStim>
   
   <InjectionStim specieID="Glu" injectionSite="dend:submembrane">
         <onset>20000</onset>
 	<duration>60000</duration>
 	<rate>2.4</rate>
-        
         <end>80000</end> 
        
 </InjectionStim>
@@ -26,9 +25,7 @@
         <onset>80000</onset>
 	<duration>6000</duration>
 	<rate>24</rate>
-        
         <end>86000</end> 
-       
   </InjectionStim>
 
 </StimulationSet>
