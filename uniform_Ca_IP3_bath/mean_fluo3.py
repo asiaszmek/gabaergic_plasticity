@@ -39,7 +39,7 @@ if __name__ == "__main__":
     mean_signal = out.mean(axis=1)
     dt = time[1] - time[0]
     print(fluo)
-    mean_fluo = mean_signal[int(50/dt):int(t_stim//dt)].mean()
+    mean_fluo = mean_signal[int((t_stim-60000)//dt):int(t_stim//dt)].mean()
     print(mean_fluo)
     time = np.arange(time[0], len(mean_signal)*dt ,dt)
     fig, ax = plt.subplots(1, 1)
