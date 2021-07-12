@@ -36,9 +36,9 @@
   <Specie name="fixedbufferCa" id="fixedbufferCa" kdiff="0" kdiffunit="mu2/s"/>
   <Specie name="Calbin" id="Calbin" kdiff="9.3" kdiffunit="mu2/s" />
   <Specie name="CalbinC" id="CalbinC" kdiff="9.3" kdiffunit="mu2/s" />
-
-  <Specie name="Fluo3" id="Fluo3" kdiff="60" kdiffunit="mu2/s" />
-  <Specie name="Fluo3Ca" id="Fluo3Ca" kdiff="60" kdiffunit="mu2/s" />
+  <!-- In protein FLuo3 has higher Kd, roughly 1 uM-->
+  <Specie name="Fluo3" id="Fluo3" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="Fluo3Ca" id="Fluo3Ca" kdiff="0" kdiffunit="mu2/s" />
 
   <Specie name="pmca" id="pmca" kdiff="0" kdiffunit="mu2/s" />
   <Specie name="ncx" id="ncx" kdiff="0" kdiffunit="mu2/s" />
@@ -368,8 +368,8 @@
     <Reactant specieID="Fluo3"/>
     <Product specieID="Fluo3Ca"/>
     
-    <forwardRate>0.236e-3</forwardRate>
-    <reverseRate>0.175</reverseRate>
+    <forwardRate>0.236e-5</forwardRate>
+    <reverseRate>0.236e-2</reverseRate>
   </Reaction>
 
 
