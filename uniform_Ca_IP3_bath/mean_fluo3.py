@@ -44,11 +44,11 @@ if __name__ == "__main__":
     time = np.arange(time[0], len(mean_signal)*dt ,dt)
     fig, ax = plt.subplots(1, 1)
     if fluo:
-        ax.plot(time/1000, (mean_signal-mean_fluo)/mean_fluo)
-        ax.set_xlabel("time (sec)")
+        ax.plot(time/60000-40/60, (mean_signal-mean_fluo)/mean_fluo)
+        ax.set_xlabel("time (min)")
         ax.set_ylabel("%s Fluorescence" % specie)
     else:
-        ax.plot(time/1000, mean_signal)
+        ax.plot(time/60000-40/60, mean_signal)
         ax.set_xlabel("time (sec)")
         ax.set_ylabel("%s (nM)" % specie)
     plt.show()
