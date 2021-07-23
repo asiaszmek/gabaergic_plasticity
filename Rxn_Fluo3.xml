@@ -369,7 +369,7 @@
     <Product specieID="Fluo3Ca"/>
     
     <forwardRate>0.236e-6</forwardRate>
-    <reverseRate>0.236e-7</reverseRate>
+    <reverseRate>0.236e-3</reverseRate>
   </Reaction>
 
 
