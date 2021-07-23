@@ -1813,8 +1813,8 @@ avoids the need to generate Gqbg, and have them react-->
     <Reactant specieID="SERCA"/>
     <Product specieID="SERCA_Ca"/>
     
-    <forwardRate>2e-3</forwardRate>
-    <reverseRate>0.04</reverseRate>
+    <forwardRate>2e-5</forwardRate>
+    <reverseRate>0.0004</reverseRate>
     <Q10>0.2</Q10>
   </Reaction>
 
@@ -1823,8 +1823,8 @@ avoids the need to generate Gqbg, and have them react-->
     <Reactant specieID="SERCA_Ca"/>
     <Product specieID="SERCA_Ca2"/>
     
-    <forwardRate>2.5e-7</forwardRate>
-    <reverseRate>25e-4</reverseRate>
+    <forwardRate>2.5e-9</forwardRate>
+    <reverseRate>25e-6</reverseRate>
     <Q10>0.2</Q10>
   </Reaction>
 
