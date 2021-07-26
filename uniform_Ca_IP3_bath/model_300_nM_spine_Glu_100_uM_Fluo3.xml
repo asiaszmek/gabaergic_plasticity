@@ -5,7 +5,7 @@
 
     <xi:include href="../Rxn_Fluo3.xml" />
     <xi:include href="../morph_diam_0.6_um_2_um_dendrite.xml" />
-    <xi:include href="../IC_Fluo3.xml" />
+    <xi:include href="../IC_diam_0.6_um_2_um_dendrite_Fluo3.xml" />
     <xi:include href="Stim_300_nM_spine_Glu_100_uM.xml"/>
 
     <!--2D means the morphology is interpreted like a flatworm, 3D for
