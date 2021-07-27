@@ -7,6 +7,8 @@ from lxml import etree
 import sys
 from scipy.constants import Avogadro
 
+
+NA = Avogadro*1e-23
 def nano_molarity(N, V):
     return 10 * N / V / NA
 
@@ -85,12 +87,25 @@ def get_volumes_positions(fle):
                          +dendrite[i*3+2][12])
     return positions, volumes
 
+def get_population_along(specie_idx, new_population, pos, vols, dy=0.2):
+    out = np.zeros((new_population.shape[0], len(pos)))
+    for i in range(len(pos)):
+        p = i*dy
+        temp = np.zeros((new_population.shape[0]))
+        for idx in pos[p]:
+            temp +=  new_population[:, idx, specie_idx]
+        out[:, i] =  nano_molarity(temp, vols[p])
+    
+    return out
+                   
 
 if __name__ == '__main__':
     if len(sys.argv) == 1:
         sys.exit('No filename given')
-    fig, ax = plt.subplots(1, 1)    
-    for fname in sys.argv[1:]:
+    fig, ax = plt.subplots(1, 1)
+    fig2, ax2 = plt.subplots(1, len(sys.argv)-1)
+    pops = []
+    for ax_idx, fname in enumerate(sys.argv[1:]):
         my_file = h5py.File(fname, 'r')
         new_populations = avg_populations(my_file)
         positions, volumes = get_volumes_positions(my_file)
@@ -100,11 +115,12 @@ if __name__ == '__main__':
         PP2B_indices = []
         CKp_indices = []
         for i, specie in enumerate(species):
-            if  specie=="PP1":
+            if  "PP2BCaMC" in specie:
                PP2B_indices.append(i)
-            elif "CKp" in specie:
+            elif "CKC" in specie or "CKp":
                 CKp_indices.append(i)
         means_PP2B = np.zeros((new_populations.shape[0]))
+
         for idx in PP2B_indices:
             means_PP2B += new_populations[:,:ind_len, idx].mean(axis=1)
         means_CKp = np.zeros((new_populations.shape[0]))
@@ -112,6 +128,20 @@ if __name__ == '__main__':
             means_CKp += new_populations[:,:ind_len, idx].mean(axis=1)
 
         new_mean = means_CKp/means_PP2B
-        ax.plot(means_CKp, label=fname)
+        ax.plot(new_mean, label=fname)
         ax.legend()
+        ca_idx = species.index("Ca")
+        ca_dend = get_population_along(ca_idx, new_populations,
+                                              positions,
+                                              volumes, dy=0.2)
+        pops.append(ca_dend)
+    min_val = min([ca.min() for ca in pops])
+    max_val = max([ca.max() for ca in pops])
+    for ix, ax in enumerate(ax2):
+        show = ax.imshow(pops[ix], origin="lower",
+                         interpolation="none", aspect="auto", vmin=min_val,
+                         vmax=max_val, cmap="Reds")
+        
+    fig2.colorbar(show)
+        
     plt.show()
