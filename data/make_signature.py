@@ -7,7 +7,7 @@ from lxml import etree
 import sys
 from scipy.constants import Avogadro
 
-
+titles = ["Low Ca (spine 2 uM)", "High Ca (spine 10 uM)"]
 NA = Avogadro*1e-23
 def nano_molarity(N, V):
     return 10 * N / V / NA
@@ -54,19 +54,17 @@ def make_spatial_avg(pop, ind):
 
 def avg_populations(fle):
     populations= []
-    max_len = 0
+
     for key in fle:
         if key == "model":
             continue
         populations.append(get_populations(fle, trial=key))
-        if max_len < populations[-1].shape[0]:
-            max_len = populations[-1].shape[0]
-            
-    new_populations = np.zeros((max_len, populations[0].shape[1],
+    min_len = min([pop.shape[0] for pop in populations])
+    new_populations = np.zeros((min_len, populations[0].shape[1],
                                 populations[0].shape[2]))
     for i, population in enumerate(populations):
         tot_len = population.shape[0]
-        new_populations[:tot_len] += population
+        new_populations += population[:min_len]
     new_populations = new_populations/len(populations)
     return new_populations
 
@@ -97,13 +95,37 @@ def get_population_along(specie_idx, new_population, pos, vols, dy=0.2):
         out[:, i] =  nano_molarity(temp, vols[p])
     
     return out
-                   
+
+def make_figs(populations, fname, fig1, ax1):
+    min_len = min([pop.shape[0] for pop in populations]) 
+    min_val = min([ca.min() for ca in populations])
+    max_val = max([ca.max() for ca in populations])
+    for ix, ax in enumerate(ax1):
+        dt = 0.2
+        dy = 0.2
+        t_stop = min_len*dt
+        max_len = populations[ix].shape[1]*dy
+        extent = [0, max_len, 0, t_stop]
+        print(ax)
+        show = ax.imshow(populations[ix][:min_len],
+                         origin="lower", extent=extent,
+                         interpolation="none", aspect="auto", vmin=min_val,
+                         vmax=max_val, cmap="Reds")
+        ax.set_xlabel("dendrite (um)")
+        if not ix:
+            ax.set_ylabel("time (sec)")
+        ax.set_title(titles[ix])
+    fig1.colorbar(show)
+    fig1.savefig(fname)
+
 
 if __name__ == '__main__':
     if len(sys.argv) == 1:
         sys.exit('No filename given')
     fig, ax = plt.subplots(1, 1)
     fig2, ax2 = plt.subplots(1, len(sys.argv)-1)
+    if len(sys.argv) - 1 == 1:
+        ax2 = [ax2]
     pops = []
     for ax_idx, fname in enumerate(sys.argv[1:]):
         my_file = h5py.File(fname, 'r')
@@ -135,13 +157,6 @@ if __name__ == '__main__':
                                               positions,
                                               volumes, dy=0.2)
         pops.append(ca_dend)
-    min_val = min([ca.min() for ca in pops])
-    max_val = max([ca.max() for ca in pops])
-    for ix, ax in enumerate(ax2):
-        show = ax.imshow(pops[ix], origin="lower",
-                         interpolation="none", aspect="auto", vmin=min_val,
-                         vmax=max_val, cmap="Reds")
-        
-    fig2.colorbar(show)
-        
+
+    make_figs(pops, "Calcium_in_the_10_um_dendrite.png", fig2, ax2)
     plt.show()
