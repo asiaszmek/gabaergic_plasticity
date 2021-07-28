@@ -1,0 +1,72 @@
+<StimulationSet>
+
+
+  <InjectionStim injectionSite="sa1[0].pointA" specieID="CaCbuf">
+    <onset>120000</onset>
+    <rate>4.3</rate>
+    <duration>40000</duration>
+    <end>160000</end>
+  </InjectionStim>
+
+    <InjectionStim injectionSite="sa1[0].pointA" specieID="CaCbuf">
+    <onset>160000</onset>
+    <rate>3.8</rate>
+    <duration>60000</duration>
+    <end>220000</end>
+  </InjectionStim>
+  <InjectionStim injectionSite="sa1[0].pointA" specieID="CaCbuf">
+    <onset>220000</onset>
+    <rate>3.3</rate>
+    <duration>60000</duration>
+    <end>280000</end>
+  </InjectionStim>
+  <InjectionStim injectionSite="sa1[0].pointA" specieID="CaCbuf">
+    <onset>280000</onset>
+    <rate>2.8</rate>
+    <duration>60000</duration>
+    <end>340000</end>
+  </InjectionStim>
+  <InjectionStim injectionSite="sa1[0].pointA" specieID="CaCbuf">
+    <onset>340000</onset>
+    <rate>2.3</rate>
+    <duration>60000</duration>
+    <end>400000</end>
+  </InjectionStim>
+  <InjectionStim injectionSite="sa1[0].pointA" specieID="CaCbuf">
+    <onset>400000</onset>
+    <rate>1.8</rate>
+    <duration>60000</duration>
+    <end>460000</end>
+  </InjectionStim>
+  <InjectionStim injectionSite="sa1[0].pointA" specieID="CaCbuf">
+    <onset>460000</onset>
+    <rate>1.3</rate>
+    <duration>60000</duration>
+    <end>530000</end>
+  </InjectionStim>
+  <InjectionStim injectionSite="sa1[0].pointA" specieID="CaCbuf">
+    <onset>520000</onset>
+    <rate>0.8</rate>
+    <duration>60000</duration>
+    <end>580000</end>
+  </InjectionStim>
+
+
+<InjectionStim specieID="Glu" injectionSite="dend:submembrane">
+        <onset>100000</onset>
+	<duration>60000</duration>
+	<rate>24</rate>
+        
+        <end>160000</end> 
+       
+</InjectionStim>
+
+<InjectionStim specieID="GluBuf" injectionSite="dend:submembrane">
+        <onset>160000</onset>
+	<duration>6000</duration>
+	<rate>240</rate>
+        
+        <end>166000</end> 
+       
+  </InjectionStim>
+</StimulationSet>
