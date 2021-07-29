@@ -4,7 +4,7 @@
 -	 reaction data brought in from other files --> 
 
    
-    <xi:include href="morph_10_um_dendrite.xml" />
+    <xi:include href="morph_diam_0.6_um_10_um_dendrite.xml" />
     <xi:include href="IC_basal_long.xml" />
     <xi:include href="Rxn_start.xml" />
     <!--2D means the morphology is interpreted like a flatworm, 3D for
