@@ -28,9 +28,6 @@
   <Specie name="CaOutLeak" id="CaOutLeak" kdiff="0"
 	  kdiffunit="mu2/s" />
   <Specie name="Leak" id="Leak" kdiff="0" kdiffunit="mu2/s" />
-  <Specie name="CaOutERLeak" id="CaOutERLeak" kdiff="0"
-	  kdiffunit="mu2/s" />
-  <Specie name="LeakToER" id="LeakToER" kdiff="0" kdiffunit="mu2/s" />
 
   <Specie name="fixedbuffer" id="fixedbuffer" kdiff="0" kdiffunit="mu2/s"/>
   <Specie name="fixedbufferCa" id="fixedbufferCa" kdiff="0" kdiffunit="mu2/s"/>
@@ -1188,7 +1185,7 @@
       <Reactant specieID="GluR1" />
       <Reactant specieID="CKCaMCa4" />
       <Product specieID="GluR1_CKCaM" />
-      <forwardRate>10e-8</forwardRate>
+      <forwardRate>20e-8</forwardRate>
       <reverseRate>.2e-3</reverseRate>
       <Q10>0.2</Q10>
     </Reaction>
@@ -1205,7 +1202,7 @@
       <Reactant specieID="GluR1" />
       <Reactant specieID="CKpCaMCa4" />
       <Product specieID="GluR1_CKpCaM" />
-      <forwardRate>10e-8</forwardRate>
+      <forwardRate>20e-8</forwardRate>
       <reverseRate>0.5e-3</reverseRate>
       <Q10>0.2</Q10>
     </Reaction>
@@ -1222,7 +1219,7 @@
       <Reactant specieID="GluR1" />
       <Reactant specieID="CKp" />
       <Product specieID="GluR1_CKp" />
-      <forwardRate>10e-8</forwardRate>
+      <forwardRate>20e-8</forwardRate>
       <reverseRate>0.5e-4</reverseRate>
       <Q10>0.2</Q10>
     </Reaction>
@@ -1257,7 +1254,7 @@
       <Reactant specieID="GluR1_S845" />
       <Reactant specieID="CKCaMCa4" />
       <Product specieID="GluR1_S845_CKCaM" />
-      <forwardRate>10e-8</forwardRate>
+      <forwardRate>20e-8</forwardRate>
       <reverseRate>0.2e-3</reverseRate>
       <Q10>0.2</Q10>
     </Reaction>
@@ -1275,7 +1272,7 @@
       <Reactant specieID="GluR1_S845" />
       <Reactant specieID="CKpCaMCa4" />
       <Product specieID="GluR1_S845_CKpCaM" />
-      <forwardRate>10e-8</forwardRate>
+      <forwardRate>20e-8</forwardRate>
       <reverseRate>0.5e-3</reverseRate>
       <Q10>0.2</Q10>
     </Reaction>
@@ -1294,7 +1291,7 @@
       <Reactant specieID="GluR1_S845" />
       <Reactant specieID="CKp" />
       <Product specieID="GluR1_S845_CKp" />
-      <forwardRate>10e-8</forwardRate>
+      <forwardRate>20e-8</forwardRate>
       <reverseRate>0.5e-3</reverseRate>
       <Q10>0.2</Q10>
     </Reaction>
