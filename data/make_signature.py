@@ -4,11 +4,11 @@ import matplotlib.pyplot as plt
 import h5py
 import numpy as np
 from lxml import etree
-import sys
 from scipy.constants import Avogadro
 
 titles = ["Low Ca (spine 2 uM)", "High Ca (spine 10 uM)"]
 NA = Avogadro*1e-23
+fnames = ["model_2xHFS_10s_10_um_2_uM.h5", "model_2xHFS_10s_10_um.h5"]
 def nano_molarity(N, V):
     return 10 * N / V / NA
 
@@ -120,14 +120,10 @@ def make_figs(populations, fname, fig1, ax1):
 
 
 if __name__ == '__main__':
-    if len(sys.argv) == 1:
-        sys.exit('No filename given')
     fig, ax = plt.subplots(1, 1)
-    fig2, ax2 = plt.subplots(1, len(sys.argv)-1)
-    if len(sys.argv) - 1 == 1:
-        ax2 = [ax2]
+    fig2, ax2 = plt.subplots(1, len(fnames))
     pops = []
-    for ax_idx, fname in enumerate(sys.argv[1:]):
+    for ax_idx, fname in enumerate(fnames):
         my_file = h5py.File(fname, 'r')
         new_populations = avg_populations(my_file)
         positions, volumes = get_volumes_positions(my_file)
