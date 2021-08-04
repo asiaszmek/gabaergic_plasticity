@@ -88,7 +88,7 @@ def make_figs(dend, spine, idexes, ylabel, fname):
             new_dend[key].append(out)
         out_avg = np.array(avg).mean(axis=0)
         #ax[0][i].plot(time, out_avg, label="mean CaMKII")
-        ax[0][i].set_title("%s dendrite" % key, fontsize=14)
+        ax[0][i].set_title("%s dendrite" % key, fontsize=24)
         if i:
             ax[0][i].set_yticks([])
     for x in ax[0]:
@@ -113,25 +113,25 @@ def make_figs(dend, spine, idexes, ylabel, fname):
             new_spine[key].append(out)
         out_avg = np.array(avg).mean(axis=0)
         #ax[1][i].plot(time, out_avg, label="mean CaMKII")
-        ax[1][i].set_title("%s spine" % key, fontsize=14)
+        ax[1][i].set_title("%s spine" % key, fontsize=24)
         if i:
             ax[1][i].set_yticks([])
 
     for x in ax[1]:
         x.set_ylim([min_val * 0.95, max_val*1.05])
-    ax[0][0].set_ylabel(ylabel, fontsize=14)
-    ax[1][0].set_ylabel(ylabel, fontsize=14)
-    ax[1][0].set_xlabel("time (min)", fontsize=14)
+    ax[0][0].set_ylabel(ylabel, fontsize=24)
+    ax[1][0].set_ylabel(ylabel, fontsize=24)
+    ax[1][0].set_xlabel("time (min)", fontsize=24)
     for x in ax[0]:
         for tick in x.xaxis.get_major_ticks():
-             tick.label.set_fontsize(14) 
+             tick.label.set_fontsize(24) 
         for tick in x.yaxis.get_major_ticks():
-             tick.label.set_fontsize(14)
+             tick.label.set_fontsize(24)
     for x in ax[1]:
         for tick in x.xaxis.get_major_ticks():
-             tick.label.set_fontsize(14) 
+             tick.label.set_fontsize(24) 
         for tick in x.yaxis.get_major_ticks():
-             tick.label.set_fontsize(14) 
+             tick.label.set_fontsize(24) 
  
     fig.savefig(fname, bbox_inches="tight")
     plt.close(fig)
@@ -228,7 +228,7 @@ if __name__ == "__main__":
                                       "Bath_paradigms_epac.png")
     
     
-    fig, ax = plt.subplots(1, 2)
+    fig, ax = plt.subplots(1, 2, figsize=(16, 8))
     min_val = 100000
     max_val = 0
     for key in keys:
@@ -246,8 +246,8 @@ if __name__ == "__main__":
         avg_pp1_spine = np.array(pp1_spine[key]).mean(axis=0)
         avg_epac_dend = np.array(epac_dend[key]).mean(axis=0)
         avg_epac_spine = np.array(epac_spine[key]).mean(axis=0)
-        dend = avg_acamkii_dend/(avg_pp2ball_dend+avg_epac_dend)
-        spine = avg_acamkii_spine/(avg_pp2ball_spine+avg_epac_spine)
+        dend = (avg_pp2b_dend)/avg_pcamkii_dend
+        spine = (avg_pp2b_spine )/avg_pcamkii_spine
         ax[1].plot((time-100000)/60000, dend,
                    label=key, color=colors[key])
         ax[0].plot((time-100000)/60000, spine,
@@ -261,18 +261,18 @@ if __name__ == "__main__":
         if spine.min() < min_val:
             min_val = spine.min()
     ax[0].legend()
-    ax[0].set_xlabel("time (min)", fontsize=14)
-    ax[0].set_ylabel("active CaMKII/(active PP2B + Epac)", fontsize=14)
-    ax[1].set_title("dendrite", fontsize=14)
+    ax[0].set_xlabel("time (min)", fontsize=20)
+    ax[0].set_ylabel("activated PP2B/pCaMKII", fontsize=18)
+    ax[1].set_title("dendrite", fontsize=20)
     ax[1].set_yticklabels([])
-    ax[0].set_title("spine", fontsize=14)
+    ax[0].set_title("spine", fontsize=20)
     for x in ax:
         for tick in x.xaxis.get_major_ticks():
              tick.label.set_fontsize(14) 
         for tick in x.yaxis.get_major_ticks():
              tick.label.set_fontsize(14) 
         x.set_ylim([min_val *0.95, 1.05*max_val])
-    fig.savefig("CaMKII_to_PP2B_and_Epac.png", bbox_inches="tight")
+    fig.savefig("PP2B_to_pCaMKII.png", bbox_inches="tight")
     plt.show()
 
     

@@ -94,7 +94,7 @@ if __name__ == "__main__":
         ax[1].plot(time, mean_ca, color=colors[key], marker="d", label=key,
                  linestyle = 'None', markerfacecolor='None',
                  markeredgecolor=colors[key])
-    ax[0].set_ylabel("Fluorescence", fontsize=14)
+    ax[0].set_ylabel("% Fluo3 bound Ca", fontsize=14)
     ax[1].set_ylabel("Ca concentration (nM)", fontsize=14)
     ax[0].set_xlabel("time (min)", fontsize=14)
     ax[1].set_xlabel("time (min)", fontsize=14)
@@ -105,7 +105,8 @@ if __name__ == "__main__":
         for tick in x.yaxis.get_major_ticks():
              tick.label.set_fontsize(14) 
 
-    fig.savefig("Ca_and_Fluo_for_Glu_NMDA_bath.png", dpi=100)
+    fig.savefig("Ca_and_Fluo_for_Glu_NMDA_bath.png", dpi=100,
+                bbox_inches="tight")
     plt.show()
         
 
