@@ -12,7 +12,7 @@
     <NanoMolarity specieID="fixedbufferCa" value="3000"/>
 
     <NanoMolarity specieID="CaM" value="8000"/>
-    <NanoMolarity specieID="CaMCa2" value="300"/>
+    <NanoMolarity specieID="CaMCa2C" value="300"/>
     <NanoMolarity specieID="CaMCa4" value="0"/>
     <NanoMolarity specieID="NgCaM" value="17500"/>
     <NanoMolarity specieID="Ng" value="2500"/>
