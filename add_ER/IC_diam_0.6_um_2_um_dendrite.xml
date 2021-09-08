@@ -16,7 +16,7 @@
     <NanoMolarity specieID="CaMCa4" value="0"/>
     <NanoMolarity specieID="NgCaM" value="17500"/>
     <NanoMolarity specieID="Ng" value="2500"/>
-    <NanoMolarity specieID="IP3" value="20"/>
+    <NanoMolarity specieID="Ip3" value="20"/>
 
     </ConcentrationSet>
 
@@ -31,7 +31,7 @@
     <PicoSD specieID="ncx" value="13500"/>
     <PicoSD specieID="ncxCa" value="1500"/>
 
-    <PicoSD  specieID="PLC"  value="220"    />
+    <PicoSD  specieID="Plc"  value="220"    />
     <PicoSD  specieID="Pip2" value="10000"  />
     <PicoSD  specieID="PIkinase"   value="300"  />
     <PicoSD  specieID="MgluR" value="0.28e03"  />
