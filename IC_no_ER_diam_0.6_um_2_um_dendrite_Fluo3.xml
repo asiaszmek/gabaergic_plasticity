@@ -28,11 +28,7 @@
     <NanoMolarity specieID="CaMCa4" value="2"/>
     <NanoMolarity specieID="NgCaM" value="17750"/>
     <NanoMolarity specieID="Ng" value="2250"/>
-    <NanoMolarity specieID="PP2BCaM" value="1900"/>
-    <NanoMolarity specieID="PP2BCaMCa2C" value="300"/>
-    <NanoMolarity specieID="PP2BCaMCa2N" value="50"/>
-    <NanoMolarity specieID="PP2BCaMCa4" value="0"/>
-    <NanoMolarity specieID="PP2B" value="0"/>
+    <NanoMolarity specieID="PP2BCaM" value="2200"/>
     <NanoMolarity specieID="CK" value="22250"/>
     <NanoMolarity specieID="CKCaMCa4" value="120"/>
     <NanoMolarity specieID="CKpCaMCa4" value="400"/>
@@ -151,8 +147,8 @@
     <PicoSD specieID="PKAr" value="0"/>
     <PicoSD specieID="PKAcAMP2" value="20"/>
     <PicoSD specieID="PKAcAMP4" value="5"/>
-    <PicoSD specieID="PDE4" value="100"/>
-    <PicoSD specieID="pPDE4" value="60"/>
+    <PicoSD specieID="PDE4" value="800"/>
+    <PicoSD specieID="pPDE4" value="600"/>
 
   </SurfaceDensitySet>
   

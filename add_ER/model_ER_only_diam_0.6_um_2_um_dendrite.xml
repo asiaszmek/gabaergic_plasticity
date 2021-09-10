@@ -24,15 +24,15 @@ results (also, 3D may not work yet...)  -->
     <spineSeed>123</spineSeed>
 
     <discretization>
-      <defaultMaxElementSide>0.2</defaultMaxElementSide>
-      <MaxElementSide region="dend">0.12</MaxElementSide>
+      <defaultMaxElementSide>1.0</defaultMaxElementSide>
+      <surfaceLayers>0.2</surfaceLayers>
+ 
+      <!-- default largest size for elements in bulk volumes (dendrites), microns -->	
 
-	<!-- default largest size for elements in bulk volumes (dendrites), microns -->	
+      <spineDeltaX>0.1</spineDeltaX>
 
-	<spineDeltaX>0.1</spineDeltaX>
-
-	<!-- override the default for a particular region. -->
-	<!-- Matches against id or regionClass in the morphology file -->
+      <!-- override the default for a particular region. -->
+      <!-- Matches against id or regionClass in the morphology file -->
 
 
     </discretization>
