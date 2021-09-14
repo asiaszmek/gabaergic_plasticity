@@ -112,7 +112,7 @@
 
   <SurfaceDensitySet region="dend">
     <PicoSD specieID="Leak" value="5"/>
-    <PicoSD specieID="CaOutLeak" value="7000"/>
+    <PicoSD specieID="CaOutLeak" value="6500"/>
 
     <PicoSD specieID="pmca" value="420"/>
     <PicoSD specieID="pmcaCa" value="180"/>
@@ -145,8 +145,8 @@
     <PicoSD specieID="PKAr" value="0"/>
     <PicoSD specieID="PKAcAMP2" value="20"/>
     <PicoSD specieID="PKAcAMP4" value="5"/>
-    <PicoSD specieID="PDE4" value="300"/>
-    <PicoSD specieID="pPDE4" value="180"/>
+    <PicoSD specieID="PDE4" value="500"/>
+    <PicoSD specieID="pPDE4" value="300"/>
 
   </SurfaceDensitySet>
   
