@@ -39,8 +39,8 @@
     <PicoSD  specieID="PIkinase"   value="300"  />
     <PicoSD  specieID="MgluR" value="0.28e03"  />
     <PicoSD specieID="Gqabg" value="5500"/>
-    <PicoSD specieID="GluMgluRdesens" value="20"/>
-    <PicoSD specieID="MgluRGq" value="180"/>
+    <PicoSD specieID="GluMgluRdesens" value="40"/>
+    <PicoSD specieID="MgluRGq" value="160"/>
     
      <PicoSD specieID="Dag"                value="40"  />
      <PicoSD specieID="DagK"               value="140"  />
