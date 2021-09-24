@@ -9,16 +9,16 @@
 <InjectionStim specieID="Glu" injectionSite="dend:submembrane">
         <onset>200000</onset>
 	<duration>60000</duration>
-	<rate>1.2</rate>
+	<rate>96</rate>
         
         <end>260000</end> 
        
-</InjectionStim>
+  </InjectionStim>
 
-<InjectionStim specieID="GluBuf" injectionSite="dend:submembrane">
+ <InjectionStim specieID="GluBuf" injectionSite="dend:submembrane">
         <onset>260000</onset>
 	<duration>6000</duration>
-	<rate>12</rate>
+	<rate>960</rate>
         
         <end>266000</end> 
        
