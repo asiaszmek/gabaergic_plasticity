@@ -3,9 +3,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 colors = {
-    "100 uM Glu": "tab:orange",
-    "50 uM NMDA": "tab:blue",
-    "10 uM Glu": "tab:green",
+    "100 uM Glu": "k",
+    "50 uM NMDA": "g",
+    "10 uM Glu": "r",
 }
 
 fnames_spine = {
@@ -29,7 +29,7 @@ fnames_spine = {
 
     ],
 }
-
+dt = 200
 
 fnames_dend = {
     "10 uM Glu": [
@@ -61,7 +61,7 @@ fnames_dend = {
 data_dend = OrderedDict()
 data_spine = OrderedDict()
 keys = ["10 uM Glu", "50 uM NMDA", "100 uM Glu"]
-
+t_stim = 100000
 def make_figs(dend, spine, idexes, ylabel, fname):
     new_dend = {}
     new_spine = {}
@@ -74,7 +74,7 @@ def make_figs(dend, spine, idexes, ylabel, fname):
         avg = []
         new_dend[key] = []
         for j, d in enumerate(dend[key]):
-            time = (dend[key][j][:, 0]-100000)/60000 #convert to min stim
+            time = (dend[key][j][:, 0]-t_stim)/60000 #convert to min stim
             out = np.zeros((len(time)))
             for idx in idexes:
                 out += dend[key][j][:, idx]
@@ -88,7 +88,7 @@ def make_figs(dend, spine, idexes, ylabel, fname):
             new_dend[key].append(out)
         out_avg = np.array(avg).mean(axis=0)
         #ax[0][i].plot(time, out_avg, label="mean CaMKII")
-        ax[0][i].set_title("%s dendrite" % key, fontsize=24)
+        ax[0][i].set_title("%s dendrite" % key, color=colors[key], fontsize=24)
         if i:
             ax[0][i].set_yticks([])
     for x in ax[0]:
@@ -100,7 +100,7 @@ def make_figs(dend, spine, idexes, ylabel, fname):
         min_val = 1000000
         new_spine[key] = []
         for j, d in enumerate(spine[key]):
-            time = (dend[key][j][:, 0]-100000)/60000 #convert to min stim
+            time = (dend[key][j][:, 0]-t_stim)/60000 #convert to min stim
             out = np.zeros((len(time)))
             for idx in idexes:
                 out += spine[key][j][:, idx]
@@ -113,7 +113,7 @@ def make_figs(dend, spine, idexes, ylabel, fname):
             new_spine[key].append(out)
         out_avg = np.array(avg).mean(axis=0)
         #ax[1][i].plot(time, out_avg, label="mean CaMKII")
-        ax[1][i].set_title("%s spine" % key, fontsize=24)
+        ax[1][i].set_title("%s spine" % key, color=colors[key], fontsize=24)
         if i:
             ax[1][i].set_yticks([])
 
@@ -164,7 +164,7 @@ if __name__ == "__main__":
     for i, specie in enumerate(header):
         if "CKC" in specie or "CKp" in specie:
             all_CK_act.append(i)
-    print(all_CK_act)
+
     CK_act = []
     for i, specie in enumerate(header):
         if "CKC" in specie:
@@ -231,26 +231,30 @@ if __name__ == "__main__":
     fig, ax = plt.subplots(1, 2, figsize=(16, 8))
     min_val = 100000
     max_val = 0
+    sig_spine = {}
+    sig_dend = {}
+    sig_spine_error = {}
+    sig_dend_error = {}
     for key in keys:
         avg_pcamkii_dend = np.array(pcamkii_dend[key]).mean(axis=0)
         avg_pcamkii_spine = np.array(pcamkii_spine[key]).mean(axis=0)
-        avg_acamkii_dend = np.array(acamkii_dend[key]).mean(axis=0)
-        avg_acamkii_spine = np.array(acamkii_spine[key]).mean(axis=0)
-        avg_camkii_dend = np.array(camkii_dend[key]).mean(axis=0)
-        avg_camkii_spine = np.array(camkii_spine[key]).mean(axis=0)
-        avg_pp2ball_dend = np.array(pp2ball_dend[key]).mean(axis=0)
-        avg_pp2ball_spine = np.array(pp2ball_spine[key]).mean(axis=0)
         avg_pp2b_dend = np.array(pp2b_dend[key]).mean(axis=0)
         avg_pp2b_spine = np.array(pp2b_spine[key]).mean(axis=0)
-        avg_pp1_dend = np.array(pp1_dend[key]).mean(axis=0)
-        avg_pp1_spine = np.array(pp1_spine[key]).mean(axis=0)
         avg_epac_dend = np.array(epac_dend[key]).mean(axis=0)
-        avg_epac_spine = np.array(epac_spine[key]).mean(axis=0)
-        dend = (avg_pp2b_dend)/avg_pcamkii_dend
-        spine = (avg_pp2b_spine )/avg_pcamkii_spine
-        ax[1].plot((time-100000)/60000, dend,
+        avg_epac_spine =np.array(epac_spine[key]).mean(axis=0)
+        pp2b_dend_basal = avg_pp2b_dend[int(t_stim/dt)-int(60000/dt):int(t_stim/dt)].mean()
+        pp2b_spine_basal = avg_pp2b_dend[int(t_stim/dt)-int(60000/dt):int(t_stim/dt)].mean()
+        pcamkii_dend_basal = avg_pcamkii_dend[int(t_stim/dt)-int(60000/dt):int(t_stim/dt)].mean()
+        pcamkii_spine_basal = avg_pcamkii_dend[int(t_stim/dt)-int(60000/dt):int(t_stim/dt)].mean()
+        epac_dend_basal = avg_epac_dend[int(t_stim/dt)-int(60000/dt):int(t_stim/dt)].mean()
+        epac_spine_basal = avg_epac_dend[int(t_stim/dt)-int(60000/dt):int(t_stim/dt)].mean()
+        dend = (avg_pp2b_dend/pp2b_dend_basal+avg_epac_dend/epac_dend_basal)/(avg_pcamkii_dend/pcamkii_dend_basal)
+        spine = (avg_pp2b_spine/pp2b_spine_basal+avg_epac_spine/epac_spine_basal)/(avg_pcamkii_spine/pcamkii_spine_basal)
+        #dend = (avg_pp2b_dend + avg_epac_dend)/avg_pcamkii_dend
+        #spine = (avg_pp2b_spine + avg_epac_spine)/avg_pcamkii_spine
+        ax[1].plot((time-t_stim)/60000, dend,
                    label=key, color=colors[key])
-        ax[0].plot((time-100000)/60000, spine,
+        ax[0].plot((time-t_stim)/60000, spine,
                    label=key, color=colors[key])
         if dend.max() > max_val:
             max_val = dend.max()
@@ -260,9 +264,31 @@ if __name__ == "__main__":
             min_val = dend.min()
         if spine.min() < min_val:
             min_val = spine.min()
-    ax[0].legend()
+        basal_dend = dend[int(t_stim/dt)-int(60000/dt):int(t_stim/dt)].mean()
+        basal_spine = spine[int(t_stim/dt)-int(60000/dt):int(t_stim/dt)].mean()
+        sig_spine[key] = (spine-basal_spine).sum()
+        sig_dend[key] = (dend-basal_dend).sum()
+        sig_spine_error[key] = 0
+        sig_dend_error[key] = 0
+        for i, pdend in enumerate(pcamkii_dend[key]):
+            ss = pp2b_spine[key][i]/ pcamkii_spine[key][i]
+            sd = pp2b_dend[key][i]/ pcamkii_dend[key][i]
+            sbasal = ss[int(t_stim/dt)-int(60000/dt):int(t_stim/dt)].mean()
+            dbasal = sd[int(t_stim/dt)-int(60000/dt):int(t_stim/dt)].mean()
+            sig_spine_error[key] += ((ss-sbasal).sum() - sig_spine[key])**2
+            sig_dend_error[key] += ((sd-dbasal).sum() - sig_dend[key])**2
+        sig_spine_error[key] = (sig_spine_error[key]
+                                /len(pcamkii_dend[key])/
+                                (len(pcamkii_dend[key])-1))**0.5
+        sig_dend_error[key] = (sig_dend_error[key]
+                                /len(pcamkii_dend[key])/
+                                (len(pcamkii_dend[key])-1))**0.5
+
+        print(key, sig_spine[key], sig_spine_error[key],
+              sig_dend[key], sig_dend_error[key])
+    ax[0].legend(prop={'size': 14})
     ax[0].set_xlabel("time (min)", fontsize=20)
-    ax[0].set_ylabel("activated PP2B/pCaMKII", fontsize=18)
+    ax[0].set_ylabel("activated (PP2B + Epac)/pCaMKII", fontsize=18)
     ax[1].set_title("dendrite", fontsize=20)
     ax[1].set_yticklabels([])
     ax[0].set_title("spine", fontsize=20)
@@ -272,7 +298,8 @@ if __name__ == "__main__":
         for tick in x.yaxis.get_major_ticks():
              tick.label.set_fontsize(14) 
         x.set_ylim([min_val *0.95, 1.05*max_val])
-    fig.savefig("PP2B_to_pCaMKII.png", bbox_inches="tight")
+    
+    fig.savefig("PP2B_Epac_to_pCaMKII.png", bbox_inches="tight")
     plt.show()
 
     

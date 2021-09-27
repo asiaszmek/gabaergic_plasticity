@@ -2,7 +2,7 @@ import sys
 import argparse
 import numpy as np
 import matplotlib.pyplot as plt
-keys = ["10 uM Glu", "50 uM NMDA", "100 uM Glu"] 
+keys = [ "100 uM Glu","50 uM NMDA",  "10 uM Glu"] 
 filenames_Fluo = {
     "100 uM Glu":
     [
@@ -27,9 +27,9 @@ filenames_Fluo = {
     ]
 }
 colors = {
-    "100 uM Glu": "tab:orange",
-    "50 uM NMDA": "tab:blue",
-    "10 uM Glu": "tab:green",
+    "100 uM Glu": "k",
+    "50 uM NMDA": "g",
+    "10 uM Glu": "r",
 }
 
 filenames_Ca = {
