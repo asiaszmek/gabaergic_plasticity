@@ -12,7 +12,7 @@
    viewBox="0 0 401.73383 320.4628"
    version="1.1"
    id="svg8"
-   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
+   inkscape:version="1.0.2 (e86c870879, 2021-01-15)"
    sodipodi:docname="overall_mechanism.svg"
    inkscape:export-filename="/home/asia/overall_mechanism.png"
    inkscape:export-xdpi="96.599998"
@@ -219,10 +219,10 @@
      fit-margin-left="1"
      fit-margin-right="1"
      fit-margin-bottom="1"
-     inkscape:window-width="1848"
-     inkscape:window-height="1136"
-     inkscape:window-x="72"
-     inkscape:window-y="27"
+     inkscape:window-width="1280"
+     inkscape:window-height="656"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
      inkscape:window-maximized="1" />
   <metadata
      id="metadata5">
@@ -232,7 +232,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -267,48 +267,56 @@
            style="stroke-width:0.26458299">High Ca</tspan></text>
       <text
          xml:space="preserve"
-         style="font-size:14.1111002px;line-height:1.25;font-family:sans-serif;stroke-width:0.26458299"
+         style="font-size:14.1111px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
          x="-62.359226"
          y="218.27144"
-         id="text30"><tspan
+         id="text30"
+         inkscape:export-filename="/home/asia/overall_mechanism.png"
+         inkscape:export-xdpi="96.599998"
+         inkscape:export-ydpi="96.599998"><tspan
            sodipodi:role="line"
            x="-62.359226"
            y="218.27144"
-           style="stroke-width:0.26458299"
+           style="stroke-width:0.264583"
            id="tspan34">phosphorylation</tspan><tspan
            sodipodi:role="line"
            x="-62.359226"
            y="235.91031"
-           style="stroke-width:0.26458299"
+           style="stroke-width:0.264583"
            id="tspan41"
-           dy="0 0 0 0 0 0 2.2678571 -2.2678571">of GABAA </tspan><tspan
+           dy="0 0 0 0 0 0 0 2.2678571 2.2678571">of GABAA </tspan><tspan
            sodipodi:role="line"
            x="-62.359226"
            y="253.54919"
-           style="stroke-width:0.26458299"
+           style="stroke-width:0.264583"
            id="tspan43">receptors/scaffolding</tspan></text>
       <text
          xml:space="preserve"
-         style="font-size:14.1111002px;line-height:1.25;font-family:sans-serif;stroke-width:0.26458299"
+         style="font-size:14.1111px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
          x="190.97882"
          y="222.91022"
-         id="text47"><tspan
+         id="text47"
+         inkscape:export-filename="/home/asia/overall_mechanism_part1.png"
+         inkscape:export-xdpi="96.599998"
+         inkscape:export-ydpi="96.599998"><tspan
            sodipodi:role="line"
            id="tspan45"
            x="190.97882"
            y="222.91022"
-           style="stroke-width:0.26458299">dephosphorylation</tspan><tspan
+           style="stroke-width:0.264583">dephosphorylation</tspan><tspan
            sodipodi:role="line"
            x="190.97882"
            y="240.54909"
-           style="stroke-width:0.26458299"
-           id="tspan51"
-           dy="0 0 0 0 0 0 2.2678571 -2.2678571">of GABAA</tspan><tspan
+           style="stroke-width:0.264583"
+           id="tspan59"><tspan
+             dy="0 0 0 0 0 0 0 2.2678571"
+             id="tspan176"
+             style="stroke-width:0.264583">of GABAA</tspan></tspan><tspan
            sodipodi:role="line"
            x="190.97882"
            y="258.18796"
-           style="stroke-width:0.26458299"
-           id="tspan59">receptors/scaffolding</tspan></text>
+           style="stroke-width:0.264583"
+           id="tspan178">receptors/scaffolding</tspan></text>
       <text
          xml:space="preserve"
          style="font-size:14.1111002px;line-height:1.25;font-family:sans-serif;stroke-width:0.26458299"

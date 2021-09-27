@@ -12,7 +12,7 @@
    viewBox="0 0 401.73383 320.4628"
    version="1.1"
    id="svg8"
-   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
+   inkscape:version="1.0.2 (e86c870879, 2021-01-15)"
    sodipodi:docname="overall_mechanism_part1.svg"
    inkscape:export-filename="/home/asia/overall_mechanism.png"
    inkscape:export-xdpi="96.599998"
@@ -219,10 +219,10 @@
      fit-margin-left="1"
      fit-margin-right="1"
      fit-margin-bottom="1"
-     inkscape:window-width="1848"
-     inkscape:window-height="1136"
-     inkscape:window-x="72"
-     inkscape:window-y="27"
+     inkscape:window-width="1280"
+     inkscape:window-height="656"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
      inkscape:window-maximized="1" />
   <metadata
      id="metadata5">
@@ -232,7 +232,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -242,10 +242,13 @@
      id="layer1"
      transform="translate(62.580637,-40.522241)">
     <g
-       id="g2569">
+       id="g2569"
+       inkscape:export-filename="/home/asia/overall_mechanism_part1.png"
+       inkscape:export-xdpi="96.599998"
+       inkscape:export-ydpi="96.599998">
       <text
          xml:space="preserve"
-         style="font-size:14.1111002px;line-height:1.25;font-family:sans-serif;stroke-width:0.26458299"
+         style="font-size:14.1111px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
          x="-62.965561"
          y="167.78896"
          id="text22"><tspan
@@ -253,32 +256,32 @@
            id="tspan20"
            x="-62.965561"
            y="167.78896"
-           style="stroke-width:0.26458299">Low Ca</tspan></text>
+           style="stroke-width:0.264583">Low Ca</tspan></text>
       <text
          xml:space="preserve"
-         style="font-size:14.1111002px;line-height:1.25;font-family:sans-serif;stroke-width:0.26458299"
+         style="font-size:14.1111px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
          x="-62.359226"
          y="218.27144"
          id="text30"><tspan
            sodipodi:role="line"
            x="-62.359226"
            y="218.27144"
-           style="stroke-width:0.26458299"
+           style="stroke-width:0.264583"
            id="tspan34">phosphorylation</tspan><tspan
            sodipodi:role="line"
            x="-62.359226"
            y="235.91031"
-           style="stroke-width:0.26458299"
+           style="stroke-width:0.264583"
            id="tspan41"
-           dy="0 0 0 0 0 0 2.2678571 -2.2678571">of GABAA </tspan><tspan
+           dy="0 0 0 0 0 0 2.2678571 -2.2678571 2.2678571">of GABAR </tspan><tspan
            sodipodi:role="line"
            x="-62.359226"
            y="253.54919"
-           style="stroke-width:0.26458299"
+           style="stroke-width:0.264583"
            id="tspan43">receptors/scaffolding</tspan></text>
       <text
          xml:space="preserve"
-         style="font-size:14.1111002px;line-height:1.25;font-family:sans-serif;stroke-width:0.26458299"
+         style="font-size:14.1111px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
          x="-62.359226"
          y="306.76709"
          id="text63"><tspan
@@ -286,12 +289,12 @@
            id="tspan61"
            x="-62.359226"
            y="306.76709"
-           style="stroke-width:0.26458299"
+           style="stroke-width:0.264583"
            dx="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -0.75595236"
            dy="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2.2678571 -2.2678571">clustering of GABAARs</tspan></text>
       <text
          xml:space="preserve"
-         style="font-size:14.1111002px;line-height:1.25;font-family:sans-serif;stroke-width:0.26458299"
+         style="font-size:14.1111px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
          x="-62.910442"
          y="359.98495"
          id="text71"><tspan
@@ -299,13 +302,13 @@
            id="tspan69"
            x="-62.910442"
            y="359.98495"
-           style="stroke-width:0.26458299">iLTP</tspan></text>
+           style="stroke-width:0.264583">iLTP</tspan></text>
       <g
          id="g1420"
          transform="translate(2.4178713)">
         <text
            xml:space="preserve"
-           style="font-size:14.1111002px;line-height:1.25;font-family:sans-serif;opacity:0.994;stroke-width:0.26458299"
+           style="font-size:14.1111px;line-height:1.25;font-family:sans-serif;opacity:0.994;stroke-width:0.264583"
            x="52.878994"
            y="52.24337"
            id="text12"><tspan
@@ -313,15 +316,15 @@
              id="tspan10"
              x="52.878994"
              y="52.24337"
-             style="stroke-width:0.26458299">Excitatory </tspan><tspan
+             style="stroke-width:0.264583">Excitatory </tspan><tspan
              sodipodi:role="line"
              x="52.878994"
              y="69.882248"
-             style="stroke-width:0.26458299"
+             style="stroke-width:0.264583"
              id="tspan14">input</tspan></text>
         <text
            xml:space="preserve"
-           style="font-size:14.1111002px;line-height:1.25;font-family:sans-serif;opacity:0.994;stroke-width:0.26458299"
+           style="font-size:14.1111px;line-height:1.25;font-family:sans-serif;opacity:0.994;stroke-width:0.264583"
            x="57.960506"
            y="128.05124"
            id="text18"><tspan
@@ -329,7 +332,7 @@
              id="tspan16"
              x="57.960506"
              y="128.05124"
-             style="stroke-width:0.26458299">Ca influx</tspan></text>
+             style="stroke-width:0.264583">Ca influx</tspan></text>
         <path
            style="opacity:0.994;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
            d="m 88.902616,79.670293 0.460658,32.963657"
