@@ -163,10 +163,10 @@
     <PicoSD specieID="AC8CaMCa4" value="0"/>
     <PicoSD specieID="AC8CaMCa4ATP" value="0"/>
     
-    <PicoSD specieID="PKA" value="500"/>
+    <PicoSD specieID="PKA" value="1500"/>
     <PicoSD specieID="PKAr" value="0"/>
-    <PicoSD specieID="PKAcAMP2" value="20"/>
-    <PicoSD specieID="PKAcAMP4" value="5"/>
+    <PicoSD specieID="PKAcAMP2" value="60"/>
+    <PicoSD specieID="PKAcAMP4" value="15"/>
     <PicoSD specieID="PDE4" value="1700"/>
     <PicoSD specieID="pPDE4" value="400"/>
 
