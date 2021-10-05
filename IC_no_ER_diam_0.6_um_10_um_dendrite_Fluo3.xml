@@ -3,6 +3,8 @@
   <ConcentrationSet>
     <NanoMolarity specieID="Ca" value="75"/>
     <NanoMolarity specieID="CaOut" value="2000000"/>
+    <NanoMolarity specieID="Fluo3" value="905"/>
+    <NanoMolarity specieID="Fluo3Ca" value="95"/>
     <!-- total calbindin = 160 uM -->
     <NanoMolarity specieID="Calbin" value="150000"/>
     <NanoMolarity specieID="CalbinC" value="15000"/>

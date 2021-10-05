@@ -2,7 +2,10 @@
 <InitialConditions>
   <ConcentrationSet>
     <NanoMolarity specieID="Ca" value="75"/>
-    <NanoMolarity specieID="CaOut" value="2000000"/>
+    <NanoMolarity specieID="CaOut" value="2100000"/>
+    <NanoMolarity specieID="Fluo3" value="905"/>
+    <NanoMolarity specieID="Fluo3Ca" value="95"/>
+
     <!-- total calbindin = 160 uM -->
     <NanoMolarity specieID="Calbin" value="150000"/>
     <NanoMolarity specieID="CalbinC" value="15000"/>
@@ -129,11 +132,12 @@
     <NanoMolarity specieID="Ip35" value="10"/>
     <NanoMolarity specieID="PP1" value="750"/>
     <NanoMolarity specieID="Ip35PP1" value="850"/>
+
   </ConcentrationSet>
 
   <SurfaceDensitySet region="dend">
     <PicoSD specieID="Leak" value="5"/>
-    <PicoSD specieID="CaOutLeak" value="6000"/>
+    <PicoSD specieID="CaOutLeak" value="6500"/>
 
     <PicoSD specieID="pmca" value="420"/>
     <PicoSD specieID="pmcaCa" value="180"/>
@@ -162,12 +166,12 @@
     <PicoSD specieID="AC8CaMCa4" value="0"/>
     <PicoSD specieID="AC8CaMCa4ATP" value="0"/>
     
-    <PicoSD specieID="PKA" value="500"/>
+    <PicoSD specieID="PKA" value="3000"/>
     <PicoSD specieID="PKAr" value="0"/>
-    <PicoSD specieID="PKAcAMP2" value="20"/>
-    <PicoSD specieID="PKAcAMP4" value="5"/>
-    <PicoSD specieID="PDE4" value="1100"/>
-    <PicoSD specieID="pPDE4" value="700"/>
+    <PicoSD specieID="PKAcAMP2" value="120"/>
+    <PicoSD specieID="PKAcAMP4" value="30"/>
+    <PicoSD specieID="PDE4" value="1700"/>
+    <PicoSD specieID="pPDE4" value="400"/>
 
   </SurfaceDensitySet>
   
