@@ -72,7 +72,9 @@ def get_output_regions(my_file):
     return outputs
         
 def get_key(cell):
-    return cell[15].decode('utf-8') + '_' + cell[18].decode('utf-8')
+    if cell[18]:
+        return cell[15].decode('utf-8') + '_' + cell[18].decode('utf-8')
+    return cell[15].decode('utf-8')
 
 def region_volumes(my_file):
     grid_list = get_grid_list(my_file)
@@ -110,10 +112,11 @@ def region_surface(grid_list, direction=0):
     submembrane_regions_dict = {}
     for i, cell in enumerate(grid_list):
         if cell[17] == b'submembrane':
-            if cell[15] not in submembrane_regions:
-                submembrane_regions.append(cell[15])
-                submembrane_regions_dict[cell[15]] = []
-            submembrane_regions_dict[cell[15]].append(i)
+            new_name = cell[15].decode('utf-8')
+            if  new_name not in submembrane_regions:
+                submembrane_regions.append(new_name)
+                submembrane_regions_dict[new_name] = []
+            submembrane_regions_dict[new_name].append(i)
     surface = {}
     for key in submembrane_regions_dict:
         surface[key] = 0

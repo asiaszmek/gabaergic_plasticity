@@ -5,7 +5,7 @@
     <NanoMolarity specieID="CaOut" value="2000000"/>
     <!-- total calbindin = 160 uM -->
     <NanoMolarity specieID="Calbin" value="150000"/>
-    <NanoMolarity specieID="CalbinC" value="15000"/>
+    <NanoMolarity specieID="CalbinC" value="16000"/>
     <NanoMolarity specieID="ISO" value="9"/> <!--norepinephrine-->
     <NanoMolarity specieID="ISOOut" value="2000000"/>
     <NanoMolarity specieID="DaOut"  value="4000000" /> 
@@ -20,22 +20,22 @@
     <NanoMolarity specieID="PDE1CaMCa4" value="3000"/>
     <NanoMolarity specieID="PDE1CaMCa4cAMP" value="10"/>
 
-    <NanoMolarity specieID="CaM" value="9000"/>
-    <NanoMolarity specieID="CaMCa2C" value="200"/>
-    <NanoMolarity specieID="CaMCa2N" value="40"/>
-    <NanoMolarity specieID="CaMCa4" value="2"/>
-    <NanoMolarity specieID="NgCaM" value="17000"/>
-    <NanoMolarity specieID="Ng" value="3000"/>
-    <NanoMolarity specieID="PP2BCaM" value="1500"/>
-    <NanoMolarity specieID="PP2BCaMCa2N" value="600"/>
-    <NanoMolarity specieID="PP2BCaMCa2C" value="100"/>
+    <NanoMolarity specieID="CaM" value="8412"/>
+    <NanoMolarity specieID="CaMCa2C" value="424"/>
+    <NanoMolarity specieID="CaMCa2N" value="64"/>
+    <NanoMolarity specieID="CaMCa4" value="3"/>
+    <NanoMolarity specieID="NgCaM" value="17350"/>
+    <NanoMolarity specieID="Ng" value="2650"/>
+    <NanoMolarity specieID="PP2BCaM" value="1384"/>
+    <NanoMolarity specieID="PP2BCaMCa2N" value="707"/>
+    <NanoMolarity specieID="PP2BCaMCa2C" value="107"/>
     <NanoMolarity specieID="PP2BCaMCa4" value="5"/>
 
 
-    <NanoMolarity specieID="CK" value="22150"/>
-    <NanoMolarity specieID="CKCaMCa4" value="200"/>
-    <NanoMolarity specieID="CKpCaMCa4" value="400"/>
-    <NanoMolarity specieID="CKp" value="20"/>
+    <NanoMolarity specieID="CK" value="22110"/>
+    <NanoMolarity specieID="CKCaMCa4" value="242"/>
+    <NanoMolarity specieID="CKpCaMCa4" value="410"/>
+    <NanoMolarity specieID="CKp" value="10"/>
     <NanoMolarity specieID="CKpPP1" value="0"/>
 
     <NanoMolarity specieID="I1" value="1250"/> <!-- I1 conc 1.5 muM -->
@@ -136,10 +136,10 @@
     <PicoSD specieID="Leak" value="5"/>
     <PicoSD specieID="CaOutLeak" value="6000"/>
 
-    <PicoSD specieID="pmca" value="420"/>
-    <PicoSD specieID="pmcaCa" value="180"/>
-    <PicoSD specieID="ncx" value="13500"/>
-    <PicoSD specieID="ncxCa" value="1500"/>
+    <PicoSD specieID="pmca" value="440"/>
+    <PicoSD specieID="pmcaCa" value="161"/>
+    <PicoSD specieID="ncx" value="13930"/>
+    <PicoSD specieID="ncxCa" value="1070"/>
     <PicoSD specieID="GsbAR" value="472"/>
     <PicoSD specieID="ISObARGs" value="20"/>
     <PicoSD specieID="Gs" value="10000"/>
@@ -147,18 +147,20 @@
 
 
     <!-- <PicoSD  specieID="DAGK" value="280"  /> -->
-    <PicoSD specieID="GasGTP" value="29"/>
+    <PicoSD specieID="GasGTP" value="27"/>
     <PicoSD specieID="GasGDP" value="0"/>
-    <PicoSD specieID="GsD1R" value="536" />
+    <PicoSD specieID="GsD1R" value="541" />
     <PicoSD specieID="DaD1RGs" value="20" />
     <PicoSD specieID="pDaD1RGs" value="1" />
-    <PicoSD specieID="pGsD1R" value="22" />
+    <PicoSD specieID="pGsD1R" value="16" />
     
     
-    <PicoSD specieID="AC1" value="211"/>
-    <PicoSD specieID="AC1CaMCa4ATP" value="23"/>
-    <PicoSD specieID="AC1GasGTP" value="120"/>
-    <PicoSD specieID="AC1GasGTPCaMCa4ATP" value="10"/>
+    <PicoSD specieID="AC1" value="200"/>
+    <PicoSD specieID="AC1CaMCa4ATP" value="35"/>
+    <PicoSD specieID="AC1CaMCa4" value="3"/>
+   
+    <PicoSD specieID="AC1GasGTP" value="105"/>
+    <PicoSD specieID="AC1GasGTPCaMCa4ATP" value="20"/>
     <PicoSD specieID="AC8" value="1000"/>
     <PicoSD specieID="AC8CaMCa4" value="0"/>
     <PicoSD specieID="AC8CaMCa4ATP" value="0"/>
@@ -167,8 +169,8 @@
     <PicoSD specieID="PKAr" value="0"/>
     <PicoSD specieID="PKAcAMP2" value="60"/>
     <PicoSD specieID="PKAcAMP4" value="20"/>
-    <PicoSD specieID="PDE4" value="1600"/>
-    <PicoSD specieID="pPDE4" value="500"/>
+    <PicoSD specieID="PDE4" value="1460"/>
+    <PicoSD specieID="pPDE4" value="640"/>
 
   </SurfaceDensitySet>
   
