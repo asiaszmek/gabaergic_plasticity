@@ -6,24 +6,24 @@ keys = ["10 uM Glu", "50 uM NMDA", "100 uM Glu"]
 filenames_Fluo = {
     "100 uM Glu":
     [
-        "model_no_ER_250_nM_spine_Glu_100_uM_Fluo3_trial0_total.txt",
-        "model_no_ER_250_nM_spine_Glu_100_uM_Fluo3_trial1_total.txt",
-        "model_no_ER_250_nM_spine_Glu_100_uM_Fluo3_trial2_total.txt",
-        "model_no_ER_250_nM_spine_Glu_100_uM_Fluo3_trial3_total.txt",
+        "model_no_ER_diam_0.6_um_2_um_250_nM_spine_Glu_100_uM_Fluo3_trial0_total.txt",
+        "model_no_ER_diam_0.6_um_2_um_250_nM_spine_Glu_100_uM_Fluo3_trial1_total.txt",
+        "model_no_ER_diam_0.6_um_2_um_250_nM_spine_Glu_100_uM_Fluo3_trial2_total.txt",
+        "model_no_ER_diam_0.6_um_2_um_250_nM_spine_Glu_100_uM_Fluo3_trial3_total.txt",
     ],
     "10 uM Glu":
     [
-        "model_no_ER_150_nM_spine_Glu_10_uM_Fluo3_trial0_total.txt",
-        "model_no_ER_150_nM_spine_Glu_10_uM_Fluo3_trial1_total.txt",
-        "model_no_ER_150_nM_spine_Glu_10_uM_Fluo3_trial2_total.txt",
-        "model_no_ER_150_nM_spine_Glu_10_uM_Fluo3_trial3_total.txt",
+        "model_no_ER_diam_0.6_um_2_um_150_nM_spine_Glu_10_uM_Fluo3_trial0_total.txt",
+        "model_no_ER_diam_0.6_um_2_um_150_nM_spine_Glu_10_uM_Fluo3_trial1_total.txt",
+        "model_no_ER_diam_0.6_um_2_um_150_nM_spine_Glu_10_uM_Fluo3_trial2_total.txt",
+        "model_no_ER_diam_0.6_um_2_um_150_nM_spine_Glu_10_uM_Fluo3_trial3_total.txt",
     ],
     "50 uM NMDA":
     [
-        "model_no_ER_150_nM_spine_NMDA_Fluo3_trial0_total.txt",
-        "model_no_ER_150_nM_spine_NMDA_Fluo3_trial1_total.txt",
-        "model_no_ER_150_nM_spine_NMDA_Fluo3_trial2_total.txt",
-        "model_no_ER_150_nM_spine_NMDA_Fluo3_trial3_total.txt",
+        "model_no_ER_diam_0.6_um_2_um_150_nM_spine_NMDA_Fluo3_trial0_total.txt",
+        "model_no_ER_diam_0.6_um_2_um_150_nM_spine_NMDA_Fluo3_trial1_total.txt",
+        "model_no_ER_diam_0.6_um_2_um_150_nM_spine_NMDA_Fluo3_trial2_total.txt",
+        "model_no_ER_diam_0.6_um_2_um_150_nM_spine_NMDA_Fluo3_trial3_total.txt",
     ]
 }
 colors = {
@@ -35,24 +35,24 @@ colors = {
 filenames_Ca = {
     "100 uM Glu":
     [
-        "model_no_ER_250_nM_spine_Glu_100_uM_trial0_total.txt",
-        "model_no_ER_250_nM_spine_Glu_100_uM_trial1_total.txt",
-        "model_no_ER_250_nM_spine_Glu_100_uM_trial2_total.txt",
-        "model_no_ER_250_nM_spine_Glu_100_uM_trial3_total.txt",
+        "model_no_ER_diam_0.6_um_2_um_250_nM_spine_Glu_100_uM_trial0_total.txt",
+        "model_no_ER_diam_0.6_um_2_um_250_nM_spine_Glu_100_uM_trial1_total.txt",
+        "model_no_ER_diam_0.6_um_2_um_250_nM_spine_Glu_100_uM_trial2_total.txt",
+        "model_no_ER_diam_0.6_um_2_um_250_nM_spine_Glu_100_uM_trial3_total.txt",
     ],
     "10 uM Glu":
     [
-        "model_no_ER_150_nM_spine_Glu_10_uM_trial0_total.txt",
-        "model_no_ER_150_nM_spine_Glu_10_uM_trial1_total.txt",
-        "model_no_ER_150_nM_spine_Glu_10_uM_trial2_total.txt",
-        "model_no_ER_150_nM_spine_Glu_10_uM_trial3_total.txt",
+        "model_no_ER_diam_0.6_um_2_um_150_nM_spine_Glu_10_uM_trial0_total.txt",
+        "model_no_ER_diam_0.6_um_2_um_150_nM_spine_Glu_10_uM_trial1_total.txt",
+        "model_no_ER_diam_0.6_um_2_um_150_nM_spine_Glu_10_uM_trial2_total.txt",
+        "model_no_ER_diam_0.6_um_2_um_150_nM_spine_Glu_10_uM_trial3_total.txt",
     ],
     "50 uM NMDA":
     [
-        "model_no_ER_150_nM_spine_NMDA_trial0_total.txt",
-        "model_no_ER_150_nM_spine_NMDA_trial1_total.txt",
-        "model_no_ER_150_nM_spine_NMDA_trial2_total.txt",
-        "model_no_ER_150_nM_spine_NMDA_trial3_total.txt",
+        "model_no_ER_diam_0.6_um_2_um_150_nM_spine_NMDA_trial0_total.txt",
+        "model_no_ER_diam_0.6_um_2_um_150_nM_spine_NMDA_trial1_total.txt",
+        "model_no_ER_diam_0.6_um_2_um_150_nM_spine_NMDA_trial2_total.txt",
+        "model_no_ER_diam_0.6_um_2_um_150_nM_spine_NMDA_trial3_total.txt",
     ]
 }
 
