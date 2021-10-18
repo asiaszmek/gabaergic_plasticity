@@ -13,10 +13,10 @@ filenames_Fluo = {
     ],
     "10 uM Glu":
     [
-        "model_no_ER_diam_0.6_um_2_um_150_nM_spine_Glu_10_uM_Fluo3_trial0_total.txt",
-        "model_no_ER_diam_0.6_um_2_um_150_nM_spine_Glu_10_uM_Fluo3_trial1_total.txt",
-        "model_no_ER_diam_0.6_um_2_um_150_nM_spine_Glu_10_uM_Fluo3_trial2_total.txt",
-        "model_no_ER_diam_0.6_um_2_um_150_nM_spine_Glu_10_uM_Fluo3_trial3_total.txt",
+        "model_no_ER_diam_0.6_um_2_um_120_nM_spine_Glu_10_uM_Fluo3_trial0_total.txt",
+        "model_no_ER_diam_0.6_um_2_um_120_nM_spine_Glu_10_uM_Fluo3_trial1_total.txt",
+        "model_no_ER_diam_0.6_um_2_um_120_nM_spine_Glu_10_uM_Fluo3_trial2_total.txt",
+        "model_no_ER_diam_0.6_um_2_um_120_nM_spine_Glu_10_uM_Fluo3_trial3_total.txt",
     ],
     "50 uM NMDA":
     [
@@ -42,10 +42,10 @@ filenames_Ca = {
     ],
     "10 uM Glu":
     [
-        "model_no_ER_diam_0.6_um_2_um_150_nM_spine_Glu_10_uM_trial0_total.txt",
-        "model_no_ER_diam_0.6_um_2_um_150_nM_spine_Glu_10_uM_trial1_total.txt",
-        "model_no_ER_diam_0.6_um_2_um_150_nM_spine_Glu_10_uM_trial2_total.txt",
-        "model_no_ER_diam_0.6_um_2_um_150_nM_spine_Glu_10_uM_trial3_total.txt",
+        "model_no_ER_diam_0.6_um_2_um_120_nM_spine_Glu_10_uM_trial0_total.txt",
+        "model_no_ER_diam_0.6_um_2_um_120_nM_spine_Glu_10_uM_trial1_total.txt",
+        "model_no_ER_diam_0.6_um_2_um_120_nM_spine_Glu_10_uM_trial2_total.txt",
+        "model_no_ER_diam_0.6_um_2_um_120_nM_spine_Glu_10_uM_trial3_total.txt",
     ],
     "50 uM NMDA":
     [
