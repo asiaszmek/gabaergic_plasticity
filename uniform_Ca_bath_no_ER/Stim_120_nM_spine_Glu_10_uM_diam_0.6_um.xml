@@ -15,6 +15,7 @@
     <end>500000</end>
   </InjectionStim>
   <InjectionStim injectionSite="sa1[*].pointA" specieID="CaCbuf">
+
     <onset>500000</onset>
     <rate>0.5</rate>
     <duration>60000</duration>
