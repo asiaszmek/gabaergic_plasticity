@@ -2,7 +2,7 @@
 <InitialConditions>
   <ConcentrationSet>
     <NanoMolarity specieID="Ca" value="75"/>
-    <NanoMolarity specieID="CaOut" value="2100000"/>
+    <NanoMolarity specieID="CaOut" value="2000000"/>
     <NanoMolarity specieID="Fluo3" value="905"/>
     <NanoMolarity specieID="Fluo3Ca" value="95"/>
 

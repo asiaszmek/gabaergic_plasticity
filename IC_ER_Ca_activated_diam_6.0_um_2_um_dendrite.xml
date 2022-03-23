@@ -2,7 +2,7 @@
 <InitialConditions>
   <ConcentrationSet>
     <NanoMolarity specieID="Ca" value="75"/>
-    <NanoMolarity specieID="CaOut" value="2100000"/>
+    <NanoMolarity specieID="CaOut" value="2000000"/>
     <NanoMolarity specieID="GluOut" value="1000000"/>
     
     <!-- total calbindin = 160 uM -->
@@ -96,11 +96,11 @@
     <NanoMolarity specieID="LeakER" value="25"/>
 
     <NanoMolarity       specieID="SERCA"       value="15000"     />
-    <NanoMolarity       specieID="SERCA_Ca"       value="60000"     />
+    <NanoMolarity       specieID="SERCA_Ca"       value="62500"     />
     <NanoMolarity       specieID="SERCA_Ca2"       value="150"     />
 
-    <NanoMolarity       specieID="CRT" value="7500"/>
-    <NanoMolarity       specieID="CRTP" value="92500"/>
+    <NanoMolarity       specieID="CRT" value="6500"/>
+    <NanoMolarity       specieID="CRTP" value="94000"/>
 
   </ConcentrationSet>
   
