@@ -1,0 +1,11 @@
+Add Stim/Orai1
+SOCE complex usually requires a couple of Stim1 proteins [1]. Hence we will use the STIM1_4-Orai1 model [2]. STIM-1 affinity for Ca2+ in the ER is around 100-500 uM [4] and will have to be lowered, because we have uniformly distributed ER in the dendrite (ER comprises 25% of dendrite's volume or less. We have 100uM of Ca in the dendrite and this value is on the higher side of the spectrum).
+I think we'll take C-site CaM constants and just adjust them to get 25 uM affinity. (-Ca sensor)
+
+[1] DOI 10.1073/pnas.2010789118
+[2] DOI 10.1074/jbc.M112.417246
+[3] DOI 10.1038/s41467-018-06816-8
+[4] DOI 10.1074/jbc.M608247200
+Junctate also binds, but nobody knows, how it interacts
+[a] DOI 10.1074/jbc.M005473200
+[b] DOI 10.1016/j.bpj.2010.02.038
