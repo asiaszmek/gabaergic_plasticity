@@ -5,7 +5,7 @@
 
           <xi:include href="Rxn_start_ER.xml" />
           <xi:include href="Morph.xml" />        
-          <xi:include href="IC_diam_6.0_um_10_um_dendrite.xml" />
+          <xi:include href="IC_one_comp.xml" />
  	  
  
     <!--2D means the morphology is interpreted like a flatworm, 3D for
