@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml version="1.0" encoding="utf-8"?>
+
 <InitialConditions>
   <ConcentrationSet>
     <NanoMolarity specieID="Ca" value="75"/>
@@ -62,7 +62,7 @@
 
     <NanoMolarity       specieID="CRT" value="7500"/>
     <NanoMolarity       specieID="CRTP" value="92500"/>
-    <NanoMolarity specieID="STIM_CaER" value="75" />
+    <NanoMolarity specieID="STIMCaER" value="75" />
   </ConcentrationSet>
   
 
