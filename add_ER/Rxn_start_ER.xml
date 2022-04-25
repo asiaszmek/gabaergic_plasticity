@@ -272,7 +272,7 @@
     <Reactant specieID="CaER" />
     <Product specieID="STIMCaER"/>
     <forwardRate>0.1e-3</forwardRate>
-    <reverseRate>10000e-3</reverseRate>
+    <reverseRate>5000e-3</reverseRate>
   </Reaction>
 
   <Reaction name = "STIM_CaER_2" id="STIM_CaER_2">
@@ -280,14 +280,14 @@
     <Reactant specieID="CaER" />
     <Product specieID="STIMCaER_STIMCaER"/>
     <forwardRate>0.1e-3</forwardRate>
-    <reverseRate>10000e-3</reverseRate>
+    <reverseRate>5000e-3</reverseRate>
   </Reaction>
   <Reaction name = "STIM_CaER_3" id="STIM_CaER_3">
     <Reactant specieID="STIM_2" />
     <Reactant specieID="CaER" />
     <Product specieID="STIMCaER_STIM"/>
     <forwardRate>0.1e-3</forwardRate>
-    <reverseRate>10000e-3</reverseRate>
+    <reverseRate>5000e-3</reverseRate>
   </Reaction>
   <Reaction name = "STIM_Orai" id="STIM_Orai">
     <Reactant specieID="STIM_2" />
