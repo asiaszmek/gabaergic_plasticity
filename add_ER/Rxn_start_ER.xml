@@ -301,24 +301,24 @@
     <Reactant specieID="OraiSTIM_2" />
     <Reactant specieID="STIM_2" />
     <Product specieID="Orai2STIM_2"/>
-    <forwardRate>1.5e-4</forwardRate>
-    <reverseRate>8e-4</reverseRate>
+    <forwardRate>3e-4</forwardRate>
+    <reverseRate>8e-3</reverseRate>
   </Reaction>
 
   <Reaction name = "STIM_Orai3" id="STIM_Orai3">
     <Reactant specieID="Orai2STIM_2" />
     <Reactant specieID="STIM_2" />
     <Product specieID="Orai3STIM_2"/>
-    <forwardRate>1.5e-4</forwardRate>
-    <reverseRate>8e-4</reverseRate>
+    <forwardRate>6e-5</forwardRate>
+    <reverseRate>8e-3</reverseRate>
   </Reaction>
 
   <Reaction name = "STIM_Orai4" id="STIM_Orai4">
     <Reactant specieID="Orai3STIM_2" />
     <Reactant specieID="STIM_2" />
     <Product specieID="Orai4STIM_2"/>
-    <forwardRate>1.5e-4</forwardRate>
-    <reverseRate>8e-4</reverseRate>
+    <forwardRate>1.2e-5</forwardRate>
+    <reverseRate>8e-3</reverseRate>
   </Reaction>
 
   
