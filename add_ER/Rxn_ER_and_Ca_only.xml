@@ -46,10 +46,6 @@
   <Specie name="STIM_2" id="STIM_2" kdiff="0.05" kdiffunit="mu2/s" />
   <Specie name="STIM" id="STIM" kdiff="0.1" kdiffunit="mu2/s" />
   <Specie name="STIMCaER" id="STIMCaER" kdiff="0" kdiffunit="mu2/s" />
-  <Specie name="STIMCaER_STIM" id="STIMCaER_STIM" kdiff="0"
-	  kdiffunit="mu2/s" />
-  <Specie name="STIMCaER_STIMCaER" id="STIMCaER_STIMCaER" kdiff="0"
-	  kdiffunit="mu2/s" />
   
   <Specie name="fixedbuffer" id="fixedbuffer" kdiff="0" kdiffunit="mu2/s"/>
   <Specie name="fixedbufferCa" id="fixedbufferCa" kdiff="0" kdiffunit="mu2/s"/>
@@ -251,47 +247,18 @@
   <Reaction name = "STIM_dim_1" id="STIM_dim_1">
     <Reactant specieID="STIM" power="2" />
     <Product specieID="STIM_2" />
-    <forwardRate>10e-4</forwardRate>
-    <reverseRate>5e-5</reverseRate>
+    <forwardRate>1e-8</forwardRate>
+    <reverseRate>1e-3</reverseRate>
   </Reaction>
   
-  <Reaction name = "STIM_dim_2" id="STIM_dim_2">
-    <Reactant specieID="STIMCaER" />
-    <Reactant specieID="STIM" />
-    <Product specieID="STIMCaER_STIM"/>
-    <forwardRate>10e-4</forwardRate>
-    <reverseRate>5e-5</reverseRate>
-  </Reaction>
-
-  <Reaction name = "STIM_dim_3" id="STIM_dim_3">
-    <Reactant specieID="STIMCaER" power="2"/>
-    <Product specieID="STIMCaER_STIMCaER"/>
-    <forwardRate>10e-4</forwardRate>
-    <reverseRate>5e-5</reverseRate>
-  </Reaction>
-
   <Reaction name = "STIMCaER_1" id="STIMCaER_1">
     <Reactant specieID="STIM" />
     <Reactant specieID="CaER" />
     <Product specieID="STIMCaER"/>
     <forwardRate>0.1e-3</forwardRate>
-    <reverseRate>5000e-3</reverseRate>
+    <reverseRate>2000e-3</reverseRate>
   </Reaction>
 
-  <Reaction name = "STIMCaER_2" id="STIMCaER_2">
-    <Reactant specieID="STIMCaER_STIM" />
-    <Reactant specieID="CaER" />
-    <Product specieID="STIMCaER_STIMCaER"/>
-    <forwardRate>0.1e-3</forwardRate>
-    <reverseRate>5000e-3</reverseRate>
-  </Reaction>
-  <Reaction name = "STIMCaER_3" id="STIMCaER_3">
-    <Reactant specieID="STIM_2" />
-    <Reactant specieID="CaER" />
-    <Product specieID="STIMCaER_STIM"/>
-    <forwardRate>0.1e-3</forwardRate>
-    <reverseRate>5000e-3</reverseRate>
-  </Reaction>
   <Reaction name = "STIM_Orai" id="STIM_Orai">
     <Reactant specieID="STIM_2" />
     <Reactant specieID="Orai" />
