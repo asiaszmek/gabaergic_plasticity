@@ -27,8 +27,7 @@
   <SurfaceDensitySet region="dend">
     <PicoSD specieID="Leak" value="0"/>
     <PicoSD specieID="CaOutLeak" value="6000"/>
-   
-
+ 
     <PicoSD specieID="pmca" value="420"/>
     <PicoSD specieID="pmcaCa" value="180"/>
     <PicoSD specieID="ncx" value="13500"/>
@@ -50,18 +49,18 @@
      <PicoSD specieID="PIkinase"           value="280"  />
      <PicoSD specieID="Ip3degPIk"          value="0"  />
      <PicoSD specieID="Ip3degrad"          value="0"  />
-     <PicoSD specieID="Orai"          value="200"  />
+     <PicoSD specieID="Orai"          value="100"  />
   </SurfaceDensitySet>
   <ConcentrationSet region="dend">
     <NanoMolarity specieID="CaER"         value="0.5e5"     />
-    <NanoMolarity specieID="IP3R"      value="300"     />
-    <NanoMolarity specieID="CaERLeak" value="75"/>
-    <NanoMolarity specieID="LeakER" value="25"/>
+    <NanoMolarity specieID="IP3R"      value="150"     />
+    <NanoMolarity specieID="CaERLeak" value="37.5"/>
+    <NanoMolarity specieID="LeakER" value="12.5"/>
 
-    <NanoMolarity       specieID="SERCA"       value="50000"     />
-    <NanoMolarity       specieID="SERCA_Ca"       value="100000"     />
+    <NanoMolarity       specieID="SERCA"       value="15000"     />
+    <NanoMolarity       specieID="SERCA_Ca"       value="50000"     />
     <NanoMolarity       specieID="CRTP" value="0.1e+6"/>
-    <NanoMolarity specieID="STIM" value="10" />
+    <NanoMolarity specieID="STIMCaER" value="500" />
   </ConcentrationSet>
   
 
