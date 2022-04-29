@@ -9,3 +9,15 @@ I think we'll take C-site CaM constants and just adjust them to get 25 uM affini
 Junctate also binds, but nobody knows, how it interacts
 [a] DOI 10.1074/jbc.M005473200
 [b] DOI 10.1016/j.bpj.2010.02.038
+
+1. I needed to lower Kd of STIM1 to CaER, because model [2] had high affinity or STIM1 polymerization and as a consequence STIM1 would polymerize, bind ORAI etc. even for high CaER. I also increased STIM polymerization Kd compared to [2]. Now it is sort of OK, most STIM1 is bound to CaER. Especially for the one comp model, because stochasticity does not play such an important role.
+
+2. Tuning the model to experimental data:
+There is a lot of data on 0 Ca in the bath. This would mean starting simulations with 0 CaOout, 0 GluOut (it won't be released, right, with no Ca influx) and possibly 25 nM of Glu (there was some, it will be bound etc.)
+
+DOI: 10.1523/JNEUROSCI.23-21-07737.2003
+DOI:https://doi.org/10.1016/S0092-8674(00)80282-2 (not neurons, but will have to do).
+
+Thapsigargin kinetics binding to SERCA https://doi.org/10.1074/jbc.270.20.11731
+
+Barbara A Niemeyer did a lot of experimental work on SOCE, I should read more about it. Saleet Jafri and Dirk Gillespie.
