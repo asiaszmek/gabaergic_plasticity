@@ -34,7 +34,7 @@ results. depth 2D units are microns  -->
     <outputInterval>      200.0   </outputInterval>
 
     <!-- the tolerace is used for adaptive sims -->
-    <tolerance>           0.01       </tolerance>
+    <tolerance>           0.05       </tolerance>
     <!-- calculation types include
 	 GRID_STEPPED_STOCHASTIC (old fixedStep tau-leap),
 	 GRID_STEPPED_CONTINUOUS (deterministic), and
