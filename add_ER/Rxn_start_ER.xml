@@ -129,11 +129,10 @@
   <Specie name="PA"             id="PA"            kdiff="0"     kdiffunit="mu2/s"/>
   <Specie name="2agDegrad"      id="2agDegrad"     kdiff="88.6"  kdiffunit="mu2/s"/>
   <Specie name="Dgl"            id="Dgl"           kdiff="0"     kdiffunit="mu2/s"/>
-  <Specie name="pDgl"           id="pDgl"          kdiff="0"     kdiffunit="mu2/s"/>
   <Specie name="CaDgl"          id="CaDgl"         kdiff="0"     kdiffunit="mu2/s"/>
-  <Specie name="CapDgl"          id="CapDgl"         kdiff="0"     kdiffunit="mu2/s"/>
+
   <Specie name="DagCaDgl"       id="DagCaDgl"      kdiff="0"     kdiffunit="mu2/s"/>
-  <Specie name="DagCapDgl"       id="DagCapDgl"      kdiff="0"     kdiffunit="mu2/s"/>
+
   <Specie name="2ag"            id="2ag"           kdiff="88.6"  kdiffunit="mu2/s"/>
   <Specie name="Pkc"            id="Pkc"           kdiff="14"    kdiffunit="mu2/s"/>
   <Specie name="PkcCa"          id="PkcCa"         kdiff="14"    kdiffunit="mu2/s"/>
