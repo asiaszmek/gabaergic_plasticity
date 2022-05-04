@@ -36,23 +36,26 @@
     <PicoSD  specieID="Plc"  value="220"    />
     <PicoSD  specieID="Pip2" value="10000"  />
     <PicoSD  specieID="PIkinase"   value="300"  />
-    <PicoSD  specieID="MgluR" value="0.28e03"  />
-    <PicoSD specieID="Gqabg" value="5500"/>
+    <PicoSD  specieID="MgluR" value="100"  />
+    <PicoSD specieID="Gqabg" value="5320"/>
     <PicoSD specieID="GluMgluRdesens" value="40"/>
-    <PicoSD specieID="MgluRGq" value="160"/>
+    <PicoSD specieID="MgluRGq" value="320"/>
+    <PicoSD specieID="GluMgluRGq" value="25"/>
+
+    <PicoSD specieID="Dag"                value="120"  />
+    <PicoSD specieID="DagCaDgl"                value="30"  />
+ 
+    <PicoSD specieID="DagK"               value="140"  />
+    <PicoSD specieID="Dgl"                value="340"  />
+    <PicoSD specieID="CaDgl"              value="60"  />
     
-     <PicoSD specieID="Dag"                value="40"  />
-     <PicoSD specieID="DagK"               value="140"  />
-     <PicoSD specieID="Dgl"                value="308"  />
-     <PicoSD specieID="CaDgl"              value="112"  />
-     
-     <PicoSD specieID="PIkinase"           value="280"  />
-     <PicoSD specieID="Ip3degPIk"          value="0"  />
-     <PicoSD specieID="Ip3degrad"          value="0"  />
-     <PicoSD specieID="Orai"          value="100"  />
+    <PicoSD specieID="PIkinase"           value="280"  />
+    <PicoSD specieID="Ip3degPIk"          value="0"  />
+    <PicoSD specieID="Ip3degrad"          value="0"  />
+    <PicoSD specieID="Orai"          value="100"  />
   </SurfaceDensitySet>
   <ConcentrationSet region="dend">
-    <NanoMolarity specieID="CaER"         value="0.75e5"     />
+    <NanoMolarity specieID="CaER"         value="0.8e5"     />
     <NanoMolarity specieID="IP3R"      value="300"     />
     <NanoMolarity specieID="CaERLeak" value="75"/>
     <NanoMolarity specieID="LeakER" value="25"/>
