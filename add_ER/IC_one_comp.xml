@@ -2,25 +2,28 @@
 
 <InitialConditions>
   <ConcentrationSet>
-    <NanoMolarity specieID="Ca" value="75"/>
+    <NanoMolarity specieID="Ca" value="80"/>
     <NanoMolarity specieID="CaOut" value="2000000"/>
     <NanoMolarity specieID="GluOut" value="1000000"/>
+    <NanoMolarity specieID="Glu" value="40"/>
+    
     <!-- total calbindin = 160 uM -->
     <!-- total calbindin = 160 uM -->
-    <NanoMolarity specieID="Calbin" value="150000"/>
-    <NanoMolarity specieID="CalbinC" value="15000"/>
+    <NanoMolarity specieID="Calbin" value="149500"/>
+    <NanoMolarity specieID="CalbinC" value="15500"/>
     <NanoMolarity specieID="fixedbuffer" value="2000000"/>
     <NanoMolarity specieID="fixedbufferCa" value="3000"/>
 
-    <NanoMolarity specieID="CaM" value="8000"/>
-    <NanoMolarity specieID="CaMCa2C" value="300"/>
-    <NanoMolarity specieID="CaMCa4" value="0"/>
-    <NanoMolarity specieID="NgCaM" value="17500"/>
-    <NanoMolarity specieID="Ng" value="2500"/>
+    <NanoMolarity specieID="CaM" value="8050"/>
+    <NanoMolarity specieID="CaMCa2C" value="380"/>
+    <NanoMolarity specieID="CaMCa2N" value="60"/>
+    <NanoMolarity specieID="CaMCa4" value="2.5"/>
+    <NanoMolarity specieID="NgCaM" value="17250"/>
+    <NanoMolarity specieID="Ng" value="2750"/>
 
     <NanoMolarity specieID="Ip3" value="0.2"/>
-    <NanoMolarity specieID="Pkc"         value="9950"     />  
-    <NanoMolarity specieID="PkcCa"         value="50"     />  
+    <NanoMolarity specieID="Pkc"         value="9700"     />  
+    <NanoMolarity specieID="PkcCa"         value="300"     />  
 
 
     </ConcentrationSet>
@@ -29,39 +32,43 @@
   <SurfaceDensitySet region="dend">
     <PicoSD specieID="Leak" value="0"/>
     <PicoSD specieID="CaOutLeak" value="6000"/>
-    <PicoSD specieID="pmca" value="420"/>
-    <PicoSD specieID="pmcaCa" value="180"/>
-    <PicoSD specieID="ncx" value="13500"/>
-    <PicoSD specieID="ncxCa" value="1500"/>
+    <PicoSD specieID="pmca" value="450"/>
+    <PicoSD specieID="pmcaCa" value="150"/>
+    <PicoSD specieID="ncx" value="14000"/>
+    <PicoSD specieID="ncxCa" value="1000"/>
    
     <PicoSD  specieID="Plc"  value="220"    />
     <PicoSD  specieID="Pip2" value="10000"  />
     <PicoSD  specieID="PIkinase"   value="300"  />
-    <PicoSD  specieID="MgluR" value="0.28e03"  />
-    <PicoSD specieID="Gqabg" value="5500"/>
-    <PicoSD specieID="GluMgluRdesens" value="40"/>
-    <PicoSD specieID="MgluRGq" value="160"/>
+    <PicoSD  specieID="MgluR" value="400"  />
+    <PicoSD specieID="Gqabg" value="5620"/>
+    <PicoSD specieID="GluMgluRdesens" value="75"/>
+    <PicoSD specieID="MgluRGq" value="40"/>
     
-    <PicoSD specieID="Dag"                value="40"  />
+    <PicoSD specieID="Dag"                value="90"  />
     <PicoSD specieID="DagK"               value="140"  />
-    <PicoSD specieID="Dgl"                value="308"  />
-    <PicoSD specieID="CaDgl"              value="112"  />
+    <PicoSD specieID="Dgl"                value="360"  />
+    <PicoSD specieID="CaDgl"              value="60"  />
     
     <PicoSD specieID="PIkinase"           value="280"  />
     <PicoSD specieID="Ip3degPIk"          value="0"  />
     <PicoSD specieID="Ip3degrad"          value="0"  />
     <PicoSD specieID="Orai"          value="100"  />
   </SurfaceDensitySet>
+ 
   <ConcentrationSet region="dend">
-    <NanoMolarity specieID="CaER"         value="0.5e5"     />
+    <NanoMolarity specieID="CaER"         value="0.8e5"     />
     <NanoMolarity specieID="IP3R"      value="112"     />
-    <NanoMolarity specieID="CaERLeak" value="0"/>
-    <NanoMolarity specieID="LeakER" value="7.5"/>
+    <NanoMolarity specieID="CaERLeak" value="20"/>
 
-    <NanoMolarity       specieID="SERCA"       value="2000"     />
-    <NanoMolarity       specieID="SERCA_Ca"       value="7000"     />
-    <NanoMolarity       specieID="CRTP" value="0.1e+6"/>
-    <NanoMolarity specieID="STIMCaER" value="75" />
+
+    <NanoMolarity       specieID="SERCA"       value="1000"     />
+    <NanoMolarity       specieID="SERCA_Ca"       value="500"     />
+    <NanoMolarity       specieID="CRTP" value="9e+4"/>
+    <NanoMolarity       specieID="CRT" value="1e+4"/>
+ 
+    <NanoMolarity specieID="STIMCaER" value="55" />
+    <NanoMolarity specieID="STIM" value="20" />
   </ConcentrationSet>
   
 
