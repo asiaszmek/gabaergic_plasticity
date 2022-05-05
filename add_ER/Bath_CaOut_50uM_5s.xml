@@ -1,27 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StimulationSet>
 
-    <!-- the injectionSite must match a regionLabel deefined in the morphology -->
+  <!-- the injectionSite must match a regionLabel deefined in the morphology -->
    
 
-<!-- Train I -->
+  <!-- Train I -->
 
-<InjectionStim specieID="CaOut" injectionSite="dend:submembrane">
-        <onset>20000</onset>
-	<duration>1000</duration>
-	<rate>15000</rate>
-        
-        <end>21000</end> 
-       
-</InjectionStim>
+  <InjectionStim specieID="CaOut" injectionSite="dend:submembrane">
+    <onset>20000</onset>
+    <duration>1000</duration>
+    <rate>15000</rate>
+    <end>21000</end> 
+  </InjectionStim>
 
-<InjectionStim specieID="CaOutbuff" injectionSite="dend:submembrane">
-        <onset>25000</onset>
-	<duration>1000</duration>
-	<rate>15000</rate>
-        
-        <end>26000</end> 
-       
+  <InjectionStim specieID="CaOutbuff" injectionSite="dend:submembrane">
+    <onset>25000</onset>
+    <duration>1000</duration>
+    <rate>15000</rate>
+    <end>26000</end> 
+  </InjectionStim>
+  
+  <InjectionStim specieID="GluOut" injectionSite="dend:submembrane">
+    <onset>20000</onset>
+    <duration>1000</duration>
+    <rate>300</rate>
+    <end>21000</end> 
+  </InjectionStim>
+
+  <InjectionStim specieID="GluBuff" injectionSite="dend:submembrane">
+    <onset>25000</onset>
+    <duration>1000</duration>
+    <rate>300</rate>
+    <end>26000</end>    
   </InjectionStim>
 
 </StimulationSet>
