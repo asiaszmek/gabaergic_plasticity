@@ -14,8 +14,8 @@
     <NanoMolarity specieID="fixedbuffer" value="2000000"/>
     <NanoMolarity specieID="fixedbufferCa" value="3000"/>
 
-    <NanoMolarity specieID="CaM" value="8050"/>
-    <NanoMolarity specieID="CaMCa2C" value="380"/>
+    <NanoMolarity specieID="CaM" value="8040"/>
+    <NanoMolarity specieID="CaMCa2C" value="400"/>
     <NanoMolarity specieID="CaMCa2N" value="60"/>
     <NanoMolarity specieID="CaMCa4" value="2.5"/>
     <NanoMolarity specieID="NgCaM" value="17250"/>
@@ -57,18 +57,20 @@
   </SurfaceDensitySet>
  
   <ConcentrationSet region="dend">
-    <NanoMolarity specieID="CaER"         value="0.8e5"     />
+    <NanoMolarity specieID="CaER"         value="0.81e5"     />
     <NanoMolarity specieID="IP3R"      value="112"     />
-    <NanoMolarity specieID="CaERLeak" value="20"/>
+    <NanoMolarity specieID="CaERLeak" value="10"/>
+    <NanoMolarity specieID="LeakER" value="10"/>
 
 
-    <NanoMolarity       specieID="SERCA"       value="1000"     />
-    <NanoMolarity       specieID="SERCA_Ca"       value="500"     />
-    <NanoMolarity       specieID="CRTP" value="9e+4"/>
-    <NanoMolarity       specieID="CRT" value="1e+4"/>
+    <NanoMolarity       specieID="SERCA"       value="317.5"     />
+    <NanoMolarity       specieID="SERCA_Ca"       value="1180"     />
+    <NanoMolarity       specieID="SERCA_Ca2"       value="2.5"     />
+    <NanoMolarity       specieID="CRTP" value="8.9e+4"/>
+    <NanoMolarity       specieID="CRT" value="1.1e+4"/>
  
-    <NanoMolarity specieID="STIMCaER" value="55" />
-    <NanoMolarity specieID="STIM" value="20" />
+    <NanoMolarity specieID="STIMCaER" value="60" />
+    <NanoMolarity specieID="STIM" value="15" />
   </ConcentrationSet>
   
 
