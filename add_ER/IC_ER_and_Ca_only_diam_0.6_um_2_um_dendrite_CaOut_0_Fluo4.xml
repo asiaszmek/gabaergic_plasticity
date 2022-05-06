@@ -15,7 +15,8 @@
     <NanoMolarity specieID="NgCaM" value="17250"/>
     <NanoMolarity specieID="Ng" value="2750"/>
     <NanoMolarity specieID="Ip3" value="20"/>
-    <NanoMolarity specieID="Fluo4" value="500"/>
+    <NanoMolarity specieID="Fluo4" value="450"/>
+    <NanoMolarity specieID="Fluo4Ca" value="50"/>
 
     </ConcentrationSet>
 

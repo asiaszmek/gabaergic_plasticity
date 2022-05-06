@@ -18,7 +18,8 @@
     <NanoMolarity specieID="Pkc"         value="9700"     />  
     <NanoMolarity specieID="PkcCa"         value="300"     />  
 
-    <NanoMolarity specieID="Fluo4" value="500"/>
+    <NanoMolarity specieID="Fluo4" value="450"/>
+    <NanoMolarity specieID="Fluo4Ca" value="50"/>
     </ConcentrationSet>
 
 

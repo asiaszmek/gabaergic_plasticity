@@ -50,15 +50,8 @@
     <PicoSD specieID="Orai"          value="100"  />
   </SurfaceDensitySet>
   <ConcentrationSet region="dend">
-    <NanoMolarity specieID="CaER"         value="0.8e5"     />
     <NanoMolarity specieID="IP3R"      value="300"     />
-    <NanoMolarity specieID="CaERLeak" value="75"/>
-    <NanoMolarity specieID="LeakER" value="25"/>
-
-    <NanoMolarity       specieID="CRTP" value="9e+4"/>
-    <NanoMolarity       specieID="CRT" value="1e+4"/>
-    <NanoMolarity specieID="STIMCaER" value="750" />
-    <NanoMolarity specieID="STIM" value="250" />
+    <NanoMolarity specieID="STIM" value="1000" />
   </ConcentrationSet>
   
 
