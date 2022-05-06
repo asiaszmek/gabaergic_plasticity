@@ -58,6 +58,8 @@
  
   <ConcentrationSet region="dend">
     <NanoMolarity specieID="IP3R"      value="112"     />
+    <NanoMolarity specieID="LeakER" value="200"/>
+    <NanoMolarity specieID="CRT" value="1.0e+5"/>
     <NanoMolarity specieID="STIM" value="75" />
   </ConcentrationSet>
   

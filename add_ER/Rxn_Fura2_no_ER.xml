@@ -64,21 +64,7 @@
   <Specie name="ncxCa" id="ncxCa" kdiff="0" kdiffunit="mu2/s" />
  
   <Specie name="CaER" id="CaER" kdiff="0." kdiffunit="mu2/s"/>
-  
-  <Specie name="CaERLeak" id="CaERLeak" kdiff="0" kdiffunit="mu2/s"/>
-
-  <Specie name="LeakER" id="LeakER" kdiff="0" kdiffunit="mu2/s"/>
-
-  <Specie name="SERCA" id="SERCA" kdiff="0" kdiffunit="mu2/s"/>
-  <Specie name="SERCA_Ca" id="SERCA_Ca" kdiff="0" kdiffunit="mu2/s"/>
-  <Specie name="SERCA_Ca2" id="SERCA_Ca2" kdiff="0" kdiffunit="mu2/s"/>
-
-  
-  <!--calreticulin-->
-  <Specie name="CRT" id="CRT" kdiff="0" kdiffunit="mu2/s"/>
-  <Specie name="CRTP" id="CRTP" kdiff="0" kdiffunit="mu2/s"/>
-
-
+ 
   <Specie name="Ng" id="Ng" kdiff="0" kdiffunit="mu2/s" />
   <Specie name="NgCaM" id="NgCaM" kdiff="0" kdiffunit="mu2/s" />
   <!-- -->
@@ -423,6 +409,7 @@
 <!--2a) CaM  + Ng
 <-> NgCaM -->
 <!--I step of the Neurogranin -->
+
 <Reaction name="NgCaM_bind" id="NgCaM_bind">
   <Reactant specieID="CaM" />
   <Reactant specieID="Ng" />
@@ -816,71 +803,6 @@ MUCH slower binding compared to CaDgl  -->
      
     <!-- Ca leak -    CaOut + Leak <-> CaOutLeak -->
   <!-- Serca -->
-  <Reaction name = "SERCA_1a" id="SERCA_1a">
-    <Reactant specieID="Ca" />
-    <Reactant specieID="SERCA"/>
-    <Product specieID="SERCA_Ca"/>
-    
-    <forwardRate>2e-3</forwardRate>
-    <reverseRate>0.04</reverseRate>
-    <Q10>0.2</Q10>
-  </Reaction>
-
-
-  
-    <Reaction name = "SERCA_1b" id="SERCA_1b">
-    <Reactant specieID="Ca" />
-    <Reactant specieID="SERCA_Ca"/>
-    <Product specieID="SERCA_Ca2"/>
-    
-    <forwardRate>2.5e-7</forwardRate>
-    <reverseRate>25e-4</reverseRate>
-    <Q10>0.2</Q10>
-  </Reaction>
-
-
-  <Reaction name = "SERCA_1c" id="SERCA_1c">
-    <Reactant specieID="SERCA_Ca2"/>
-    <Product specieID="CaER" power="2" />
-    <Product specieID="SERCA"/>
-    <forwardRate>7.5e-3</forwardRate>
-    <Q10>0.2</Q10>
-  </Reaction>
-
-
-
-
- <!-- ER Ca leak -    CaER+ LeakER <-> CaERLeak-->
-  <Reaction name = "Ca_leakER" id="Ca_leakaER">
-    <Reactant specieID="CaER"/>
-    <Reactant specieID="LeakER"/>
-    <Product specieID="CaERLeak"/>
-    
-    <forwardRate>7.e-8</forwardRate>
-    <reverseRate>1.1e-3</reverseRate>
-    <Q10>0.2</Q10>
-  </Reaction>
-    
-<!--  ER Ca leak -    CaERLeak <-> Ca + LeakER-->
-  <Reaction name = "Ca_leakER" id="Ca_leakbER">
-    <Reactant specieID="CaERLeak"/>
-    <Product specieID="Ca"/>
-    <Product specieID="LeakER"/>
-    
-    <forwardRate>2.5e-3</forwardRate>
-    <reverseRate>0</reverseRate>
-    <Q10>0.2</Q10>
-  </Reaction>
-  <!-- higher affinity lower capacity CRT-Ca binding,
-       Baksh and Michalak, J Biol Chem 1991-->
-  <Reaction name = "CRTP_bind" id="CRTP_bind">
-    <Reactant specieID="CRT"/>
-    <Reactant specieID="CaER"/>
-    <Product specieID="CRTP"/>
-    
-    <forwardRate>1e-7</forwardRate>
-    <reverseRate>0.001</reverseRate>
-    </Reaction>
 
   <Reaction name = "IP3R+IP3" id="IP3R+IP3">
     <Reactant specieID="IP3R"           />
