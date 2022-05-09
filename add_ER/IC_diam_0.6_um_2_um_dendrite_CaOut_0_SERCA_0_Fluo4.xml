@@ -51,7 +51,7 @@
   </SurfaceDensitySet>
   <ConcentrationSet region="dend">
     <NanoMolarity specieID="IP3R"      value="300"     />
-    <NanoMolarity specieID="STIM" value="1000" />
+    <NanoMolarity specieID="STIM" value="10000" />
   </ConcentrationSet>
   
 

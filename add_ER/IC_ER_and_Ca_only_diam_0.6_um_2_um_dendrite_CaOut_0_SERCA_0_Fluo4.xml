@@ -28,7 +28,7 @@
     <PicoSD specieID="Orai"          value="100"  />
   </SurfaceDensitySet>
   <ConcentrationSet region="dend">
-    <NanoMolarity specieID="STIM" value="1000" />
+    <NanoMolarity specieID="STIM" value="10000" />
   </ConcentrationSet>
   
 
