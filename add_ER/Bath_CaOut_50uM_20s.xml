@@ -27,7 +27,7 @@
     <end>21000</end>    
   </InjectionStim>
 
-  <InjectionStim specieID="CaOutbuff" injectionSite="dend:submembrane">
+  <InjectionStim specieID="GluBuf" injectionSite="dend:submembrane">
     <onset>40000</onset>
     <duration>1000</duration>
     <rate>300</rate>

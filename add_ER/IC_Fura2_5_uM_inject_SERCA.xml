@@ -9,10 +9,8 @@
     
     <!-- total calbindin = 160 uM -->
     <!-- total calbindin = 160 uM -->
-    <NanoMolarity specieID="Calbin" value="149500"/>
-    <NanoMolarity specieID="CalbinC" value="15500"/>
+    <NanoMolarity specieID="Calbin" value="165000"/>
     <NanoMolarity specieID="fixedbuffer" value="2000000"/>
-    <NanoMolarity specieID="fixedbufferCa" value="3000"/>
 
     <NanoMolarity specieID="CaM" value="8040"/>
     <NanoMolarity specieID="CaMCa2C" value="400"/>
@@ -21,7 +19,7 @@
     <NanoMolarity specieID="NgCaM" value="17250"/>
     <NanoMolarity specieID="Ng" value="2750"/>
 
-    <NanoMolarity specieID="Ip3" value="0.2"/>
+    <NanoMolarity specieID="Ip3" value="0.02"/>
     <NanoMolarity specieID="Pkc"         value="9700"     />  
     <NanoMolarity specieID="PkcCa"         value="300"     />  
     <NanoMolarity specieID="Fura2" value="5000"/>
@@ -32,10 +30,8 @@
   <SurfaceDensitySet region="dend">
     <PicoSD specieID="Leak" value="6000"/>
     <PicoSD specieID="CaOutLeak" value="0"/>
-    <PicoSD specieID="pmca" value="450"/>
-    <PicoSD specieID="pmcaCa" value="150"/>
-    <PicoSD specieID="ncx" value="14000"/>
-    <PicoSD specieID="ncxCa" value="1000"/>
+    <PicoSD specieID="pmca" value="600"/>
+    <PicoSD specieID="ncx" value="15000"/>
    
     <PicoSD  specieID="Plc"  value="220"    />
     <PicoSD  specieID="Pip2" value="10000"  />
