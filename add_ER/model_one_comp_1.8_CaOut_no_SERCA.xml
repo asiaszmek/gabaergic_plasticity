@@ -5,7 +5,7 @@
 
           <xi:include href="Rxn_Fura2_no_ER.xml"/>
           <xi:include href="Morph.xml" />        
-          <xi:include href="IC_ER_Ca_Fura2_5_uM_no_SERCA.xml"/>
+          <xi:include href="IC_Fura2_5_uM_no_SERCA.xml"/>
 	  <xi:include href="Bath_CaOut_1.8uM.xml"/>
  	  
  
