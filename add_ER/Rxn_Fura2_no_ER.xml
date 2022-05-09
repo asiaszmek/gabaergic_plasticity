@@ -144,7 +144,7 @@
     <Reactant specieID="Fura2"/>
     <Product specieID="Fura2Ca"/>
 
-    <forwardRate>5.1e-4</forwardRate>
+    <forwardRate>0.35e-4</forwardRate>
     <reverseRate>2.6e-3</reverseRate>
   </Reaction>
 
@@ -220,7 +220,7 @@
     <Reactant specieID="Orai4STIM_2" />
     <Product specieID="CaOutOrai4STIM_2" />
     
-    <forwardRate>1.5e-8</forwardRate>
+    <forwardRate>1.5e-6</forwardRate>
     <reverseRate>1.1e-3</reverseRate>
   </Reaction>
 
@@ -239,7 +239,7 @@
     <Reactant specieID="Orai3STIM_2" />
     <Product specieID="CaOutOrai3STIM_2" />
     
-    <forwardRate>4.125e-9</forwardRate>
+    <forwardRate>5e-7</forwardRate>
     <reverseRate>1.1e-3</reverseRate>
   </Reaction>
 
@@ -257,7 +257,7 @@
     <Reactant specieID="Orai2STIM_2" />
     <Product specieID="CaOutOrai2STIM_2" />
     
-    <forwardRate>3.75e-10</forwardRate>
+    <forwardRate>3.75e-8</forwardRate>
     <reverseRate>1.1e-3</reverseRate>
   </Reaction>
 
@@ -276,7 +276,7 @@
     <Reactant specieID="OraiSTIM_2" />
     <Product specieID="CaOutOraiSTIM_2" />
     
-    <forwardRate>1.5e-11</forwardRate>
+    <forwardRate>1.5e-9</forwardRate>
     <reverseRate>1.1e-3</reverseRate>
   </Reaction>
 
