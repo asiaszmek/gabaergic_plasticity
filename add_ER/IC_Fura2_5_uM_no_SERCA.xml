@@ -41,12 +41,12 @@
     <PicoSD specieID="PIkinase"           value="280"  />
     <PicoSD specieID="Ip3degPIk"          value="0"  />
     <PicoSD specieID="Ip3degrad"          value="0"  />
-    <PicoSD specieID="Orai"          value="100"  />
+    <PicoSD specieID="Orai"          value="500"  />
   </SurfaceDensitySet>
  
   <ConcentrationSet region="dend">
     <NanoMolarity specieID="IP3R"      value="112"     />
-    <NanoMolarity specieID="STIM" value="1000000" />
+    <NanoMolarity specieID="STIM" value="1000" />
   </ConcentrationSet>
   
 

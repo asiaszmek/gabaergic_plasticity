@@ -49,7 +49,7 @@
      <PicoSD specieID="PIkinase"           value="280"  />
      <PicoSD specieID="Ip3degPIk"          value="0"  />
      <PicoSD specieID="Ip3degrad"          value="0"  />
-     <PicoSD specieID="Orai"          value="100"  />
+     <PicoSD specieID="Orai"          value="500"  />
 
   </SurfaceDensitySet>
   <ConcentrationSet region="dend">
@@ -62,7 +62,7 @@
     <NanoMolarity       specieID="SERCA_Ca"       value="10000"     />
     <NanoMolarity       specieID="CRTP" value="0.1e+6"/>
 
-    <NanoMolarity specieID="STIMCaER" value="100" />
+    <NanoMolarity specieID="STIMCaER" value="1000" />
   </ConcentrationSet>
   
 

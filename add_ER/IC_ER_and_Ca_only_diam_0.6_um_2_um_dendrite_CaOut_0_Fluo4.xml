@@ -27,7 +27,7 @@
     <PicoSD specieID="pmca" value="600"/>
     <PicoSD specieID="ncx" value="15000"/>
 
-    <PicoSD specieID="Orai"          value="100"  />
+    <PicoSD specieID="Orai"          value="500"  />
   </SurfaceDensitySet>
   <ConcentrationSet region="dend">
     <NanoMolarity specieID="CaER"         value="0.8e5"     />

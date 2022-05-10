@@ -17,11 +17,11 @@
     <PicoSD specieID="CaOutLeak" value="0"/>
     <PicoSD specieID="pmca" value="600"/>
     <PicoSD specieID="ncx" value="15000"/>
-    <PicoSD specieID="Orai"          value="100"  />
+    <PicoSD specieID="Orai"          value="500"  />
 
   </SurfaceDensitySet>
   <ConcentrationSet region="dend">
-    <NanoMolarity specieID="STIM" value="75" />
+    <NanoMolarity specieID="STIM" value="1000" />
   </ConcentrationSet>
   
 
