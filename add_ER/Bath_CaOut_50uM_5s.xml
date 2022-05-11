@@ -19,6 +19,7 @@
     <rate>30000</rate>
     <end>206000</end> 
   </InjectionStim>
+
   
   <InjectionStim specieID="GluOut" injectionSite="dend:submembrane">
     <onset>200000</onset>
