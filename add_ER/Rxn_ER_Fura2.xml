@@ -24,6 +24,7 @@
 
   <!--TODO add bAR desensitization!-->
   <Specie name="Ca" id="Ca" kdiff="174.3" kdiffunit="mu2/s" />
+  <!-- doi: 10.1126/science.1465619-->
   <Specie name="CaOut" id="CaOut" kdiff="3." kdiffunit="mu2/s" />
   <Specie name="CaOutbuff" id="CaOutbuff" kdiff="3." kdiffunit="mu2/s" />
 

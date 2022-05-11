@@ -6,10 +6,18 @@
 
   <!-- Train I -->
 
+  <InjectionStim specieID="TG" injectionSite="dend:submembrane">
+    <onset>1</onset>
+    <duration>300</duration>
+    <rate>70</rate>
+    <end>301</end> 
+  </InjectionStim>
+
+  
   <InjectionStim specieID="CaOut" injectionSite="dend:submembrane">
     <onset>300000</onset>
     <duration>300</duration>
-    <rate>100800</rate>
+    <rate>100000</rate>
     <end>301000</end> 
   </InjectionStim>
 
