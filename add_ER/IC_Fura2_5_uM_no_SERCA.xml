@@ -24,7 +24,7 @@
     <NanoMolarity specieID="Ip3" value="0.0"/>
     <NanoMolarity specieID="Pkc"         value="9700"     />  
     <NanoMolarity specieID="PkcCa"         value="300"     />  
-
+    <NanoMolarity specieID="Fura2"         value="5000"     />  
 
     </ConcentrationSet>
 
