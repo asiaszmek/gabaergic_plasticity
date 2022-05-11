@@ -5,33 +5,39 @@
    
   
   <!-- Train I -->
+  <InjectionStim specieID="CaOutbuff" injectionSite="dend:submembrane">
+    <onset>1</onset>
+    <duration>1000</duration>
+    <rate>7</rate>
+    <end>306000</end> 
+  </InjectionStim>
   
   <InjectionStim specieID="CaOut" injectionSite="dend:submembrane">
-    <onset>200000</onset>
+    <onset>300000</onset>
     <duration>1000</duration>
-    <rate>30000</rate>
-    <end>201000</end> 
+    <rate>36000</rate>
+    <end>301000</end> 
   </InjectionStim>
   
   <InjectionStim specieID="CaOutbuff" injectionSite="dend:submembrane">
-    <onset>220000</onset>
+    <onset>320000</onset>
     <duration>1000</duration>
-    <rate>30000</rate>
-    <end>221000</end> 
+    <rate>36000</rate>
+    <end>321000</end> 
   </InjectionStim>
 
   <InjectionStim specieID="GluOut" injectionSite="dend:submembrane">
-    <onset>200000</onset>
+    <onset>300000</onset>
     <duration>1000</duration>
-    <rate>300</rate>
-    <end>201000</end>    
+    <rate>750</rate>
+    <end>301000</end>    
   </InjectionStim>
 
   <InjectionStim specieID="GluBuf" injectionSite="dend:submembrane">
-    <onset>220000</onset>
+    <onset>320000</onset>
     <duration>1000</duration>
-    <rate>300</rate>
-    <end>221000</end> 
+    <rate>750</rate>
+    <end>321000</end> 
   </InjectionStim>
 
 </StimulationSet>
