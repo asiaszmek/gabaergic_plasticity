@@ -290,7 +290,7 @@
     <Reactant specieID="OraiSTIM_2" />
     <Product specieID="CaOutOraiSTIM_2" />
     
-    <forwardRate>1.5e-9</forwardRate>
+    <forwardRate>1.5e-10</forwardRate>
     <reverseRate>1.1e-3</reverseRate>
   </Reaction>
 
