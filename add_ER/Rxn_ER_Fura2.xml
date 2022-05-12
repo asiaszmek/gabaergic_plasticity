@@ -291,7 +291,7 @@
     <Reactant specieID="OraiSTIM_2" />
     <Product specieID="CaOutOraiSTIM_2" />
     
-    <forwardRate>1.5e-9</forwardRate>
+    <forwardRate>1.5e-10</forwardRate>
     <reverseRate>1.1e-3</reverseRate>
   </Reaction>
 
@@ -308,8 +308,8 @@
   <Reaction name = "STIM_dim_1" id="STIM_dim_1">
     <Reactant specieID="STIM" power="2" />
     <Product specieID="STIM_2" />
-    <forwardRate>1e-8</forwardRate>
-    <reverseRate>1e-3</reverseRate>
+    <forwardRate>1e-7</forwardRate>
+    <reverseRate>1e-2</reverseRate>
   </Reaction>
   
 
@@ -317,8 +317,8 @@
     <Reactant specieID="STIM" />
     <Reactant specieID="CaER" />
     <Product specieID="STIMCaER"/>
-    <forwardRate>0.1e-3</forwardRate>
-    <reverseRate>200e-3</reverseRate>
+    <forwardRate>1e-3</forwardRate>
+    <reverseRate>20e-3</reverseRate>
   </Reaction>
 
   <Reaction name = "STIM_Orai" id="STIM_Orai">
@@ -857,8 +857,8 @@ MUCH slower binding compared to CaDgl  -->
     <Reactant specieID="LeakER"/>
     <Product specieID="CaERLeak"/>
     
-    <forwardRate>7.e-8</forwardRate>
-    <reverseRate>1.1e-3</reverseRate>
+    <forwardRate>7.e-7</forwardRate>
+    <reverseRate>1.1e-4</reverseRate>
     <Q10>0.2</Q10>
   </Reaction>
     
@@ -868,7 +868,7 @@ MUCH slower binding compared to CaDgl  -->
     <Product specieID="Ca"/>
     <Product specieID="LeakER"/>
     
-    <forwardRate>2.5e-3</forwardRate>
+    <forwardRate>2.5e-2</forwardRate>
     <reverseRate>0</reverseRate>
     <Q10>0.2</Q10>
   </Reaction>
