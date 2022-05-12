@@ -11,6 +11,11 @@
     <duration>300</duration>
     <rate>70</rate>
     <end>301</end> 
+  <InjectionStim specieID="CaOutbuff" injectionSite="dend:submembrane">
+    <onset>1</onset>
+    <duration>300000</duration>
+    <rate>1</rate>
+    <end>300000</end> 
   </InjectionStim>
 
   
