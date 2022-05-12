@@ -65,12 +65,14 @@
 
 
     <NanoMolarity       specieID="SERCA"       value="3000"     />
-    <NanoMolarity       specieID="SERCA_Ca"       value="10400"     />
+    <NanoMolarity       specieID="SERCA_Ca"       value="10600"     />
     <NanoMolarity       specieID="SERCA_Ca2"       value="19"     />
     <NanoMolarity       specieID="CRTP" value="8.9e+4"/>
     <NanoMolarity       specieID="CRT" value="1.1e+4"/>
  
-    <NanoMolarity specieID="STIMCaER" value="1000" />
+    <NanoMolarity specieID="STIM" value="20" />
+    <NanoMolarity specieID="STIMCaER" value="980" />
+ 
   </ConcentrationSet>
   
 
