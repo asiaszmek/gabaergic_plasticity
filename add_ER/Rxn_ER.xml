@@ -834,8 +834,8 @@ MUCH slower binding compared to CaDgl  -->
     <Reactant specieID="LeakER"/>
     <Product specieID="CaERLeak"/>
     
-    <forwardRate>7.e-8</forwardRate>
-    <reverseRate>1.1e-3</reverseRate>
+    <forwardRate>7.e-7</forwardRate>
+    <reverseRate>1.1e-4</reverseRate>
     <Q10>0.2</Q10>
   </Reaction>
     
@@ -845,7 +845,7 @@ MUCH slower binding compared to CaDgl  -->
     <Product specieID="Ca"/>
     <Product specieID="LeakER"/>
     
-    <forwardRate>2.5e-3</forwardRate>
+    <forwardRate>2.5e-2</forwardRate>
     <reverseRate>0</reverseRate>
     <Q10>0.2</Q10>
   </Reaction>
