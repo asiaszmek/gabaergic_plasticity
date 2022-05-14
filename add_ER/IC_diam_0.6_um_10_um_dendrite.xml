@@ -54,8 +54,8 @@
   <ConcentrationSet region="dend">
     <NanoMolarity specieID="CaER"         value="0.5e5"     />
     <NanoMolarity specieID="IP3R"      value="300"     />
-    <NanoMolarity specieID="CaERLeak" value="75"/>
-    <NanoMolarity specieID="LeakER" value="25"/>
+    <NanoMolarity specieID="CaERLeak" value="7.5"/>
+    <NanoMolarity specieID="LeakER" value="2.5"/>
 
     <NanoMolarity       specieID="SERCA"       value="50000"     />
     <NanoMolarity       specieID="SERCA_Ca"       value="100000"     />
