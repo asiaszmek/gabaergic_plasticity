@@ -9,7 +9,7 @@
   <InjectionStim specieID="TG" injectionSite="dend:submembrane">
     <onset>1</onset>
     <duration>1000</duration>
-    <rate>140</rate>
+    <rate>1400</rate>
     <end>600000</end> 
   </InjectionStim>
 
