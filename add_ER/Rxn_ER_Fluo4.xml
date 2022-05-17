@@ -72,6 +72,7 @@
   <Specie name="SERCA" id="SERCA" kdiff="0" kdiffunit="mu2/s"/>
   <Specie name="SERCA_Ca" id="SERCA_Ca" kdiff="0" kdiffunit="mu2/s"/>
   <Specie name="SERCA_Ca2" id="SERCA_Ca2" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="SERCA_CaER" id="SERCA_CaER" kdiff="0" kdiffunit="mu2/s"/>
 
   
   <!--calreticulin-->
@@ -741,9 +742,17 @@ avoids the need to generate Gqbg, and have them react-->
 
   <Reaction name = "SERCA_1c" id="SERCA_1c">
     <Reactant specieID="SERCA_Ca2"/>
-    <Product specieID="CaER" n="2" />
+    <Product specieID="CaER" />
+    <Product specieID="SERCA_CaER"/>
+    <forwardRate>7.5e-2</forwardRate>
+    <Q10>0.2</Q10>
+  </Reaction>
+
+  <Reaction name = "SERCA_1d" id="SERCA_1d">
+    <Reactant specieID="SERCA_CaER"/>
+    <Product specieID="CaER" />
     <Product specieID="SERCA"/>
-    <forwardRate>7.5e-3</forwardRate>
+    <forwardRate>7.5e-2</forwardRate>
     <Q10>0.2</Q10>
   </Reaction>
 
