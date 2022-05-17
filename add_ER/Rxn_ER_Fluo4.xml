@@ -305,7 +305,7 @@
   
 
   <Reaction name = "STIM_dim_1" id="STIM_dim_1">
-    <Reactant specieID="STIM" power="2" />
+    <Reactant specieID="STIM" n="2" />
     <Product specieID="STIM_2" />
     <forwardRate>1e-5</forwardRate>
     <reverseRate>0.2e-2</reverseRate>
@@ -841,7 +841,7 @@ MUCH slower binding compared to CaDgl  -->
 
   <Reaction name = "SERCA_1c" id="SERCA_1c">
     <Reactant specieID="SERCA_Ca2"/>
-    <Product specieID="CaER" power="2" />
+    <Product specieID="CaER" n="2" />
     <Product specieID="SERCA"/>
     <forwardRate>7.5e-3</forwardRate>
     <Q10>0.2</Q10>
