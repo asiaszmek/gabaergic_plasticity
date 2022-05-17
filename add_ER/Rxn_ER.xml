@@ -123,20 +123,6 @@
 
   <Specie name="IP3RC4"          id="IP3RC4"          kdiff="0"     kdiffunit="mu2/s"/>
   <Specie name="Ip3"            id="Ip3"           kdiff="10." kdiffunit="mu2/s"/>
-  <Specie name="Dag"       id="Dag"   kdiff="0"    kdiffunit="mu2/s"/>
-  <Specie name="DagK"           id="DagK"          kdiff="0"     kdiffunit="mu2/s"/>
-  <Specie name="DagKdag"        id="DagKdag"       kdiff="0"     kdiffunit="mu2/s"/>
-  <Specie name="PA"             id="PA"            kdiff="0"     kdiffunit="mu2/s"/>
-  <Specie name="2agDegrad"      id="2agDegrad"     kdiff="88.6"  kdiffunit="mu2/s"/>
-  <Specie name="Dgl"            id="Dgl"           kdiff="0"     kdiffunit="mu2/s"/>
-  <Specie name="CaDgl"          id="CaDgl"         kdiff="0"     kdiffunit="mu2/s"/>
-
-  <Specie name="DagCaDgl"       id="DagCaDgl"      kdiff="0"     kdiffunit="mu2/s"/>
-
-  <Specie name="2ag"            id="2ag"           kdiff="88.6"  kdiffunit="mu2/s"/>
-  <Specie name="Pkc"            id="Pkc"           kdiff="14"    kdiffunit="mu2/s"/>
-  <Specie name="PkcCa"          id="PkcCa"         kdiff="14"    kdiffunit="mu2/s"/>
-  <Specie name="PkcCaDag"       id="PkcCaDag"      kdiff="0"     kdiffunit="mu2/s"/>
 
   <!--Hindered cytoplasmic diffusion of
 	  inositol trisphosphate restricts its cellular range of
@@ -492,7 +478,6 @@ Incraese Kb by 5x to decrease Ip3 production-->
     <Reactant specieID="PlcCaPip2"            />
     <Product  specieID="PlcCa"               />
     <Product  specieID="Ip3"            />
-    <Product  specieID="Dag"            />
 
     <forwardRate> 0.45e-03     </forwardRate>
     <reverseRate> 0e-03    </reverseRate>
@@ -517,7 +502,6 @@ Increse Kb by 5x to decrease Ip3 production-->
 <Reaction name = "PlcCaGqaGTPPip2--PlcCaGqaGTPDag+Ip3" id="PlcCaGqaGTPPip2--PlcCaGqaGTPDag+Ip3">
     <Reactant specieID="PlcCaGqaGTPPip2"            />
     <Product  specieID="PlcCaGqaGTP"               />
-    <Product  specieID="Dag"            />
     <Product  specieID="Ip3"            />
 
     <forwardRate> 30e-03     </forwardRate>
@@ -589,38 +573,6 @@ Discovered mistake!!! specified PIkinase as product, not reactant!-->
     <Q10>         0.2           </Q10>
 </Reaction>
 
-    <!-- Ca + Dgl <-> CaDgl   Dgl is DAG lipase, which produces 2AG -->
-    <!-- no source for rates.  Make 400 nM affinity -->
-    <Reaction name = "Ca+Dlg--CaDgl" id="Ca+Dlg--CaDgl">
-        <Reactant specieID="Ca"            />
-        <Reactant specieID="Dgl"               />
-        <Product  specieID="CaDgl"            />
-
-        <forwardRate> 0.125e-03     </forwardRate>
-        <reverseRate> 50e-03    </reverseRate>
-    </Reaction>
- 
-    <!-- Dag + CaDgl <-> DagCaDgl -->
-    <!--affinity dec to 2500 nM   -->
-    <Reaction name = "Dag+CaDlg--DagCaDgl" id="Dag+CaDlg--DagCaDgl">
-        <Reactant specieID="Dag"            />
-        <Reactant specieID="CaDgl"               />
-        <Product  specieID="DagCaDgl"            />
-
-        <forwardRate> 0.0005e-03     </forwardRate>
-        <reverseRate> 1.0e-03    </reverseRate>
-    </Reaction>
-
-    <!-- DagCaDgl <-> CaDgl + 2ag -->
-    <!-- kcat from Rosenburger Lipids 2007 -->
-    <Reaction name = "DagCaDgl--CaDgl+2ag" id="DagCaDgl--CaDgl+2ag">
-        <Reactant specieID="DagCaDgl"            />
-        <Product  specieID="CaDgl"               />
-        <Product  specieID="2ag"            />
-
-        <forwardRate> 0.25e-03     </forwardRate>
-        <reverseRate> 0e-03    </reverseRate>
-    </Reaction>
 
 
 <!-- Hydrolysis of GqaGTP - slower than GAP activity-->
@@ -644,59 +596,7 @@ avoids the need to generate Gqbg, and have them react-->
     <Q10>         0.2           </Q10>
 </Reaction>
 
-    <!--  2ag    <-> 2agDegrad       Degraded 2AG   -->
-    <Reaction name = "2ag--2agDegrad" id="2ag--2agDegrad">
-         <Reactant specieID="2ag"            />
-        <Product  specieID="2agDegrad"        />
 
-        <forwardRate> 0.25e-03      </forwardRate>
-        <reverseRate> 0.0e-03      </reverseRate>
-    </Reaction>
-
-	<!-- ************* degradation of  DAG by DAG kinase -->
-     <!--  Dag   + DagK <-> DagKdag -> PA  step 1  (Km = 2 mol% Shulga et al. FEBS letters -->
-    <Reaction name = "DagKdag1" id="DagKdag1">
-         <Reactant specieID="Dag"            />
-         <Reactant specieID="DagK"            />
-        <Product  specieID="DagKdag"        />
-
-        <forwardRate> 0.00007e-03      </forwardRate>
-        <reverseRate> 0.8e-3         </reverseRate>
-    </Reaction>
-
-    <!--  Dag   + DagK <-> DagKdag -> PA   step 2 -->
-    <Reaction name = "DagKdag1" id="DagKdag1">
-         <Reactant specieID="DagKdag"            />
-        <Product  specieID="PA"        />
-        <Product  specieID="DagK"        />
-
-        <forwardRate> 0.2e-03      </forwardRate>
-        <reverseRate> 0.0e-03      </reverseRate>
-    </Reaction>
-
-
-<!-- These are values from Hellgren Kotaleski PKC paper. 2.5 uM affinity -->
-    <!-- Pkc + Ca    <->   PkcCa  -->
-    <Reaction name = "Pkc+Ca--PkcCa" id="Pkc+Ca--PkcCa">
-        <Reactant specieID="Ca"           />
-        <Reactant specieID="Pkc"              />
-        <Product  specieID="PkcCa"               />
-
-        <forwardRate> 0.020e-03   </forwardRate>
-        <reverseRate> 50e-03        </reverseRate>
-    </Reaction>
- 
-<!-- THese are values from Hellgren Kotaleski PKC paper. 10 uM affinity
-MUCH slower binding compared to CaDgl  -->
-   <!-- PkcCa + Dag    <-> PkcCaDag    -->
-    <Reaction name = "PkcCa+Dag--PkcCaDag" id="PkcCa+Dag--PkcCaDag">
-        <Reactant specieID="PkcCa"               />
-        <Reactant specieID="Dag"             />
-        <Product  specieID="PkcCaDag"            />
-
-        <forwardRate> 0.015e-06   </forwardRate>
-        <reverseRate>  0.15e-03   </reverseRate>
-    </Reaction>
 
 
 <!-- GluR reactions with Glutamate and Gq-proteins -->
