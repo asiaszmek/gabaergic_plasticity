@@ -17,8 +17,6 @@
     <NanoMolarity specieID="NgCaM" value="17500"/>
     <NanoMolarity specieID="Ng" value="2500"/>
     <NanoMolarity specieID="Ip3" value="20"/>
-    <NanoMolarity specieID="Pkc"         value="9950"     />  
-    <NanoMolarity specieID="PkcCa"         value="50"     />  
 
 
     </ConcentrationSet>
@@ -41,12 +39,7 @@
     <PicoSD specieID="GluMgluRdesens" value="40"/>
     <PicoSD specieID="MgluRGq" value="160"/>
     
-     <PicoSD specieID="Dag"                value="40"  />
-     <PicoSD specieID="DagK"               value="140"  />
-     <PicoSD specieID="Dgl"                value="308"  />
-     <PicoSD specieID="CaDgl"              value="112"  />
-     
-     <PicoSD specieID="PIkinase"           value="280"  />
+    <PicoSD specieID="PIkinase"           value="280"  />
      <PicoSD specieID="Ip3degPIk"          value="0"  />
      <PicoSD specieID="Ip3degrad"          value="0"  />
      <PicoSD specieID="Orai"          value="500"  />
