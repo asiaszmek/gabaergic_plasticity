@@ -283,7 +283,7 @@
 
   <!-- vi: Ca leak -    CaOutLeak <-> Ca (inside) + Leak  -->
   <Reaction name = "Ca_leak_toER4_comp" id="Ca_leak_toER4_comp" >
-    <Reactant specieID="CaOutOrai3STIM_2" />
+    <Reactant specieID="CaOutOraiSTIM_2" />
     <Product specieID="Ca" />
     <Product specieID="OraiSTIM_2" />
     <forwardRate>1.1e-3</forwardRate>
@@ -292,7 +292,7 @@
   
 
   <Reaction name = "STIM_dim_1" id="STIM_dim_1">
-    <Reactant specieID="STIM" n="2" />
+    <Reactant specieID="STIM" power="2" />
     <Product specieID="STIM_2" />
     <forwardRate>1e-5</forwardRate>
     <reverseRate>0.2e-2</reverseRate>

@@ -6,6 +6,8 @@
           <xi:include href="Rxn_ER_Fura2.xml" />
           <xi:include href="Morph.xml" />        
           <xi:include href="IC_Fura2_5_uM_SERCA.xml" />
+	  <xi:include href="Bath_CaOut_0.xml" />
+	  
  	  
  
     <!--2D means the morphology is interpreted like a flatworm, 3D for
