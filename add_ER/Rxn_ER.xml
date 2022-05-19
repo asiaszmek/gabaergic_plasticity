@@ -691,7 +691,7 @@ avoids the need to generate Gqbg, and have them react-->
 
 <!--Add endoplasmic reticulum and IP3R from the never used growth cone model-->
 <!-- try out sneyd's model - not appropriate, does not pump, just buffers-->
-     <!--https://pubmed.ncbi.nlm.nih.gov/6244305/ -->
+     <!--https://pubmed.ncbi.nlm.nih.gov/6244305/ lowered affinity for Ca for SERCA, because it was pumping in Ca even when there was no external Ca-->
      
     <!-- Ca leak -    CaOut + Leak <-> CaOutLeak -->
   <!-- Serca -->
@@ -701,7 +701,7 @@ avoids the need to generate Gqbg, and have them react-->
     <Product specieID="SERCA_Ca"/>
     
     <forwardRate>2e-3</forwardRate>
-    <reverseRate>0.04</reverseRate>
+    <reverseRate>0.12</reverseRate>
     <Q10>0.2</Q10>
   </Reaction>
 
