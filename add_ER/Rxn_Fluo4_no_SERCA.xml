@@ -740,8 +740,8 @@ avoids the need to generate Gqbg, and have them react-->
     <Reactant specieID="CaER"/>
     <Product specieID="CRTP"/>
     
-    <forwardRate>1e-7</forwardRate>
-    <reverseRate>0.001</reverseRate>
+    <forwardRate>1e-6</forwardRate>
+    <reverseRate>0.01</reverseRate>
     </Reaction>
 
   <Reaction name = "IP3R+IP3" id="IP3R+IP3">
