@@ -38,7 +38,8 @@
     <PicoSD specieID="GluMgluRdesens" value="40"/>
     <PicoSD specieID="MgluRGq" value="320"/>
     <PicoSD specieID="GluMgluRGq" value="25"/>
-  
+
+    
     <PicoSD specieID="PIkinase"           value="280"  />
     <PicoSD specieID="Ip3degPIk"          value="0"  />
     <PicoSD specieID="Ip3degrad"          value="0"  />
@@ -49,9 +50,11 @@
   <ConcentrationSet region="dend">
     <NanoMolarity specieID="CaER"         value="0.8e5"     />
     <NanoMolarity specieID="IP3R"      value="300"     />
-    <NanoMolarity specieID="CaERLeak" value="15"/>
-    <NanoMolarity specieID="LeakER" value="30"/>
+    <NanoMolarity specieID="CaERLeak" value="40"/>
+    <NanoMolarity specieID="LeakER" value="5"/>
 
+    <NanoMolarity       specieID="SERCA"       value="60000"     />
+    <NanoMolarity       specieID="SERCA_Ca"       value="90000"     />
     <NanoMolarity       specieID="CRTP" value="9e+4"/>
     <NanoMolarity       specieID="CRT" value="1e+4"/>
     <NanoMolarity specieID="STIMCaER" value="9590" />
