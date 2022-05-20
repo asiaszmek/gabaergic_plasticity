@@ -25,7 +25,7 @@
   <!--TODO add bAR desensitization!-->
   <Specie name="Ca" id="Ca" kdiff="174.3" kdiffunit="mu2/s" />
   <Specie name="CaOut" id="CaOut" kdiff="3." kdiffunit="mu2/s" />
-  <Specie name="CaOutbuff" id="CaOutbuff" kdiff="3." kdiffunit="mu2/s" />
+  <Specie name="CaOutBuf" id="CaOutBuf" kdiff="3." kdiffunit="mu2/s" />
 
   <Specie name="CaOutLeak" id="CaOutLeak" kdiff="0"
 	  kdiffunit="mu2/s" />
@@ -151,7 +151,7 @@
 
   <Reaction name = "CaOutdeg" id="CaOutdeg">
     <Reactant specieID="CaOut"/>
-    <Reactant specieID="CaOutbuff"/>
+    <Reactant specieID="CaOutBuf"/>
     <forwardRate>1e-06</forwardRate>
     <reverseRate>0</reverseRate>
   </Reaction>
@@ -295,7 +295,7 @@
     <Reactant specieID="STIM" power="2" />
     <Product specieID="STIM_2" />
     <forwardRate>1e-5</forwardRate>
-    <reverseRate>0.2e-2</reverseRate>
+    <reverseRate>2e-4</reverseRate>
   </Reaction>
   
 
@@ -304,7 +304,7 @@
     <Reactant specieID="CaER" />
     <Product specieID="STIMCaER"/>
     <forwardRate>2e-5</forwardRate>
-    <reverseRate>2e-3</reverseRate>
+    <reverseRate>2e-4</reverseRate>
   </Reaction>
 
   <Reaction name = "STIM_Orai" id="STIM_Orai">

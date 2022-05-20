@@ -6,7 +6,7 @@
 
   <!-- Train I -->
 
-  <InjectionStim specieID="CaOutbuff" injectionSite="dend:submembrane">
+  <InjectionStim specieID="CaOutBuf" injectionSite="dend:submembrane">
     <onset>1</onset>
     <duration>600000</duration>
     <rate>2</rate>
