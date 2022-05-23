@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <InitialConditions>
   <ConcentrationSet>
     <NanoMolarity specieID="Ca" value="75"/>
@@ -53,8 +54,6 @@
     <NanoMolarity specieID="CaERLeak" value="40"/>
     <NanoMolarity specieID="LeakER" value="5"/>
 
-    <NanoMolarity       specieID="SERCA"       value="60000"     />
-    <NanoMolarity       specieID="SERCA_Ca"       value="90000"     />
     <NanoMolarity       specieID="CRTP" value="9e+4"/>
     <NanoMolarity       specieID="CRT" value="1e+4"/>
     <NanoMolarity specieID="STIMCaER" value="9590" />
