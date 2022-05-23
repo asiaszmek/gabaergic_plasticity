@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml version="1.0" encoding="utf-8"?>
+
 <InitialConditions>
   <ConcentrationSet>
     <NanoMolarity specieID="Ca" value="75"/>
@@ -51,7 +51,7 @@
   <ConcentrationSet region="dend">
     <NanoMolarity specieID="CaER"         value="0.8e5"     />
     <NanoMolarity specieID="IP3R"      value="300"     />
-    <NanoMolarity specieID="CaERLeak" value="40"/>
+    <NanoMolarity specieID="CaERLeak" value="35"/>
     <NanoMolarity specieID="LeakER" value="5"/>
 
     <NanoMolarity       specieID="CRTP" value="9e+4"/>
