@@ -780,7 +780,16 @@ avoids the need to generate Gqbg, and have them react-->
     <reverseRate>5.2e-06</reverseRate>
     <Q10>0.2</Q10>
   </Reaction>
-  
+ 
+  <Reaction name = "TG_SERCA_2b" id="SERCA_2b">
+    <Reactant specieID="Ca" />
+    <Reactant specieID="TG_SERCA_Ca"/>
+    <Product specieID="TG_SERCA_Ca2"/>
+        
+    <forwardRate>2.5e-7</forwardRate>
+    <reverseRate>25e-4</reverseRate>
+    <Q10>0.2</Q10>
+  </Reaction>
 
   <Reaction name = "TG_SERCA_1c" id="TG_SERCA_1c">
     <Reactant specieID="SERCA_Ca2"/>
