@@ -57,7 +57,8 @@
     <NanoMolarity specieID="CaERLeak" value="11.25"/>
     <NanoMolarity specieID="LeakER" value="0"/>
 
-
+    <NanoMolarity       specieID="SERCA"       value="6000"     />
+    <NanoMolarity       specieID="SERCA_Ca"       value="7600"     />
     <NanoMolarity       specieID="CRTP" value="8.9e+4"/>
     <NanoMolarity       specieID="CRT" value="1.1e+4"/>
  
