@@ -75,6 +75,7 @@
   <Specie name="SERCA_CaER" id="SERCA_CaER" kdiff="0" kdiffunit="mu2/s"/>
 
   <Specie name="TG" id="TG" kdiff="100" kdiffunit="mu2/s"/>
+  <Specie name="TGBuff" id="TGBuff" kdiff="100" kdiffunit="mu2/s"/>
   <Specie name="TG_SERCA" id="TG_SERCA" kdiff="0" kdiffunit="mu2/s"/>
   <Specie name="TG_SERCA_Ca" id="TG_SERCA_Ca" kdiff="0" kdiffunit="mu2/s"/>
   <Specie name="TG_SERCA_Ca2" id="TG_SERCA_Ca2" kdiff="0" kdiffunit="mu2/s"/>
@@ -156,6 +157,13 @@
   <Reaction name = "CaOutdeg" id="CaOutdeg">
     <Reactant specieID="CaOut"/>
     <Reactant specieID="CaOutBuf"/>
+    <forwardRate>1e-06</forwardRate>
+    <reverseRate>0</reverseRate>
+  </Reaction>
+
+  <Reaction name = "TGdeg" id="TGdeg">
+    <Reactant specieID="TG"/>
+    <Reactant specieID="TGBuff"/>
     <forwardRate>1e-06</forwardRate>
     <reverseRate>0</reverseRate>
   </Reaction>
@@ -781,15 +789,6 @@ avoids the need to generate Gqbg, and have them react-->
     <Q10>0.2</Q10>
   </Reaction>
  
-  <Reaction name = "TG_SERCA_2b" id="SERCA_2b">
-    <Reactant specieID="Ca" />
-    <Reactant specieID="TG_SERCA_Ca"/>
-    <Product specieID="TG_SERCA_Ca2"/>
-        
-    <forwardRate>2.5e-7</forwardRate>
-    <reverseRate>25e-4</reverseRate>
-    <Q10>0.2</Q10>
-  </Reaction>
 
   <Reaction name = "TG_SERCA_1c" id="TG_SERCA_1c">
     <Reactant specieID="SERCA_Ca2"/>
