@@ -290,7 +290,7 @@
     <Reactant specieID="STIM" power="2" />
     <Product specieID="STIM_2" />
     <forwardRate>1e-6</forwardRate>
-    <reverseRate>2e-4</reverseRate>
+    <reverseRate>2e-3</reverseRate>
   </Reaction>
   
 
