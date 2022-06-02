@@ -213,7 +213,7 @@
     <Reactant specieID="Leak"/>
     <Product specieID="CaOutLeak"/>
 
-    <forwardRate>1.5e-6</forwardRate>
+    <forwardRate>1.5e-8</forwardRate>
     <reverseRate>1.1e-3</reverseRate>
   </Reaction>
 
@@ -289,7 +289,7 @@
     <Reactant specieID="OraiSTIM_2" />
     <Product specieID="CaOutOraiSTIM_2" />
     
-    <forwardRate>1.5e-10</forwardRate>
+    <forwardRate>1.5e-8</forwardRate>
     <reverseRate>1.1e-3</reverseRate>
   </Reaction>
 
@@ -306,7 +306,7 @@
   <Reaction name = "STIM_dim_1" id="STIM_dim_1">
     <Reactant specieID="STIM" power="2" />
     <Product specieID="STIM_2" />
-    <forwardRate>1e-5</forwardRate>
+    <forwardRate>1e-6</forwardRate>
     <reverseRate>2e-4</reverseRate>
   </Reaction>
   
@@ -315,7 +315,7 @@
     <Reactant specieID="STIM" />
     <Reactant specieID="CaER" />
     <Product specieID="STIMCaER"/>
-    <forwardRate>2e-4</forwardRate>
+    <forwardRate>2e-6</forwardRate>
     <reverseRate>2e-3</reverseRate>
   </Reaction>
 
@@ -735,7 +735,7 @@ avoids the need to generate Gqbg, and have them react-->
     <Product specieID="SERCA_Ca"/>
     
     <forwardRate>2e-3</forwardRate>
-    <reverseRate>0.04</reverseRate>
+    <reverseRate>0.12</reverseRate>
     <Q10>0.2</Q10>
   </Reaction>
 

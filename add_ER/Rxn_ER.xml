@@ -179,7 +179,7 @@
     <Reactant specieID="Leak"/>
     <Product specieID="CaOutLeak"/>
 
-    <forwardRate>1.5e-6</forwardRate>
+    <forwardRate>1.5e-8</forwardRate>
     <reverseRate>1.1e-3</reverseRate>
   </Reaction>
 
@@ -255,7 +255,7 @@
     <Reactant specieID="OraiSTIM_2" />
     <Product specieID="CaOutOraiSTIM_2" />
     
-    <forwardRate>1.5e-10</forwardRate>
+    <forwardRate>1.5e-8</forwardRate>
     <reverseRate>1.1e-3</reverseRate>
   </Reaction>
 
@@ -272,7 +272,7 @@
   <Reaction name = "STIM_dim_1" id="STIM_dim_1">
     <Reactant specieID="STIM" power="2" />
     <Product specieID="STIM_2" />
-    <forwardRate>1e-5</forwardRate>
+    <forwardRate>1e-6</forwardRate>
     <reverseRate>2e-4</reverseRate>
   </Reaction>
   
@@ -281,7 +281,7 @@
     <Reactant specieID="STIM" />
     <Reactant specieID="CaER" />
     <Product specieID="STIMCaER"/>
-    <forwardRate>2e-4</forwardRate>
+    <forwardRate>2e-6</forwardRate>
     <reverseRate>2e-3</reverseRate>
   </Reaction>
 
@@ -691,9 +691,8 @@ avoids the need to generate Gqbg, and have them react-->
 
 <!--Add endoplasmic reticulum and IP3R from the never used growth cone model-->
 <!-- try out sneyd's model - not appropriate, does not pump, just buffers-->
-     <!--https://pubmed.ncbi.nlm.nih.gov/6244305/ lowered affinity for Ca for SERCA, because it was pumping in Ca even when there was no external Ca-->
+     <!--https://pubmed.ncbi.nlm.nih.gov/6244305/ -->
      
-    <!-- Ca leak -    CaOut + Leak <-> CaOutLeak -->
   <!-- Serca -->
   <Reaction name = "SERCA_1a" id="SERCA_1a">
     <Reactant specieID="Ca" />
@@ -706,12 +705,12 @@ avoids the need to generate Gqbg, and have them react-->
   </Reaction>
 
 
-  
-    <Reaction name = "SERCA_1b" id="SERCA_1b">
+ 
+  <Reaction name = "SERCA_1b" id="SERCA_1b">
     <Reactant specieID="Ca" />
     <Reactant specieID="SERCA_Ca"/>
     <Product specieID="SERCA_Ca2"/>
-    
+        
     <forwardRate>2.5e-7</forwardRate>
     <reverseRate>25e-4</reverseRate>
     <Q10>0.2</Q10>
