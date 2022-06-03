@@ -735,8 +735,8 @@ avoids the need to generate Gqbg, and have them react-->
     <Reactant specieID="SERCA_Ca"/>
     <Product specieID="SERCA_Ca2"/>
     
-    <forwardRate>2.5e-7</forwardRate>
-    <reverseRate>25e-4</reverseRate>
+    <forwardRate>2.5e-6</forwardRate>
+    <reverseRate>25e-3</reverseRate>
     <Q10>0.2</Q10>
   </Reaction>
 
