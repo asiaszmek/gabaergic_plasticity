@@ -32,8 +32,8 @@
 	  kdiffunit="mu2/s" />
   <Specie name="Leak" id="Leak" kdiff="0" kdiffunit="mu2/s" />
 
-  <Specie name="Fluro4" id="Fura2" kdiff="83" kdiffunit="mu2/s" />
-  <Specie name="Fluro4Ca" id="Fura2Ca" kdiff="83" kdiffunit="mu2/s" />
+  <Specie name="Fura2" id="Fura2" kdiff="83" kdiffunit="mu2/s" />
+  <Specie name="Fura2" id="Fura2Ca" kdiff="83" kdiffunit="mu2/s" />
 
   <Specie name="CaOutOraiSTIM_8" id="CaOutOraiSTIM_8" kdiff="0"
 	  kdiffunit="mu2/s" />
@@ -150,8 +150,8 @@
     <Reactant specieID="Fura2"/>
     <Product specieID="Fura2Ca"/>
 
-    <forwardRate>0.35e-4</forwardRate>
-    <reverseRate>2.6e-3</reverseRate>
+    <forwardRate>1e-3</forwardRate>
+    <reverseRate>185e-3</reverseRate>
   </Reaction>
 
   <Reaction name = "CaOutdeg" id="CaOutdeg">
