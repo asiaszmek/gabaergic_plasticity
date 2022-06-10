@@ -22,7 +22,8 @@
     <NanoMolarity specieID="Ng" value="2750"/>
 
     <NanoMolarity specieID="Ip3" value="0.0"/>
-    <NanoMolarity specieID="Fura2"         value="5000"     />  
+    <NanoMolarity specieID="Fura2"         value="3400"     />  
+    <NanoMolarity specieID="Fura2Ca"         value="1600"     />  
 
 
     </ConcentrationSet>
@@ -55,7 +56,7 @@
   <ConcentrationSet region="dend">
     <NanoMolarity specieID="CaER"         value="0.6e5"     />
     <NanoMolarity specieID="IP3R"      value="112"     />
-    <NanoMolarity specieID="CaERLeak" value="115"/>
+    <NanoMolarity specieID="CaERLeak" value="370"/>
     <NanoMolarity specieID="LeakER" value="0"/>
 
 
