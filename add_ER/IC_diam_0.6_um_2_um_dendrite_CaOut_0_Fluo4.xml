@@ -4,9 +4,9 @@
     <NanoMolarity specieID="Ca" value="75"/>
     <NanoMolarity specieID="Glu" value="50"/>
     <!-- total calbindin = 160 uM -->
-    <NanoMolarity specieID="Calbin" value="150000"/>
+    <NanoMolarity specieID="Calbin" value="135000"/>
     <NanoMolarity specieID="CalbinC" value="15000"/>
-    <NanoMolarity specieID="fixedbuffer" value="2000000"/>
+    <NanoMolarity specieID="fixedbuffer" value="1997000"/>
     <NanoMolarity specieID="fixedbufferCa" value="3000"/>
 
     <NanoMolarity specieID="CaM" value="8050"/>
@@ -23,7 +23,7 @@
 
   <SurfaceDensitySet region="dend">
     <PicoSD specieID="Leak" value="500"/>
-    <PicoSD specieID="CaOutLeak" value="5500"/>
+    <PicoSD specieID="CaOutLeak" value="6000"/>
     <PicoSD specieID="Leak" value="500"/>
     <PicoSD specieID="pmca" value="420"/>
     <PicoSD specieID="pmcaCa" value="180"/>
