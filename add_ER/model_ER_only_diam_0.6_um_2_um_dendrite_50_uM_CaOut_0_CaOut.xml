@@ -5,7 +5,7 @@
     <xi:include href="Rxn_ER_Fluo4.xml" />
     <xi:include href="morph_diam_0.6_um_2_um_dendrite.xml" />
     <xi:include href="IC_diam_0.6_um_2_um_dendrite_CaOut_0_Fluo4.xml" />
-    <xi:include href="Bath_CaOut_50uM_20s.xml"/>
+    <xi:include href="Bath_CaOut_50uM_20s_diam_0.6_2_um.xml"/>
 
     <!--2D means the morphology is interpreted like a flatworm, 3D for
 roundworms. The 2D case is good for testing as it is easy to visualize the
