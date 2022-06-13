@@ -29,8 +29,8 @@
 
   <SurfaceDensitySet region="dend">
     <PicoSD specieID="Leak" value="0"/>
-    <PicoSD specieID="CaOutLeak" value="5550"/>
-    <PicoSD specieID="Leak" value="450"/>
+    <PicoSD specieID="CaOutLeak" value="6000"/>
+    <PicoSD specieID="Leak" value="500"/>
     <PicoSD specieID="pmca" value="450"/>
     <PicoSD specieID="pmcaCa" value="150"/>
     <PicoSD specieID="ncx" value="14000"/>
