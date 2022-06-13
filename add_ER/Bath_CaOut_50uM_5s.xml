@@ -9,7 +9,7 @@
   <InjectionStim specieID="CaOutBuf" injectionSite="dend:submembrane">
     <onset>305000</onset>
     <duration>1000</duration>
-    <rate>36000</rate>
+    <rate>30000</rate>
     <end>307000</end> 
   </InjectionStim>
 
