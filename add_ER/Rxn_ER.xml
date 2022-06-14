@@ -67,6 +67,7 @@
   <Specie name="SERCA" id="SERCA" kdiff="0" kdiffunit="mu2/s"/>
   <Specie name="SERCA_Ca" id="SERCA_Ca" kdiff="0" kdiffunit="mu2/s"/>
   <Specie name="SERCA_Ca2" id="SERCA_Ca2" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="SERCA_CaER" id="SERCA_CaER" kdiff="0" kdiffunit="mu2/s"/>
   
   <!--calreticulin-->
   <Specie name="CRT" id="CRT" kdiff="0" kdiffunit="mu2/s"/>
@@ -279,8 +280,8 @@
     <Reactant specieID="STIM" />
     <Reactant specieID="CaER" />
     <Product specieID="STIMCaER"/>
-    <forwardRate>4e-6</forwardRate>
-    <reverseRate>2e-3</reverseRate>
+    <forwardRate>4e-3</forwardRate>
+    <reverseRate>2e-1</reverseRate>
   </Reaction>
 
   <Reaction name = "STIM_Orai" id="STIM_Orai">
@@ -698,7 +699,7 @@ avoids the need to generate Gqbg, and have them react-->
     <Product specieID="SERCA_Ca"/>
     
     <forwardRate>2e-2</forwardRate>
-    <reverseRate>0.4</reverseRate>
+    <reverseRate>2.8</reverseRate>
     <Q10>0.2</Q10>
   </Reaction>
 
@@ -709,19 +710,27 @@ avoids the need to generate Gqbg, and have them react-->
     <Reactant specieID="SERCA_Ca"/>
     <Product specieID="SERCA_Ca2"/>
         
-    <forwardRate>2.5e-5</forwardRate>
-    <reverseRate>25e-2</reverseRate>
+    <forwardRate>2.5e-4</forwardRate>
+    <reverseRate>25e-1</reverseRate>
     <Q10>0.2</Q10>
   </Reaction>
-
 
   <Reaction name = "SERCA_1c" id="SERCA_1c">
     <Reactant specieID="SERCA_Ca2"/>
-    <Product specieID="CaER" power="2" />
-    <Product specieID="SERCA"/>
-    <forwardRate>7.5e-2</forwardRate>
+    <Product specieID="CaER" />
+    <Product specieID="SERCA_CaER"/>
+    <forwardRate>0.274</forwardRate>
     <Q10>0.2</Q10>
   </Reaction>
+
+  <Reaction name = "SERCA_1d" id="SERCA_1d">
+    <Reactant specieID="SERCA_CaER"/>
+    <Product specieID="CaER" />
+    <Product specieID="SERCA"/>
+    <forwardRate>0.274</forwardRate>
+    <Q10>0.2</Q10>
+  </Reaction>
+ 
 
  <!-- ER Ca leak -    CaER+ LeakER <-> CaERLeak-->
   <Reaction name = "Ca_leakER" id="Ca_leakaER">
@@ -729,8 +738,8 @@ avoids the need to generate Gqbg, and have them react-->
     <Reactant specieID="LeakER"/>
     <Product specieID="CaERLeak"/>
     
-    <forwardRate>7.e-2</forwardRate>
-    <reverseRate>110</reverseRate>
+    <forwardRate>7.e-3</forwardRate>
+    <reverseRate>11</reverseRate>
     <Q10>0.2</Q10>
   </Reaction>
     
