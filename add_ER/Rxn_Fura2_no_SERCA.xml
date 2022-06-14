@@ -812,7 +812,7 @@ avoids the need to generate Gqbg, and have them react-->
     <Product specieID="Ca"/>
     <Product specieID="LeakER"/>
     
-    <forwardRate>5e-2</forwardRate>
+    <forwardRate>2.5e-2</forwardRate>
     <reverseRate>0</reverseRate>
     <Q10>0.2</Q10>
   </Reaction>
