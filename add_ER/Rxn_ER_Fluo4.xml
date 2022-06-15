@@ -302,7 +302,7 @@
     <Reactant specieID="STIM" />
     <Reactant specieID="CaER" />
     <Product specieID="STIMCaER"/>
-    <forwardRate>4e-3</forwardRate>
+    <forwardRate>4e-4</forwardRate>
     <reverseRate>2e-1</reverseRate>
   </Reaction>
 
