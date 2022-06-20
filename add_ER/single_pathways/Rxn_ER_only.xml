@@ -29,14 +29,7 @@
 	  kdiffunit="mu2/s" />
   <Specie name="Leak" id="Leak" kdiff="0" kdiffunit="mu2/s" />
 
-  <Specie name="CaOutOraiSTIM_8" id="CaOutOraiSTIM_8" kdiff="0"
-	  kdiffunit="mu2/s" />
-  <Specie name="CaOutOraiSTIM_6" id="CaOutOraiSTIM_6" kdiff="0"
-	  kdiffunit="mu2/s" />
-  <Specie name="CaOutOraiSTIM_4" id="CaOutOraiSTIM_4" kdiff="0"
-	  kdiffunit="mu2/s" />
-  <Specie name="CaOutOraiSTIM_2" id="CaOutOraiSTIM_2" kdiff="0"
-	  kdiffunit="mu2/s" />
+ 
 
   <Specie name="OraiSTIM_8" id="OraiSTIM_8" kdiff="0" kdiffunit="mu2/s" />
   <Specie name="OraiSTIM_6" id="OraiSTIM_6" kdiff="0" kdiffunit="mu2/s" />
@@ -148,80 +141,46 @@
     <reverseRate>0</reverseRate>
   </Reaction>
 
-
-  <Reaction name = "Ca_leak_toER" id="Ca_leak_toER">
+<Reaction name = "Ca_leak_toER" id="Ca_leak_toER">
     <Reactant specieID="CaOut" />
     <Reactant specieID="OraiSTIM_8" />
-    <Product specieID="CaOutOraiSTIM_8" />
-    
-    <forwardRate>1.5e-6</forwardRate>
-    <reverseRate>1.1e-3</reverseRate>
-  </Reaction>
-
-  <!-- vi: Ca leak -    CaOutLeak <-> Ca (inside) + Leak  -->
-  <Reaction name = "Ca_leak_toER2" id="Ca_leak_toER2">
-    <Reactant specieID="CaOutOraiSTIM_8" />
-    <Product specieID="Ca" />
     <Product specieID="OraiSTIM_8" />
-    
-    <forwardRate>1.1e-3</forwardRate>
-    <reverseRate>0</reverseRate>
+    <Product specieID="Ca" />    
+    <forwardRate>7.5e-5</forwardRate>
+    <reverseRate>1.1</reverseRate>
   </Reaction>
 
   <Reaction name = "Ca_leak_toER_comp" id="Ca_leak_toER_comp">
     <Reactant specieID="CaOut" />
     <Reactant specieID="OraiSTIM_6" />
-    <Product specieID="CaOutOraiSTIM_6" />
-    
-    <forwardRate>5e-7</forwardRate>
-    <reverseRate>1.1e-3</reverseRate>
+    <Product specieID="OraiSTIM_6" />
+    <Product specieID="Ca" />    
+
+    <forwardRate>1.5e-5</forwardRate>
+    <reverseRate>1.1</reverseRate>
   </Reaction>
 
-  <!-- vi: Ca leak -    CaOutLeak <-> Ca (inside) + Leak  -->
-  <Reaction name = "Ca_leak_toER2_comp" id="Ca_leak_toER2_comp" >
-    <Reactant specieID="CaOutOraiSTIM_6" />
-    <Product specieID="Ca" />
-    <Product specieID="OraiSTIM_6" />
-    <forwardRate>1.1e-3</forwardRate>
-    <reverseRate>0</reverseRate>
-  </Reaction>
 
   <Reaction name = "Ca_leak_toER3" id="Ca_leak_toER3">
     <Reactant specieID="CaOut" />
     <Reactant specieID="OraiSTIM_4" />
-    <Product specieID="CaOutOraiSTIM_4" />
-    
-    <forwardRate>3.75e-8</forwardRate>
-    <reverseRate>1.1e-3</reverseRate>
+    <Product specieID="OraiSTIM_4" />
+    <Product specieID="Ca" />    
+    <forwardRate>3.75e-7</forwardRate>
+    <reverseRate>5.5e-2</reverseRate>
   </Reaction>
 
-  <!-- vi: Ca leak -    CaOutLeak <-> Ca (inside) + Leak  -->
-  <Reaction name = "Ca_leak_toER4" id="Ca_leak_toER4">
-    <Reactant specieID="CaOutOraiSTIM_4" />
-    <Product specieID="Ca" />
-    <Product specieID="OraiSTIM_4" />
-    
-    <forwardRate>1.1e-3</forwardRate>
-    <reverseRate>0</reverseRate>
-  </Reaction>
 
   <Reaction name = "Ca_leak_toER3_comp" id="Ca_leak_toER3_comp">
     <Reactant specieID="CaOut" />
     <Reactant specieID="OraiSTIM_2" />
-    <Product specieID="CaOutOraiSTIM_2" />
-    
-    <forwardRate>1.5e-8</forwardRate>
-    <reverseRate>1.1e-3</reverseRate>
+    <Product specieID="OraiSTIM_2" />
+    <Product specieID="Ca" />    
+    <forwardRate>5e-6</forwardRate>
+    <reverseRate>1.1</reverseRate>
   </Reaction>
 
-  <!-- vi: Ca leak -    CaOutLeak <-> Ca (inside) + Leak  -->
-  <Reaction name = "Ca_leak_toER4_comp" id="Ca_leak_toER4_comp" >
-    <Reactant specieID="CaOutOraiSTIM_2" />
-    <Product specieID="Ca" />
-    <Product specieID="OraiSTIM_2" />
-    <forwardRate>1.1e-3</forwardRate>
-    <reverseRate>0</reverseRate>
-  </Reaction>
+
   
 
   <Reaction name = "STIM_dim_1" id="STIM_dim_1">

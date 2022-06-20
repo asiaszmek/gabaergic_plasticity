@@ -3,12 +3,12 @@
 <InitialConditions>
   <ConcentrationSet>
     <NanoMolarity specieID="Ca" value="80"/>
-   
+    <NanoMolarity specieID="CaOut" value="2000000"/>
+  </ConcentrationSet>
 
-    </ConcentrationSet>
-
-
- 
+  <SurfaceDensitySet region="dend">
+    <PicoSD specieID="Orai"          value="3000"  />
+  </SurfaceDensitySet>
   <ConcentrationSet region="dend">
     <NanoMolarity specieID="CaER"         value="0.65e5"     />
     <NanoMolarity specieID="CaERLeak" value="120"/>
@@ -20,6 +20,9 @@
     <NanoMolarity       specieID="SERCA_Ca2"       value="0"     />
     <NanoMolarity       specieID="CRTP" value="8.7e+4"/>
     <NanoMolarity       specieID="CRT" value="1.3e+4"/>
+
+    <NanoMolarity specieID="STIM" value="10" />
+    <NanoMolarity specieID="STIMCaER" value="990" />
   </ConcentrationSet>
   
 
