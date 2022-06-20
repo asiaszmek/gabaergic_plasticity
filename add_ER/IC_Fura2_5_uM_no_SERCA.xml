@@ -63,8 +63,7 @@
     <NanoMolarity       specieID="CRTP" value="8.9e+4"/>
     <NanoMolarity       specieID="CRT" value="1.1e+4"/>
  
-    <NanoMolarity       specieID="STIM" value="10"/>
-    <NanoMolarity specieID="STIMCaER" value="990" />
+    <NanoMolarity specieID="STIMCaER" value="10000" />
 
   </ConcentrationSet>
   
