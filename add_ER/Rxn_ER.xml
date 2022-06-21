@@ -738,8 +738,8 @@ avoids the need to generate Gqbg, and have them react-->
     <Reactant specieID="LeakER"/>
     <Product specieID="CaERLeak"/>
     
-    <forwardRate>7.e-4</forwardRate>
-    <reverseRate>1.1</reverseRate>
+    <forwardRate>7.e-5</forwardRate>
+    <reverseRate>1.1e-1</reverseRate>
     <Q10>0.2</Q10>
   </Reaction>
     
