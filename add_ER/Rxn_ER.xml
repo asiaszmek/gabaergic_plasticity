@@ -60,7 +60,7 @@
  
   <Specie name="CaER" id="CaER" kdiff="0." kdiffunit="mu2/s"/>
   <Specie name="LeakER" id="LeakER" kdiff="0" kdiffunit="mu2/s"/>
-
+  <Specie name="CaERLeak" id="CaERLeak" kdiff="0" kdiffunit="mu2/s"/>
   <Specie name="SERCA" id="SERCA" kdiff="0" kdiffunit="mu2/s"/>
   <Specie name="SERCA_Ca" id="SERCA_Ca" kdiff="0" kdiffunit="mu2/s"/>
   <Specie name="SERCA_Ca2" id="SERCA_Ca2" kdiff="0" kdiffunit="mu2/s"/>
@@ -733,10 +733,21 @@ avoids the need to generate Gqbg, and have them react-->
   <Reaction name = "Ca_leakER" id="Ca_leakaER">
     <Reactant specieID="CaER"/>
     <Reactant specieID="LeakER"/>
+    <Product specieID="CaERLeak"/>
+    
+    <forwardRate>7.e-6</forwardRate>
+    <reverseRate>1.1e-2</reverseRate>
+    <Q10>0.2</Q10>
+  </Reaction>
+    
+<!--  ER Ca leak -    CaERLeak <-> Ca + LeakER-->
+  <Reaction name = "Ca_leakER" id="Ca_leakbER">
+    <Reactant specieID="CaERLeak"/>
     <Product specieID="Ca"/>
     <Product specieID="LeakER"/>
-    <forwardRate>7.e-5</forwardRate>
-    <reverseRate>1.1e-1</reverseRate>
+    
+    <forwardRate>2.5e-3</forwardRate>
+    <reverseRate>0</reverseRate>
     <Q10>0.2</Q10>
   </Reaction>
   <!-- higher affinity lower capacity CRT-Ca binding,
