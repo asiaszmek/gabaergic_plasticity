@@ -65,8 +65,6 @@
  
   <Specie name="CaER" id="CaER" kdiff="0." kdiffunit="mu2/s"/>
   
-  <Specie name="CaERLeak" id="CaERLeak" kdiff="0" kdiffunit="mu2/s"/>
-
   <Specie name="LeakER" id="LeakER" kdiff="0" kdiffunit="mu2/s"/>
 
   <Specie name="SERCA" id="SERCA" kdiff="0" kdiffunit="mu2/s"/>
@@ -758,8 +756,8 @@ avoids the need to generate Gqbg, and have them react-->
   <Reaction name = "Ca_leakER" id="Ca_leakaER">
     <Reactant specieID="CaER"/>
     <Reactant specieID="LeakER"/>
-    <Product specieID="CaERLeak"/>
-    
+    <Product specieID="LeakER"/>
+    <Product specieID="Ca"/>
     <forwardRate>7.e-5</forwardRate>
     <reverseRate>1.1e-1</reverseRate>
     <Q10>0.2</Q10>
