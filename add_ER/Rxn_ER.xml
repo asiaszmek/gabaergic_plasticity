@@ -59,11 +59,8 @@
   <Specie name="ncxCa" id="ncxCa" kdiff="0" kdiffunit="mu2/s" />
  
   <Specie name="CaER" id="CaER" kdiff="0." kdiffunit="mu2/s"/>
-  
-  <Specie name="CaERLeak" id="CaERLeak" kdiff="0" kdiffunit="mu2/s"/>
-
   <Specie name="LeakER" id="LeakER" kdiff="0" kdiffunit="mu2/s"/>
-
+  <Specie name="CaERLeak" id="CaERLeak" kdiff="0" kdiffunit="mu2/s"/>
   <Specie name="SERCA" id="SERCA" kdiff="0" kdiffunit="mu2/s"/>
   <Specie name="SERCA_Ca" id="SERCA_Ca" kdiff="0" kdiffunit="mu2/s"/>
   <Specie name="SERCA_Ca2" id="SERCA_Ca2" kdiff="0" kdiffunit="mu2/s"/>
