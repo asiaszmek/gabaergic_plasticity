@@ -12,12 +12,12 @@
     <end>322000</end> 
   </InjectionStim>
 
-  <!-- <InjectionStim specieID="CaOutBuf" injectionSite="dend:submembrane"> -->
-  <!--   <onset>1</onset> -->
-  <!--   <duration>600000</duration> -->
-  <!--   <rate>0.8</rate> -->
-  <!--   <end>600000</end>  -->
-  <!-- </InjectionStim> -->
+  <InjectionStim specieID="CaOutBuf" injectionSite="dend:submembrane">
+    <onset>1</onset>
+    <duration>600000</duration>
+    <rate>0.8</rate>
+    <end>600000</end>
+  </InjectionStim>
 
 
   <InjectionStim specieID="CaOut" injectionSite="dend:submembrane">
