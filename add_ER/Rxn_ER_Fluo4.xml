@@ -228,7 +228,7 @@
     <Product specieID="Ca" />
     <Product specieID="OraiSTIM_8" />
     
-    <forwardRate>1.1e-3</forwardRate>
+    <forwardRate>1.1e-2</forwardRate>
     <reverseRate>0</reverseRate>
   </Reaction>
 
@@ -246,7 +246,7 @@
     <Reactant specieID="CaOutOraiSTIM_6" />
     <Product specieID="Ca" />
     <Product specieID="OraiSTIM_6" />
-    <forwardRate>1.1e-3</forwardRate>
+    <forwardRate>5.5e-3</forwardRate>
     <reverseRate>0</reverseRate>
   </Reaction>
 
