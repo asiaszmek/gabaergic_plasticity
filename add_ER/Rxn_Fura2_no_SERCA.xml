@@ -306,8 +306,8 @@
     <Reactant specieID="STIM" />
     <Reactant specieID="CaER" />
     <Product specieID="STIMCaER"/>
-    <forwardRate>4e-4</forwardRate>
-    <reverseRate>2e-1</reverseRate>
+    <forwardRate>4e-6</forwardRate>
+    <reverseRate>2e-3</reverseRate>
   </Reaction>
   <!-- 5x because we're simulating 20% of the denrite as the ER-->
   
