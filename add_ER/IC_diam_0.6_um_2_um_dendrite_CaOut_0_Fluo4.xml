@@ -43,7 +43,7 @@
     <PicoSD specieID="PIkinase"           value="280"  />
     <PicoSD specieID="Ip3degPIk"          value="0"  />
     <PicoSD specieID="Ip3degrad"          value="0"  />
-    <PicoSD specieID="Orai"          value="100"  />
+    <PicoSD specieID="Orai"          value="300"  />
 
   </SurfaceDensitySet>
   <ConcentrationSet region="dend">
