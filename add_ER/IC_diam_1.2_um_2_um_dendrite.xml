@@ -51,9 +51,9 @@
     <PicoSD specieID="Ip3degPIk"          value="0"  />
     <PicoSD specieID="Ip3degrad"          value="0"  />
     <PicoSD specieID="Orai"          value="100"  />
-    <PicoSD specieID="OraiSTIM_2"          value="175"  />
-    <PicoSD specieID="OraiSTIM_4"          value="11"  />
-    <PicoSD specieID="CaOutOraiSTIM_2"          value="1"  />
+    <PicoSD specieID="CaOutOraiSTIM_2"          value="175"  />
+    <PicoSD specieID="CaOutOraiSTIM_4"          value="11"  />
+    <PicoSD specieID="OraiSTIM_2"          value="1"  />
     <PicoSD specieID="OraiSTIM_4"          value="13"  />
 
   </SurfaceDensitySet>
