@@ -2,8 +2,8 @@
 <InitialConditions>
   <ConcentrationSet>
     <NanoMolarity specieID="Ca" value="75"/>
-    <NanoMolarity specieID="CaOut" value="2000000"/>
-    <NanoMolarity specieID="GluOut" value="1000000"/>
+    <NanoMolarity specieID="CaOut" value="0"/>
+    <NanoMolarity specieID="GluOut" value="0"/>
     <NanoMolarity specieID="Glu" value="40"/>
     <!-- total calbindin = 160 uM -->
     <NanoMolarity specieID="Calbin" value="134400"/>
@@ -59,7 +59,7 @@
 
   </SurfaceDensitySet>
   <ConcentrationSet region="dend">
-    <NanoMolarity specieID="CaER"         value="0.66728e5"     />
+    <NanoMolarity specieID="CaER"         value="0.77e5"     />
     <NanoMolarity specieID="IP3R"      value="150"     />
     <NanoMolarity specieID="CaERLeak" value="5144"/>
     <NanoMolarity specieID="LeakER" value="2956"/>
