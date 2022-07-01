@@ -7,7 +7,7 @@
     <NanoMolarity specieID="GluOut" value="1000000"/>
     <NanoMolarity specieID="Glu" value="50"/>
     
-    <!-- total calbindin = 160 uM -->
+    <!-- total calbindin = 160 1uM -->
     <!-- total calbindin = 160 uM -->
     <NanoMolarity specieID="Calbin" value="135000"/>
     <NanoMolarity specieID="CalbinC" value="15000"/>
@@ -51,9 +51,9 @@
   </SurfaceDensitySet>
  
   <ConcentrationSet region="dend">
-    <NanoMolarity specieID="CaER"         value="0.6e5"     />
+    <NanoMolarity specieID="CaER"         value="0.77e5"     />
     <NanoMolarity specieID="IP3R"      value="30"     />
-    <NanoMolarity specieID="CaERLeak" value="1150"/>
+    <NanoMolarity specieID="CaERLeak" value="1040"/>
     <NanoMolarity specieID="LeakER" value="600"/>
 
     <NanoMolarity       specieID="SERCA"       value="1300"     />
