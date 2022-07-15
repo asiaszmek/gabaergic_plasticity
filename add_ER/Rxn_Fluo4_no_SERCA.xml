@@ -116,6 +116,7 @@
   <Specie name="IP3R"          id="IP3R"          kdiff="0"     kdiffunit="mu2/s"/>
   <Specie name="IP3RIP3"          id="IP3RIP3"          kdiff="0"     kdiffunit="mu2/s"/>
   <Specie name="IP3RO"           id="IP3RO"           kdiff="0"     kdiffunit="mu2/s"/>
+  <Specie name="IP3ROCaER"           id="IP3ROCaER"           kdiff="0"     kdiffunit="mu2/s"/>
   <Specie name="IP3RC"           id="IP3RC"           kdiff="0"     kdiffunit="mu2/s"/>
   <Specie name="IP3RC2"                  id="IP3RC2"           kdiff="0"     kdiffunit="mu2/s"/>
   <Specie name="IP3RC3"                  id="IP3RC3"           kdiff="0"     kdiffunit="mu2/s"/>
@@ -806,16 +807,25 @@ avoids the need to generate Gqbg, and have them react-->
     <Q10>         0.2           </Q10>
     </Reaction>
 
-    <Reaction name = "IP3R_Ob-flux_Ia" id="IP3R_Ob-flux">
+       <Reaction name = "IP3R_Ob-flux_Ia" id="IP3R_Ob-fluxa">
     <Reactant specieID="IP3RO"           />
     <Reactant specieID="CaER"           />
-    <Product  specieID="Ca"               />
-    <Product  specieID="IP3RO"               />
+    <Product  specieID="IP3ROCaER"               />
 
     <forwardRate> 0.000048 </forwardRate>
     <reverseRate>  0.016      </reverseRate>
     <Q10>         0.2           </Q10>
+    </Reaction>
+
+    <Reaction name = "IP3R_Ob-flux_Ib" id="IP3R_Ob-fluxb">
+    <Reactant specieID="IP3ROCaER"           />
+    <Product  specieID="Ca"               />
+    <Product  specieID="IP3RO"               />
+
+    <forwardRate> 0.48e-3 </forwardRate>
+    <Q10>         0.2           </Q10>
   </Reaction>
+
 
 
 
