@@ -20,18 +20,6 @@
     <end>340000</end> 
   </InjectionStim>
 
-  <InjectionStim specieID="GluOut" injectionSite="dend:submembrane">
-    <onset>300000</onset>
-    <duration>2000</duration>
-    <rate>750</rate>
-    <end>302000</end>    
-  </InjectionStim>
-
-  <InjectionStim specieID="GluBuf" injectionSite="dend:submembrane">
-    <onset>320000</onset>
-    <duration>10000</duration>
-    <rate>150</rate>
-    <end>330000</end> 
-  </InjectionStim>
+ 
 
 </StimulationSet>
