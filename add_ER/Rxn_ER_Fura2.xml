@@ -65,7 +65,7 @@
   <Specie name="ncxCa" id="ncxCa" kdiff="0" kdiffunit="mu2/s" />
  
   <Specie name="CaER" id="CaER" kdiff="0." kdiffunit="mu2/s"/>
-  <Specie name="CaERLeak" id="CaERLeak" kdiff="0" kdiffunit="mu2/s"/>
+
   <Specie name="LeakER" id="LeakER" kdiff="0" kdiffunit="mu2/s"/>
 
   <Specie name="SERCA" id="SERCA" kdiff="0" kdiffunit="mu2/s"/>
@@ -122,7 +122,6 @@
   <Specie name="IP3R"          id="IP3R"          kdiff="0"     kdiffunit="mu2/s"/>
   <Specie name="IP3RIP3"          id="IP3RIP3"          kdiff="0"     kdiffunit="mu2/s"/>
   <Specie name="IP3RO"           id="IP3RO"           kdiff="0"     kdiffunit="mu2/s"/>
-  <Specie name="IP3ROCaER"           id="IP3ROCaER"           kdiff="0"     kdiffunit="mu2/s"/>
 
   <Specie name="IP3RC"           id="IP3RC"           kdiff="0"     kdiffunit="mu2/s"/>
   <Specie name="IP3RC2"                  id="IP3RC2"           kdiff="0"     kdiffunit="mu2/s"/>
@@ -735,8 +734,8 @@ avoids the need to generate Gqbg, and have them react-->
     <Reactant specieID="SERCA_Ca"/>
     <Product specieID="SERCA_Ca2"/>
     
-    <forwardRate>2.5e-4</forwardRate>
-    <reverseRate>25e-1</reverseRate>
+    <forwardRate>2.5e-3</forwardRate>
+    <reverseRate>25</reverseRate>
     <Q10>0.2</Q10>
   </Reaction>
 
@@ -758,27 +757,19 @@ avoids the need to generate Gqbg, and have them react-->
     <Q10>0.2</Q10>
   </Reaction>
 
+ <!-- Neymotin et al. 2015 Ca wave rescaled -->
  <!-- ER Ca leak -    CaER+ LeakER <-> CaERLeak-->
   <Reaction name = "Ca_leakER" id="Ca_leakaER">
     <Reactant specieID="CaER"/>
     <Reactant specieID="LeakER"/>
-    <Product specieID="CaERLeak"/>
-    
-    <forwardRate>7.e-8</forwardRate>
-    <reverseRate>1.1e-4</reverseRate>
-    <Q10>0.2</Q10>
-  </Reaction>
-    
-<!--  ER Ca leak -    CaERLeak <-> Ca + LeakER-->
-  <Reaction name = "Ca_leakER" id="Ca_leakbER">
-    <Reactant specieID="CaERLeak"/>
-    <Product specieID="Ca"/>
     <Product specieID="LeakER"/>
+    <Product specieID="Ca"/>
     
-    <forwardRate>2.5e-3</forwardRate>
-    <reverseRate>0</reverseRate>
+    <forwardRate>3.0e-6</forwardRate>
+    <reverseRate>3.0e-6</reverseRate>
     <Q10>0.2</Q10>
   </Reaction>
+ 
   <!-- higher affinity lower capacity CRT-Ca binding,
        Baksh and Michalak, J Biol Chem 1991-->
   <Reaction name = "CRTP_bind" id="CRTP_bind">
@@ -855,25 +846,16 @@ avoids the need to generate Gqbg, and have them react-->
 
    
 
-    <Reaction name = "IP3R_Ob-flux_Ia" id="IP3R_Ob-fluxa">
+   <Reaction name = "IP3R_Ob-flux_Ia" id="IP3R_Ob-fluxa">
     <Reactant specieID="IP3RO"           />
     <Reactant specieID="CaER"           />
-    <Product  specieID="IP3ROCaER"               />
+    <Product  specieID="IP3RO"               />
+    <Product  specieID="Ca"               />
 
-    <forwardRate> 0.000048 </forwardRate>
-    <reverseRate>  0.016      </reverseRate>
+    <forwardRate> 0.0016 </forwardRate>
+    <reverseRate>  0.0016      </reverseRate>
     <Q10>         0.2           </Q10>
     </Reaction>
-
-    <Reaction name = "IP3R_Ob-flux_Ib" id="IP3R_Ob-fluxb">
-    <Reactant specieID="IP3ROCaER"           />
-    <Product  specieID="Ca"               />
-    <Product  specieID="IP3RO"               />
-
-    <forwardRate> 0.48 </forwardRate>
-    <Q10>         0.2           </Q10>
-  </Reaction>
-
 
 
   

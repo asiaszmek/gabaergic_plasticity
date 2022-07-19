@@ -23,8 +23,6 @@
  
   <Specie name="CaER" id="CaER" kdiff="0." kdiffunit="mu2/s"/>
   
-  <Specie name="CaERLeak" id="CaERLeak" kdiff="0" kdiffunit="mu2/s"/>
-
   <Specie name="LeakER" id="LeakER" kdiff="0" kdiffunit="mu2/s"/>
 
   <Specie name="SERCA" id="SERCA" kdiff="0" kdiffunit="mu2/s"/>
@@ -235,23 +233,13 @@
   <Reaction name = "Ca_leakER" id="Ca_leakaER">
     <Reactant specieID="CaER"/>
     <Reactant specieID="LeakER"/>
-    <Product specieID="CaERLeak"/>
-    
-    <forwardRate>7.e-2</forwardRate>
-    <reverseRate>110</reverseRate>
-    <Q10>0.2</Q10>
-  </Reaction>
-    
-<!--  ER Ca leak -    CaERLeak <-> Ca + LeakER-->
-  <Reaction name = "Ca_leakER" id="Ca_leakbER">
-    <Reactant specieID="CaERLeak"/>
     <Product specieID="Ca"/>
     <Product specieID="LeakER"/>
-    
-    <forwardRate>2.5e-2</forwardRate>
-    <reverseRate>0</reverseRate>
+    <forwardRate>2.0e-6</forwardRate>
+    <reverseRate>2.0e-6</reverseRate>
     <Q10>0.2</Q10>
   </Reaction>
+    
   <!-- higher affinity lower capacity CRT-Ca binding,
        Baksh and Michalak, J Biol Chem 1991-->
   <Reaction name = "CRTP_bind" id="CRTP_bind">
