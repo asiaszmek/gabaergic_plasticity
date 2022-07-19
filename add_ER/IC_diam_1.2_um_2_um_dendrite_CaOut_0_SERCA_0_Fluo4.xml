@@ -2,7 +2,7 @@
 <InitialConditions>
   <ConcentrationSet>
     <NanoMolarity specieID="Ca" value="75"/>
-    <NanoMolarity specieID="Glu" value="40"/>
+
     <!-- total calbindin = 160 uM -->
     <NanoMolarity specieID="Calbin" value="134400"/>
     <NanoMolarity specieID="CalbinC" value="15600"/>
