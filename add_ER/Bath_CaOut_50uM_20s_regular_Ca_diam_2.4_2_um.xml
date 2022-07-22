@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StimulationSet>
+
+  <!-- the injectionSite must match a regionLabel deefined in the morphology -->
+   
+  
+  <!-- Train I -->
+ 
+  <InjectionStim specieID="CaOut" injectionSite="dend:submembrane">
+    <onset>200000</onset>
+    <duration>5000</duration>
+    <rate>7200</rate>
+    <end>305000</end> 
+  </InjectionStim>
+  
+  <InjectionStim specieID="CaOutBuf" injectionSite="dend:submembrane">
+    <onset>220000</onset>
+    <duration>10000</duration>
+    <rate>3600</rate>
+    <end>240000</end> 
+  </InjectionStim>
+
+ 
+
+</StimulationSet>
