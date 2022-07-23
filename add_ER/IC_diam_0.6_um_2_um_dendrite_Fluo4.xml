@@ -65,11 +65,11 @@
     <NanoMolarity specieID="IP3R"      value="300"     />
     <NanoMolarity specieID="LeakER" value="12"/>
 
-    <NanoMolarity       specieID="SERCA"       value="31072"     />
-    <NanoMolarity       specieID="SERCA_Ca"       value="18620"     />
-    <NanoMolarity       specieID="SERCA_Ca2"       value="192"     />
-    <NanoMolarity       specieID="SERCA_CaER"       value="177"     />
-   
+    <NanoMolarity       specieID="SERCA"       value="28000"     />
+    <NanoMolarity       specieID="SERCA_Ca"       value="13000"     />
+    <NanoMolarity       specieID="SERCA_Ca2"       value="128"     />
+    <NanoMolarity       specieID="SERCA_CaER"       value="118"     />
+  
     <NanoMolarity       specieID="CRTP" value="88525"/>
     <NanoMolarity       specieID="CRT" value="11477"/>
     <NanoMolarity specieID="STIMCaER" value="8154" />
