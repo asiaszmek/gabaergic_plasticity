@@ -174,7 +174,7 @@
     <Reactant specieID="Leak"/>
     <Product specieID="CaOutLeak"/>
 
-    <forwardRate>1.5e-8</forwardRate>
+    <forwardRate>1.5e-6</forwardRate>
     <reverseRate>1.1e-3</reverseRate>
   </Reaction>
 
