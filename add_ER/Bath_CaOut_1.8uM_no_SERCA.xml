@@ -7,7 +7,7 @@
   <!-- Train I -->
 
   <InjectionStim specieID="TG" injectionSite="dend:submembrane">
-    <onset>900000</onset>
+    <onset>300000</onset>
     <duration>20000</duration>
     <rate>5</rate>
     <end>1200000</end> 
@@ -15,14 +15,14 @@
 
   
   <InjectionStim specieID="CaOut" injectionSite="dend:submembrane">
-    <onset>1200000</onset>
+    <onset>600000</onset>
     <duration>9000</duration>
     <rate>3000</rate>
     <end>1210000</end> 
   </InjectionStim>
 
     <InjectionStim specieID="GluOut" injectionSite="dend:submembrane">
-    <onset>1200000</onset>
+    <onset>600000</onset>
     <duration>90000</duration>
     <rate>300</rate>
     <end>1310000</end> 
