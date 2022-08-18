@@ -21,7 +21,7 @@ results. depth 2D units are microns  -->
 
 
     <!-- run time for the calculation, milliseconds -->
-    <runtime>          1800000      </runtime>
+    <runtime>          1000000      </runtime>
 
     <!-- set the seed to get the same spines each time testing -->
     <spineSeed>          123          </spineSeed>
