@@ -26,6 +26,7 @@
   <Specie name="Ca" id="Ca" kdiff="174.3" kdiffunit="mu2/s" />
   <Specie name="CaOut" id="CaOut" kdiff="3." kdiffunit="mu2/s" />
   <Specie name="CaOutBuf" id="CaOutBuf" kdiff="3." kdiffunit="mu2/s" />
+  <Specie name="CaOutAnn" id="CaOutAnn" kdiff="3." kdiffunit="mu2/s" />
 
   <Specie name="CaOutLeak" id="CaOutLeak" kdiff="0"
 	  kdiffunit="mu2/s" />
@@ -144,6 +145,7 @@
   <Reaction name = "CaOutdeg" id="CaOutdeg">
     <Reactant specieID="CaOut"/>
     <Reactant specieID="CaOutBuf"/>
+    <Product specieID="CaOutAnn"/>
     <forwardRate>1e-06</forwardRate>
     <reverseRate>0</reverseRate>
   </Reaction>
