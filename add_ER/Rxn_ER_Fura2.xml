@@ -224,7 +224,7 @@
     <Product specieID="CaOutOraiSTIM_8" />
     
     <forwardRate>1.5e-6</forwardRate>
-    <reverseRate>1.1e-3</reverseRate>
+    <reverseRate>1.1e-2</reverseRate>
   </Reaction>
 
   <!-- vi: Ca leak -    CaOutLeak <-> Ca (inside) + Leak  -->
@@ -243,7 +243,7 @@
     <Product specieID="CaOutOraiSTIM_6" />
     
     <forwardRate>5e-7</forwardRate>
-    <reverseRate>1.1e-3</reverseRate>
+    <reverseRate>1.1e-2</reverseRate>
   </Reaction>
 
   <!-- vi: Ca leak -    CaOutLeak <-> Ca (inside) + Leak  -->
@@ -261,7 +261,7 @@
     <Product specieID="CaOutOraiSTIM_4" />
     
     <forwardRate>3.75e-8</forwardRate>
-    <reverseRate>1.1e-3</reverseRate>
+    <reverseRate>1.1e-2</reverseRate>
   </Reaction>
 
   <!-- vi: Ca leak -    CaOutLeak <-> Ca (inside) + Leak  -->
@@ -280,7 +280,7 @@
     <Product specieID="CaOutOraiSTIM_2" />
     
     <forwardRate>1.5e-8</forwardRate>
-    <reverseRate>1.1e-3</reverseRate>
+    <reverseRate>1.1e-2</reverseRate>
   </Reaction>
 
   <!-- vi: Ca leak -    CaOutLeak <-> Ca (inside) + Leak  -->
