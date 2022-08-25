@@ -44,9 +44,7 @@
     <PicoSD specieID="Ip3degPIk"          value="0"  />
     <PicoSD specieID="Ip3degrad"          value="0"  />
     <PicoSD specieID="Orai"          value="218."  />
-    <PicoSD specieID="CaOutOraiSTIM_4"          value="0.5" />
-    <PicoSD specieID="CaOutOraiSTIM_2"          value="75" />
-    <PicoSD specieID="OraiSTIM_2"          value="6.5" />
+    <PicoSD specieID="OraiSTIM_2"          value="82" />
   </SurfaceDensitySet>
   <ConcentrationSet region="dend">
     <NanoMolarity specieID="CaER"         value="0.75e5"     />

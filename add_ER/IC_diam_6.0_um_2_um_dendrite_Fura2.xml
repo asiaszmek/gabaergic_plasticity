@@ -44,7 +44,7 @@
     <PicoSD specieID="Ip3degPIk"          value="0"  />
     <PicoSD specieID="Ip3degrad"          value="0"  />
     <PicoSD specieID="Orai"          value="291"  />
-    <PicoSD specieID="CaOutOraiSTIM_2" value="9"  />
+    <PicoSD specieID="OraiSTIM_2" value="9"  />
 
   </SurfaceDensitySet>
   <ConcentrationSet region="dend">
