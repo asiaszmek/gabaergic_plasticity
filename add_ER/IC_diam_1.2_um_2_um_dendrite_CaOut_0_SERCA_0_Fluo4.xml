@@ -50,7 +50,7 @@
     <PicoSD specieID="Ip3degPIk"          value="0"  />
     <PicoSD specieID="Ip3degrad"          value="0"  />
     <PicoSD specieID="Orai"          value="45"  />
-    <PicoSD specieID="CaOutOraiSTIM_6"          value="5"  />
+    <PicoSD specieID="OraiSTIM_6"          value="5"  />
     <PicoSD specieID="OraiSTIM_2"          value="210"  />
     <PicoSD specieID="OraiSTIM_4"          value="40"  />
 

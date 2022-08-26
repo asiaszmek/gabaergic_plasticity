@@ -52,7 +52,7 @@
     <PicoSD specieID="Ip3degPIk"          value="0"  />
     <PicoSD specieID="Ip3degrad"          value="0"  />
     <PicoSD specieID="Orai"          value="45"  />
-    <PicoSD specieID="CaOutOraiSTIM_6"          value="5"  />
+    <PicoSD specieID="OraiSTIM_6"          value="5"  />
     <PicoSD specieID="OraiSTIM_2"          value="210"  />
     <PicoSD specieID="OraiSTIM_4"          value="40"  />
 
@@ -61,8 +61,8 @@
     <NanoMolarity specieID="CaER"         value="0.77e5"     />
     <NanoMolarity specieID="IP3R"      value="150"     />
     <NanoMolarity specieID="LeakER" value="12"/>
-    <NanoMolarity       specieID="SERCA"       value="10500"  />
-    <NanoMolarity       specieID="SERCA_Ca"       value="7500"     />
+    <NanoMolarity       specieID="SERCA"       value="5000"  />
+    <NanoMolarity       specieID="SERCA_Ca"       value="3750"     />
 
     <NanoMolarity       specieID="CRTP" value="86774"/>
     <NanoMolarity       specieID="CRT" value="13226"/>
