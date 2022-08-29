@@ -5,15 +5,15 @@
    
  <InjectionStim specieID="CaOutBuf" injectionSite="dend:submembrane">
     <onset>1</onset>
-    <duration>600000</duration>
-    <rate>2</rate>
+    <duration>6000</duration>
+    <rate>200</rate>
     <end>900000</end>
   </InjectionStim>
   <!-- Train I -->
 
 
    <InjectionStim specieID="TG" injectionSite="dend:submembrane">
-    <onset>900000</onset>
+    <onset>600000</onset>
     <duration>20000</duration>
     <rate>0.2</rate>
     <end>1000000</end> 
