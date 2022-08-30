@@ -229,7 +229,7 @@
     <Reactant specieID="STIM" power="2" />
     <Product specieID="STIM_2" />
     <forwardRate>1e-6</forwardRate>
-    <reverseRate>2e-3</reverseRate>
+    <reverseRate>2e-2</reverseRate>
   </Reaction>
   
 
@@ -237,7 +237,7 @@
     <Reactant specieID="STIM" />
     <Reactant specieID="CaER" />
     <Product specieID="STIMCaER"/>
-    <forwardRate>4e-6</forwardRate>
+    <forwardRate>4e-7</forwardRate>
     <reverseRate>2e-3</reverseRate>
   </Reaction>
 
