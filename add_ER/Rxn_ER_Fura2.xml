@@ -25,8 +25,8 @@
   <!--TODO add bAR desensitization!-->
   <Specie name="Ca" id="Ca" kdiff="174.3" kdiffunit="mu2/s" />
   <!-- doi: 10.1126/science.1465619-->
-  <Specie name="CaOut" id="CaOut" kdiff="3." kdiffunit="mu2/s" />
-  <Specie name="CaOutBuf" id="CaOutBuf" kdiff="3." kdiffunit="mu2/s" />
+  <Specie name="CaOut" id="CaOut" kdiff="174." kdiffunit="mu2/s" />
+  <Specie name="CaOutBuf" id="CaOutBuf" kdiff="174." kdiffunit="mu2/s" />
   <Specie name="CaOutAnn" id="CaOutAnn" kdiff="3." kdiffunit="mu2/s" />
 
   <Specie name="CaOutLeak" id="CaOutLeak" kdiff="0"

@@ -24,7 +24,7 @@
 
   <!--TODO add bAR desensitization!-->
   <Specie name="Ca" id="Ca" kdiff="174.3" kdiffunit="mu2/s" />
-  <Specie name="CaOut" id="CaOut" kdiff="3." kdiffunit="mu2/s" />
+  <Specie name="CaOut" id="CaOut" kdiff="174." kdiffunit="mu2/s" />
   <Specie name="CaOutLeak" id="CaOutLeak" kdiff="0"
 	  kdiffunit="mu2/s" />
   <Specie name="Leak" id="Leak" kdiff="0" kdiffunit="mu2/s" />
