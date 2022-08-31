@@ -6,22 +6,22 @@
 
   <!-- Train I -->
 
-  <InjectionStim specieID="CaOutBuf" injectionSite="dend:submembrane">
+  <InjectionStim specieID="CaOutAnnB" injectionSite="dend:submembrane">
     <onset>1</onset>
     <duration>1200</duration>
     <rate>50</rate>
     <end>150000</end> 
   </InjectionStim>
   
-  <InjectionStim specieID="CaOutBuf" injectionSite="dend:submembrane">
+  <InjectionStim specieID="CaOutAnn" injectionSite="dend:submembrane">
     <onset>185000</onset>
-    <duration>10000</duration>
-    <rate>8800</rate>
+    <duration>1000</duration>
+    <rate>88000</rate>
     <end>195000</end> 
   </InjectionStim>
 
   
-  <InjectionStim specieID="CaOut" injectionSite="dend:submembrane">
+  <InjectionStim specieID="CaOutBuf" injectionSite="dend:submembrane">
     <onset>180000</onset>
     <duration>2000</duration>
     <rate>44000</rate>

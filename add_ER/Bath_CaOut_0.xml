@@ -3,10 +3,10 @@
 
   <!-- the injectionSite must match a regionLabel deefined in the morphology -->
    
- <InjectionStim specieID="CaOutBuf" injectionSite="dend:submembrane">
+ <InjectionStim specieID="CaOutAnnB" injectionSite="dend:submembrane">
     <onset>1</onset>
-    <duration>600000</duration>
-    <rate>2</rate>
+    <duration>6000</duration>
+    <rate>200</rate>
     <end>900000</end>
   </InjectionStim>
 

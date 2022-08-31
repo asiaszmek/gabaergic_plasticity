@@ -26,7 +26,9 @@
   <Specie name="Ca" id="Ca" kdiff="174.3" kdiffunit="mu2/s" />
   <Specie name="CaOut" id="CaOut" kdiff="174." kdiffunit="mu2/s" />
   <Specie name="CaOutBuf" id="CaOutBuf" kdiff="174." kdiffunit="mu2/s" />
-  <Specie name="CaOutAnn" id="CaOutAnn" kdiff="3." kdiffunit="mu2/s" />
+  <Specie name="Buf" id="Buf" kdiff="174." kdiffunit="mu2/s" />
+  <Specie name="CaOutAnn" id="CaOutAnn" kdiff="174." kdiffunit="mu2/s" />
+  <Specie name="CaOutAnnB" id="CaOutAnnB" kdiff="174." kdiffunit="mu2/s" />
 
   <Specie name="CaOutLeak" id="CaOutLeak" kdiff="0"
 	  kdiffunit="mu2/s" />
@@ -142,13 +144,29 @@
     <reverseRate>2.1e-5</reverseRate>
   </Reaction>
 
-  <Reaction name = "CaOutdeg" id="CaOutdeg">
-    <Reactant specieID="CaOut"/>
+ <Reaction name = "CaOutInj" id="CaOutInj">
     <Reactant specieID="CaOutBuf"/>
-    <Product specieID="CaOutAnn"/>
-    <forwardRate>1e-06</forwardRate>
+    <Product specieID="Buf"/>
+    <Product specieID="CaOut"/>
+    <forwardRate>1e-04</forwardRate>
     <reverseRate>0</reverseRate>
   </Reaction>
+
+  <Reaction name = "CaOutInj2" id="CaOutInj2">
+    <Reactant specieID="Buf"/>
+    <Reactant specieID="CaOutAnn"/>
+    <Product specieID="CaOutAnnB"/>
+    <forwardRate>1e-01</forwardRate>
+    <reverseRate>0</reverseRate>
+  </Reaction>
+
+    <Reaction name = "CaOutInj3" id="CaOutInj3">
+    <Reactant specieID="CaOut"/>
+    <Reactant specieID="CaOutAnnB"/>
+    <forwardRate>1e-04</forwardRate>
+    <reverseRate>0</reverseRate>
+  </Reaction>
+
 
   <!-- i: Ca pump high affinity -    Ca + pmca <-> pmcaCa  SAME-->
   <Reaction name = "Ca_pump1a" id="Ca_pump1a">
