@@ -26,7 +26,7 @@
   <Specie name="Ca" id="Ca" kdiff="174.3" kdiffunit="mu2/s" />
 
   <Specie name="CaOut" id="CaOut" kdiff="174." kdiffunit="mu2/s" />
-  <Specie name="CaOutBuf" id="Buf" kdiff="174." kdiffunit="mu2/s" />
+  <Specie name="CaOutBuf" id="CaOutBuf" kdiff="174." kdiffunit="mu2/s" />
   <Specie name="Buf" id="Buf" kdiff="174." kdiffunit="mu2/s" />
   <Specie name="CaOutAnn" id="CaOutAnn" kdiff="174." kdiffunit="mu2/s" />
   <Specie name="CaOutAnnB" id="CaOutAnnB" kdiff="174." kdiffunit="mu2/s" />
