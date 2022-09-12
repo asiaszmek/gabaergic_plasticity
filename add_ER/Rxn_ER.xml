@@ -219,8 +219,8 @@
     <Reactant specieID="OraiSTIM_4" />
     <Product specieID="OraiSTIM_4" />
     <Product specieID="Ca" />
-    <forwardRate>1e-7</forwardRate>
-    <reverseRate>1e-7</reverseRate>
+    <forwardRate>1e-9</forwardRate>
+    <reverseRate>1e-9</reverseRate>
   </Reaction>
 
   <!-- vi: Ca leak -    CaOutLeak <-> Ca (inside) + Leak  -->
