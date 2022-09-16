@@ -298,8 +298,8 @@
 <Reactant specieID="Ca"/>
 <Reactant specieID="fixedbuffer"/>
 <Product specieID="fixedbufferCa"/>
-<forwardRate>0.004e-1</forwardRate>
-<reverseRate>20.0</reverseRate>
+<forwardRate>0.004e-3</forwardRate>
+<reverseRate>20.0e-2</reverseRate>
 <Q10>0.2</Q10>
 </Reaction>
   
