@@ -281,8 +281,8 @@
   <Reaction name = "STIM_dim_1" id="STIM_dim_1">
     <Reactant specieID="STIM" power="2" />
     <Product specieID="STIM_2" />
-    <forwardRate>1e-6</forwardRate>
-    <reverseRate>2e-2</reverseRate>
+    <forwardRate>10e-6</forwardRate>
+    <reverseRate>10e-2</reverseRate>
   </Reaction>
   
 
