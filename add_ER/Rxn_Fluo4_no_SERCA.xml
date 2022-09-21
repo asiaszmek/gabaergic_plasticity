@@ -26,9 +26,9 @@
   <Specie name="Ca" id="Ca" kdiff="174.3" kdiffunit="mu2/s" />
   <Specie name="CaOut" id="CaOut" kdiff="174." kdiffunit="mu2/s" />
   <Specie name="CaOutBuf" id="CaOutBuf" kdiff="174." kdiffunit="mu2/s" />
-  <Specie name="Buf" id="CaOutBuf" kdiff="174." kdiffunit="mu2/s" />
-  <Specie name="CaOutAnn" id="CaOutAnn" kdiff="3." kdiffunit="mu2/s" />
-  <Specie name="CaOutAnnB" id="CaOutAnnB" kdiff="3." kdiffunit="mu2/s" />
+  <Specie name="Buf" id="Buf" kdiff="174." kdiffunit="mu2/s" />
+  <Specie name="CaOutAnn" id="CaOutAnn" kdiff="174." kdiffunit="mu2/s" />
+  <Specie name="CaOutAnnB" id="CaOutAnnB" kdiff="174." kdiffunit="mu2/s" />
 
   <Specie name="CaOutLeak" id="CaOutLeak" kdiff="0"
 	  kdiffunit="mu2/s" />
@@ -63,8 +63,6 @@
   <Specie name="ncxCa" id="ncxCa" kdiff="0" kdiffunit="mu2/s" />
  
   <Specie name="CaER" id="CaER" kdiff="0." kdiffunit="mu2/s"/>
-  <Specie name="LeakER" id="LeakER" kdiff="0" kdiffunit="mu2/s"/>
-
   
   <!--calreticulin-->
   <Specie name="CRT" id="CRT" kdiff="0" kdiffunit="mu2/s"/>
@@ -224,7 +222,7 @@
   </Reaction>
 
 
-  <Reaction name = "Ca_leak_toER" id="Ca_leak_toER">
+  <Reaction name = "SOCE1" id="SOCE1">
     <Reactant specieID="CaOut" />
     <Reactant specieID="OraiSTIM_8" />
     <Product specieID="OraiSTIM_8" />
@@ -233,43 +231,37 @@
     <reverseRate>1.5e-7</reverseRate>
   </Reaction>
 
-  <!-- vi: Ca leak -    CaOutLeak <-> Ca (inside) + Leak  -->
-  <!-- <Reaction name = "Ca_leak_toER2" id="Ca_leak_toER2"> -->
-  <!--   <Reactant specieID="CaOutOraiSTIM_8" /> -->
-  <!--   <Product specieID="Ca" /> -->
-  <!--   <Product specieID="OraiSTIM_8" /> -->
-    
-  <!--   <forwardRate>1.1e-2</forwardRate> -->
-  <!--   <reverseRate>0</reverseRate> -->
-  <!-- </Reaction> -->
 
-  <Reaction name = "Ca_leak_toER_comp" id="Ca_leak_toER_comp">
+  <Reaction name = "SOCE2" id="SOCE2">
     <Reactant specieID="CaOut" />
     <Reactant specieID="OraiSTIM_6" />
     <Product specieID="OraiSTIM_6" />
-    <Product specieID="cA" />
-    <forwardRate>1e-8</forwardRate>
-    <reverseRate>1e-8</reverseRate>
+    <Product specieID="Ca" />
+  
+    <forwardRate>5e-8</forwardRate>
+    <reverseRate>5e-8</reverseRate>
   </Reaction>
 
-  <Reaction name = "Ca_leak_toER_comp2" id="Ca_leak_toER_comp2">
+  <Reaction name = "SOCE3" id="SOCE3">
     <Reactant specieID="CaOut" />
     <Reactant specieID="OraiSTIM_4" />
     <Product specieID="OraiSTIM_4" />
-    <Product specieID="cA" />
-    <forwardRate>1e-9</forwardRate>
-    <reverseRate>1e-9</reverseRate>
+    <Product specieID="Ca" />
+  
+    <forwardRate>1e-10</forwardRate>
+    <reverseRate>1e-10</reverseRate>
   </Reaction>
 
-  <!-- vi: Ca leak -    CaOutLeak <-> Ca (inside) + Leak  -->
-  <!-- <Reaction name = "Ca_leak_toER2_comp" id="Ca_leak_toER2_comp" > -->
-  <!--   <Reactant specieID="CaOutOraiSTIM_6" /> -->
-  <!--   <Product specieID="Ca" /> -->
-  <!--   <Product specieID="OraiSTIM_6" /> -->
-  <!--   <forwardRate>5.5e-3</forwardRate> -->
-  <!--   <reverseRate>0</reverseRate> -->
-  <!-- </Reaction> -->
-
+   <Reaction name = "SOCE4" id="SOCE4">
+    <Reactant specieID="CaOut" />
+    <Reactant specieID="OraiSTIM_2" />
+    <Product specieID="OraiSTIM_2" />
+    <Product specieID="Ca" />
+  
+    <forwardRate>1e-11</forwardRate>
+    <reverseRate>1e-11</reverseRate>
+  </Reaction>
+ 
 
   <Reaction name = "STIM_dim_1" id="STIM_dim_1">
     <Reactant specieID="STIM" power="2" />
@@ -277,7 +269,7 @@
     <forwardRate>10e-6</forwardRate>
     <reverseRate>7.5e-2</reverseRate>
   </Reaction>
-  
+
 
   <Reaction name = "STIMCaER_1" id="STIMCaER_1">
     <Reactant specieID="STIM" />
@@ -286,6 +278,7 @@
     <forwardRate>4e-7</forwardRate>
     <reverseRate>2e-3</reverseRate>
   </Reaction>
+  <!-- 5x because we're simulating 20% of the denrite as the ER-->
 
   <Reaction name = "STIM_Orai" id="STIM_Orai">
     <Reactant specieID="STIM_2" />
@@ -307,16 +300,16 @@
     <Reactant specieID="OraiSTIM_4" />
     <Reactant specieID="STIM_2" />
     <Product specieID="OraiSTIM_6"/>
-    <forwardRate>30e-6</forwardRate>
-    <reverseRate>8e-4</reverseRate>
+    <forwardRate>30e-5</forwardRate>
+    <reverseRate>8e-3</reverseRate>
   </Reaction>
 
   <Reaction name = "STIM_Orai4" id="STIM_Orai4">
     <Reactant specieID="OraiSTIM_6" />
     <Reactant specieID="STIM_2" />
     <Product specieID="OraiSTIM_8"/>
-    <forwardRate>6e-6</forwardRate>
-    <reverseRate>8e-4</reverseRate>
+    <forwardRate>6e-5</forwardRate>
+    <reverseRate>8e-3</reverseRate>
   </Reaction>
 
   
@@ -689,23 +682,16 @@ avoids the need to generate Gqbg, and have them react-->
         <reverseRate>   0  </reverseRate>
         <Q10>         0.2           </Q10>
     </Reaction>
-  
-
-<!--Add endoplasmic reticulum and IP3R from the never used growth cone model-->
-<!-- try out sneyd's model - not appropriate, does not pump, just buffers-->
-     <!--https://pubmed.ncbi.nlm.nih.gov/6244305/ -->
      
-    <!-- Ca leak -    CaOut + Leak <-> CaOutLeak -->
+
 <!-- Neymotin et al. 2015 Ca wave rescaled -->
  <!-- ER Ca leak -    CaER+ LeakER <-> CaERLeak-->
-  <Reaction name = "Ca_leakER" id="Ca_leakaER">
-    <Reactant specieID="CaER"/>
-    <Reactant specieID="LeakER"/>
-    <Product specieID="LeakER"/>
-    <Product specieID="Ca"/>
+ <Reaction name = "Ca_leakER" id="Ca_leakaER">
+    <Reactant specieID="CaER" p="2"/>
+    <Product specieID="Ca" p="2"/>
     
-    <forwardRate>3.0e-7</forwardRate>
-    <reverseRate>3.0e-7</reverseRate>
+    <forwardRate>1.8e-6</forwardRate>
+    <reverseRate>1.8e-6</reverseRate>
     <Q10>0.2</Q10>
   </Reaction>
 

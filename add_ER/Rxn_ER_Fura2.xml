@@ -28,8 +28,8 @@
   <Specie name="CaOut" id="CaOut" kdiff="174." kdiffunit="mu2/s" />
   <Specie name="CaOutBuf" id="CaOutBuf" kdiff="174." kdiffunit="mu2/s" />
   <Specie name="Buf" id="Buf" kdiff="174." kdiffunit="mu2/s" />
-  <Specie name="CaOutAnn" id="CaOutAnn" kdiff="3." kdiffunit="mu2/s" />
-  <Specie name="CaOutAnnB" id="CaOutAnnB" kdiff="3." kdiffunit="mu2/s" />
+  <Specie name="CaOutAnn" id="CaOutAnn" kdiff="174." kdiffunit="mu2/s" />
+  <Specie name="CaOutAnnB" id="CaOutAnnB" kdiff="174." kdiffunit="mu2/s" />
   <Specie name="CaOutLeak" id="CaOutLeak" kdiff="0"
 	  kdiffunit="mu2/s" />
   <Specie name="Leak" id="Leak" kdiff="0" kdiffunit="mu2/s" />
@@ -238,15 +238,6 @@
     <reverseRate>1.5e-7</reverseRate>
   </Reaction>
 
-  <!-- vi: Ca leak -    CaOutLeak <-> Ca (inside) + Leak  -->
-  <!-- <Reaction name = "Ca_leak_toER2" id="Ca_leak_toER2"> -->
-  <!--   <Reactant specieID="CaOutOraiSTIM_8" /> -->
-  <!--   <Product specieID="Ca" /> -->
-  <!--   <Product specieID="OraiSTIM_8" /> -->
-    
-  <!--   <forwardRate>1.1e-2</forwardRate> -->
-  <!--   <reverseRate>0</reverseRate> -->
-  <!-- </Reaction> -->
 
   <Reaction name = "SOCE2" id="SOCE2">
     <Reactant specieID="CaOut" />
@@ -295,7 +286,8 @@
     <forwardRate>4e-7</forwardRate>
     <reverseRate>2e-3</reverseRate>
   </Reaction>
-
+  <!-- 5x because we're simulating 20% of the denrite as the ER-->
+ 
   <Reaction name = "STIM_Orai" id="STIM_Orai">
     <Reactant specieID="STIM_2" />
     <Reactant specieID="Orai" />

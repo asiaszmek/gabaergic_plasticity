@@ -275,15 +275,6 @@
     <reverseRate>1e-11</reverseRate>
   </Reaction>
 
-  <!-- vi: Ca leak -    CaOutLeak <-> Ca (inside) + Leak  -->
-  <!-- <Reaction name = "Ca_leak_toER2_comp" id="Ca_leak_toER2_comp" > -->
-  <!--   <Reactant specieID="CaOutOraiSTIM_6" /> -->
-  <!--   <Product specieID="Ca" /> -->
-  <!--   <Product specieID="OraiSTIM_6" /> -->
-  <!--   <forwardRate>5.5e-3</forwardRate> -->
-  <!--   <reverseRate>0</reverseRate> -->
-  <!-- </Reaction> -->
-
 
   <Reaction name = "STIM_dim_1" id="STIM_dim_1">
     <Reactant specieID="STIM" power="2" />
@@ -771,11 +762,11 @@ avoids the need to generate Gqbg, and have them react-->
 
   
 <!-- Neymotin et al. 2015 Ca wave rescaled -->
- <!-- ER Ca leak -    CaER+ LeakER <-> CaERLeak-->
-  <Reaction name = "Ca_leakER" id="Ca_leakaER">
-    <Reactant specieID="CaER" p="2"/>
-    <Product specieID="Ca" p="2"/>
-    
+<!-- ER Ca leak -    CaER+ LeakER <-> CaERLeak-->
+<Reaction name = "Ca_leakER" id="Ca_leakaER">
+  <Reactant specieID="CaER" p="2"/>
+  <Product specieID="Ca" p="2"/>
+  
     <forwardRate>1.8e-6</forwardRate>
     <reverseRate>1.8e-6</reverseRate>
     <Q10>0.2</Q10>
