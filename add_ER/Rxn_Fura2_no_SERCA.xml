@@ -289,7 +289,7 @@
     <Reactant specieID="STIM" power="2" />
     <Product specieID="STIM_2" />
     <forwardRate>10e-6</forwardRate>
-    <reverseRate>10e-2</reverseRate>
+    <reverseRate>7.5e-2</reverseRate>
   </Reaction>
   
 
@@ -814,7 +814,36 @@ avoids the need to generate Gqbg, and have them react-->
     <Q10>0.2</Q10>
   </Reaction>
 
+  <Reaction name = "TG_SERCA_1d" id="TG_SERCA_1e">
+    <Reactant specieID="TG" />
+    <Reactant specieID="ER_SERCA_Ca"/>
+    <Product specieID="TG_SERCA_Ca"/>
+    
+    <forwardRate>2.6e-05</forwardRate>
+    <reverseRate>0</reverseRate>
+    <Q10>0.2</Q10>
+  </Reaction>
+ 
 
+  <Reaction name = "TG_SERCA_1e" id="TG_SERCA_1e">
+    <Reactant specieID="ER_SERCA_Ca2"/>
+    <Reactant specieID="TG"/>
+    <Product specieID="TG_SERCA_Ca2" />
+  
+    <forwardRate>2.6e-05</forwardRate>
+    <reverseRate>0</reverseRate>
+    <Q10>0.2</Q10>
+  </Reaction>
+
+
+  <Reaction name = "TG_SERCA_1f" id="TG_SERCA_1f">
+    <Reactant specieID="TG" />
+    <Reactant specieID="ER_SERCA"/>
+    <Product specieID="TG_SERCA"/>
+    <forwardRate>2.6e-05</forwardRate>
+    <reverseRate>0</reverseRate>    
+    <Q10>0.2</Q10>
+  </Reaction>
 
 
   <!-- higher affinity lower capacity CRT-Ca binding,
@@ -824,8 +853,8 @@ avoids the need to generate Gqbg, and have them react-->
     <Reactant specieID="CaER"/>
     <Product specieID="CRTP"/>
     
-    <forwardRate>1e-6</forwardRate>
-    <reverseRate>0.01</reverseRate>
+    <forwardRate>1e-5</forwardRate>
+    <reverseRate>0.1</reverseRate>
     </Reaction>
 
   <Reaction name = "IP3R+IP3" id="IP3R+IP3">
