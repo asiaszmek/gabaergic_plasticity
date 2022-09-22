@@ -29,10 +29,6 @@
 	  kdiffunit="mu2/s" />
   <Specie name="Leak" id="Leak" kdiff="0" kdiffunit="mu2/s" />
 
-  <!-- <Specie name="CaOutOraiSTIM_8" id="CaOutOraiSTIM_8" kdiff="0" -->
-  <!-- 	  kdiffunit="mu2/s" /> -->
-  <!-- <Specie name="CaOutOraiSTIM_6" id="CaOutOraiSTIM_6" kdiff="0" -->
-  <!-- 	  kdiffunit="mu2/s" /> -->
 
   <Specie name="OraiSTIM_8" id="OraiSTIM_8" kdiff="0" kdiffunit="mu2/s" />
   <Specie name="OraiSTIM_6" id="OraiSTIM_6" kdiff="0" kdiffunit="mu2/s" />
@@ -210,8 +206,8 @@
     <Reactant specieID="OraiSTIM_4" />
     <Product specieID="OraiSTIM_4" />
     <Product specieID="Ca" />
-    <forwardRate>1e-10</forwardRate>
-    <reverseRate>1e-10</reverseRate>
+    <forwardRate>1e-11</forwardRate>
+    <reverseRate>1e-11</reverseRate>
   </Reaction>
 
   <Reaction name = "SOCE4" id="SOCE4">
@@ -219,8 +215,8 @@
     <Reactant specieID="OraiSTIM_2" />
     <Product specieID="OraiSTIM_2" />
     <Product specieID="Ca" />
-    <forwardRate>1e-11</forwardRate>
-    <reverseRate>1e-11</reverseRate>
+    <forwardRate>1e-12</forwardRate>
+    <reverseRate>1e-12</reverseRate>
   </Reaction>
 
 
