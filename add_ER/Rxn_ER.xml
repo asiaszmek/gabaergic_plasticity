@@ -210,14 +210,14 @@
     <reverseRate>1e-11</reverseRate>
   </Reaction>
 
-  <Reaction name = "SOCE4" id="SOCE4">
-    <Reactant specieID="CaOut" />
-    <Reactant specieID="OraiSTIM_2" />
-    <Product specieID="OraiSTIM_2" />
-    <Product specieID="Ca" />
-    <forwardRate>1e-12</forwardRate>
-    <reverseRate>1e-12</reverseRate>
-  </Reaction>
+  <!-- <Reaction name = "SOCE4" id="SOCE4"> -->
+  <!--   <Reactant specieID="CaOut" /> -->
+  <!--   <Reactant specieID="OraiSTIM_2" /> -->
+  <!--   <Product specieID="OraiSTIM_2" /> -->
+  <!--   <Product specieID="Ca" /> -->
+  <!--   <forwardRate>1e-12</forwardRate> -->
+  <!--   <reverseRate>1e-12</reverseRate> -->
+  <!-- </Reaction> -->
 
 
 
