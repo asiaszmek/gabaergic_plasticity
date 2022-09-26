@@ -270,8 +270,8 @@
   <Reaction name = "STIM_dim_1" id="STIM_dim_1">
     <Reactant specieID="STIM" power="2" />
     <Product specieID="STIM_2" />
-    <forwardRate>10e-6</forwardRate>
-    <reverseRate>7.5e-2</reverseRate>
+    <forwardRate>1e-6</forwardRate>
+    <reverseRate>1e-2</reverseRate>
   </Reaction>
   
 
@@ -279,8 +279,8 @@
     <Reactant specieID="STIM" />
     <Reactant specieID="CaER" />
     <Product specieID="STIMCaER"/>
-    <forwardRate>4e-7</forwardRate>
-    <reverseRate>2e-3</reverseRate>
+    <forwardRate>4e-8</forwardRate>
+    <reverseRate>2e-4</reverseRate>
   </Reaction>
   <!-- 5x because we're simulating 20% of the denrite as the ER-->
  
@@ -288,32 +288,32 @@
     <Reactant specieID="STIM_2" />
     <Reactant specieID="Orai" />
     <Product specieID="OraiSTIM_2"/>
-    <forwardRate>7.5e-4</forwardRate>
-    <reverseRate>8e-4</reverseRate>
+    <forwardRate>7.5e-5</forwardRate>
+    <reverseRate>8e-5</reverseRate>
   </Reaction>
 
   <Reaction name = "STIM_Orai2" id="STIM_Orai2">
     <Reactant specieID="OraiSTIM_2" />
     <Reactant specieID="STIM_2" />
     <Product specieID="OraiSTIM_4"/>
-    <forwardRate>15e-5</forwardRate>
-    <reverseRate>8e-4</reverseRate>
+    <forwardRate>15e-6</forwardRate>
+    <reverseRate>8e-5</reverseRate>
   </Reaction>
 
   <Reaction name = "STIM_Orai3" id="STIM_Orai3">
     <Reactant specieID="OraiSTIM_4" />
     <Reactant specieID="STIM_2" />
     <Product specieID="OraiSTIM_6"/>
-    <forwardRate>30e-5</forwardRate>
-    <reverseRate>8e-3</reverseRate>
+    <forwardRate>30e-6</forwardRate>
+    <reverseRate>8e-4</reverseRate>
   </Reaction>
 
   <Reaction name = "STIM_Orai4" id="STIM_Orai4">
     <Reactant specieID="OraiSTIM_6" />
     <Reactant specieID="STIM_2" />
     <Product specieID="OraiSTIM_8"/>
-    <forwardRate>6e-5</forwardRate>
-    <reverseRate>8e-3</reverseRate>
+    <forwardRate>6e-6</forwardRate>
+    <reverseRate>8e-4</reverseRate>
   </Reaction>
 
   
