@@ -285,32 +285,32 @@
     <Reactant specieID="STIM_2" />
     <Reactant specieID="Orai" />
     <Product specieID="OraiSTIM_2"/>
-    <forwardRate>7.5e-5</forwardRate>
-    <reverseRate>8e-5</reverseRate>
+    <forwardRate>1.5e-4</forwardRate>
+    <reverseRate>8e-4</reverseRate>
   </Reaction>
 
   <Reaction name = "STIM_Orai2" id="STIM_Orai2">
     <Reactant specieID="OraiSTIM_2" />
     <Reactant specieID="STIM_2" />
     <Product specieID="OraiSTIM_4"/>
-    <forwardRate>15e-6</forwardRate>
-    <reverseRate>8e-5</reverseRate>
+    <forwardRate>3e-5</forwardRate>
+    <reverseRate>16e-4</reverseRate>
   </Reaction>
 
   <Reaction name = "STIM_Orai3" id="STIM_Orai3">
     <Reactant specieID="OraiSTIM_4" />
     <Reactant specieID="STIM_2" />
     <Product specieID="OraiSTIM_6"/>
-    <forwardRate>30e-6</forwardRate>
-    <reverseRate>8e-4</reverseRate>
+    <forwardRate>6e-6</forwardRate>
+    <reverseRate>32e-4</reverseRate>
   </Reaction>
 
   <Reaction name = "STIM_Orai4" id="STIM_Orai4">
     <Reactant specieID="OraiSTIM_6" />
     <Reactant specieID="STIM_2" />
     <Product specieID="OraiSTIM_8"/>
-    <forwardRate>6e-6</forwardRate>
-    <reverseRate>8e-4</reverseRate>
+    <forwardRate>1.2e-6</forwardRate>
+    <reverseRate>64e-4</reverseRate>
   </Reaction>
 
   
