@@ -75,7 +75,6 @@
   <Specie name="CaMCa4" id="CaMCa4" kdiff="4" kdiffunit="mu2/s" />
   <!-- 4 Ca bound Calmodulin-->
   <!-- -->
-  <Specie name="GluBuf" id="GluBuf" kdiff="1" kdiffunit="mu2/s" />
 
   <!-- Add mGluRs from Blackwell's model -->
   <Specie name="Glu"            id="Glu"           kdiff="100"   kdiffunit="mu2/s"/>
@@ -567,12 +566,6 @@ avoids the need to generate Gqbg, and have them react-->
   	<Q10>0.2</Q10>
   </Reaction>
 
-<Reaction name="GluOut+GluBuf--NULL" id="GluOut_buf--NULL">
-  <Reactant specieID="GluOut" />
-  <Reactant specieID="GluBuf" />
-  <forwardRate>1e-06</forwardRate>
-  <reverseRate>0</reverseRate>
-</Reaction>
   
    <!--0b. GluMgluR <==> Desensitized, needed for prolonged DHPG application -->
       <Reaction name = "Glu+MgluR--GluMgluRdesens" id="Glu+MgluR--GluMgluRdesens">
