@@ -14,33 +14,33 @@
   <!-- </InjectionStim> -->
   
   <InjectionStim specieID="CaOutAnn" injectionSite="dend:submembrane">
-    <onset>200000</onset>
+    <onset>80000</onset>
     <duration>1000</duration>
     <rate>36000</rate>
-    <end>220000</end> 
+    <end>90000</end> 
   </InjectionStim>
 
 
   <InjectionStim specieID="CaOutBuf" injectionSite="dend:submembrane">
-    <onset>180000</onset>
+    <onset>60000</onset>
     <duration>1000</duration>
     <rate>36000</rate>
-    <end>185000</end> 
+    <end>75000</end> 
   </InjectionStim>
   
 
   <InjectionStim specieID="GluOut" injectionSite="dend:submembrane">
-    <onset>180000</onset>
+    <onset>60000</onset>
     <duration>5000</duration>
     <rate>150</rate>
-    <end>185000</end>    
+    <end>65000</end>    
   </InjectionStim>
 
   <InjectionStim specieID="GluBuf" injectionSite="dend:submembrane">
-    <onset>200000</onset>
+    <onset>80000</onset>
     <duration>10000</duration>
     <rate>75</rate>
-    <end>210000</end> 
+    <end>90000</end> 
   </InjectionStim>
 
 </StimulationSet>
