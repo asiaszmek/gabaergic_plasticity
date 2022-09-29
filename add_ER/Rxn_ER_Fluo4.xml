@@ -228,8 +228,8 @@
     <Reactant specieID="OraiSTIM_8" />
     <Product specieID="OraiSTIM_8" />
     <Product specieID="Ca" />
-    <forwardRate>1.5e-7</forwardRate>
-    <reverseRate>1.5e-7</reverseRate>
+    <forwardRate>0.5e-7</forwardRate>
+    <reverseRate>0.5e-7</reverseRate>
   </Reaction>
 
 
@@ -239,8 +239,8 @@
     <Product specieID="OraiSTIM_6" />
     <Product specieID="Ca" />
   
-    <forwardRate>5e-8</forwardRate>
-    <reverseRate>5e-8</reverseRate>
+    <forwardRate>0.5e-8</forwardRate>
+    <reverseRate>0.5e-8</reverseRate>
   </Reaction>
 
   <!-- <Reaction name = "SOCE3" id="SOCE3"> -->
