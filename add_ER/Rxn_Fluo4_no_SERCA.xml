@@ -17,8 +17,8 @@
        
   -->
   <!-- you can specify the units of the diffusion constant. If they are not specified they are assumed to be micron^2/second, (microns written "mu" here) it should understand microns, mm, and m for distances and seconds and ms for times -->
-  <!-- This code is implemented CaMKII_bimols Rns -0.44, 0.28, 0.088. Fix 3 products 2rxns break down to 2nd order rxn : LbARG/Ip35P1P2 -->
-  <!-- last rxn of Ip35p1p2 was wrong reactant:fixed on Aug,8th,2008
+  <!-- This code is implemented CaMKII_bimols Rns -0.44, 0.28, 0.088. Fix 3 products 2rxns break down to 2nd order rxn : LbARG/IP35P1P2 -->
+  <!-- last rxn of IP35p1p2 was wrong reactant:fixed on Aug,8th,2008
    Chosen katp=1 sec(not 10 sec) is enough   -->
   <!-- Suggested by avrama Ca kdiff=600 for helping fast decay on Feb.24th 2009-->
 
@@ -100,9 +100,9 @@
  
   
   <Specie name="PIkinase"      id="PIkinase"      kdiff="0"    kdiffunit = "mu2/s"/>
-  <Specie name="Ip3degPIk"     id="Ip3degPIk"   kdiff="0"    kdiffunit = "mu2/s"/>
+  <Specie name="IP3degPIk"     id="IP3degPIk"   kdiff="0"    kdiffunit = "mu2/s"/>
   
-  <Specie name="Ip3degrad"     id="Ip3degrad"           kdiff="10.6"    kdiffunit = "mu2/s"/>
+  <Specie name="IP3degrad"     id="IP3degrad"           kdiff="10.6"    kdiffunit = "mu2/s"/>
 
   <Specie name="IP3R"          id="IP3R"          kdiff="0"     kdiffunit="mu2/s"/>
   <Specie name="IP3RIP3"          id="IP3RIP3"          kdiff="0"     kdiffunit="mu2/s"/>
@@ -112,7 +112,7 @@
   <Specie name="IP3RC3"                  id="IP3RC3"           kdiff="0"     kdiffunit="mu2/s"/>
 
   <Specie name="IP3RC4"          id="IP3RC4"          kdiff="0"     kdiffunit="mu2/s"/>
-  <Specie name="Ip3"            id="Ip3"           kdiff="10." kdiffunit="mu2/s"/>
+  <Specie name="IP3"            id="IP3"           kdiff="10." kdiffunit="mu2/s"/>
 
   <!--Hindered cytoplasmic diffusion of
 	  inositol trisphosphate restricts its cellular range of
@@ -450,7 +450,7 @@
    <!-- PlcCa + Pip2    <-> PlcCaPip2    -->
 <!--No affinities for Pip2 are found in literature.  ALso, backward rate is very low compared to kcat
 This will initiall have small effect on Km, but might slow down IP3 production.
-Incraese Kb by 5x to decrease Ip3 production-->
+Incraese Kb by 5x to decrease IP3 production-->
 <!-- Decrease Kf by 10x to compensate for 10x inc in Pip2-->
 <!-- decrease the next two set of rates 5x overall since too much Pip2 is being hydrolyzed at basal calcium Nov 30 -->
 <Reaction name = "PlcCa+Pip2--PlcCaPip2" id="PlcCa+Pip2--PlcCaPip2">
@@ -464,11 +464,11 @@ Incraese Kb by 5x to decrease Ip3 production-->
 </Reaction>
   
 
-<!-- PlcCaPip2      <-> PlcCaDag + Ip3 -->  <!--Tuomo: used rate from Blackwell et al. 2018-->
-<Reaction name = "PlcCaPip2--PlcCaDag+Ip3" id="PlcCaPip2--PlcCaDag+Ip3">
+<!-- PlcCaPip2      <-> PlcCaDag + IP3 -->  <!--Tuomo: used rate from Blackwell et al. 2018-->
+<Reaction name = "PlcCaPip2--PlcCaDag+IP3" id="PlcCaPip2--PlcCaDag+IP3">
     <Reactant specieID="PlcCaPip2"            />
     <Product  specieID="PlcCa"               />
-    <Product  specieID="Ip3"            />
+    <Product  specieID="IP3"            />
 
     <forwardRate> 0.45e-03     </forwardRate>
     <reverseRate> 0e-03    </reverseRate>
@@ -478,7 +478,7 @@ Incraese Kb by 5x to decrease Ip3 production-->
 <!-- PlcCaGqaGTP + Pip2    <-> PlcCaGqaGTPPip2    -->
 <!-- Decrease Kf by 10x to compensate for 10x inc in Pip2-->
 <!-- Decrease rates by 2x to maintain 10x enhancement by GqaGTP Nov 30
-Increse Kb by 5x to decrease Ip3 production-->
+Increse Kb by 5x to decrease IP3 production-->
 <Reaction name = "PlcCaGqaGTP+Pip2--PlcCaGqaGTPPip2" id="PlcCaGqaGTP+Pip2--PlcCaGqaGTPPip2">
     <Reactant specieID="PlcCaGqaGTP"               />
     <Reactant specieID="Pip2"             />
@@ -489,11 +489,11 @@ Increse Kb by 5x to decrease Ip3 production-->
     <Q10>         0.2           </Q10>
 </Reaction>
   
-<!-- PlcCaGqaGTPPip2       <-> PlcCaGqaGTPDag + Ip3 -->
-<Reaction name = "PlcCaGqaGTPPip2--PlcCaGqaGTPDag+Ip3" id="PlcCaGqaGTPPip2--PlcCaGqaGTPDag+Ip3">
+<!-- PlcCaGqaGTPPip2       <-> PlcCaGqaGTPDag + IP3 -->
+<Reaction name = "PlcCaGqaGTPPip2--PlcCaGqaGTPDag+IP3" id="PlcCaGqaGTPPip2--PlcCaGqaGTPDag+IP3">
     <Reactant specieID="PlcCaGqaGTPPip2"            />
     <Product  specieID="PlcCaGqaGTP"               />
-    <Product  specieID="Ip3"            />
+    <Product  specieID="IP3"            />
 
     <forwardRate> 30e-03     </forwardRate>
     <reverseRate> 0e-03    </reverseRate>
@@ -506,20 +506,20 @@ No idea what these rates should be.  Try different values to obtain equilibirum 
 These rates interact with PIkinase quantity. Affinity started at 1 uM
 Discovered mistake!!! specified PIkinase as product, not reactant!-->
 
-<!--  Ip3    <-> Ip3degrad          Degraded IP3-->
-<Reaction name = "Ip3--Ip3degrad" id="Ip3--Ip3degrad">
-     <Reactant specieID="Ip3"            />
-    <Product  specieID="Ip3degrad"        />
+<!--  IP3    <-> IP3degrad          Degraded IP3-->
+<Reaction name = "IP3--IP3degrad" id="IP3--IP3degrad">
+     <Reactant specieID="IP3"            />
+    <Product  specieID="IP3degrad"        />
 
     <forwardRate> 0.66e-03      </forwardRate>
     <reverseRate> 0.0e-03      </reverseRate>
     <Q10>         0.2           </Q10>
 </Reaction>
 
-   <Reaction name = "Ip3degrad + PIkinase -- Ip3degPIkinase" id="PIkinase1">
-    <Reactant specieID="Ip3degrad"            />   
+   <Reaction name = "IP3degrad + PIkinase -- IP3degPIkinase" id="PIkinase1">
+    <Reactant specieID="IP3degrad"            />   
     <Reactant specieID="PIkinase"               />
-    <Product  specieID="Ip3degPIk"            />
+    <Product  specieID="IP3degPIk"            />
 
     <forwardRate> 2.0e-6    </forwardRate>
     <reverseRate> 1e-03    </reverseRate>
@@ -527,8 +527,8 @@ Discovered mistake!!! specified PIkinase as product, not reactant!-->
 </Reaction>
 
 <!-- Initial rate from PI5kinase from Falkenburger, increased to compensate for lower reactant quantity -->
-   <Reaction name = "Ip3degPIkinase -- PIP2 + PIkinase" id="PIkinase2">
-    <Reactant specieID="Ip3degPIk"            />
+   <Reaction name = "IP3degPIkinase -- PIP2 + PIkinase" id="PIkinase2">
+    <Reactant specieID="IP3degPIk"            />
     <Product  specieID="PIkinase"               />
     <Product  specieID="Pip2"            />
 
@@ -703,7 +703,7 @@ avoids the need to generate Gqbg, and have them react-->
 
   <Reaction name = "IP3R+IP3" id="IP3R+IP3">
     <Reactant specieID="IP3R"           />
-    <Reactant specieID="Ip3"              />
+    <Reactant specieID="IP3"              />
     <Product  specieID="IP3RIP3"               />
 
     <forwardRate> 0.00001   </forwardRate>

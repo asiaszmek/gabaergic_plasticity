@@ -17,7 +17,7 @@
     <NanoMolarity specieID="CaMCa4" value="3"/>
     <NanoMolarity specieID="NgCaM" value="17250"/>
     <NanoMolarity specieID="Ng" value="2750"/>
-    <NanoMolarity specieID="Ip3" value="26"/>
+    <NanoMolarity specieID="IP3" value="26"/>
 
 
     </ConcentrationSet>
@@ -48,8 +48,8 @@
     <PicoSD specieID="GqaGDP" value="8"/>
     
     <PicoSD specieID="PIkinase"           value="280"  />
-    <PicoSD specieID="Ip3degPIk"          value="0"  />
-    <PicoSD specieID="Ip3degrad"          value="0"  />
+    <PicoSD specieID="IP3degPIk"          value="0"  />
+    <PicoSD specieID="IP3degrad"          value="0"  />
     <PicoSD specieID="Orai"          value="300"  />
   </SurfaceDensitySet>
   <ConcentrationSet region="dend">
