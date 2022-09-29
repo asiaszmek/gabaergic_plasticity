@@ -9,10 +9,10 @@ fname_list = {
         "model_one_comp_1.8_CaOut_TG_trial3_dend.txt"
     ],
     "no_TG": [
-        "model_one_comp_1.8_CaOut_SERCA_trial0_dend.txt",
-        "model_one_comp_1.8_CaOut_SERCA_trial1_dend.txt",
-        "model_one_comp_1.8_CaOut_SERCA_trial2_dend.txt",
-        "model_one_comp_1.8_CaOut_SERCA_trial3_dend.txt"
+        "model_one_comp_1.8_CaOut_trial0_dend.txt",
+        "model_one_comp_1.8_CaOut_trial1_dend.txt",
+        "model_one_comp_1.8_CaOut_trial2_dend.txt",
+        "model_one_comp_1.8_CaOut_trial3_dend.txt"
     ],
 }
 specie = "Fura2Ca"
