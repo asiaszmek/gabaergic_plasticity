@@ -3,10 +3,10 @@ import matplotlib.pyplot as plt
 
 fname_list = {
     "TG": [
-        "model_one_comp_1.8_CaOut_no_SERCA_trial0_dend.txt",
-        "model_one_comp_1.8_CaOut_no_SERCA_trial1_dend.txt",
-        "model_one_comp_1.8_CaOut_no_SERCA_trial2_dend.txt",
-        "model_one_comp_1.8_CaOut_no_SERCA_trial3_dend.txt"
+        "model_one_comp_1.8_CaOut_TG_trial0_dend.txt",
+        "model_one_comp_1.8_CaOut_TG_trial1_dend.txt",
+        "model_one_comp_1.8_CaOut_TG_trial2_dend.txt",
+        "model_one_comp_1.8_CaOut_TG_trial3_dend.txt"
     ],
     "no_TG": [
         "model_one_comp_1.8_CaOut_SERCA_trial0_dend.txt",
