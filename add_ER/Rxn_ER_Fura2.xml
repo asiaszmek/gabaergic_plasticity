@@ -297,7 +297,7 @@
     <Reactant specieID="STIM_2" />
     <Product specieID="OraiSTIM_4"/>
     <forwardRate>3e-5</forwardRate>
-    <reverseRate>16e-6</reverseRate>
+    <reverseRate>16e-4</reverseRate>
   </Reaction>
 
   <Reaction name = "STIM_Orai3" id="STIM_Orai3">

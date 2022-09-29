@@ -33,7 +33,7 @@
   <Specie name="CaOutLeak" id="CaOutLeak" kdiff="0"
 	  kdiffunit="mu2/s" />
   <Specie name="Leak" id="Leak" kdiff="0" kdiffunit="mu2/s" />
-  <Specie name="LeakER" id="LeakER" kdiff="0" kdiffunit="mu2/s" />
+
   <Specie name="Fluro4" id="Fluo4" kdiff="83" kdiffunit="mu2/s" />
   <Specie name="Fluro4Ca" id="Fluo4Ca" kdiff="83" kdiffunit="mu2/s" />
 
