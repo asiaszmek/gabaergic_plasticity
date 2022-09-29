@@ -143,7 +143,7 @@
     <Reactant specieID="CaOutBuf"/>
     <Product specieID="Buf"/>
     <Product specieID="CaOut"/>
-    <forwardRate>1e-04</forwardRate>
+    <forwardRate>1e-03</forwardRate>
     <reverseRate>0</reverseRate>
   </Reaction>
 
@@ -151,7 +151,7 @@
     <Reactant specieID="Buf"/>
     <Reactant specieID="CaOutAnn"/>
     <Product specieID="CaOutAnnB"/>
-    <forwardRate>1e-01</forwardRate>
+    <forwardRate>1e-02</forwardRate>
     <reverseRate>0</reverseRate>
   </Reaction>
 
