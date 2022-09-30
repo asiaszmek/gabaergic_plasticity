@@ -34,6 +34,8 @@
   <Specie name="CaOutLeak" id="CaOutLeak" kdiff="0"
 	  kdiffunit="mu2/s" />
   <Specie name="Leak" id="Leak" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="LeakER" id="LeakER" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="CaLeakER" id="CaLeakER" kdiff="0" kdiffunit="mu2/s" />
 
   <Specie name="Fura2" id="Fura2" kdiff="83" kdiffunit="mu2/s" />
   <Specie name="Fura2Ca" id="Fura2Ca" kdiff="83" kdiffunit="mu2/s" />
@@ -251,25 +253,7 @@
     <reverseRate>2.5e-8</reverseRate>
   </Reaction>
 
-  <!-- <Reaction name = "SOCE3" id="SOCE3"> -->
-  <!--   <Reactant specieID="CaOut" /> -->
-  <!--   <Reactant specieID="OraiSTIM_4" /> -->
-  <!--   <Product specieID="OraiSTIM_4" /> -->
-  <!--   <Product specieID="Ca" /> -->
-  
-  <!--   <forwardRate>1e-11</forwardRate> -->
-  <!--   <reverseRate>1e-11</reverseRate> -->
-  <!-- </Reaction> -->
-
-  <!--  <Reaction name = "SOCE4" id="SOCE4"> -->
-  <!--   <Reactant specieID="CaOut" /> -->
-  <!--   <Reactant specieID="OraiSTIM_2" /> -->
-  <!--   <Product specieID="OraiSTIM_2" /> -->
-  <!--   <Product specieID="Ca" /> -->
-  
-  <!--   <forwardRate>1e-12</forwardRate> -->
-  <!--   <reverseRate>1e-12</reverseRate> -->
-  <!-- </Reaction> -->
+ 
 
 
   <Reaction name = "STIM_dim_1" id="STIM_dim_1">
@@ -284,8 +268,8 @@
     <Reactant specieID="STIM" />
     <Reactant specieID="CaER" />
     <Product specieID="STIMCaER"/>
-    <forwardRate>4e-8</forwardRate>
-    <reverseRate>2e-4</reverseRate>
+    <forwardRate>4e-7</forwardRate>
+    <reverseRate>2e-3</reverseRate>
   </Reaction>
   <!-- 5x because we're simulating 20% of the denrite as the ER-->
   
@@ -757,17 +741,25 @@ avoids the need to generate Gqbg, and have them react-->
   </Reaction>
 
   
-<!-- Neymotin et al. 2015 Ca wave rescaled -->
 <!-- ER Ca leak -    CaER+ LeakER <-> CaERLeak-->
-<Reaction name = "Ca_leakER" id="Ca_leakaER">
+ <Reaction name = "Ca_leakER1" id="Ca_leakaER1">
   <Reactant specieID="CaER" p="2"/>
-  <Product specieID="Ca" p="2"/>
-  
-    <forwardRate>1.8e-6</forwardRate>
-    <reverseRate>1.8e-6</reverseRate>
+  <Reactant specieID="LeakER" />
+  <Product specieID="CaLeakER"/>
+
+    <forwardRate>1.8e-3</forwardRate>
+    <reverseRate>1.8e-3</reverseRate>
     <Q10>0.2</Q10>
   </Reaction>
- 
+
+  <Reaction name = "Ca_leakER2" id="Ca_leakaER2">
+  <Reactant specieID="CaLeakER"/>
+  <Product specieID="LeakER" />
+  <Product specieID="Ca" p="2"/>
+    <forwardRate>2.5e-2</forwardRate>
+    <Q10>0.2</Q10>
+  </Reaction>
+
  
   <Reaction name = "TG_SERCA_1a" id="TG_SERCA_1a">
     <Reactant specieID="TG" />
