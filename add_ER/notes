@@ -1,0 +1,38 @@
+Add Stim/Orai1
+SOCE complex usually requires a couple of Stim1 proteins [1]. Hence we will use the STIM1_4-Orai1 model [2]. STIM-1 affinity for Ca2+ in the ER is around 100-500 uM [4] and will have to be lowered, because we have uniformly distributed ER in the dendrite (ER comprises 25% of dendrite's volume or less. We have 100uM of Ca in the dendrite and this value is on the higher side of the spectrum).
+I think we'll take C-site CaM constants and just adjust them to get 25 uM affinity. (-Ca sensor)
+
+[1] DOI 10.1073/pnas.2010789118
+[2] DOI 10.1074/jbc.M112.417246
+[3] DOI 10.1038/s41467-018-06816-8
+[4] DOI 10.1074/jbc.M608247200
+[5] DOI 10.1073/pnas.1101664108
+Junctate also binds, but nobody knows, how it interacts
+[a] DOI 10.1074/jbc.M005473200
+[b] DOI 10.1016/j.bpj.2010.02.038
+
+1. I needed to lower Kd of STIM1 to CaER, because model [2] had high affinity or STIM1 polymerization and as a consequence STIM1 would polymerize, bind ORAI etc. even for high CaER. I also increased STIM polymerization Kd compared to [2]. Now it is sort of OK, most STIM1 is bound to CaER. Especially for the one comp model, because stochasticity does not play such an important role.
+
+2. Tuning the model to experimental data:
+There is a lot of data on 0 Ca in the bath. This would mean starting simulations with 0 CaOout, 0 GluOut (it won't be released, right, with no Ca influx) and possibly 25 nM of Glu (there was some, it will be bound etc.)
+
+DOI: 10.1523/JNEUROSCI.23-21-07737.2003
+DOI:https://doi.org/10.1016/S0092-8674(00)80282-2 (not neurons, but will have to do).
+DOI 10.1113/JP272645 (hippocampal cultured neurons, CPA -- store uptake inhibitor)
+DOI 10.1523/JNEUROSCI.5053-10.2011
+
+Thapsigargin kinetics binding to SERCA https://doi.org/10.1074/jbc.270.20.11731
+
+Barbara A Niemeyer did a lot of experimental work on SOCE, I should read more about it. Saleet Jafri and Dirk Gillespie.
+
+
+This is actually quite interesting, even if it is a bit off-topic
+https://www.sciencedirect.com/science/article/pii/S089662731000975X
+https://www.jneurosci.org/content/36/47/11837
+https://www.sciencedirect.com/science/article/pii/S0896627314001172?via%3Dihub#fig1
+
+Fura constants from:  10.1113/jphysiol.1993.sp019618 
+
+SOCE tuning from doi: 10.1523/JNEUROSCI.23-21-07737.2003.
+
+Back to constants from [2], apparently beta (cooperativity factor) is 0.5 [5]
