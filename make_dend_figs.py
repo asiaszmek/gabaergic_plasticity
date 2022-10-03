@@ -1,4 +1,3 @@
-from __future__ import print_function, division, unicode_literals
 import h5py
 import numpy as np
 import matplotlib.pyplot as plt 
@@ -36,8 +35,10 @@ def get_all_species(My_file, output="__main__"):
 def get_dend_indices(grid, region="dend"):
     out = {}
     volumes = {}
+    if not isinstance(region, list):
+        region = [region]
     for i, line in enumerate(grid):
-        if line[15].decode('utf-8') == region:
+        if line[15].decode('utf-8') in region:
             pos = abs(np.round(line[0], 3))
             if pos in out:
                 out[pos].append(i)
@@ -76,6 +77,8 @@ def get_dynamics_in_region(my_file, specie, region, trial,
 if __name__ == '__main__':
     specie_list = ["Ca"]
     specie = "Ca"
+    reg_list = ["dend", "dend1", "dend2", "dend3", "dend4", "dend5", "dend6",
+                "dend7", "dend8", "dend9", "dend10"]
     if len(sys.argv) == 1:
         sys.exit('No filename given')
     for fname in sys.argv[1:]:
@@ -87,7 +90,7 @@ if __name__ == '__main__':
                 continue
             conc, voxels = get_dynamics_in_region(my_file,
                                                   specie_list,
-                                                  "dend", trial, "__main__")
+                                                  reg_list, trial, "__main__")
             conc_dict[trial] = conc
             time = get_times(my_file, trial, "__main__")
             time_dict[trial] = time

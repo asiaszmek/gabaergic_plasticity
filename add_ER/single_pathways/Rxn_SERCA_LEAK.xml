@@ -1,0 +1,209 @@
+<?xml version="1.0"?>
+<ReactionScheme>
+
+  
+ 
+  <!--TODO add bAR desensitization!-->
+  <Specie name="Ca" id="Ca" kdiff="174.3" kdiffunit="mu2/s" />
+  <Specie name="CaOut" id="CaOut" kdiff="3." kdiffunit="mu2/s" />
+  <!-- <Specie name="CaOutOraiSTIM_8" id="CaOutOraiSTIM_8" kdiff="0" -->
+  <!-- 	  kdiffunit="mu2/s" /> -->
+  <!-- <Specie name="CaOutOraiSTIM_6" id="CaOutOraiSTIM_6" kdiff="0" -->
+  <!-- 	  kdiffunit="mu2/s" /> -->
+  <!-- <Specie name="CaOutOraiSTIM_4" id="CaOutOraiSTIM_4" kdiff="0" -->
+  <!-- 	  kdiffunit="mu2/s" /> -->
+  <!-- <Specie name="CaOutOraiSTIM_2" id="CaOutOraiSTIM_2" kdiff="0" -->
+  <!-- 	  kdiffunit="mu2/s" /> -->
+
+  <Specie name="OraiSTIM_8" id="OraiSTIM_8" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="OraiSTIM_6" id="OraiSTIM_6" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="OraiSTIM_4" id="OraiSTIM_4" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="OraiSTIM_2" id="OraiSTIM_2" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="Orai" id="Orai" kdiff="0" kdiffunit="mu2/s" />
+
+  <Specie name="STIM_2" id="STIM_2" kdiff="0.05" kdiffunit="mu2/s" />
+  <Specie name="STIM" id="STIM" kdiff="0.1" kdiffunit="mu2/s" />
+  <Specie name="STIMCaER" id="STIMCaER" kdiff="0" kdiffunit="mu2/s" />
+  
+  <Specie name="CaER" id="CaER" kdiff="0." kdiffunit="mu2/s"/>
+  
+  <Specie name="CaERLeak" id="CaERLeak" kdiff="0" kdiffunit="mu2/s"/>
+
+  <Specie name="LeakER" id="LeakER" kdiff="0" kdiffunit="mu2/s"/>
+
+  <Specie name="SERCA" id="SERCA" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="SERCA_Ca" id="SERCA_Ca" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="SERCA_Ca2" id="SERCA_Ca2" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="SERCA_CaER" id="SERCA_CaER" kdiff="0" kdiffunit="mu2/s"/>
+  <!--calreticulin-->
+  <Specie name="CRT" id="CRT" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="CRTP" id="CRTP" kdiff="0" kdiffunit="mu2/s"/>
+  <!--*************************************************************************
+  Now, the reactions themselves   SAME means params are same in both files
+  **************************************************************************-->
+     
+  <!-- Serca -->
+  <Reaction name = "SERCA_1a" id="SERCA_1a">
+    <Reactant specieID="Ca" />
+    <Reactant specieID="SERCA"/>
+    <Product specieID="SERCA_Ca"/>
+    
+    <forwardRate>2e-2</forwardRate>
+    <reverseRate>2.8</reverseRate>
+    <Q10>0.2</Q10>
+  </Reaction>
+
+
+ 
+  <Reaction name = "SERCA_1b" id="SERCA_1b">
+    <Reactant specieID="Ca" />
+    <Reactant specieID="SERCA_Ca"/>
+    <Product specieID="SERCA_Ca2"/>
+        
+    <forwardRate>2.5e-4</forwardRate>
+    <reverseRate>25e-1</reverseRate>
+    <Q10>0.2</Q10>
+  </Reaction>
+
+
+  <Reaction name = "SERCA_1c" id="SERCA_1c">
+    <Reactant specieID="SERCA_Ca2"/>
+    <Product specieID="CaER" />
+    <Product specieID="SERCA_CaER"/>
+    <forwardRate>0.274</forwardRate>
+    <Q10>0.2</Q10>
+  </Reaction>
+
+  <Reaction name = "SERCA_1d" id="SERCA_1d">
+    <Reactant specieID="SERCA_CaER"/>
+    <Product specieID="CaER" />
+    <Product specieID="SERCA"/>
+    <forwardRate>0.274</forwardRate>
+    <Q10>0.2</Q10>
+  </Reaction>
+
+
+ <!-- ER Ca leak -    CaER+ LeakER <-> CaERLeak-->
+  <Reaction name = "Ca_leakER" id="Ca_leakaER">
+    <Reactant specieID="CaER"/>
+    <Reactant specieID="LeakER"/>
+    <Product specieID="CaERLeak"/>
+    
+    <forwardRate>7.e-3</forwardRate>
+    <reverseRate>11</reverseRate>
+    <Q10>0.2</Q10>
+  </Reaction>
+    
+<!--  ER Ca leak -    CaERLeak <-> Ca + LeakER-->
+  <Reaction name = "Ca_leakER" id="Ca_leakbER">
+    <Reactant specieID="CaERLeak"/>
+    <Product specieID="Ca"/>
+    <Product specieID="LeakER"/>
+    
+    <forwardRate>2.5e-2</forwardRate>
+    <reverseRate>0</reverseRate>
+    <Q10>0.2</Q10>
+  </Reaction>
+  <!-- higher affinity lower capacity CRT-Ca binding,
+       Baksh and Michalak, J Biol Chem 1991-->
+  <Reaction name = "CRTP_bind" id="CRTP_bind">
+    <Reactant specieID="CRT"/>
+    <Reactant specieID="CaER"/>
+    <Product specieID="CRTP"/>
+    
+    <forwardRate>1e-6</forwardRate>
+    <reverseRate>0.01</reverseRate>
+    </Reaction>
+
+
+<Reaction name = "Ca_leak_toER" id="Ca_leak_toER">
+    <Reactant specieID="CaOut" />
+    <Reactant specieID="OraiSTIM_8" />
+    <Product specieID="OraiSTIM_8" />
+    <Product specieID="Ca" />    
+    <forwardRate>7.5e-6</forwardRate>
+    <reverseRate>1.1</reverseRate>
+  </Reaction>
+
+  <Reaction name = "Ca_leak_toER_comp" id="Ca_leak_toER_comp">
+    <Reactant specieID="CaOut" />
+    <Reactant specieID="OraiSTIM_6" />
+    <Product specieID="OraiSTIM_6" />
+    <Product specieID="Ca" />    
+
+    <forwardRate>1.5e-6</forwardRate>
+    <reverseRate>1.1</reverseRate>
+  </Reaction>
+
+
+  <Reaction name = "Ca_leak_toER3" id="Ca_leak_toER3">
+    <Reactant specieID="CaOut" />
+    <Reactant specieID="OraiSTIM_4" />
+    <Product specieID="OraiSTIM_4" />
+    <Product specieID="Ca" />    
+    <forwardRate>3.75e-8</forwardRate>
+    <reverseRate>5.5e-2</reverseRate>
+  </Reaction>
+
+
+  <Reaction name = "Ca_leak_toER3_comp" id="Ca_leak_toER3_comp">
+    <Reactant specieID="CaOut" />
+    <Reactant specieID="OraiSTIM_2" />
+    <Product specieID="OraiSTIM_2" />
+    <Product specieID="Ca" />    
+    <forwardRate>5e-7</forwardRate>
+    <reverseRate>1.1</reverseRate>
+  </Reaction>
+
+
+  <Reaction name = "STIM_dim_1" id="STIM_dim_1">
+    <Reactant specieID="STIM" power="2" />
+    <Product specieID="STIM_2" />
+    <forwardRate>1e-6</forwardRate>
+    <reverseRate>2e-3</reverseRate>
+  </Reaction>
+  
+
+  <Reaction name = "STIMCaER_1" id="STIMCaER_1">
+    <Reactant specieID="STIM" />
+    <Reactant specieID="CaER" />
+    <Product specieID="STIMCaER"/>
+    <forwardRate>4e-3</forwardRate>
+    <reverseRate>2</reverseRate>
+  </Reaction>
+
+  <Reaction name = "STIM_Orai" id="STIM_Orai">
+    <Reactant specieID="STIM_2" />
+    <Reactant specieID="Orai" />
+    <Product specieID="OraiSTIM_2"/>
+    <forwardRate>1.5e-4</forwardRate>
+    <reverseRate>8e-4</reverseRate>
+  </Reaction>
+
+  <Reaction name = "STIM_Orai2" id="STIM_Orai2">
+    <Reactant specieID="OraiSTIM_2" />
+    <Reactant specieID="STIM_2" />
+    <Product specieID="OraiSTIM_4"/>
+    <forwardRate>3e-4</forwardRate>
+    <reverseRate>8e-3</reverseRate>
+  </Reaction>
+
+  <Reaction name = "STIM_Orai3" id="STIM_Orai3">
+    <Reactant specieID="OraiSTIM_4" />
+    <Reactant specieID="STIM_2" />
+    <Product specieID="OraiSTIM_6"/>
+    <forwardRate>6e-5</forwardRate>
+    <reverseRate>8e-3</reverseRate>
+  </Reaction>
+
+  <Reaction name = "STIM_Orai4" id="STIM_Orai4">
+    <Reactant specieID="OraiSTIM_6" />
+    <Reactant specieID="STIM_2" />
+    <Product specieID="OraiSTIM_8"/>
+    <forwardRate>1.2e-5</forwardRate>
+    <reverseRate>8e-3</reverseRate>
+  </Reaction>
+
+    
+  
+</ReactionScheme>
