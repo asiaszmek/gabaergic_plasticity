@@ -230,8 +230,8 @@
     <Reactant specieID="OraiSTIM_8" />
     <Product specieID="OraiSTIM_8" />
     <Product specieID="Ca" />
-    <forwardRate>1.5e-7</forwardRate>
-    <reverseRate>1.5e-7</reverseRate>
+    <forwardRate>5e-7</forwardRate>
+    <reverseRate>5e-7</reverseRate>
   </Reaction>
 
 
