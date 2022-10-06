@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <InitialConditions>
   <ConcentrationSet>
+    <NanoMolarity specieID="GluOut" value="1000000"/>
+    <NanoMolarity specieID="Glu" value="40"/>
+ 
     <NanoMolarity specieID="Ca" value="75"/>
      <!-- total calbindin = 160 uM -->
     <NanoMolarity specieID="Calbin" value="135000"/>

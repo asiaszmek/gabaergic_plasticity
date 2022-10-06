@@ -6,7 +6,9 @@
     <NanoMolarity specieID="CalbinC" value="15000"/>
     <NanoMolarity specieID="fixedbuffer" value="1997000"/>
     <NanoMolarity specieID="fixedbufferCa" value="3000"/>
-
+    <NanoMolarity specieID="GluOut" value="1000000"/>
+    <NanoMolarity specieID="Glu" value="40"/>
+ 
     <NanoMolarity specieID="CaM" value="8050"/>
     <NanoMolarity specieID="CaMCa2C" value="400"/>
     <NanoMolarity specieID="CaMCa2N" value="100"/>
