@@ -31,20 +31,15 @@
     <PicoSD specieID="pmcaCa" value="180"/>
     <PicoSD specieID="ncx" value="14000"/>
     <PicoSD specieID="ncxCa" value="1000"/>
+    <PicoSD  specieID="Plc"  value="440"    />
+    <PicoSD  specieID="Pip2" value="20000"  />
+    <PicoSD  specieID="PIkinase"   value="560"  />
+    <PicoSD  specieID="MgluR" value="234"  />
+    <PicoSD specieID="Gqabg" value="10650"/>
+    <PicoSD specieID="GluMgluRdesens" value="62"/>
+    <PicoSD specieID="MgluRGq" value="646"/>
+    <PicoSD specieID="GluMgluRGq" value="24"/>
 
-    <PicoSD  specieID="Plc"  value="220"    />
-    <PicoSD  specieID="Pip2" value="10000"  />
-    <PicoSD  specieID="PIkinase"   value="300"  />
-    <PicoSD  specieID="MgluR" value="117"  />
-    <PicoSD specieID="Gqabg" value="5325"/>
-    <PicoSD specieID="GluMgluRdesens" value="31"/>
-    <PicoSD specieID="MgluRGq" value="323"/>
-    <PicoSD specieID="GluMgluRGq" value="12"/>
-
-    
-    <PicoSD specieID="PIkinase"           value="280"  />
-    <PicoSD specieID="IP3degPIk"          value="0"  />
-    <PicoSD specieID="IP3degrad"          value="0"  />
     <PicoSD specieID="Orai"          value="200"  />
     <PicoSD specieID="OraiSTIM_2"          value="96"  />
     <PicoSD specieID="OraiSTIM_4"          value="4"  />
