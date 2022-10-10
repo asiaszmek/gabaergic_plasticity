@@ -40,8 +40,8 @@
     <PicoSD specieID="MgluRGq" value="646"/>
     <PicoSD specieID="GluMgluRGq" value="24"/>
 
-    <PicoSD specieID="Orai"          value="200"  />
-    <PicoSD specieID="OraiSTIM_2"          value="96"  />
+    <PicoSD specieID="Orai"          value="175"  />
+    <PicoSD specieID="OraiSTIM_2"          value="121"  />
     <PicoSD specieID="OraiSTIM_4"          value="4"  />
 
   </SurfaceDensitySet>
