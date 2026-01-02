@@ -42,7 +42,8 @@ flist_ER_no_IP3 = [
     "Rxn_module_PP2B.xml",
     ]
 flist_ER = flist_ER_no_IP3 + ["Rxn_module_mGLuR.xml",
-                              "Rxn_module_IP3R.xml"]
+                              "Rxn_module_IP3R.xml",
+                              "Rxn_module_SOCE.xml"]
 
 
 
