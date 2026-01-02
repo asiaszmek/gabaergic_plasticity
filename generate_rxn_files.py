@@ -38,6 +38,8 @@ flist_ER_no_IP3 = [
     "Rxn_module_Ca.xml",
     "Rxn_module_RyR2_CaM.xml",
     "Rxn_module_SERCA2.xml",
+    "Rxn_module_CK.xml",
+    "Rxn_module_PP2B.xml",
     ]
 
 if __name__ == "__main__":

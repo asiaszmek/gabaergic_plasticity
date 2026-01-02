@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<InitialConditions>
+  <ConcentrationSet>
+   <NanoMolarity specieID="Ca" value="75"/>
+    <NanoMolarity specieID="CaOut" value="2000000"/>
+    <!-- total calbindin = 160 uM -->
+    <NanoMolarity specieID="Calbin" value="135875"/>
+    <NanoMolarity specieID="CalbinC" value="14125"/>
+    <NanoMolarity specieID="fixedbuffer" value="1996760"/>
+    <NanoMolarity specieID="fixedbufferCa" value="3230"/>
+    
+    <NanoMolarity specieID="CaM" value="8022"/>
+    <NanoMolarity specieID="CaMCa2C" value="400"/>
+    <NanoMolarity specieID="CaMCa2N" value="60"/>
+    <NanoMolarity specieID="CaMCa4" value="3"/>
+    <NanoMolarity specieID="NgCaM" value="17235"/>
+    <NanoMolarity specieID="Ng" value="2765"/>
+    <NanoMolarity specieID="CaER"         value="0.8e5"     />
+    <NanoMolarity       specieID="CRTP" value="88750"/>
+    <NanoMolarity       specieID="CRT" value="11250"/>
+    <NanoMolarity specieID="RyR2_4CaM"      value="8"    />
+    <!-- Bartol et al 2015-->
+    <NanoMolarity specieID="Cyt_SERCA" value="2351" />
+    <NanoMolarity specieID="Cyt_SERCA_Ca" value="370" />
+    <NanoMolarity specieID="Cyt_SERCA_Ca2" value="56" />
+    
+    <NanoMolarity specieID="LeakER" value="381" />
+ 
+    <NanoMolarity specieID="PP2B" value="0" />
+    <NanoMolarity specieID="PP2BCaM" value="3233" />
+    <NanoMolarity specieID="PP2BCaMCa2C" value="1515" />
+    <NanoMolarity specieID="PP2BCaMCa2N" value="239" />
+    <NanoMolarity specieID="PP2BCaMCa4" value="12" />
+    
+    <NanoMolarity specieID="CK" value="19821" />
+    <NanoMolarity specieID="CKp" value="0.0" />
+    <NanoMolarity specieID="CKCaMCa4" value="188" />
+    <NanoMolarity specieID="CKpCaMCa4" value="0.0" />
+    <NanoMolarity specieID="Complex" value="0.0" />
+    <NanoMolarity specieID="pComplex" value="0.0" />  
+    <NanoMolarity specieID="PP1" value="3600" />
+    <NanoMolarity specieID="CKpPP1" value="0.0" />
+    <NanoMolarity specieID="CKpCaMCa4PP1" value="0.0" />
+
+  </ConcentrationSet>
+
+
+  <SurfaceDensitySet>
+    <PicoSD specieID="Leak" value="5"/>
+    <PicoSD specieID="CaOutLeak" value="1925"/>
+    <PicoSD specieID="ncx" value="2780"/>
+    <PicoSD specieID="ncxCa" value="220"/>
+    <PicoSD specieID="pmca1a" value="5266"/> 
+    <PicoSD specieID="pmca1aCa" value="65"/>
+    <PicoSD specieID="CaMCa4pmca1a" value="32"/> 
+    <PicoSD specieID="CaMCa4pmca1aCa" value="4"/>
+    <PicoSD specieID="CaMpmca1a" value="265"/> 
+  </SurfaceDensitySet>
+</InitialConditions> 

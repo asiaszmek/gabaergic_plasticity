@@ -9,7 +9,8 @@
   <!-- -->
   <Specie name="PP2B" id="PP2B" kdiff="0" kdiffunit="mu2/s" />
   <Specie name="PP2BCaM" id="PP2BCaM" kdiff="0" kdiffunit="mu2/s" />
-  <Specie name="PP2CaMCa2" id="PP2BCaMCa2" kdiff="0"
+  <Specie name="PP2BCaMCa2C" id="PP2BCaMCa2C" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="PP2CaMCa2N" id="PP2BCaMCa2N" kdiff="0"
 	  kdiffunit="mu2/s" />
   <Specie name="PP2BCaMCa4" id="PP2BCaMCa4" kdiff="0"
 	  kdiffunit="mu2/s" />
