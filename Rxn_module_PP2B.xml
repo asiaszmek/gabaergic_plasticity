@@ -63,16 +63,7 @@
     
   </Reaction>
 
-  <!--3) CaM  + PP2B
-      <-> PP2CaM -->
-  <Reaction name="PP2_bind" id="PP2_bind">
-    <Reactant specieID="CaM" />
-    <Reactant specieID="PP2B" />
-    <Product specieID="PP2BCaM" />
-    <forwardRate>4.6e-06</forwardRate>
-    <reverseRate>1.2e-6</reverseRate>
-    <Q10>0.2</Q10>
-  </Reaction>
+ 
   <!--4C) CaMCa2C    +   PP2B    <->  PP2BCaMCa2C (in xpp: k33c=1 k_33c=0.3) -->
   <Reaction name = "CaMCa2C+PP2B--PP2BCaMCa2C reac" id="CaMCa2C+PP2B--PP2BCaMCa2C_id">
     <Reactant specieID="CaMCa2C"                 />
@@ -93,26 +84,7 @@
     <reverseRate> 0.0012e-3      </reverseRate>
   </Reaction>
 
-  <!--5xC) PP2BCaM    +   Ca2      <->  PP2BCaMCa2C -->
-  <Reaction name = "PP2BCaM+Ca2--PP2BCaMCa2C reac" id="PP2BCaM+Ca2--PP2BCaMCa2C_id">
-    <Reactant specieID="PP2BCaM"                />
-    <Reactant specieID="Ca"        n="2"        />
-    <Product  specieID="PP2BCaMCa2C"             />
-    
-    <forwardRate> 6.0e-06       </forwardRate>
-    <reverseRate> 0.91e-03      </reverseRate>
-  </Reaction>
-
-  <!--5xN) PP2BCaM    +   Ca2      <->  PP2BCaMCa2N -->
-  <Reaction name = "PP2BCaM+Ca2--PP2BCaMCa2N reac" id="PP2BCaM+Ca2--PP2BCaMCa2N_id">
-    <Reactant specieID="PP2BCaM"                />
-    <Reactant specieID="Ca"        n="2"        />
-    <Product  specieID="PP2BCaMCa2N"             />
-	
-    <forwardRate> 0.1e-03       </forwardRate>
-    <reverseRate> 100e-03      </reverseRate>
-  </Reaction>
-
+ 
   <!--7x) CaMCa4    +  PP2B    <->  PP2BCaMCa4 -->
   <Reaction name = "CaMCa4+PP2B--PP2BCaMCa4 reac" id="CaMCa4+PP2B--PP2BCaMCa4_id">
     <Reactant specieID="CaMCa4"                 />

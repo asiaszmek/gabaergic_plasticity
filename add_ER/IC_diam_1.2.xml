@@ -30,8 +30,7 @@
     
     <NanoMolarity specieID="LeakER" value="381" />
  
-    <NanoMolarity specieID="PP2B" value="0" />
-    <NanoMolarity specieID="PP2BCaM" value="3233" />
+    <NanoMolarity specieID="PP2B" value="3233" />
     <NanoMolarity specieID="PP2BCaMCa2C" value="1515" />
     <NanoMolarity specieID="PP2BCaMCa2N" value="239" />
     <NanoMolarity specieID="PP2BCaMCa4" value="12" />
