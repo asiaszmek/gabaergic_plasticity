@@ -77,7 +77,7 @@
     <PicoSD specieID="GluMgluRGq" value="13"/>
     <PicoSD specieID="GqaGTP" value="8"/>
     <PicoSD specieID="GqaGDP" value="8"/>
-
+    <PicoSD specieID="NR2BC" value="200"/>   
     <PicoSD specieID="Orai"          value="200"  />
     <PicoSD specieID="PMJ" value="6"/>
   </SurfaceDensitySet>

@@ -7981,7 +7981,9 @@
   </Reaction>
 
   
-<Specie name="GluBuf" id="GluBuf" kdiff="10" kdiffunit="mu2/s"/>
+<Specie name="NMDA" id="NMDA" kdiff="10" kdiffunit="mu2/s"/>
+  <Specie name="NMDAOut" id="NMDAOut" kdiff="10" kdiffunit="mu2/s"/>
+  <Specie name="NMDABuf" id="NMDABuf" kdiff="10" kdiffunit="mu2/s"/>
   <Specie name="NR2BC" id="NR2BC" kdiff="0" kdiffunit="mu2/s"/>
   <Specie name="NR2BC1" id="NR2BC1" kdiff="0" kdiffunit="mu2/s"/>
   <Specie name="NR2BC2" id="NR2BC2" kdiff="0" kdiffunit="mu2/s"/>
@@ -7989,7 +7991,7 @@
   <Specie name="NR2BO" id="NR2BO" kdiff="0" kdiffunit="mu2/s"/>
 <Reaction name="NR2BC-C1" id="NR2BC-C1">
     <Reactant specieID="NR2BC"/>
-    <Reactant specieID="Glu"/>
+    <Reactant specieID="NMDA"/>
     <Product specieID="NR2BC1"/>
     <forwardRate>5e-6</forwardRate>
     <reverseRate>5e-3</reverseRate>
@@ -7997,7 +7999,7 @@
 
   <Reaction name="NR2BC1-C2" id="NR2BC1-C2">
     <Reactant specieID="NR2BC1"/>
-    <Reactant specieID="Glu"/>
+    <Reactant specieID="NMDA"/>
     <Product specieID="NR2BC2"/>
     <forwardRate>5e-6</forwardRate>
     <reverseRate>5e-3</reverseRate>
@@ -8027,9 +8029,18 @@
   </Reaction>
 
 
-  <Reaction name="GluOut+GluBuf--NULL" id="GluOut_buf--NULL">
-    <Reactant specieID="Glu"/>
-    <Reactant specieID="GluBuf"/>
+  <Reaction name="NMDA--NMDAOut" id="NMDA--NMDAOut">
+    <Reactant specieID="NMDA"/>
+    <Product specieID="NMDAOut"/>
+  
+    <forwardRate>0.5e-2</forwardRate>
+    <reverseRate>0.02e-6</reverseRate>
+    <Q10>0.2</Q10>
+  </Reaction>
+
+  <Reaction name="NMDAOut+NMDABuf--NULL" id="NMDAOut_buf--NULL">
+    <Reactant specieID="NMDA"/>
+    <Reactant specieID="NMDABuf"/>
     <forwardRate>5e-02</forwardRate>
     <reverseRate>0</reverseRate>
   </Reaction>
