@@ -3,8 +3,9 @@
   <ConcentrationSet>
     <NanoMolarity specieID="Ca" value="75"/>
     <NanoMolarity specieID="CaOut" value="2000000"/>
-    <NanoMolarity specieID="GluOut" value="1000000"/>
-    <NanoMolarity specieID="Glu" value="40"/>
+    <!--Using NMDARs expressed by CA1 pyramidal cells in acute hippocampal slices to monitor extracellular glutamate, we find that its baseline concentration is much lower, near 25 nm.  doi: 10.1523/JNEUROSCI.3009-07.2007-->
+    <NanoMolarity specieID="GluOut" value="500000"/>    
+    <NanoMolarity specieID="Glu" value="20"/>
     <!-- total calbindin = 160 uM -->
     <NanoMolarity specieID="Calbin" value="132850"/>
     <NanoMolarity specieID="CalbinC" value="15150"/>
@@ -25,7 +26,7 @@
     <NanoMolarity specieID="Cyt_SERCA_Ca" value="370" />
     <NanoMolarity specieID="Cyt_SERCA_Ca2" value="56" />
     
-    <NanoMolarity specieID="LeakER" value="280" />
+    <NanoMolarity specieID="LeakER" value="200" />
  
     <NanoMolarity specieID="PP2B" value="3233" />
     <NanoMolarity specieID="PP2BCaMCa2C" value="1515" />
