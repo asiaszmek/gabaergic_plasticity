@@ -99,8 +99,12 @@
   </Reaction>
   
  
-<!--     Hong Qi, Linxi Li & Jianwei Shuai 2015 gives 0.5e-3
+<!--     Hong Qi, Linxi Li & Jianwei Shuai 2015 gives 0.5e-3 ms-1
 Breit et al 2018 has RyR permeability 30 x higher than IP3RO
+Lower IP3R flux by a factor of 10
+
+doi:10.1016/j.ceca.2003.10.009 has 0.0085 1/ms, 
+https://doi.org/10.1371/journal.pcbi.1008360 0.01 1/ms
 -->
    <Reaction name = "IP3R_Ob-flux_Ia" id="IP3R_Ob-fluxa">
     <Reactant specieID="IP3RO"           />
@@ -109,7 +113,7 @@ Breit et al 2018 has RyR permeability 30 x higher than IP3RO
     <Product  specieID="Ca"               />
 
     <forwardRate> 1.667e-5 </forwardRate>
-    <reverseRate> 1.667e-5      </reverseRate>
+    <reverseRate> 4.1675e-06      </reverseRate>
     <Q10>   0.2   </Q10>
    </Reaction>
     

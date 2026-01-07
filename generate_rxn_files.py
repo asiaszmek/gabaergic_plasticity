@@ -48,8 +48,7 @@ flist_ER_IP3 = [
     "Rxn_module_mGLuR.xml",
     "Rxn_module_IP3R.xml",
     "Rxn_module_SOCE.xml",
-    "Rxn_module_CK.xml",
-    "Rxn_module_PP2B.xml",  
+ 
     ]
 
 
