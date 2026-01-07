@@ -7878,8 +7878,8 @@
     <Product specieID="IP3RO"/>
     <Product specieID="Ca"/>
 
-    <forwardRate> 1.667e-5 </forwardRate>
-    <reverseRate> 4.1675e-06      </reverseRate>
+    <forwardRate> 0.00016667 </forwardRate>
+    <reverseRate> 5.555666666666666e-05      </reverseRate>
     <Q10>   0.2   </Q10>
    </Reaction>
     
