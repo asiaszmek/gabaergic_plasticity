@@ -7447,8 +7447,7 @@
 	<reverseRate> 0 </reverseRate>
     </Reaction>
 
-    <Specie name="CaMCa2" id="CaMCa2" kdiff="4" kdiffunit="mu2/s"/>
-  <Specie name="PP2B" id="PP2B" kdiff="0" kdiffunit="mu2/s"/>
+    <Specie name="PP2B" id="PP2B" kdiff="0" kdiffunit="mu2/s"/>
   <Specie name="PP2BCaM" id="PP2BCaM" kdiff="0" kdiffunit="mu2/s"/>
   <Specie name="PP2BCaMCa2C" id="PP2BCaMCa2C" kdiff="0" kdiffunit="mu2/s"/>
   <Specie name="PP2CaMCa2N" id="PP2BCaMCa2N" kdiff="0" kdiffunit="mu2/s"/>

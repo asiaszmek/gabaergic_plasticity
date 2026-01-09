@@ -2,7 +2,8 @@
   <Specie name="Ca" id="Ca" kdiff="174.2" kdiffunit="mu2/s"/>
   <Specie name="CaM" id="CaM" kdiff="4" kdiffunit="mu2/s" />
   <!--Calmodulin-->
-  <Specie name="CaMCa2" id="CaMCa2" kdiff="4" kdiffunit="mu2/s" />
+  <Specie name="CaMCa2C" id="CaMCa2C" kdiff="4" kdiffunit="mu2/s" />
+  <Specie name="CaMCa2N" id="CaMCa2C" kdiff="4" kdiffunit="mu2/s" />
   <!-- 2 Ca bound Calmodulin-->
   <Specie name="CaMCa4" id="CaMCa4" kdiff="4" kdiffunit="mu2/s" />
   <!-- 4 Ca bound Calmodulin-->
