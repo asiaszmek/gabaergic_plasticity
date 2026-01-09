@@ -21,7 +21,7 @@
     <NanoMolarity       specieID="CRT" value="10945"/>
     <NanoMolarity specieID="RyR2_3CaM"      value="0.3"    />
     <NanoMolarity specieID="RyR2_4CaM"      value="4"    />
-    <NanoMolarity specieID="RyR2_4CaM2C"      value=".3"    />
+    <NanoMolarity specieID="RyR2_4CaMCa2C"      value=".3"    />
     <NanoMolarity specieID="RyR2_3CaM_1CaMCa2C"      value="1.9"    />
     <NanoMolarity specieID="RyR2_3CaM_1CaMCa4"      value="0.2"    />
     <NanoMolarity specieID="RyR2_1CaM_3CaMCa2C"      value="0.55"    />
