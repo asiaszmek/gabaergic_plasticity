@@ -12,7 +12,7 @@
     <NanoMolarity specieID="fixedbuffer" value="1996913"/>
     <NanoMolarity specieID="fixedbufferCa" value="3087"/>
     
-    <NanoMolarity specieID="CaM" value="1880"/>
+    <NanoMolarity specieID="CaM" value="21880"/>
     <NanoMolarity specieID="CaMCa2C" value="0"/>
     <NanoMolarity specieID="CaMCa2N" value="0"/>
     <NanoMolarity specieID="CaMCa4" value="0"/>
@@ -38,6 +38,23 @@
     <NanoMolarity specieID="STIM_2CaER" value="917" />
     <NanoMolarity specieID="STIM_2" value="27.5" />
     <NanoMolarity specieID="STIM_4" value="3.5" />
+
+
+    <NanoMolarity specieID="RyR2_4CaM"      value="20"    />
+    <NanoMolarity specieID="PP2B" value="0" />
+    <NanoMolarity specieID="PP2BCaMCa2C" value="4307" />
+    <NanoMolarity specieID="PP2BCaMCa2N" value="658" />
+    <NanoMolarity specieID="PP2BCaMCa4" value="34" />
+    
+    <NanoMolarity specieID="CK" value="19800" />
+    <NanoMolarity specieID="CKp" value="0.0" />
+    <NanoMolarity specieID="CKCaMCa4" value="200" />
+    <NanoMolarity specieID="CKpCaMCa4" value="0.0" />
+    <NanoMolarity specieID="Complex" value="0.0" />
+    <NanoMolarity specieID="pComplex" value="0.0" />  
+    <NanoMolarity specieID="PP1" value="3600" />
+    <NanoMolarity specieID="CKpPP1" value="0.0" />
+    <NanoMolarity specieID="CKpCaMCa4PP1" value="0.0" />
   </ConcentrationSet>
 
 

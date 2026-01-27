@@ -36,7 +36,7 @@ def read_in_files(flist):
 
 flist_ER_no_IP3 = [
     "Rxn_module_Ca.xml",
-    "Rxn_module_RyR2_CaM_reduced.xml",
+    "Rxn_module_RyR2_CaM.xml",
     "Rxn_module_SERCA2.xml",
     "Rxn_module_CK.xml",
     "Rxn_module_PP2B.xml",
@@ -55,7 +55,7 @@ flist_ER_IP3 = [
 flist_ER = flist_ER_no_IP3 + ["Rxn_module_mGLuR.xml",
                               "Rxn_module_IP3R.xml",
                               "Rxn_module_SOCE.xml",
-                              "Rxn_module_NR2B.xml"]
+                              "Rxn_module_CaCbuf.xml"]
 
 
 

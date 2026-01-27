@@ -17,12 +17,15 @@
   <Specie name="CaMCa4pmca1aCa" id="CaMCa4pmca1aCa" kdiff="0" kdiffunit="mu2/s"/>
   <Specie name="CaMpmca1a" id="CaMpmca1a" kdiff="0" kdiffunit="mu2/s"/> 
 
+  
   <Specie name="Ng" id="Ng" kdiff="0" kdiffunit="mu2/s"/>
   <Specie name="NgCaM" id="NgCaM" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="NgCaMCa2C" id="NgCaMCa2C" kdiff="0" kdiffunit="mu2/s"/>
   <Specie name="CaM" id="CaM" kdiff="4" kdiffunit="mu2/s"/>
   <Specie name="CaMCa2C" id="CaMCa2C" kdiff="4" kdiffunit="mu2/s"/>
   <Specie name="CaMCa2N" id="CaMCa2N" kdiff="4" kdiffunit="mu2/s"/>
   <Specie name="CaMCa4" id="CaMCa4" kdiff="4" kdiffunit="mu2/s"/>
+
   <Reaction name="Ca_pump1a_1" id="Ca_pump1a_1">
     <Reactant specieID="Ca"/>
     <Reactant specieID="pmca1a"/>
@@ -41,7 +44,6 @@
     <forwardRate>12e-3</forwardRate>
     <reverseRate>0</reverseRate>
   </Reaction>
-
 
   <Reaction name="Ca_CaMCa4pump1a_1" id="Ca_CaMCa4pump1a_1">
     <Reactant specieID="Ca"/>
@@ -63,6 +65,8 @@
   </Reaction>
 
 
+  
+
   <Reaction name="CaMCa4pump1a_bind" id="CaMCa4pump1a_bind">
     <Reactant specieID="CaMCa4"/>
     <Reactant specieID="pmca1a"/>
@@ -72,6 +76,9 @@
     <reverseRate>0.02e-3</reverseRate>
   </Reaction>
 
+  
+
+
   <Reaction name="CaMCa4pump1a_Ca_unbind" id="CaMCa4pump1a_Ca_unbind">
     <Reactant specieID="CaMCa4pmca1a"/>
     <Product specieID="CaMpmca1a"/>
@@ -79,6 +86,9 @@
     <forwardRate>0.47e-3</forwardRate>
     <reverseRate>14.697e-24</reverseRate>
   </Reaction>
+
+ 
+ 
 
   <Reaction name="CaMpump1a_Ca_unbind" id="CaMpump1a_Ca_unbind">
     <Reactant specieID="CaMpmca1a"/>
@@ -88,6 +98,8 @@
 
   </Reaction>
 
+
+  
   <Reaction name="Ca_pump2a" id="Ca_pump2a">
     <Reactant specieID="Ca"/>
     <Reactant specieID="ncx"/>
@@ -144,37 +156,37 @@
   
   <Reaction name="CaMC_bind" id="CaMC_bind">
     <Reactant specieID="CaM"/>
-    <Reactant specieID="Ca" n="2"/>
+    <Reactant specieID="Ca" power="2"/>
     <Product specieID="CaMCa2C"/>
-    <forwardRate>6e-6</forwardRate>
-    <reverseRate>9.1e-3</reverseRate>
+    <forwardRate>5.442e-09</forwardRate>
+    <reverseRate>0.08</reverseRate>
     <Q10>0.2</Q10>
   </Reaction>
   <Reaction name="CaMCa2C_bind" id="CaMCa2C_bind">
     <Reactant specieID="CaMCa2C"/>
-    <Reactant specieID="Ca" n="2"/>
+    <Reactant specieID="Ca" power="2"/>
     <Product specieID="CaMCa4"/>
-    <forwardRate>0.1e-3</forwardRate>
-    <reverseRate>1000e-3</reverseRate>
+    <forwardRate>3.162e-9</forwardRate>
+    <reverseRate>900e-3</reverseRate>
     <Q10>0.2</Q10>
   </Reaction>
   <Reaction name="CaMN_bind" id="CaMN_bind">
     <Reactant specieID="CaM"/>
-    <Reactant specieID="Ca" n="2"/>
+    <Reactant specieID="Ca" power="2"/>
     <Product specieID="CaMCa2N"/>
     
-    <forwardRate>0.1e-3</forwardRate>
-    <reverseRate>1000e-3</reverseRate>
+    <forwardRate>3.162e-9</forwardRate>
+    <reverseRate>900e-3</reverseRate>
     
   </Reaction>
 
   <Reaction name="CaMCa2N_bind" id="CaMCa2N_bind">
     <Reactant specieID="CaMCa2N"/>
-    <Reactant specieID="Ca" n="2"/>
+    <Reactant specieID="Ca" power="2"/>
     <Product specieID="CaMCa4"/>
     
-    <forwardRate>6e-6</forwardRate>
-    <reverseRate>9.1e-3</reverseRate>
+    <forwardRate>5.442e-09</forwardRate>
+    <reverseRate>0.08</reverseRate>
     
   </Reaction>
 
@@ -186,7 +198,23 @@
     <reverseRate>36.e-3</reverseRate>
     <Q10>0.2</Q10>
   </Reaction>
-
+   <Reaction name="NgCaMCa2_bind" id="NgCaMCa2C_bind">
+    <Reactant specieID="CaMCa2C"/>
+    <Reactant specieID="Ng"/>
+    <Product specieID="NgCaMCa2C"/>
+    <forwardRate>2e-6</forwardRate>
+    <reverseRate>136.e-3</reverseRate>
+    <Q10>0.2</Q10>
+  </Reaction>
+  <Reaction name="NgCaM_bind_2C" id="NgCaM_bind_2C">
+    <Reactant specieID="NgCaM"/>
+    <Reactant specieID="Ca" power="2"/>
+    <Product specieID="NgCaMCa2C"/>
+    
+    <forwardRate>2.57e-10</forwardRate>
+    <reverseRate>0.2</reverseRate>
+    
+  </Reaction>
 <Specie name="CaER" id="CaER" kdiff="10." kdiffunit="mu2/s"/>
   <Specie name="Cyt_SERCA" id="Cyt_SERCA" kdiff="0" kdiffunit="mu2/s"/>
   <Specie name="Cyt_SERCA_Ca" id="Cyt_SERCA_Ca" kdiff="0" kdiffunit="mu2/s"/>
