@@ -9,8 +9,10 @@
     <NanoMolarity specieID="fixedbuffer" value="1996913"/>
     <NanoMolarity specieID="fixedbufferCa" value="3087"/>
     
-    <NanoMolarity specieID="CaM" value="70000"/>
-    <NanoMolarity specieID="Ng" value="65000"/>
+    <NanoMolarity specieID="CaM" value="7522"/>
+    <NanoMolarity specieID="Ng" value="6524"/>
+    <NanoMolarity specieID="NgCaM" value="58476"/>
+
     <NanoMolarity specieID="CaER"         value="0.8e5"     />
     <NanoMolarity       specieID="CRTP" value="88750"/>
     <NanoMolarity       specieID="CRT" value="11250"/>
@@ -25,6 +27,7 @@
     
     <NanoMolarity specieID="CK" value="20000" />
     <NanoMolarity specieID="PP1" value="3600" />
+    <NanoMolarity specieID="PP2BCaMCa2C" value="4000" />
   </ConcentrationSet>
 
 
