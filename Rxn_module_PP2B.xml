@@ -22,47 +22,6 @@
   <!--This is the C site-->
   <!--1A) CaM  + 2Ca <-> CaMCa2C GQ RXN FILE, C or N can bind first-->
   
- <!--This is the C site-->
-  <Reaction name="CaMC_bind" id="CaMC_bind">
-    <Reactant specieID="CaM" />
-    <Reactant specieID="Ca" power="2" />
-    <Product specieID="CaMCa2C" />
-    <forwardRate>5.442e-09</forwardRate>
-    <reverseRate>0.08</reverseRate>
-    <Q10>0.2</Q10>
-  </Reaction>
-  <!--2) CaMCa2  + 2Ca
-      <-> CaMCa4 -->
-  <!--This is the N-site-->
-  <Reaction name="CaMCa2C_bind" id="CaMCa2C_bind">
-    <Reactant specieID="CaMCa2C" />
-    <Reactant specieID="Ca" power="2" />
-    <Product specieID="CaMCa4" />
-    <forwardRate>3.162e-9</forwardRate>
-    <reverseRate>900e-3</reverseRate>
-    <Q10>0.2</Q10>
-  </Reaction>
-  <!--1A) CaM  + 2Ca <-> CaMCa2N GQ RXN FILE, C or N can bind first-->
-  <Reaction name = "CaMN_bind" id="CaMN_bind">
-    <Reactant specieID="CaM"/>
-    <Reactant specieID="Ca" power="2"/>
-    <Product specieID="CaMCa2N"/>
-    
-    <forwardRate>3.162e-9</forwardRate>
-    <reverseRate>900e-3</reverseRate>
-    
-  </Reaction>
-
-  <!--2B) CaMCa2N  + 2Ca <-> CaMCa4 GQ RXN FILE, C or N can bind first-->
-  <Reaction name = "CaMCa2N_bind" id="CaMCa2N_bind">
-    <Reactant specieID="CaMCa2N"/>
-    <Reactant specieID="Ca" power="2"/>
-    <Product specieID="CaMCa4"/>
-    
-    <forwardRate>5.442e-09</forwardRate>
-    <reverseRate>0.08</reverseRate>
-    
-  </Reaction>
  
   <!--4A) CaMCa2C    +   PP2B    <->  PP2BCaMCa2C (in xpp: k33c=1 k_33c=0.3) -->
   <Reaction name = "CaM+PP2B--PP2BCaM reac" id="CaM+PP2B--PP2BCaM_id">
@@ -70,7 +29,7 @@
     <Reactant specieID="PP2B"                   />
     <Product  specieID="PP2BCaM"             />
     
-    <forwardRate> 0.046e-3       </forwardRate>
+    <forwardRate> 0.046e-4       </forwardRate>
     <reverseRate> 0.0012e-3      </reverseRate>
   </Reaction>
 
@@ -112,7 +71,7 @@
     <Reactant specieID="Ca"        power="2"        />
     <Product  specieID="PP2BCaMCa4"             />
     
-    <forwardRate>3.162e-9</forwardRate>
+    <forwardRate>9e-9</forwardRate>
     <reverseRate>900e-3</reverseRate>
     
   </Reaction>
@@ -123,8 +82,8 @@
     <Reactant specieID="Ca"        power="2"        />
     <Product  specieID="PP2BCaMCa2C"             />
     
-    <forwardRate>5.442e-09</forwardRate>
-    <reverseRate>0.08</reverseRate>
+    <forwardRate>30e-08</forwardRate>
+    <reverseRate>35e-3</reverseRate>
   </Reaction>
 
       <!-- PP2BCaMCa2 +  Ca2     <->  PP2BCaMCa4, either N site or C site -->
@@ -134,7 +93,7 @@
     <Reactant specieID="Ca"        power="2"        />
     <Product  specieID="PP2BCaMCa2N"             />
     
-    <forwardRate>3.162e-9</forwardRate>
+    <forwardRate>9e-8</forwardRate>
     <reverseRate>900e-3</reverseRate>
     
   </Reaction>
@@ -145,8 +104,8 @@
     <Reactant specieID="Ca"        power="2"        />
     <Product  specieID="PP2BCaMCa4"             />
     
-    <forwardRate>5.442e-09</forwardRate>
-    <reverseRate>0.08</reverseRate>
+    <forwardRate>30e-09</forwardRate>
+    <reverseRate>35e-3</reverseRate>
 
     
   </Reaction>

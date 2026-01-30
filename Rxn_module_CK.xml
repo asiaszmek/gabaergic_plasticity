@@ -33,49 +33,6 @@ phosphatase reactions take from revision of Gs to improve Ca dep dphos of Dp32--
 <!-- Calcium binding -->
 
 
-<!--1A) CaM  + 2Ca <-> CaMCa2C GQ RXN FILE, C or N can bind first-->
-    <Reaction name = "CaMC_bind" id="CaMC_bind">
-	<Reactant specieID="CaM"/>
-	<Reactant specieID="Ca" n="2"/>
-	<Product specieID="CaMCa2C"/>
-
-	<forwardRate>6e-6</forwardRate>
-	<reverseRate>9.1e-3</reverseRate>
-	
-    </Reaction>
-  
-<!--2A) CaMCa2C  + 2Ca <-> CaMCa4 GQ RXN FILE, C or N can bind first-->
-    <Reaction name = "CaMCa2C_bind" id="CaMCa2C_bind">
-	<Reactant specieID="CaMCa2C"/>
-	<Reactant specieID="Ca" n="2"/>
-	<Product specieID="CaMCa4"/>
-
-	<forwardRate>0.1e-3</forwardRate>
-	<reverseRate>1000e-3</reverseRate>
-	
-    </Reaction>
-
-<!--1B) CaM  + 2Ca <-> CaMCa2N GQ RXN FILE, C or N can bind first-->
-    <Reaction name = "CaMN_bind" id="CaMN_bind">
-	<Reactant specieID="CaM"/>
-	<Reactant specieID="Ca" n="2"/>
-	<Product specieID="CaMCa2N"/>
-
-	<forwardRate>0.1e-3</forwardRate>
-	<reverseRate>1000e-3</reverseRate>
-
-    </Reaction>
-
-<!--2B) CaMCa2N  + 2Ca <-> CaMCa4 GQ RXN FILE, C or N can bind first-->
-    <Reaction name = "CaMCa2N_bind" id="CaMCa2N_bind">
-	<Reactant specieID="CaMCa2N"/>
-	<Reactant specieID="Ca" n="2"/>
-	<Product specieID="CaMCa4"/>
-
-	<forwardRate>6e-6</forwardRate>
-	<reverseRate>9.1e-3</reverseRate>
-
-    </Reaction>
 
 <!--XII. *************** CaMKII ************* -->
 

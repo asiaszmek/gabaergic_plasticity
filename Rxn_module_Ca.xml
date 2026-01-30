@@ -181,17 +181,13 @@
     <reverseRate>20.0e-2</reverseRate>
     <Q10>0.2</Q10>
   </Reaction>
-  
-  <!-- CaM, CaMCa4 and PP2B Binding -->
-  <!--1) CaM  + 2Ca
-      <-> CaMCa2 -->
-  <!--This is the C site-->
+   <!--This is the C site-->
   <Reaction name="CaMC_bind" id="CaMC_bind">
     <Reactant specieID="CaM" />
     <Reactant specieID="Ca" power="2" />
     <Product specieID="CaMCa2C" />
-    <forwardRate>5.442e-09</forwardRate>
-    <reverseRate>0.08</reverseRate>
+    <forwardRate>30e-09</forwardRate>
+    <reverseRate>35e-3</reverseRate>
     <Q10>0.2</Q10>
   </Reaction>
   <!--2) CaMCa2  + 2Ca
@@ -201,7 +197,7 @@
     <Reactant specieID="CaMCa2C" />
     <Reactant specieID="Ca" power="2" />
     <Product specieID="CaMCa4" />
-    <forwardRate>3.162e-9</forwardRate>
+    <forwardRate>9e-9</forwardRate>
     <reverseRate>900e-3</reverseRate>
     <Q10>0.2</Q10>
   </Reaction>
@@ -211,7 +207,7 @@
     <Reactant specieID="Ca" power="2"/>
     <Product specieID="CaMCa2N"/>
     
-    <forwardRate>3.162e-9</forwardRate>
+    <forwardRate>9e-9</forwardRate>
     <reverseRate>900e-3</reverseRate>
     
   </Reaction>
@@ -222,11 +218,12 @@
     <Reactant specieID="Ca" power="2"/>
     <Product specieID="CaMCa4"/>
     
-    <forwardRate>5.442e-09</forwardRate>
-    <reverseRate>0.08</reverseRate>
+    <forwardRate>30e-09</forwardRate>
+    <reverseRate>35e-3</reverseRate>
     
   </Reaction>
 
+ 
   <!-- Kubota, Putkey, Waxham, 2007, Biophys J, 92:3848-3859, constants
        k5 and k_5-->
   <!--2a) CaM  + Ng
@@ -253,8 +250,8 @@
     <Reactant specieID="Ca" power="2"/>
     <Product specieID="NgCaMCa2C"/>
     
-    <forwardRate>2.57e-10</forwardRate>
-    <reverseRate>0.2</reverseRate>
+    <forwardRate>5.67e-09</forwardRate>
+    <reverseRate>0.35</reverseRate>
     
   </Reaction>
 </ReactionScheme>
