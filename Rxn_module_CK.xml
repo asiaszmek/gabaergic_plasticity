@@ -35,15 +35,16 @@ phosphatase reactions take from revision of Gs to improve Ca dep dphos of Dp32--
 
 
 <!--XII. *************** CaMKII ************* -->
-
+<!-- Ca-CaM to CaMKII binding rate from https://doi.org/10.1073/pnas.0804672105
+     (Stefan, Edelstein and Le Novere, PNAS 2012) -->
   <!--1) CaMCa4 + CK <-> CKCaMCa4  -->
     <Reaction name = "CK bind" id="CK_bind">
         <Reactant specieID="CaMCa4"                 />
         <Reactant specieID="CK"                     />
         <Product  specieID="CKCaMCa4"               />
 
-        <forwardRate> 0.01e-3   </forwardRate>
-        <reverseRate> 3e-3      </reverseRate>
+        <forwardRate> 3.2e-6   </forwardRate>
+        <reverseRate> 343e-3      </reverseRate>
         <!--0.8 from ode file
 	    reverseRate> 0.8e-3      </reverseRate-->
         

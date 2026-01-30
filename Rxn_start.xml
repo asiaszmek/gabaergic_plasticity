@@ -10448,8 +10448,8 @@
         <Reactant specieID="CK"/>
         <Product specieID="CKCaMCa4"/>
 
-        <forwardRate> 0.01e-3   </forwardRate>
-        <reverseRate> 3e-3      </reverseRate>
+        <forwardRate> 3.2e-6   </forwardRate>
+        <reverseRate> 343e-3      </reverseRate>
         <!--0.8 from ode file
 	    reverseRate> 0.8e-3      </reverseRate-->
         
