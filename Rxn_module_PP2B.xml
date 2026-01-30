@@ -64,7 +64,17 @@
     
   </Reaction>
  
-  <!--4C) CaMCa2C    +   PP2B    <->  PP2BCaMCa2C (in xpp: k33c=1 k_33c=0.3) -->
+  <!--4A) CaMCa2C    +   PP2B    <->  PP2BCaMCa2C (in xpp: k33c=1 k_33c=0.3) -->
+  <Reaction name = "CaM+PP2B--PP2BCaM reac" id="CaM+PP2B--PP2BCaM_id">
+    <Reactant specieID="CaM"                 />
+    <Reactant specieID="PP2B"                   />
+    <Product  specieID="PP2BCaM"             />
+    
+    <forwardRate> 0.046e-3       </forwardRate>
+    <reverseRate> 0.0012e-3      </reverseRate>
+  </Reaction>
+
+    <!--4C) CaMCa2C    +   PP2B    <->  PP2BCaMCa2C (in xpp: k33c=1 k_33c=0.3) -->
   <Reaction name = "CaMCa2C+PP2B--PP2BCaMCa2C reac" id="CaMCa2C+PP2B--PP2BCaMCa2C_id">
     <Reactant specieID="CaMCa2C"                 />
     <Reactant specieID="PP2B"                   />
@@ -108,6 +118,28 @@
   </Reaction>
 
   <!--4C) C site binding -->
+  <Reaction name = "PP2BCaM+Ca2--PP2BCaMCa2C reac" id="PP2BCaM+Ca2--PP2BCaMCa2C_id">
+    <Reactant specieID="PP2BCaM"             />
+    <Reactant specieID="Ca"        power="2"        />
+    <Product  specieID="PP2BCaMCa2C"             />
+    
+    <forwardRate>5.442e-09</forwardRate>
+    <reverseRate>0.08</reverseRate>
+  </Reaction>
+
+      <!-- PP2BCaMCa2 +  Ca2     <->  PP2BCaMCa4, either N site or C site -->
+  <!--4N) N site binding -->
+  <Reaction name = "PP2BCaM+Ca2--PP2BCaMCa2N reac" id="PP2BCaM+Ca2--PP2BCaMCa2N_id">
+    <Reactant specieID="PP2BCaM"             />
+    <Reactant specieID="Ca"        power="2"        />
+    <Product  specieID="PP2BCaMCa2N"             />
+    
+    <forwardRate>3.162e-9</forwardRate>
+    <reverseRate>900e-3</reverseRate>
+    
+  </Reaction>
+
+  <!--4C) C site binding -->
   <Reaction name = "PP2BCaMCa2N+Ca2--PP2BCaMCa4 reac" id="PP2BCaMCa2N+Ca2--PP2BCaMCa4_id">
     <Reactant specieID="PP2BCaMCa2N"             />
     <Reactant specieID="Ca"        power="2"        />
@@ -115,7 +147,7 @@
     
     <forwardRate>5.442e-09</forwardRate>
     <reverseRate>0.08</reverseRate>
-    
+
     
   </Reaction>
 </ReactionScheme>
