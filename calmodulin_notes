@@ -12,3 +12,5 @@ C C Ouimet  and T L McGuinness  and P Greengard 1984 -- highest CaMKII in . Immu
 activity is strong in the ectal limb (ec) of the dentate gyrus and even stronger in the endal limb (en). Strong stratum radiatum, but probably not that strong? Makes sense to have 20% of total hippocampal CaMKII in CA1 pyr.
 
 PP2b ~2-4 uM in CA1 pyramidal neurons (Goto et al 1986 Brain Res)
+
+For Calmodulin-Ca binding use coarse model from Pepke et al 2010 (model 2 for Ca 70 nM) with updated reaction rates provided by Linkevicius et al 2010
