@@ -153,39 +153,41 @@
     <reverseRate>20.0e-2</reverseRate>
     <Q10>0.2</Q10>
   </Reaction>
-   <Reaction name="CaMC_bind" id="CaMC_bind">
-    <Reactant specieID="CaM"/>
-    <Reactant specieID="Ca" power="2"/>
-    <Product specieID="CaMCa2C"/>
-    <forwardRate>30e-09</forwardRate>
-    <reverseRate>35e-3</reverseRate>
-    <Q10>0.2</Q10>
-  </Reaction>
-  <Reaction name="CaMCa2C_bind" id="CaMCa2C_bind">
-    <Reactant specieID="CaMCa2C"/>
-    <Reactant specieID="Ca" power="2"/>
-    <Product specieID="CaMCa4"/>
-    <forwardRate>9e-9</forwardRate>
-    <reverseRate>900e-3</reverseRate>
-    <Q10>0.2</Q10>
-  </Reaction>
+
   <Reaction name="CaMN_bind" id="CaMN_bind">
     <Reactant specieID="CaM"/>
     <Reactant specieID="Ca" power="2"/>
     <Product specieID="CaMCa2N"/>
-    
-    <forwardRate>9e-9</forwardRate>
-    <reverseRate>900e-3</reverseRate>
-    
+    <forwardRate>2.62e-8</forwardRate>
+    <reverseRate>3.61</reverseRate>
+    <Q10>0.2</Q10>
   </Reaction>
-
   <Reaction name="CaMCa2N_bind" id="CaMCa2N_bind">
     <Reactant specieID="CaMCa2N"/>
     <Reactant specieID="Ca" power="2"/>
     <Product specieID="CaMCa4"/>
+    <forwardRate>1.62e-7</forwardRate>
+    <reverseRate>0.438</reverseRate>
+    <Q10>0.2</Q10>
+  </Reaction>
+  
+  <Reaction name="CaMC_bind" id="CaMC_bind">
+    <Reactant specieID="CaM"/>
+    <Reactant specieID="Ca" power="2"/>
+    <Product specieID="CaMCa2C"/>
     
-    <forwardRate>30e-09</forwardRate>
-    <reverseRate>35e-3</reverseRate>
+    <forwardRate>1.62e-7</forwardRate>
+    <reverseRate>0.438</reverseRate>
+    
+  </Reaction>
+
+  <Reaction name="CaMCa2C_bind" id="CaMCa2C_bind">
+    <Reactant specieID="CaMCa2C"/>
+    <Reactant specieID="Ca" power="2"/>
+    <Product specieID="CaMCa4"/>
+    
+    <forwardRate>2.62e-8</forwardRate>
+    <reverseRate>3.61</reverseRate>
     
   </Reaction>
 
@@ -211,8 +213,8 @@
     <Reactant specieID="Ca" power="2"/>
     <Product specieID="NgCaMCa2C"/>
     
-    <forwardRate>5.67e-09</forwardRate>
-    <reverseRate>0.35</reverseRate>
+    <forwardRate>3.063e-8</forwardRate>
+    <reverseRate>4.38</reverseRate>
     
   </Reaction>
 <Specie name="CaER" id="CaER" kdiff="10." kdiffunit="mu2/s"/>

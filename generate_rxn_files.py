@@ -42,6 +42,15 @@ flist_ER_no_IP3 = [
     "Rxn_module_PP2B.xml",
     ]
 
+flist_ER_SERCA = [
+    "Rxn_module_Ca.xml",
+    "Rxn_module_SERCA2.xml",
+    "Rxn_module_CK.xml",
+    "Rxn_module_PP2B.xml",
+    "Rxn_module_CaCbuf.xml"
+    ]
+
+
 flist_ER_IP3 = [
     "Rxn_module_Ca.xml",
     "Rxn_module_SERCA2.xml",
@@ -74,4 +83,8 @@ if __name__ == "__main__":
 
     my_rxn_f = read_in_files(flist_ER_IP3)
     with  open("Rxn_IP3R.xml", "w") as f:
+        f.write(etree.tostring(my_rxn_f, pretty_print=True).decode("utf-8"))
+
+    my_rxn_f = read_in_files(flist_ER_SERCA)
+    with  open("Rxn_ER_just_SERCA.xml", "w") as f:
         f.write(etree.tostring(my_rxn_f, pretty_print=True).decode("utf-8"))

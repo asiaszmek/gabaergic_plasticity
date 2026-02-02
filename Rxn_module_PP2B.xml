@@ -22,14 +22,14 @@
   <!--This is the C site-->
   <!--1A) CaM  + 2Ca <-> CaMCa2C GQ RXN FILE, C or N can bind first-->
   
- 
+ <!-- Stefan, Edelstein and Le Novere 2008 PNAS do not speed up Ca binding to PP2BCaM -->
   <!--4A) CaMCa2C    +   PP2B    <->  PP2BCaMCa2C (in xpp: k33c=1 k_33c=0.3) -->
   <Reaction name = "CaM+PP2B--PP2BCaM reac" id="CaM+PP2B--PP2BCaM_id">
     <Reactant specieID="CaM"                 />
     <Reactant specieID="PP2B"                   />
     <Product  specieID="PP2BCaM"             />
     
-    <forwardRate> 0.046e-4       </forwardRate>
+    <forwardRate> 0.046e-3       </forwardRate>
     <reverseRate> 0.0012e-3      </reverseRate>
   </Reaction>
 
@@ -66,46 +66,46 @@
 
   <!-- PP2BCaMCa2 +  Ca2     <->  PP2BCaMCa4, either N site or C site -->
   <!--4N) N site binding -->
-  <Reaction name = "PP2BCaMCa2C+Ca2--PP2BCaMCa4 reac" id="PP2BCaMCa2+Ca2--PP2BCaMCa4_id">
-    <Reactant specieID="PP2BCaMCa2C"             />
-    <Reactant specieID="Ca"        power="2"        />
-    <Product  specieID="PP2BCaMCa4"             />
-    
-    <forwardRate>9e-9</forwardRate>
-    <reverseRate>900e-3</reverseRate>
-    
-  </Reaction>
-
-  <!--4C) C site binding -->
-  <Reaction name = "PP2BCaM+Ca2--PP2BCaMCa2C reac" id="PP2BCaM+Ca2--PP2BCaMCa2C_id">
-    <Reactant specieID="PP2BCaM"             />
-    <Reactant specieID="Ca"        power="2"        />
-    <Product  specieID="PP2BCaMCa2C"             />
-    
-    <forwardRate>30e-08</forwardRate>
-    <reverseRate>35e-3</reverseRate>
-  </Reaction>
-
-      <!-- PP2BCaMCa2 +  Ca2     <->  PP2BCaMCa4, either N site or C site -->
-  <!--4N) N site binding -->
-  <Reaction name = "PP2BCaM+Ca2--PP2BCaMCa2N reac" id="PP2BCaM+Ca2--PP2BCaMCa2N_id">
-    <Reactant specieID="PP2BCaM"             />
-    <Reactant specieID="Ca"        power="2"        />
-    <Product  specieID="PP2BCaMCa2N"             />
-    
-    <forwardRate>9e-8</forwardRate>
-    <reverseRate>900e-3</reverseRate>
-    
-  </Reaction>
-
-  <!--4C) C site binding -->
   <Reaction name = "PP2BCaMCa2N+Ca2--PP2BCaMCa4 reac" id="PP2BCaMCa2N+Ca2--PP2BCaMCa4_id">
     <Reactant specieID="PP2BCaMCa2N"             />
     <Reactant specieID="Ca"        power="2"        />
     <Product  specieID="PP2BCaMCa4"             />
     
-    <forwardRate>30e-09</forwardRate>
-    <reverseRate>35e-3</reverseRate>
+    <forwardRate>1.62e-7</forwardRate>
+    <reverseRate>0.438</reverseRate>
+    
+  </Reaction>
+
+  <!--4C) C site binding -->
+  <Reaction name = "PP2BCaM+Ca2--PP2BCaMCa2N reac" id="PP2BCaM+Ca2--PP2BCaMCa2N_id">
+    <Reactant specieID="PP2BCaM"             />
+    <Reactant specieID="Ca"        power="2"        />
+    <Product  specieID="PP2BCaMCa2N"             />
+    
+    <forwardRate>2.62e-8</forwardRate>
+    <reverseRate>3.61</reverseRate>
+  </Reaction>
+
+      <!-- PP2BCaMCa2 +  Ca2     <->  PP2BCaMCa4, either N site or C site -->
+  <!--4N) N site binding -->
+  <Reaction name = "PP2BCaM+Ca2--PP2BCaMCa2C reac" id="PP2BCaM+Ca2--PP2BCaMCa2C_id">
+    <Reactant specieID="PP2BCaM"             />
+    <Reactant specieID="Ca"        power="2"        />
+    <Product  specieID="PP2BCaMCa2C"             />
+    
+    <forwardRate>1.62e-7</forwardRate>
+    <reverseRate>0.438</reverseRate>
+    
+  </Reaction>
+
+  <!--4C) C site binding -->
+  <Reaction name = "PP2BCaMCa2C+Ca2--PP2BCaMCa4 reac" id="PP2BCaMCa2C+Ca2--PP2BCaMCa4_id">
+    <Reactant specieID="PP2BCaMCa2C"             />
+    <Reactant specieID="Ca"        power="2"        />
+    <Product  specieID="PP2BCaMCa4"             />
+    
+    <forwardRate>2.62e-8</forwardRate>
+    <reverseRate>3.61</reverseRate>
 
     
   </Reaction>
