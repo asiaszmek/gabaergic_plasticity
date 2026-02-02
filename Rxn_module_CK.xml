@@ -20,6 +20,10 @@ phosphatase reactions take from revision of Gs to improve Ca dep dphos of Dp32--
     <Specie name="CK"                                  id="CK"                    kdiff="0.32"     kdiffunit="mu2/s"/>
     <Specie name="CKp"                                 id="CKp"                   kdiff="0.017"     kdiffunit="mu2/s"/>
     <Specie name="CKCaMCa4"                            id="CKCaMCa4"              kdiff="0.017"     kdiffunit="mu2/s"/>
+    <Specie name="CKCaM"                            id="CKCaM"              kdiff="0.017"     kdiffunit="mu2/s"/>
+    <Specie name="CKCaMCa2C"                            id="CKCaM2C"              kdiff="0.017"     kdiffunit="mu2/s"/>
+    <Specie name="CKCaMCa2N"                            id="CKCaM2N"              kdiff="0.017"     kdiffunit="mu2/s"/>
+    
     <Specie name="CKpCaMCa4"                           id="CKpCaMCa4"             kdiff="0.017"     kdiffunit="mu2/s"/>
     <Specie name="Complex"        id="Complex"       kdiff="0"     kdiffunit="mu2/s"/>
     <Specie name="pComplex" id="pComplex" kdiff="0" kdiffunit="mu2/s"/>
@@ -35,21 +39,87 @@ phosphatase reactions take from revision of Gs to improve Ca dep dphos of Dp32--
 
 
 <!--XII. *************** CaMKII ************* -->
-<!-- Ca-CaM to CaMKII binding rate from https://doi.org/10.1073/pnas.0804672105
-     (Stefan, Edelstein and Le Novere, PNAS 2012) -->
-  <!--1) CaMCa4 + CK <-> CKCaMCa4  -->
-    <Reaction name = "CK bind" id="CK_bind">
+<!-- Coarse-grainde Pepke's scheme -->
+  <!--1a) CaM + CK <-> CKCaM  -->
+    <Reaction name = "CKCaM bind" id="CKCaM_bind">
+        <Reactant specieID="CaM"                 />
+        <Reactant specieID="CK"                     />
+        <Product  specieID="CKCaM"               />
+
+        <forwardRate>3.8e-9   </forwardRate>
+        <reverseRate> 5.5e-3      </reverseRate>
+    </Reaction>
+
+    <!--1b) CaMCa2C + CK <-> CKCaMCa2C  -->
+    <Reaction name = "CKCaMCa2C bind" id="CKCaMCa2C_bind">
+        <Reactant specieID="CaMCa2C"                 />
+        <Reactant specieID="CK"                     />
+        <Product  specieID="CKCaMCa2C"               />
+
+        <forwardRate> 0.92e-6   </forwardRate>
+        <reverseRate> 6.8e-3      </reverseRate>
+    </Reaction>
+
+    <!--1c) CaMCa2N + CK <-> CKCaMCa2N  -->
+    <Reaction name = "CKCaMCa2N bind" id="CKCaMCa2N_bind">
+        <Reactant specieID="CaMCa2N"                 />
+        <Reactant specieID="CK"                     />
+        <Product  specieID="CKCaMCa2N"               />
+
+        <forwardRate> 0.1e-6   </forwardRate>
+        <reverseRate> 1.7e-3      </reverseRate>
+    </Reaction>
+
+
+    <!--1d) CaMCa4 + CK <-> CKCaMCa4  -->
+    <Reaction name = "CKCaMCa4 bind" id="CKCaMCa4_bind">
         <Reactant specieID="CaMCa4"                 />
         <Reactant specieID="CK"                     />
         <Product  specieID="CKCaMCa4"               />
 
-        <forwardRate> 3.2e-6   </forwardRate>
-        <reverseRate> 343e-3      </reverseRate>
-        <!--0.8 from ode file
-	    reverseRate> 0.8e-3      </reverseRate-->
-        
+        <forwardRate> 30e-6   </forwardRate>
+        <reverseRate> 1.7e-3      </reverseRate>
     </Reaction>
 
+    <Reaction name="CKCaMN_bind" id="CKCaMN_Ca_bind">
+      <Reactant specieID="CKCaM" />
+      <Reactant specieID="Ca" power="2" />
+      <Product specieID="CKCaMCa2N" />
+      <forwardRate>2.23e-7</forwardRate>
+      <reverseRate>0.361</reverseRate>
+      <Q10>0.2</Q10>
+    </Reaction>
+
+     <Reaction name="CKCaMC_bind" id="CKCaMC_Ca_bind">
+      <Reactant specieID="CKCaM" />
+      <Reactant specieID="Ca" power="2" />
+      <Product specieID="CKCaMCa2C" />
+      <forwardRate>2.23e-7</forwardRate>
+      <reverseRate>0.00308</reverseRate>
+      <Q10>0.2</Q10>
+     </Reaction>
+
+     <Reaction name="CKCaMCa2C_bind" id="CKCaMCa2C_Ca_bind">
+       <Reactant specieID="CKCaMCa2C" />
+       <Reactant specieID="Ca" power="2" />
+       <Product specieID="CKCaMCa4" />
+       <forwardRate>1.93e-7</forwardRate>
+       <reverseRate>0.2038</reverseRate>
+       <Q10>0.2</Q10>
+     </Reaction>
+     
+     <Reaction name="CKCaMCa2N_bind" id="CKCaMCa2N_Ca_bind">
+       <Reactant specieID="CKCaMCa2N" />
+       <Reactant specieID="Ca" power="2" />
+       <Product specieID="CKCaMCa4" />
+       <forwardRate>0.000444</forwardRate>
+       <reverseRate>4</reverseRate>
+       <Q10>0.2</Q10>
+    </Reaction>
+
+    
+
+    
 <!--2a) CKCaMCa4 + CKCaMCa4 <-> Complex -->
     <Reaction name = "CKCaM bind" id="CKCaM_bind">
         <Reactant specieID="CKCaMCa4"  power="2"        />

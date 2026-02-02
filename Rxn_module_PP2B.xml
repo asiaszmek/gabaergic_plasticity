@@ -29,7 +29,7 @@
     <Reactant specieID="PP2B"                   />
     <Product  specieID="PP2BCaM"             />
     
-    <forwardRate> 0.046e-3       </forwardRate>
+    <forwardRate> 0.046e-5       </forwardRate>
     <reverseRate> 0.0012e-3      </reverseRate>
   </Reaction>
 
@@ -39,7 +39,7 @@
     <Reactant specieID="PP2B"                   />
     <Product  specieID="PP2BCaMCa2C"             />
     
-    <forwardRate> 0.046e-3       </forwardRate>
+    <forwardRate> 0.046e-4       </forwardRate>
     <reverseRate> 0.0012e-3      </reverseRate>
   </Reaction>
 
@@ -49,7 +49,7 @@
     <Reactant specieID="PP2B"                   />
     <Product  specieID="PP2BCaMCa2N"             />
     
-    <forwardRate> 0.046e-3       </forwardRate>
+    <forwardRate> 0.046e-4       </forwardRate>
     <reverseRate> 0.0012e-3      </reverseRate>
   </Reaction>
 
@@ -71,7 +71,7 @@
     <Reactant specieID="Ca"        power="2"        />
     <Product  specieID="PP2BCaMCa4"             />
     
-    <forwardRate>1.62e-7</forwardRate>
+    <forwardRate>1.62e-6</forwardRate>
     <reverseRate>0.438</reverseRate>
     
   </Reaction>
@@ -82,7 +82,7 @@
     <Reactant specieID="Ca"        power="2"        />
     <Product  specieID="PP2BCaMCa2N"             />
     
-    <forwardRate>2.62e-8</forwardRate>
+    <forwardRate>2.62e-7</forwardRate>
     <reverseRate>3.61</reverseRate>
   </Reaction>
 
@@ -93,7 +93,7 @@
     <Reactant specieID="Ca"        power="2"        />
     <Product  specieID="PP2BCaMCa2C"             />
     
-    <forwardRate>1.62e-7</forwardRate>
+    <forwardRate>1.62e-6</forwardRate>
     <reverseRate>0.438</reverseRate>
     
   </Reaction>
@@ -104,7 +104,7 @@
     <Reactant specieID="Ca"        power="2"        />
     <Product  specieID="PP2BCaMCa4"             />
     
-    <forwardRate>2.62e-8</forwardRate>
+    <forwardRate>2.62e-7</forwardRate>
     <reverseRate>3.61</reverseRate>
 
     
