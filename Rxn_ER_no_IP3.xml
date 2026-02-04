@@ -11066,8 +11066,8 @@
     <Specie name="CKp" id="CKp" kdiff="0.017" kdiffunit="mu2/s"/>
     <Specie name="CKCaMCa4" id="CKCaMCa4" kdiff="0.017" kdiffunit="mu2/s"/>
     <Specie name="CKCaM" id="CKCaM" kdiff="0.017" kdiffunit="mu2/s"/>
-    <Specie name="CKCaMCa2C" id="CKCaM2C" kdiff="0.017" kdiffunit="mu2/s"/>
-    <Specie name="CKCaMCa2N" id="CKCaM2N" kdiff="0.017" kdiffunit="mu2/s"/>
+    <Specie name="CKCaMCa2C" id="CKCaMCa2C" kdiff="0.017" kdiffunit="mu2/s"/>
+    <Specie name="CKCaMCa2N" id="CKCaMCa2N" kdiff="0.017" kdiffunit="mu2/s"/>
     
     <Specie name="CKpCaMCa4" id="CKpCaMCa4" kdiff="0.017" kdiffunit="mu2/s"/>
     <Specie name="Complex" id="Complex" kdiff="0" kdiffunit="mu2/s"/>
