@@ -575,7 +575,7 @@
   
   <!--3g) CKCaMCa2C_CKCaMCa2N -> CKCaMCa2C+CKpCaMCa2N -->
   <Reaction name = "CKCaMCa2C_CKCaMCa2N phos2" id="CKCaMCa2C_CKCaMCa2N phos2">
-    <Reactant  specieID="CKCaMCa2C_CKCaMCa2N"                />
+    <Reactant  specieID="CKCaMCa2N_CKCaMCa2C"                />
     <Product  specieID="CKCaMCa2C"                />
     <Product  specieID="CKpCaMCa2N"                />
     <forwardRate> 0.064e-3 </forwardRate>

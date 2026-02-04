@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- with no CaM, Ca affinity to RyR of 1 uM fits much better. For RyRCaM Ca affinity should probably 2 uM or 4 uM -->
+<!-- with no CaM, Ca affinity to RyR2 of 1 uM fits much better. For RyR2CaM Ca affinity should probably 2 uM or 4 uM -->
 <ReactionScheme>
   <Specie name="Ca" id="Ca" kdiff="200" kdiffunit="mu2/s"/>
   <Specie name="CaM" id="CaM" kdiff="4" kdiffunit="mu2/s"/>
   <Specie name="CaMCa2C" id="CaMCa2C" kdiff="4" kdiffunit="mu2/s"/>
   <Specie name="CaMCa4" id="CaMCa4" kdiff="4" kdiffunit="mu2/s"/>
 
-  <Specie name="RyR" id="RyR" kdiff="100" kdiffunit="mu2/s"/>
-  <Specie name="RyRCaM" id="RyR" kdiff="0" kdiffunit="mu2/s"/>
-  <Specie name="RyRCaMCa2C" id="RyR" kdiff="0" kdiffunit="mu2/s"/>
-  <Specie name="RyRCaMCa2N" id="RyR" kdiff="0" kdiffunit="mu2/s"/>
-  <Specie name="RyRCaMCa4" id="RyR" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="RyR2" id="RyR2" kdiff="100" kdiffunit="mu2/s"/>
+  <Specie name="RyR2CaM" id="RyR2CaM" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="RyR2CaMCa2C" id="RyR2CaMCa2C" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="RyR2CaMCa2N" id="RyR2CaMCa2N" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="RyR2CaMCa4" id="RyR2CaMCa4" kdiff="0" kdiffunit="mu2/s"/>
 
-  <Specie name="CaRyR" id="CaRyR" kdiff="100" kdiffunit="mu2/s"/>
-  <Specie name="CaRyRCaM" id="CaRyR" kdiff="0" kdiffunit="mu2/s"/>
-  <Specie name="CaRyRCaMCa2C" id="CaRyR" kdiff="0" kdiffunit="mu2/s"/>
-  <Specie name="CaRyRCaMCa2N" id="CaRyR" kdiff="0" kdiffunit="mu2/s"/>
-  <Specie name="CaRyRCaMCa4" id="CaRyR" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="CaRyR2" id="CaRyR2" kdiff="100" kdiffunit="mu2/s"/>
+  <Specie name="CaRyR2CaM" id="CaRyR2CaM" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="CaRyR2CaMCa2C" id="CaRyR2CaMCa2C" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="CaRyR2CaMCa2N" id="CaRyR2CaMCa2N" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="CaRyR2CaMCa4" id="CaRyR2CaMCa4" kdiff="0" kdiffunit="mu2/s"/>
 
 
 
-  <Reaction name="RyRCa1" id="RyRCa1">
-    <Reactant specieID="RyR"/>
+  <Reaction name="RyR2Ca1" id="RyR2Ca1">
+    <Reactant specieID="RyR2"/>
     <Reactant specieID="Ca"/>
-    <Product specieID="CaRyR"/>
+    <Product specieID="CaRyR2"/>
     <forwardRate>1.e-3</forwardRate>
     <reverseRate>1.</reverseRate>
   </Reaction>
@@ -67,7 +67,7 @@
 
 
   
-  <Reaction name="RyR2_CaM_1" id="RyR2_CaM_1">
+  <Reaction name="RyR22_CaM_1" id="RyR2_CaM_1">
     <Reactant specieID="RyR2"/>
     <Reactant specieID="CaM"/>
     <Product specieID="RyR2CaM"/>

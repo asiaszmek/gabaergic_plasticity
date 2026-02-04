@@ -399,8 +399,8 @@
     <Reactant specieID="CKCaMCa2C"/>
     <Product specieID="CKCaMCa2C_CKCaM"/>
     
-    <forwardRate> 50e-6 </forwardRate>
-    <reverseRate> 60e-3     </reverseRate>
+    <forwardRate> 50e-5 </forwardRate>
+    <reverseRate> 60e-2     </reverseRate>
     <Q10>     2             </Q10>
   </Reaction>
 
@@ -410,8 +410,8 @@
     <Reactant specieID="CKCaMCa2N"/>
     <Product specieID="CKCaMCa2N_CKCaM"/>
     
-    <forwardRate> 50e-6 </forwardRate>
-    <reverseRate> 60e-3     </reverseRate>
+    <forwardRate> 50e-5 </forwardRate>
+    <reverseRate> 60e-2     </reverseRate>
     <Q10>     2             </Q10>
   </Reaction>
 
@@ -420,16 +420,16 @@
     <Reactant specieID="CKCaMCa4"/>
     <Product specieID="CKCaMCa4_CKCaM"/>
     
-    <forwardRate> 50e-6 </forwardRate>
-    <reverseRate> 60e-3     </reverseRate>
+    <forwardRate> 50e-5 </forwardRate>
+    <reverseRate> 60e-2     </reverseRate>
     <Q10>     2             </Q10>
   </Reaction>
   <Reaction name="CKCaMCa2C_CKCaMCa2C bind" id="CKCaMCa2C_CKCaMCa2C bind">
     <Reactant specieID="CKCaMCa2C" power="2"/>
     <Product specieID="CKCaMCa2C_CKCaMCa2C"/>
     
-    <forwardRate> 50e-6 </forwardRate>
-    <reverseRate> 60e-3     </reverseRate>
+    <forwardRate> 50e-5 </forwardRate>
+    <reverseRate> 60e-2     </reverseRate>
     <Q10>     2             </Q10>
   </Reaction>
 
@@ -438,8 +438,8 @@
     <Reactant specieID="CKCaMCa2N"/>
     <Product specieID="CKCaMCa2N_CKCaMCa2C"/>
     
-    <forwardRate> 50e-6 </forwardRate>
-    <reverseRate> 60e-3     </reverseRate>
+    <forwardRate> 50e-5 </forwardRate>
+    <reverseRate> 60e-2     </reverseRate>
     <Q10>     2             </Q10>
   </Reaction>
 
@@ -448,8 +448,8 @@
     <Reactant specieID="CKCaMCa4"/>
     <Product specieID="CKCaMCa2C_CKCaMCa4"/>
     
-    <forwardRate> 50e-6 </forwardRate>
-    <reverseRate> 60e-3     </reverseRate>
+    <forwardRate> 50e-5 </forwardRate>
+    <reverseRate> 60e-2     </reverseRate>
     <Q10>     2             </Q10>
   </Reaction>
 
@@ -457,8 +457,8 @@
     <Reactant specieID="CKCaMCa2N" power="2"/>
     <Product specieID="CKCaMCa2N_CKCaMCa2N"/>
     
-    <forwardRate> 50e-6 </forwardRate>
-    <reverseRate> 60e-3     </reverseRate>
+    <forwardRate> 50e-5 </forwardRate>
+    <reverseRate> 60e-2     </reverseRate>
     <Q10>     2             </Q10>
   </Reaction>
   
@@ -467,8 +467,8 @@
     <Reactant specieID="CKCaMCa4"/>
     <Product specieID="CKCaMCa2N_CKCaMCa4"/>
     
-    <forwardRate> 50e-6 </forwardRate>
-    <reverseRate> 60e-3     </reverseRate>
+    <forwardRate> 50e-5 </forwardRate>
+    <reverseRate> 60e-2     </reverseRate>
     <Q10>     2             </Q10>
   </Reaction>
 
@@ -476,8 +476,8 @@
     <Reactant specieID="CKCaMCa4" power="2"/>
     <Product specieID="CKCaMCa4_CKCaMCa4"/>
     
-    <forwardRate> 50e-6 </forwardRate>
-    <reverseRate> 60e-3     </reverseRate>
+    <forwardRate> 50e-5 </forwardRate>
+    <reverseRate> 60e-2     </reverseRate>
     <Q10>     2             </Q10>
   </Reaction>
 
@@ -485,8 +485,8 @@
     <Reactant specieID="CKCaM"/>
     <Reactant specieID="CKpCaMCa2C"/>
     <Product specieID="CKpCaMCa2C_CKCaM"/>
-    <forwardRate> 50e-6 </forwardRate>
-    <reverseRate> 60e-3     </reverseRate>
+    <forwardRate> 50e-5 </forwardRate>
+    <reverseRate> 60e-2     </reverseRate>
     <Q10>     2             </Q10>
   </Reaction>
 
@@ -496,8 +496,8 @@
     <Reactant specieID="CKpCaMCa2N"/>
     <Product specieID="CKpCaMCa2N_CKCaM"/>
     
-    <forwardRate> 50e-6 </forwardRate>
-    <reverseRate> 60e-3     </reverseRate>
+    <forwardRate> 50e-5 </forwardRate>
+    <reverseRate> 60e-2     </reverseRate>
     <Q10>     2             </Q10>
   </Reaction>
 
@@ -506,8 +506,8 @@
     <Reactant specieID="CKpCaMCa4"/>
     <Product specieID="CKpCaMCa4_CKCaM"/>
     
-    <forwardRate> 50e-6 </forwardRate>
-    <reverseRate> 60e-3     </reverseRate>
+    <forwardRate> 50e-5 </forwardRate>
+    <reverseRate> 60e-2     </reverseRate>
     <Q10>     2             </Q10>
   </Reaction>
 
@@ -517,8 +517,8 @@
     <Reactant specieID="CKpCaMCa2C"/>
     <Product specieID="CKCaMCa2C_CKpCaMCa2C"/>
     
-    <forwardRate> 50e-6 </forwardRate>
-    <reverseRate> 60e-3     </reverseRate>
+    <forwardRate> 50e-5 </forwardRate>
+    <reverseRate> 60e-2     </reverseRate>
     <Q10>     2             </Q10>
   </Reaction>
 
@@ -527,8 +527,8 @@
     <Reactant specieID="CKpCaMCa2N"/>
     <Product specieID="CKpCaMCa2N_CKCaMCa2C"/>
     
-    <forwardRate> 50e-6 </forwardRate>
-    <reverseRate> 60e-3     </reverseRate>
+    <forwardRate> 50e-5 </forwardRate>
+    <reverseRate> 60e-2     </reverseRate>
     <Q10>     2             </Q10>
   </Reaction>
 
@@ -537,8 +537,8 @@
     <Reactant specieID="CKCaMCa4"/>
     <Product specieID="CKpCaMCa2C_CKCaMCa4"/>
     
-    <forwardRate> 50e-6 </forwardRate>
-    <reverseRate> 60e-3     </reverseRate>
+    <forwardRate> 50e-5 </forwardRate>
+    <reverseRate> 60e-2     </reverseRate>
     <Q10>     2             </Q10>
   </Reaction>
   <Reaction name="CKCaMCa2N_CKpCaMCa2N bind" id="CKCaMCa2N_CKpCaMCa2N bind">
@@ -546,8 +546,8 @@
     <Reactant specieID="CKpCaMCa2N"/>
     <Product specieID="CKCaMCa2N_CKpCaMCa2N"/>
     
-    <forwardRate> 50e-6 </forwardRate>
-    <reverseRate> 60e-3     </reverseRate>
+    <forwardRate> 50e-5 </forwardRate>
+    <reverseRate> 60e-2     </reverseRate>
     <Q10>     2             </Q10>
   </Reaction>
   
@@ -556,8 +556,8 @@
     <Reactant specieID="CKCaMCa4"/>
     <Product specieID="CKpCaMCa2N_CKCaMCa4"/>
     
-    <forwardRate> 50e-6 </forwardRate>
-    <reverseRate> 60e-3     </reverseRate>
+    <forwardRate> 50e-5 </forwardRate>
+    <reverseRate> 60e-2     </reverseRate>
     <Q10>     2             </Q10>
   </Reaction>
 
@@ -566,8 +566,8 @@
     <Reactant specieID="CKCaMCa4"/>
     <Product specieID="CKCaMCa2N_CKpCaMCa4"/>
     
-    <forwardRate> 50e-6 </forwardRate>
-    <reverseRate> 60e-3     </reverseRate>
+    <forwardRate> 50e-5 </forwardRate>
+    <reverseRate> 60e-2     </reverseRate>
     <Q10>     2             </Q10>
   </Reaction>
 
@@ -576,8 +576,8 @@
     <Reactant specieID="CKpCaMCa4"/>
     <Product specieID="CKCaMCa4_CKpCaMCa4"/>
     
-    <forwardRate> 50e-6 </forwardRate>
-    <reverseRate> 60e-3     </reverseRate>
+    <forwardRate> 50e-5 </forwardRate>
+    <reverseRate> 60e-2     </reverseRate>
     <Q10>     2             </Q10>
   </Reaction>
 
@@ -702,7 +702,7 @@
 
   
   <Reaction name="CKCaMCa2C_CKCaMCa2N phos2" id="CKCaMCa2C_CKCaMCa2N phos2">
-    <Reactant specieID="CKCaMCa2C_CKCaMCa2N"/>
+    <Reactant specieID="CKCaMCa2N_CKCaMCa2C"/>
     <Product specieID="CKCaMCa2C"/>
     <Product specieID="CKpCaMCa2N"/>
     <forwardRate> 0.064e-3 </forwardRate>
