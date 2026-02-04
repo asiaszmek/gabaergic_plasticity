@@ -40,7 +40,7 @@
     <NanoMolarity specieID="STIM_4" value="3.5" />
 
 
-    <NanoMolarity specieID="RyR2_4CaM"      value="20"    />
+    <NanoMolarity specieID="RyR2CaM"      value="80"    />
     <NanoMolarity specieID="PP2B" value="0" />
     <NanoMolarity specieID="PP2BCaMCa2C" value="4307" />
     <NanoMolarity specieID="PP2BCaMCa2N" value="658" />

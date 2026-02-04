@@ -38,7 +38,7 @@
    
     <NanoMolarity specieID="PP1" value="3600" />
 
-    <NanoMolarity specieID="RyR2_4CaM"      value="20"    />
+    <NanoMolarity specieID="RyR2CaM"      value="80"    />
 
 
 

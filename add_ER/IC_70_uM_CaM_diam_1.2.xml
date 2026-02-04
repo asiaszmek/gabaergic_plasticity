@@ -36,8 +36,8 @@
     <NanoMolarity specieID="PP1" value="3600" />
     
 
-    <NanoMolarity specieID="RyR2_4CaM"      value="18"    />
-    <NanoMolarity specieID="RyR2_3CaM"      value="2"    />    
+    <NanoMolarity specieID="RyR2CaM"      value="80"    />
+
   </ConcentrationSet>
 
   <SurfaceDensitySet>

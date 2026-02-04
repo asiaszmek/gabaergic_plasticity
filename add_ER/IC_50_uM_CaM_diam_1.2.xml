@@ -6,7 +6,7 @@
     <!--Using NMDARs expressed by CA1 pyramidal cells in acute hippocampal slices to monitor extracellular glutamate, we find that its baseline concentration is much lower, near 25 nm.  doi: 10.1523/JNEUROSCI.3009-07.2007-->
     <!-- total calbindin = 160 uM -->
 
-        <NanoMolarity specieID="Calbin" value="134038"/>
+    <NanoMolarity specieID="Calbin" value="134038"/>
     <NanoMolarity specieID="CalbinC" value="13964"/>
     <NanoMolarity specieID="fixedbuffer" value="1997089"/>
     <NanoMolarity specieID="fixedbufferCa" value="2911"/>
@@ -38,9 +38,7 @@
 
     
 
-    <NanoMolarity specieID="RyR2_4CaM"      value="14"    />
-    <NanoMolarity specieID="RyR2_3CaM"      value="4"    />
-    <NanoMolarity specieID="RyR2_2CaM"      value="2"    />
+    <NanoMolarity specieID="RyR2CaM"      value="80"    />
   </ConcentrationSet>
 
 
