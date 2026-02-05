@@ -31,13 +31,14 @@
     <NanoMolarity specieID="PP2BCaMCa2N" value="1" />
 
    
-    <NanoMolarity specieID="CK" value="19911" />
-    <NanoMolarity specieID="CKCaM" value="65" />
-    <NanoMolarity specieID="CKCaM" value="25" />
+    <NanoMolarity specieID="CK" value="19893" />
+    <NanoMolarity specieID="CKCaM" value="67" />
+    <NanoMolarity specieID="CKpCaM" value="3" />
+    <NanoMolarity specieID="CKCaMCa2C" value="27" />
     <NanoMolarity specieID="PP1" value="3600" />
 
-
-    <NanoMolarity specieID="RyR2CaM"      value="80"    />
+    <NanoMolarity specieID="RyR2"      value="11"    />
+    <NanoMolarity specieID="RyR2CaM"      value="69"    />
    </ConcentrationSet>
 
 
