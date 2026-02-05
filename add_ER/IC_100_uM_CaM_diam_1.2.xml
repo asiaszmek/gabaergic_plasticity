@@ -5,19 +5,20 @@
     <NanoMolarity specieID="CaOut" value="2000000"/>
     <!--Using NMDARs expressed by CA1 pyramidal cells in acute hippocampal slices to monitor extracellular glutamate, we find that its baseline concentration is much lower, near 25 nm.  doi: 10.1523/JNEUROSCI.3009-07.2007-->
     <!-- total calbindin = 160 uM -->
-    <NanoMolarity specieID="Calbin" value="134038"/>
-    <NanoMolarity specieID="CalbinC" value="13964"/>
+    <NanoMolarity specieID="Calbin" value="134052"/>
+    <NanoMolarity specieID="CalbinC" value="13948"/>
     <NanoMolarity specieID="fixedbuffer" value="1997089"/>
     <NanoMolarity specieID="fixedbufferCa" value="2911"/>
     
-    <NanoMolarity specieID="CaM" value="32911"/>
-    <NanoMolarity specieID="CaMCa2C" value="61"/>
-    <NanoMolarity specieID="Ng" value="2555"/>
-    <NanoMolarity specieID="NgCaM" value="62444"/>
+    <NanoMolarity specieID="CaM" value="32401"/>
+    <NanoMolarity specieID="CaMCa2C" value="63"/>
+    <NanoMolarity specieID="CaMCa2N" value="1"/>
+    <NanoMolarity specieID="Ng" value="2482"/>
+    <NanoMolarity specieID="NgCaM" value="62514"/>
     <NanoMolarity specieID="NgCaMCa2C" value="2"/>
     <NanoMolarity specieID="CaER"         value="0.8e5"     />
-    <NanoMolarity       specieID="CRTP" value="88750"/>
-    <NanoMolarity       specieID="CRT" value="11250"/>
+    <NanoMolarity       specieID="CRTP" value="88825"/>
+    <NanoMolarity       specieID="CRT" value="11125"/>
     <!-- Bartol et al 2015-->
     <NanoMolarity specieID="Cyt_SERCA" value="2377" />
     <NanoMolarity specieID="Cyt_SERCA_Ca" value="350" />
@@ -30,13 +31,17 @@
     <NanoMolarity specieID="PP2BCaMCa2C" value="77" />
     <NanoMolarity specieID="PP2BCaMCa2N" value="1" />
    
-    <NanoMolarity specieID="CK" value="19415" />
+    <NanoMolarity specieID="CK" value="19015" />
     <NanoMolarity specieID="CKCaMCa4" value="1" />
-    <NanoMolarity specieID="CKCaM" value="422" />
-    <NanoMolarity specieID="CKCaMCa2C" value="161" />
+    <NanoMolarity specieID="CKCaM" value="487" />
+    <NanoMolarity specieID="CKpCaM" value="134" />
+    <NanoMolarity specieID="CKpCaMPP1" value="43" />
+    <NanoMolarity specieID="CKCaMCa2C" value="265" />
+    <NanoMolarity specieID="CKpCaMCa2C" value="42" />
+    <NanoMolarity specieID="CKpCaMCa2CPP1" value="14" />
     <NanoMolarity specieID="CKCaMCa2N" value="1" />
    
-    <NanoMolarity specieID="PP1" value="3600" />
+    <NanoMolarity specieID="PP1" value="3543" />
 
     <NanoMolarity specieID="RyR2CaM"      value="80"    />
   </ConcentrationSet>

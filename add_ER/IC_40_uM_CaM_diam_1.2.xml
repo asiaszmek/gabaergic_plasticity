@@ -24,7 +24,7 @@
     
     <NanoMolarity specieID="LeakER" value="340" />
     <NanoMolarity specieID="CaRyR2"      value="2"    />
-    <NanoMolarity specieID="RyR2"      value="27"    />
+    <NanoMolarity specieID="RyR2"      value="24"    />
     <NanoMolarity specieID="RyR2CaM"      value="51"    />
     <NanoMolarity specieID="PP2B" value="6" />
     <NanoMolarity specieID="PP2BCaM" value="3915" />
@@ -33,7 +33,8 @@
 
    
     <NanoMolarity specieID="CK" value="19965" />
-    <NanoMolarity specieID="CKCaM" value="35" />
+    <NanoMolarity specieID="CKCaM" value="26" />
+    <NanoMolarity specieID="CKCaMCa2C" value="9" />
     <NanoMolarity specieID="PP1" value="3600" />
   </ConcentrationSet>
 
