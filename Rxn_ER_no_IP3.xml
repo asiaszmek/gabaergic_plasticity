@@ -460,7 +460,7 @@
   <Specie name="CKpCaMCa4PP1" id="CKpCaMCa4PP1" kdiff="0" kdiffunit="mu2/s"/>
   <Specie name="CKpCaMCa2NPP1" id="CKpCaMCa2NPP1" kdiff="0" kdiffunit="mu2/s"/>
   <Specie name="CKpCaMCa2CPP1" id="CKpCaMCa2CPP1" kdiff="0" kdiffunit="mu2/s"/>
-  <Specie name="CKpCaMPP1" id="CKpCaMCPP1" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="CKpCaMPP1" id="CKpCaMPP1" kdiff="0" kdiffunit="mu2/s"/>
 
 
   <Reaction name="CKCaM bind" id="CKCaM_bind">
