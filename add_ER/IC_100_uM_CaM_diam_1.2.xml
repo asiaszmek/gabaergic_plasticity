@@ -10,11 +10,11 @@
     <NanoMolarity specieID="fixedbuffer" value="1997089"/>
     <NanoMolarity specieID="fixedbufferCa" value="2911"/>
     
-    <NanoMolarity specieID="CaM" value="32401"/>
+    <NanoMolarity specieID="CaM" value="32071"/>
     <NanoMolarity specieID="CaMCa2C" value="63"/>
     <NanoMolarity specieID="CaMCa2N" value="1"/>
-    <NanoMolarity specieID="Ng" value="2482"/>
-    <NanoMolarity specieID="NgCaM" value="62514"/>
+    <NanoMolarity specieID="Ng" value="2504"/>
+    <NanoMolarity specieID="NgCaM" value="62496"/>
     <NanoMolarity specieID="NgCaMCa2C" value="2"/>
     <NanoMolarity specieID="CaER"         value="0.8e5"     />
     <NanoMolarity       specieID="CRTP" value="88825"/>
@@ -27,23 +27,24 @@
     <NanoMolarity specieID="LeakER" value="340" />
 
 
-    <NanoMolarity specieID="PP2BCaM" value="3921" />
+    <NanoMolarity specieID="PP2BCaM" value="39449" />
     <NanoMolarity specieID="PP2BCaMCa2C" value="77" />
     <NanoMolarity specieID="PP2BCaMCa2N" value="1" />
    
-    <NanoMolarity specieID="CK" value="19015" />
+    <NanoMolarity specieID="CK" value="18662" />
     <NanoMolarity specieID="CKCaMCa4" value="1" />
-    <NanoMolarity specieID="CKCaM" value="487" />
-    <NanoMolarity specieID="CKpCaM" value="134" />
-    <NanoMolarity specieID="CKpCaMPP1" value="43" />
-    <NanoMolarity specieID="CKCaMCa2C" value="265" />
-    <NanoMolarity specieID="CKpCaMCa2C" value="42" />
-    <NanoMolarity specieID="CKpCaMCa2CPP1" value="14" />
+    <NanoMolarity specieID="CKCaM" value="561" />
+    <NanoMolarity specieID="CKpCaM" value="260" />
+    <NanoMolarity specieID="CKpCaMPP1" value="64" />
+    <NanoMolarity specieID="CKCaMCa2C" value="293" />
+    <NanoMolarity specieID="CKpCaMCa2C" value="106" />
+    <NanoMolarity specieID="CKpCaMCa2CPP1" value="24" />
     <NanoMolarity specieID="CKCaMCa2N" value="1" />
    
-    <NanoMolarity specieID="PP1" value="3543" />
+    <NanoMolarity specieID="PP1" value="2512" />
 
-    <NanoMolarity specieID="RyR2CaM"      value="80"    />
+    <NanoMolarity specieID="RyR2CaM"      value="78"    />
+    <NanoMolarity specieID="RyR2"      value="2"    />
   </ConcentrationSet>
 
 
