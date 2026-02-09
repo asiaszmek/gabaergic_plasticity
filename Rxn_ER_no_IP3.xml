@@ -239,6 +239,38 @@
     <reverseRate>1.</reverseRate>
   </Reaction>
   
+  <Reaction name="RyR2CaMCa1" id="RyR2CaMCa1">
+    <Reactant specieID="RyR2CaM"/>
+    <Reactant specieID="Ca"/>
+    <Product specieID="CaRyR2CaM"/>
+    <forwardRate>1.e-3</forwardRate>
+    <reverseRate>1.</reverseRate>
+  </Reaction>
+
+  <Reaction name="RyR2CaMCa2CCa1" id="RyR2CaMCa2CCa1">
+    <Reactant specieID="RyR2CaMCa2C"/>
+    <Reactant specieID="Ca"/>
+    <Product specieID="CaRyR2CaMCa2C"/>
+    <forwardRate>1.e-3</forwardRate>
+    <reverseRate>1.</reverseRate>
+  </Reaction>
+
+  <Reaction name="RyR2CaMCa2NCa1" id="RyR2CaMCa2NCa1">
+    <Reactant specieID="RyR2CaMCa2N"/>
+    <Reactant specieID="Ca"/>
+    <Product specieID="CaRyR2CaMCa2N"/>
+    <forwardRate>1.e-3</forwardRate>
+    <reverseRate>1.</reverseRate>
+  </Reaction>
+
+  <Reaction name="RyR2CaMCa4Ca1" id="RyR2CaMCa4Ca1">
+    <Reactant specieID="RyR2CaMCa4"/>
+    <Reactant specieID="Ca"/>
+    <Product specieID="CaRyR2CaMCa4"/>
+    <forwardRate>1.e-3</forwardRate>
+    <reverseRate>1.</reverseRate>
+  </Reaction>
+
   
   <Reaction name="CaM_Ca2C" id="CaM_Ca2C">
     <Reactant specieID="CaM"/>
@@ -282,8 +314,8 @@
     <Reactant specieID="RyR2"/>
     <Reactant specieID="CaM"/>
     <Product specieID="RyR2CaM"/>
-    <forwardRate>2.1e-08</forwardRate>
-    <reverseRate>1.73e-05</reverseRate>
+    <forwardRate>1.25e-6</forwardRate>
+    <reverseRate>0.001025e-5</reverseRate>
     <Q10>.2</Q10>
   </Reaction>
   
@@ -291,8 +323,8 @@
     <Reactant specieID="RyR2"/>
     <Reactant specieID="CaMCa2C"/>
     <Product specieID="RyR2CaMCa2C"/>
-    <forwardRate>3.15e-07</forwardRate>
-    <reverseRate>2.59e-05</reverseRate>
+    <forwardRate>2.5e-6</forwardRate>
+    <reverseRate>0.00020555555555555556</reverseRate>
     <Q10>.2</Q10>
    </Reaction>
 
@@ -300,8 +332,8 @@
     <Reactant specieID="RyR2"/>
     <Reactant specieID="CaMCa2N"/>
     <Product specieID="RyR2CaMCa2N"/>
-    <forwardRate>3.15e-07</forwardRate>
-    <reverseRate>2.59e-05</reverseRate>
+    <forwardRate>2.5e-6</forwardRate>
+    <reverseRate>0.00020555555555555556</reverseRate>
     <Q10>.2</Q10>
    </Reaction>
 
@@ -310,8 +342,8 @@
      <Reactant specieID="RyR2"/>
      <Reactant specieID="CaMCa4"/>
      <Product specieID="RyR2CaMCa4"/>
-     <forwardRate>3.66e-07</forwardRate>
-    <reverseRate>3.015e-06</reverseRate>
+     <forwardRate>5.e-6</forwardRate>
+     <reverseRate>4.118852459016394e-05</reverseRate>
     <Q10>.2</Q10>
    </Reaction>
 
@@ -346,6 +378,80 @@
     <Reactant specieID="RyR2CaMCa2N"/>
     <Reactant specieID="Ca" power="2"/>
     <Product specieID="RyR2CaMCa4"/>
+    <forwardRate>1.62e-07</forwardRate>
+    <reverseRate>0.0438</reverseRate>
+    <Q10>.2</Q10>
+  </Reaction>
+
+
+  <Reaction name="CaRyR22_CaM_1" id="CaRyR2_CaM_1">
+    <Reactant specieID="CaRyR2"/>
+    <Reactant specieID="CaM"/>
+    <Product specieID="CaRyR2CaM"/>
+    <forwardRate>1.25e-6</forwardRate>
+    <reverseRate>0.001025e-5</reverseRate>
+    <Q10>.2</Q10>
+  </Reaction>
+  
+   <Reaction name="CaRyR2_CaMCa2C_2" id="CaRyR2_CaMCa2C_2">
+    <Reactant specieID="CaRyR2"/>
+    <Reactant specieID="CaMCa2C"/>
+    <Product specieID="CaRyR2CaMCa2C"/>
+    <forwardRate>2.5e-6</forwardRate>
+    <reverseRate>0.00020555555555555556</reverseRate>
+    <Q10>.2</Q10>
+   </Reaction>
+
+   <Reaction name="CaRyR2_CaMCa2N_2" id="CaRyR2_CaMCa2N_2">
+    <Reactant specieID="CaRyR2"/>
+    <Reactant specieID="CaMCa2N"/>
+    <Product specieID="CaRyR2CaMCa2N"/>
+    <forwardRate>2.5e-6</forwardRate>
+    <reverseRate>0.00020555555555555556</reverseRate>
+    <Q10>.2</Q10>
+   </Reaction>
+
+
+   <Reaction name="CaRyR2_CaMCa4_3" id="CaRyR2_CaMCa4_3">
+     <Reactant specieID="CaRyR2"/>
+     <Reactant specieID="CaMCa4"/>
+     <Product specieID="CaRyR2CaMCa4"/>
+     <forwardRate>5.e-6</forwardRate>
+     <reverseRate>4.118852459016394e-05</reverseRate>
+    <Q10>.2</Q10>
+   </Reaction>
+
+    <Reaction name="CaRyR2CaM_Ca2C" id="CaRyR2CaM_Ca2C">
+    <Reactant specieID="CaRyR2CaM"/>
+    <Reactant specieID="Ca" power="2"/>
+    <Product specieID="CaRyR2CaMCa2C"/>
+    <forwardRate>1.62e-07</forwardRate>
+    <reverseRate>0.0438</reverseRate>
+    <Q10>.2</Q10>
+  </Reaction>
+
+  <Reaction name="CaRyR2CaM_Ca2N" id="CaRyR2CaM_Ca2N">
+    <Reactant specieID="CaRyR2CaM"/>
+    <Reactant specieID="Ca" power="2"/>
+    <Product specieID="CaRyR2CaMCa2N"/>
+    <forwardRate>2.62e-08</forwardRate>
+    <reverseRate>3.639e-1</reverseRate>
+    <Q10>.2</Q10>
+  </Reaction>
+
+  <Reaction name="CaRyR2CaMCa2C_Ca2N" id="CaRyR2CaMCa2C_Ca2N">
+    <Reactant specieID="CaRyR2CaMCa2C"/>
+    <Reactant specieID="Ca" power="2"/>
+    <Product specieID="CaRyR2CaMCa4"/>
+    <forwardRate>2.62e-08</forwardRate>
+    <reverseRate>3.639e-1</reverseRate>
+    <Q10>.2</Q10>
+  </Reaction>
+
+  <Reaction name="CaRyR2CaMCa2N_Ca2C" id="CaRyR2CaMCa2N_Ca2C">
+    <Reactant specieID="CaRyR2CaMCa2N"/>
+    <Reactant specieID="Ca" power="2"/>
+    <Product specieID="CaRyR2CaMCa4"/>
     <forwardRate>1.62e-07</forwardRate>
     <reverseRate>0.0438</reverseRate>
     <Q10>.2</Q10>
