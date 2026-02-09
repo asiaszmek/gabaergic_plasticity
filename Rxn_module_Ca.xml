@@ -105,8 +105,8 @@
     <Reactant specieID="CaMCa4pmca1a"/>
     <Product specieID="CaMpmca1a"/>
     <Product specieID="Ca" power="4"/>
-    <forwardRate>0.47e-3</forwardRate>
-    <reverseRate>14.697e-24</reverseRate>
+    <forwardRate>0.0957e-3</forwardRate>
+    <reverseRate>1.006e-15</reverseRate>
   </Reaction>
 
  
@@ -116,7 +116,7 @@
     <Reactant specieID="CaMpmca1a"/>
     <Product specieID="pmca1a"/>
     <Product specieID="CaM"/>
-    <forwardRate>0.06e-3</forwardRate>
+    <forwardRate>0.0614e-3</forwardRate>
 
   </Reaction>
 
