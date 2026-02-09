@@ -315,7 +315,7 @@
     <Reactant specieID="CaM"/>
     <Product specieID="RyR2CaM"/>
     <forwardRate>1.25e-6</forwardRate>
-    <reverseRate>0.001025e-5</reverseRate>
+    <reverseRate>0.001025</reverseRate>
     <Q10>.2</Q10>
   </Reaction>
   
@@ -324,7 +324,7 @@
     <Reactant specieID="CaMCa2C"/>
     <Product specieID="RyR2CaMCa2C"/>
     <forwardRate>2.5e-6</forwardRate>
-    <reverseRate>0.00020555555555555556</reverseRate>
+    <reverseRate>0.0002</reverseRate>
     <Q10>.2</Q10>
    </Reaction>
 
@@ -333,7 +333,7 @@
     <Reactant specieID="CaMCa2N"/>
     <Product specieID="RyR2CaMCa2N"/>
     <forwardRate>2.5e-6</forwardRate>
-    <reverseRate>0.00020555555555555556</reverseRate>
+    <reverseRate>0.0002</reverseRate>
     <Q10>.2</Q10>
    </Reaction>
 
@@ -343,7 +343,7 @@
      <Reactant specieID="CaMCa4"/>
      <Product specieID="RyR2CaMCa4"/>
      <forwardRate>5.e-6</forwardRate>
-     <reverseRate>4.118852459016394e-05</reverseRate>
+     <reverseRate>4.12e-05</reverseRate>
     <Q10>.2</Q10>
    </Reaction>
 
@@ -389,7 +389,7 @@
     <Reactant specieID="CaM"/>
     <Product specieID="CaRyR2CaM"/>
     <forwardRate>1.25e-6</forwardRate>
-    <reverseRate>0.001025e-5</reverseRate>
+    <reverseRate>0.001025</reverseRate>
     <Q10>.2</Q10>
   </Reaction>
   
@@ -398,7 +398,7 @@
     <Reactant specieID="CaMCa2C"/>
     <Product specieID="CaRyR2CaMCa2C"/>
     <forwardRate>2.5e-6</forwardRate>
-    <reverseRate>0.00020555555555555556</reverseRate>
+    <reverseRate>0.0002</reverseRate>
     <Q10>.2</Q10>
    </Reaction>
 
@@ -407,7 +407,7 @@
     <Reactant specieID="CaMCa2N"/>
     <Product specieID="CaRyR2CaMCa2N"/>
     <forwardRate>2.5e-6</forwardRate>
-    <reverseRate>0.00020555555555555556</reverseRate>
+    <reverseRate>0.0002</reverseRate>
     <Q10>.2</Q10>
    </Reaction>
 
@@ -417,7 +417,7 @@
      <Reactant specieID="CaMCa4"/>
      <Product specieID="CaRyR2CaMCa4"/>
      <forwardRate>5.e-6</forwardRate>
-     <reverseRate>4.118852459016394e-05</reverseRate>
+     <reverseRate>4.12e-05</reverseRate>
     <Q10>.2</Q10>
    </Reaction>
 
