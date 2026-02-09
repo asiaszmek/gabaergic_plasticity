@@ -144,7 +144,7 @@
 
     
   <!--2a) CKCaM + CKCaM <-> Complex -->
-  <Reaction name = "CKCaM bind" id="CKCaM_bind">
+  <Reaction name = "CKCaM bind" id="CKCaM_CKCaM_bind">
     <Reactant specieID="CKCaM"  power="2"        />
     <Product  specieID="CKCaM_CKCaM"                />
     
@@ -349,7 +349,7 @@
   </Reaction>
 
   <!--2f) CKCaMCa2C + CKCaMCa2N <-> Complex -->
-  <Reaction name = "CKpCaMCa2C_CKCaMCa2N bind" id="CKpCaMCa2C_CKCaMCa2N bind">
+  <Reaction name = "CKpCaMCa2C_CKCaMCa2N bind2" id="CKpCaMCa2C_CKCaMCa2N bind2">
     <Reactant specieID="CKpCaMCa2C"/>
     <Reactant specieID="CKCaMCa2N"/>
     <Product  specieID="CKCaMCa2N_CKpCaMCa2C"                />
@@ -371,7 +371,7 @@
     <Q10>     2             </Q10>
   </Reaction>
   <!--2ga2) CKCaMCa2C + CKCaMCa4 <-> Complex -->
-  <Reaction name = "CKCaMCa2C_CKCaMCa4 bind" id="CKCaMCa2C_CKCaMCa4 bind">
+  <Reaction name = "CKCaMCa2C_CKpCaMCa4 bind" id="CKCaMCa2C_CKpCaMCa4 bind">
     <Reactant specieID="CKCaMCa2C"/>
     <Reactant specieID="CKpCaMCa4"/>
     <Product  specieID="CKCaMCa2C_CKpCaMCa4"                />
@@ -542,7 +542,7 @@
   </Reaction>
 
   <!--3f1) CKCaMCa2C_CKCaMCa2N -> CKpCaMCa2C+CKCaMCa2N -->
-  <Reaction name = "CKCaMCa2C_CKCaMCa2N phos1" id="CKCaMCa2C_CKCaMCa2N phos1">
+  <Reaction name = "CKpCaMCa2C_CKCaMCa2N phos" id="CKpCaMCa2C_CKCaMCa2N phos">
     <Reactant  specieID="CKCaMCa2N_CKCaMCa2C"                />
     <Product  specieID="CKpCaMCa2C"                />
     <Product  specieID="CKCaMCa2N"                />
@@ -552,7 +552,7 @@
   </Reaction>
 
   <!--3f1a) CKCaMCa2C_CKCaMCa2N -> CKCaMCa2C+CKpCaMCa2N -->
-  <Reaction name = "CKCaMCa2C_CKCaMCa2N phos1" id="CKCaMCa2C_CKCaMCa2N phos1">
+  <Reaction name = "CKCaMCa2C_CKpCaMCa2N phos2" id="CKCaMCa2C_CKpCaMCa2N phos2">
     <Reactant  specieID="CKCaMCa2N_CKCaMCa2C"                />
     <Product  specieID="CKCaMCa2C"                />
     <Product  specieID="CKpCaMCa2N"                />

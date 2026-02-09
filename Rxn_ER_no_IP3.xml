@@ -644,6 +644,15 @@
     
 
     
+  <Reaction name="CKCaM bind" id="CKCaM_CKCaM_bind">
+    <Reactant specieID="CKCaM" power="2"/>
+    <Product specieID="CKCaM_CKCaM"/>
+    
+    <forwardRate> 50e-5 </forwardRate>
+    <reverseRate> 60e-2     </reverseRate>
+    <Q10>     2             </Q10>
+  </Reaction>
+
   <Reaction name="CKCaMCa2C_CKCaM bind" id="CKCaMCa2C_CKCaM bind">
     <Reactant specieID="CKCaM"/>
     <Reactant specieID="CKCaMCa2C"/>
@@ -820,6 +829,17 @@
     <Q10>     2             </Q10>
   </Reaction>
 
+  <Reaction name="CKpCaMCa2C_CKCaMCa2N bind2" id="CKpCaMCa2C_CKCaMCa2N bind2">
+    <Reactant specieID="CKpCaMCa2C"/>
+    <Reactant specieID="CKCaMCa2N"/>
+    <Product specieID="CKCaMCa2N_CKpCaMCa2C"/>
+    
+    <forwardRate> 50e-5 </forwardRate>
+    <reverseRate> 60e-2     </reverseRate>
+    <Q10>     2             </Q10>
+  </Reaction>
+
+  
   <Reaction name="CKpCaMCa2C_CKCaMCa4 bind" id="CKpCaMCa2C_CKCaMCa4 bind">
     <Reactant specieID="CKpCaMCa2C"/>
     <Reactant specieID="CKCaMCa4"/>
@@ -829,6 +849,17 @@
     <reverseRate> 60e-2     </reverseRate>
     <Q10>     2             </Q10>
   </Reaction>
+  <Reaction name="CKCaMCa2C_CKpCaMCa4 bind" id="CKCaMCa2C_CKpCaMCa4 bind">
+    <Reactant specieID="CKCaMCa2C"/>
+    <Reactant specieID="CKpCaMCa4"/>
+    <Product specieID="CKCaMCa2C_CKpCaMCa4"/>
+    
+    <forwardRate> 50e-5 </forwardRate>
+    <reverseRate> 60e-2     </reverseRate>
+    <Q10>     2             </Q10>
+  </Reaction>
+
+  
   <Reaction name="CKCaMCa2N_CKpCaMCa2N bind" id="CKCaMCa2N_CKpCaMCa2N bind">
     <Reactant specieID="CKCaMCa2N"/>
     <Reactant specieID="CKpCaMCa2N"/>
@@ -970,7 +1001,7 @@
     <Q10>     2             </Q10>
   </Reaction>
 
-  <Reaction name="CKCaMCa2C_CKCaMCa2N phos1" id="CKCaMCa2C_CKCaMCa2N phos1">
+  <Reaction name="CKpCaMCa2C_CKCaMCa2N phos" id="CKpCaMCa2C_CKCaMCa2N phos">
     <Reactant specieID="CKCaMCa2N_CKCaMCa2C"/>
     <Product specieID="CKpCaMCa2C"/>
     <Product specieID="CKCaMCa2N"/>
@@ -979,6 +1010,16 @@
     <Q10>     2             </Q10>
   </Reaction>
 
+  <Reaction name="CKCaMCa2C_CKpCaMCa2N phos2" id="CKCaMCa2C_CKpCaMCa2N phos2">
+    <Reactant specieID="CKCaMCa2N_CKCaMCa2C"/>
+    <Product specieID="CKCaMCa2C"/>
+    <Product specieID="CKpCaMCa2N"/>
+    <forwardRate> 0.064e-3 </forwardRate>
+    <reverseRate> 0     </reverseRate>
+    <Q10>     2             </Q10>
+  </Reaction>
+
+  
   <Reaction name="CKpCaMCa2N_CKCaMCa2C phos1" id="CKpCaMCa2N_CKCaMCa2C phos1">
     <Reactant specieID="CKpCaMCa2N_CKCaMCa2C"/>
     <Product specieID="CKpCaMCa2C"/>
