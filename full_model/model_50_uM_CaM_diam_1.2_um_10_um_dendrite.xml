@@ -11,7 +11,7 @@ roundworms. The 2D case is good for testing as it is easy to visualize the
 results (also, 3D may not work yet...)  -->
    
     <geometry>          2D           </geometry>
-    <depth2D>           0.6          </depth2D>
+    <depth2D>           4          </depth2D>
     <distribution>      BINOMIAL     </distribution>
     <algorithm>         INDEPENDENT  </algorithm>
     <simulationSeed>    245         </simulationSeed>
@@ -24,7 +24,7 @@ results (also, 3D may not work yet...)  -->
     <spineSeed>123</spineSeed>
 
     <discretization>
-      <defaultMaxElementSide>1.</defaultMaxElementSide>
+      <defaultMaxElementSide>3.</defaultMaxElementSide>
       
  
       <!-- default largest size for elements in bulk volumes (dendrites), microns -->	

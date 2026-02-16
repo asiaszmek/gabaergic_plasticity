@@ -72,7 +72,7 @@
     
     <forwardRate> 3.8e-9   </forwardRate>
     <reverseRate> 5.5e-3      </reverseRate>
-  </Reaction>
+ </Reaction>
   
   <!--1b) CaMCa2C + CK <-> CKCaMCa2C  -->
   <Reaction name = "CKCaMCa2C bind" id="CKCaMCa2C_bind">
