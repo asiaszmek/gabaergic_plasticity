@@ -1058,8 +1058,13 @@
 	
 <Specie name="PP2B" id="PP2B" kdiff="0" kdiffunit="mu2/s"/>
   <Specie name="PP2BCaM" id="PP2BCaM" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="PP2BCaM1C" id="PP2BCaM1C" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="PP2BCaM1N" id="PP2BCaM1N" kdiff="0" kdiffunit="mu2/s"/>
   <Specie name="PP2BCaMCa2C" id="PP2BCaMCa2C" kdiff="0" kdiffunit="mu2/s"/>
   <Specie name="PP2CaMCa2N" id="PP2BCaMCa2N" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="PP2BCaM1C1N" id="PP2BCaM1C1N" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="PP2BCaM1C2N" id="PP2BCaM1C2N" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="PP2BCaM2C1N" id="PP2BCaM2C1N" kdiff="0" kdiffunit="mu2/s"/>
   <Specie name="PP2BCaMCa4" id="PP2BCaMCa4" kdiff="0" kdiffunit="mu2/s"/>
   
   <Reaction name="CaM+PP2B--PP2BCaM reac" id="CaM+PP2B--PP2BCaM_id">
@@ -1071,10 +1076,29 @@
     <reverseRate> 0.0012e-3      </reverseRate>
   </Reaction>
 
+
+  <Reaction name="CaM1C+PP2B--PP2BCaM1C reac" id="CaM1C+PP2B--PP2BCaM1C_id">
+    <Reactant specieID="CaM1C"/>
+    <Reactant specieID="PP2B"/>
+    <Product specieID="PP2BCaM1C"/>
+    
+    <forwardRate> 0.046e-4       </forwardRate>
+    <reverseRate> 0.0012e-3      </reverseRate>
+  </Reaction>
+
     <Reaction name="CaMCa2C+PP2B--PP2BCaMCa2C reac" id="CaMCa2C+PP2B--PP2BCaMCa2C_id">
     <Reactant specieID="CaMCa2C"/>
     <Reactant specieID="PP2B"/>
     <Product specieID="PP2BCaMCa2C"/>
+    
+    <forwardRate> 0.046e-4       </forwardRate>
+    <reverseRate> 0.0012e-3      </reverseRate>
+  </Reaction>
+  
+  <Reaction name="CaM1N+PP2B--PP2BCaM1N reac" id="CaM1N+PP2B--PP2BCaM1N_id">
+    <Reactant specieID="CaM1N"/>
+    <Reactant specieID="PP2B"/>
+    <Product specieID="PP2BCaM1N"/>
     
     <forwardRate> 0.046e-4       </forwardRate>
     <reverseRate> 0.0012e-3      </reverseRate>
@@ -1089,7 +1113,34 @@
     <reverseRate> 0.0012e-3      </reverseRate>
   </Reaction>
 
- 
+
+  <Reaction name="CaM1C1N+PP2B--PP2BCaM1C1N reac" id="CaM1C1N+PP2B--PP2BCaM1C1N_id">
+    <Reactant specieID="CaM1C1N"/>
+    <Reactant specieID="PP2B"/>
+    <Product specieID="PP2BCaM1C1N"/>
+    
+    <forwardRate> 0.046e-3       </forwardRate>
+    <reverseRate> 0.0012e-3      </reverseRate>
+  </Reaction>
+
+  <Reaction name="CaM2C1N+PP2B--PP2BCaM2C1N reac" id="CaM2C1N+PP2B--PP2BCaM2C1N_id">
+    <Reactant specieID="CaM2C1N"/>
+    <Reactant specieID="PP2B"/>
+    <Product specieID="PP2BCaM2C1N"/>
+    
+    <forwardRate> 0.046e-3       </forwardRate>
+    <reverseRate> 0.0012e-3      </reverseRate>
+  </Reaction>
+
+  <Reaction name="CaM1C2N+PP2B--PP2BCaM1C2N reac" id="CaM1C2N+PP2B--PP2BCaM1C2N_id">
+    <Reactant specieID="CaM1C2N"/>
+    <Reactant specieID="PP2B"/>
+    <Product specieID="PP2BCaM1C2N"/>
+    
+    <forwardRate> 0.046e-3       </forwardRate>
+    <reverseRate> 0.0012e-3      </reverseRate>
+  </Reaction>
+
   <Reaction name="CaMCa4+PP2B--PP2BCaMCa4 reac" id="CaMCa4+PP2B--PP2BCaMCa4_id">
     <Reactant specieID="CaMCa4"/>
     <Reactant specieID="PP2B"/>
@@ -1099,45 +1150,91 @@
     <reverseRate> 0.0012e-3      </reverseRate>
   </Reaction>
 
-  <Reaction name="PP2BCaMCa2N+Ca2--PP2BCaMCa4 reac" id="PP2BCaMCa2N+Ca2--PP2BCaMCa4_id">
+  <Reaction name="PP2Breaction1" id="PP2Breaction1">
+    <Reactant specieID="Ca"/>
+    <Reactant specieID="PP2BCaM"/>
+    <Product specieID="PP2BCaM1C"/>
+    <forwardRate>2.137e-05</forwardRate>
+    <reverseRate>0.00398</reverseRate>
+  </Reaction>
+  <Reaction name="PP2Breaction3" id="PP2Breaction3">
+    <Reactant specieID="Ca"/>
+    <Reactant specieID="PP2BCaM1N"/>
+    <Product specieID="PP2BCaM1C1N"/>
+    <forwardRate>2.137e-05</forwardRate>
+    <reverseRate>0.00398</reverseRate>
+  </Reaction>
+  <Reaction name="PP2Breaction5" id="PP2Breaction5">
+    <Reactant specieID="Ca"/>
     <Reactant specieID="PP2BCaMCa2N"/>
-    <Reactant specieID="Ca" power="2"/>
-    <Product specieID="PP2BCaMCa4"/>
-    
-    <forwardRate>1.62e-6</forwardRate>
-    <reverseRate>0.438</reverseRate>
-    
+    <Product specieID="PP2BCaM1C2N"/>
+    <forwardRate>2.137e-05</forwardRate>
+    <reverseRate>0.00398</reverseRate>
   </Reaction>
-
-  <Reaction name="PP2BCaM+Ca2--PP2BCaMCa2N reac" id="PP2BCaM+Ca2--PP2BCaMCa2N_id">
-    <Reactant specieID="PP2BCaM"/>
-    <Reactant specieID="Ca" power="2"/>
-    <Product specieID="PP2BCaMCa2N"/>
-    
-    <forwardRate>2.62e-7</forwardRate>
-    <reverseRate>3.61</reverseRate>
-  </Reaction>
-
-      <Reaction name="PP2BCaM+Ca2--PP2BCaMCa2C reac" id="PP2BCaM+Ca2--PP2BCaMCa2C_id">
-    <Reactant specieID="PP2BCaM"/>
-    <Reactant specieID="Ca" power="2"/>
+  <Reaction name="PP2Breaction7" id="PP2Breaction7">
+    <Reactant specieID="Ca"/>
+    <Reactant specieID="PP2BCaM1C"/>
     <Product specieID="PP2BCaMCa2C"/>
-    
-    <forwardRate>1.62e-6</forwardRate>
-    <reverseRate>0.438</reverseRate>
-    
+    <forwardRate>0.000955</forwardRate>
+    <reverseRate>0.933</reverseRate>
   </Reaction>
-
-  <Reaction name="PP2BCaMCa2C+Ca2--PP2BCaMCa4 reac" id="PP2BCaMCa2C+Ca2--PP2BCaMCa4_id">
-    <Reactant specieID="PP2BCaMCa2C"/>
-    <Reactant specieID="Ca" power="2"/>
+  <Reaction name="PP2Breaction9" id="PP2Breaction9">
+    <Reactant specieID="Ca"/>
+    <Reactant specieID="PP2BCaM1C1N"/>
+    <Product specieID="PP2BCaM2C1N"/>
+    <forwardRate>0.0009545</forwardRate>
+    <reverseRate>0.933</reverseRate>
+  </Reaction>
+  <Reaction name="PP2Breaction11" id="PP2Breaction11">
+    <Reactant specieID="Ca"/>
+    <Reactant specieID="PP2BCaM1C2N"/>
     <Product specieID="PP2BCaMCa4"/>
-    
-    <forwardRate>2.62e-7</forwardRate>
-    <reverseRate>3.61</reverseRate>
-
-    
+    <forwardRate>0.000955</forwardRate>
+    <reverseRate>0.933</reverseRate>
   </Reaction>
+  <Reaction name="PP2Breaction13" id="PP2Breaction13">
+    <Reactant specieID="Ca"/>
+    <Reactant specieID="PP2BCaM"/>
+    <Product specieID="PP2BCaM1N"/>
+    <forwardRate>0.010715</forwardRate>
+    <reverseRate>79.4328</reverseRate>
+  </Reaction>
+  <Reaction name="PP2Breaction15" id="PP2Breaction15">
+    <Reactant specieID="Ca"/>
+    <Reactant specieID="PP2BCaM1N"/>
+    <Product specieID="PP2BCaMCa2N"/>
+    <forwardRate>0.00195</forwardRate>
+    <reverseRate>3.63</reverseRate>
+  </Reaction>
+  <Reaction name="PP2Breaction17" id="PP2Breaction17">
+    <Reactant specieID="Ca"/>
+    <Reactant specieID="PP2BCaM1C"/>
+    <Product specieID="PP2BCaM1C1N"/>
+    <forwardRate>0.01075</forwardRate>
+    <reverseRate>79.4328</reverseRate>
+  </Reaction>
+  <Reaction name="PP2Breaction19" id="PP2Breaction19">
+    <Reactant specieID="Ca"/>
+    <Reactant specieID="PP2BCaM1C1N"/>
+    <Product specieID="PP2BCaM1C2N"/>
+    <forwardRate>0.00195</forwardRate>
+    <reverseRate>3.63</reverseRate>
+  </Reaction>
+  <Reaction name="PP2Breaction21" id="PP2Breaction21">
+    <Reactant specieID="Ca"/>
+    <Reactant specieID="PP2BCaMCa2C"/>
+    <Product specieID="PP2BCaM2C1N"/>
+    <forwardRate>0.010715</forwardRate>
+    <reverseRate>79.4328</reverseRate>
+  </Reaction>
+  <Reaction name="PP2Breaction23" id="PP2Breaction23">
+    <Reactant specieID="Ca"/>
+    <Reactant specieID="PP2BCaM2C1N"/>
+    <Product specieID="PP2BCaMCa4"/>
+    <forwardRate>0.00195</forwardRate>
+    <reverseRate>3.63</reverseRate>
+  </Reaction>
+
 <Specie name="CaCbuf" id="CaCbuf" kdiff="10" kdiffunit="mu2/s"/>
   <Specie name="Cbuf" id="Cbuf" kdiff="10" kdiffunit="mu2/s"/>
   <Specie name="CaBCa" id="CaBCa" kdiff="10" kdiffunit="mu2/s"/>

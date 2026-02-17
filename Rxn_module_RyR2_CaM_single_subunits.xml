@@ -192,84 +192,84 @@
 
    <!-- RyR2CaM Ca to CaM binding -->
 	
-  <Reaction name="reaction1" id="reaction1">
+  <Reaction name="ryr2_reaction1" id="ryr2_reaction1">
     <Reactant specieID="Ca" />
     <Reactant specieID="RyR2CaM" />
     <Product specieID="RyR2CaM1C" />
     <forwardRate>2.137e-05</forwardRate>
     <reverseRate>0.00398</reverseRate>
   </Reaction>
-  <Reaction name="reaction3" id="reaction3">
+  <Reaction name="ryr2_reaction3" id="ryr2_reaction3">
     <Reactant specieID="Ca" />
     <Reactant specieID="RyR2CaM1N" />
     <Product specieID="RyR2CaM1C1N" />
     <forwardRate>2.137e-05</forwardRate>
     <reverseRate>0.00398</reverseRate>
   </Reaction>
-  <Reaction name="reaction5" id="reaction5">
+  <Reaction name="ryr2_reaction5" id="ryr2_reaction5">
     <Reactant specieID="Ca" />
     <Reactant specieID="RyR2CaM2N" />
     <Product specieID="RyR2CaM1C2N" />
     <forwardRate>2.137e-05</forwardRate>
     <reverseRate>0.00398</reverseRate>
   </Reaction>
-  <Reaction name="reaction7" id="reaction7">
+  <Reaction name="ryr2_reaction7" id="ryr2_reaction7">
     <Reactant specieID="Ca" />
     <Reactant specieID="RyR2CaM1C" />
     <Product specieID="RyR2CaM2C" />
     <forwardRate>0.000955</forwardRate>
     <reverseRate>0.933</reverseRate>
   </Reaction>
-  <Reaction name="reaction9" id="reaction9">
+  <Reaction name="ryr2_reaction9" id="ryr2_reaction9">
     <Reactant specieID="Ca" />
     <Reactant specieID="RyR2CaM1C1N" />
     <Product specieID="RyR2CaM2C1N" />
     <forwardRate>0.0009545</forwardRate>
     <reverseRate>0.933</reverseRate>
   </Reaction>
-  <Reaction name="reaction11" id="reaction11">
+  <Reaction name="ryr2_reaction11" id="ryr2_reaction11">
     <Reactant specieID="Ca" />
     <Reactant specieID="RyR2CaM1C2N" />
     <Product specieID="RyR2CaMCa4" />
     <forwardRate>0.000955</forwardRate>
     <reverseRate>0.933</reverseRate>
   </Reaction>
-  <Reaction name="reaction13" id="reaction13">
+  <Reaction name="ryr2_reaction13" id="ryr2_reaction13">
     <Reactant specieID="Ca" />
     <Reactant specieID="RyR2CaM" />
     <Product specieID="RyR2CaM1N" />
     <forwardRate>0.010715</forwardRate>
     <reverseRate>79.4328</reverseRate>
   </Reaction>
-  <Reaction name="reaction15" id="reaction15">
+  <Reaction name="ryr2_reaction15" id="ryr2_reaction15">
     <Reactant specieID="Ca" />
     <Reactant specieID="RyR2CaM1N" />
     <Product specieID="RyR2CaM2N" />
     <forwardRate>0.00195</forwardRate>
     <reverseRate>3.63</reverseRate>
   </Reaction>
-  <Reaction name="reaction17" id="reaction17">
+  <Reaction name="ryr2_reaction17" id="ryr2_reaction17">
     <Reactant specieID="Ca" />
     <Reactant specieID="RyR2CaM1C" />
     <Product specieID="RyR2CaM1C1N" />
     <forwardRate>0.01075</forwardRate>
     <reverseRate>79.4328</reverseRate>
   </Reaction>
-  <Reaction name="reaction19" id="reaction19">
+  <Reaction name="ryr2_reaction19" id="ryr2_reaction19">
     <Reactant specieID="Ca" />
     <Reactant specieID="RyR2CaM1C1N" />
     <Product specieID="RyR2CaM1C2N" />
     <forwardRate>0.00195</forwardRate>
     <reverseRate>3.63</reverseRate>
   </Reaction>
-  <Reaction name="reaction21" id="reaction21">
+  <Reaction name="ryr2_reaction21" id="ryr2_reaction21">
     <Reactant specieID="Ca" />
     <Reactant specieID="RyR2CaM2C" />
     <Product specieID="RyR2CaM2C1N" />
     <forwardRate>0.010715</forwardRate>
     <reverseRate>79.4328</reverseRate>
   </Reaction>
-  <Reaction name="reaction23" id="reaction23">
+  <Reaction name="ryr2_reaction23" id="ryr2_reaction23">
     <Reactant specieID="Ca" />
     <Reactant specieID="RyR2CaM2C1N" />
     <Product specieID="RyR2CaMCa4" />
