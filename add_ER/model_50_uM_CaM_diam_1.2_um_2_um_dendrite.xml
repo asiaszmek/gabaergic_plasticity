@@ -3,7 +3,7 @@
     <!-- this file defines a single run of the calculation, using morphology and
 -	 reaction data brought in from other files --> 
     <xi:include href="../Rxn_ER_no_IP3.xml" />
-    <xi:include href="../morph_diam_1.2_um_3_um_dendrite.xml" />
+    <xi:include href="../morph_diam_1.2_um_1_um_dendrite.xml" />
     <xi:include href="IC_50_uM_CaM_diam_1.2.xml" />
 
     <!--2D means the morphology is interpreted like a flatworm, 3D for
@@ -24,7 +24,7 @@ results (also, 3D may not work yet...)  -->
     <spineSeed>123</spineSeed>
 
     <discretization>
-      <defaultMaxElementSide>1.</defaultMaxElementSide>
+      <defaultMaxElementSide>3.</defaultMaxElementSide>
       
  
       <!-- default largest size for elements in bulk volumes (dendrites), microns -->	
