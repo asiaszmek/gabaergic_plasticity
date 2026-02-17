@@ -23,7 +23,7 @@
   
   <Specie name="CaM" id="CaM" kdiff="10" kdiffunit="mu2/s"/>
   <Specie name="CaM1N" id="CaM1N" kdiff="10" kdiffunit="mu2/s"/>
-  <Specie name="CaMCa2N" id="CaMCa2N_2" kdiff="10" kdiffunit="mu2/s"/>
+  <Specie name="CaMCa2N" id="CaMCa2N" kdiff="10" kdiffunit="mu2/s"/>
   <Specie name="CaM1C" id="CaM1C" kdiff="10" kdiffunit="mu2/s"/>
   <Specie name="CaM1C1N" id="CaM1C1N" kdiff="10" kdiffunit="mu2/s"/>
   <Specie name="CaM1C2N" id="CaM1C2N" kdiff="10" kdiffunit="mu2/s"/>
