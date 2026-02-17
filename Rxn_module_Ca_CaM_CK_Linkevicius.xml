@@ -30,10 +30,9 @@
   <Specie name="Ng" id="Ng" kdiff="0" kdiffunit="mu2/s" />
   <Specie name="NgCaM" id="NgCaM" kdiff="0" kdiffunit="mu2/s" />
  
- <Specie name="CaM_0_0" id="CaM_0_0" kdiff="10" kdiffunit="mu2/s" />
  <Specie name="KaMe" id="KaMe" kdiff="4" kdiffunit="mu2/s" />
  <Specie name="pKaMe" id="pKaMe" kdiff="4" kdiffunit="mu2/s" />
- 
+ <Specie name="CaM_0_0" id="CaM_0_0" kdiff="10" kdiffunit="mu2/s" />
  <Specie name="CaM_0_1" id="CaM_0_1" kdiff="10" kdiffunit="mu2/s" />
  <Specie name="CaM_0_2" id="CaM_0_2" kdiff="10" kdiffunit="mu2/s" />
  <Specie name="CaM_1_0" id="CaM_1_0" kdiff="10" kdiffunit="mu2/s" />
