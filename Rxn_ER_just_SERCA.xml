@@ -306,8 +306,7 @@
     <reverseRate>1.8e-7</reverseRate>
     <Q10>0.2</Q10>
   </Reaction>
-<Specie name="CaMCa2N" id="CaMCa2N" kdiff="11" kdiffunit="mu2/s"/>
-  <Specie name="CK" id="CK" kdiff="0.32" kdiffunit="mu2/s"/>
+<Specie name="CK" id="CK" kdiff="0.32" kdiffunit="mu2/s"/>
 
   <Specie name="CKCaMCa4" id="CKCaMCa4" kdiff="0.02" kdiffunit="mu2/s"/>
   <Specie name="CKCaM" id="CKCaM" kdiff="0.02" kdiffunit="mu2/s"/>
