@@ -3,8 +3,8 @@
   <Specie name="PP2BCaM" id="PP2BCaM" kdiff="0" kdiffunit="mu2/s" />
   <Specie name="PP2BCaM1C" id="PP2BCaM1C" kdiff="0" kdiffunit="mu2/s" />
   <Specie name="PP2BCaM1N" id="PP2BCaM1N" kdiff="0" kdiffunit="mu2/s" />
-  <Specie name="PP2BCaMCa2C" id="PP2BCaMCa2C" kdiff="0" kdiffunit="mu2/s" />
-  <Specie name="PP2CaMCa2N" id="PP2BCaMCa2N" kdiff="0"
+  <Specie name="PP2BCaM2C" id="PP2BCaM2C" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="PP2CaM2N" id="PP2BCaM2N" kdiff="0"
 	  kdiffunit="mu2/s" />
   <Specie name="PP2BCaM1C1N" id="PP2BCaM1C1N" kdiff="0" kdiffunit="mu2/s" />
   <Specie name="PP2BCaM1C2N" id="PP2BCaM1C2N" kdiff="0" kdiffunit="mu2/s" />
@@ -16,10 +16,10 @@
   <!--1) CaM  + 2Ca
       <-> CaMCa2 -->
   <!--This is the C site-->
-  <!--1A) CaM  + 2Ca <-> CaMCa2C GQ RXN FILE, C or N can bind first-->
+  <!--1A) CaM  + 2Ca <-> CaM2C GQ RXN FILE, C or N can bind first-->
   
  <!-- Stefan, Edelstein and Le Novere 2008 PNAS do not speed up Ca binding to PP2BCaM -->
-  <!--4A) CaMCa2C    +   PP2B    <->  PP2BCaMCa2C (in xpp: k33c=1 k_33c=0.3) -->
+  <!--4A) CaM2C    +   PP2B    <->  PP2BCaM2C (in xpp: k33c=1 k_33c=0.3) -->
   <Reaction name = "CaM+PP2B--PP2BCaM reac" id="CaM+PP2B--PP2BCaM_id">
     <Reactant specieID="CaM"                 />
     <Reactant specieID="PP2B"                   />
@@ -40,11 +40,11 @@
     <reverseRate> 0.0012e-3      </reverseRate>
   </Reaction>
 
-    <!--4C) CaMCa2C    +   PP2B    <->  PP2BCaMCa2C (in xpp: k33c=1 k_33c=0.3) -->
-  <Reaction name = "CaMCa2C+PP2B--PP2BCaMCa2C reac" id="CaMCa2C+PP2B--PP2BCaMCa2C_id">
-    <Reactant specieID="CaMCa2C"                 />
+    <!--4C) CaM2C    +   PP2B    <->  PP2BCaM2C (in xpp: k33c=1 k_33c=0.3) -->
+  <Reaction name = "CaM2C+PP2B--PP2BCaM2C reac" id="CaM2C+PP2B--PP2BCaM2C_id">
+    <Reactant specieID="CaM2C"                 />
     <Reactant specieID="PP2B"                   />
-    <Product  specieID="PP2BCaMCa2C"             />
+    <Product  specieID="PP2BCaM2C"             />
     
     <forwardRate> 0.046e-4       </forwardRate>
     <reverseRate> 0.0012e-3      </reverseRate>
@@ -60,11 +60,11 @@
     <reverseRate> 0.0012e-3      </reverseRate>
   </Reaction>
 
-  <!--4N) CaMCa2N    +   PP2B    <->  PP2BCaMCa2N (in xpp: k33c=1 k_33c=0.3) -->
-  <Reaction name = "CaMCa2N+PP2B--PP2BCaMCa2N reac" id="CaMCa2N+PP2B--PP2BCaMCa2N_id">
-    <Reactant specieID="CaMCa2N"                 />
+  <!--4N) CaM2N    +   PP2B    <->  PP2BCaM2N (in xpp: k33c=1 k_33c=0.3) -->
+  <Reaction name = "CaM2N+PP2B--PP2BCaM2N reac" id="CaM2N+PP2B--PP2BCaM2N_id">
+    <Reactant specieID="CaM2N"                 />
     <Reactant specieID="PP2B"                   />
-    <Product  specieID="PP2BCaMCa2N"             />
+    <Product  specieID="PP2BCaM2N"             />
     
     <forwardRate> 0.046e-4       </forwardRate>
     <reverseRate> 0.0012e-3      </reverseRate>
@@ -131,7 +131,7 @@
   </Reaction>
   <Reaction name="PP2Breaction5" id="PP2Breaction5">
     <Reactant specieID="Ca" />
-    <Reactant specieID="PP2BCaMCa2N" />
+    <Reactant specieID="PP2BCaM2N" />
     <Product specieID="PP2BCaM1C2N" />
     <forwardRate>2.137e-05</forwardRate>
     <reverseRate>0.00398</reverseRate>
@@ -139,7 +139,7 @@
   <Reaction name="PP2Breaction7" id="PP2Breaction7">
     <Reactant specieID="Ca" />
     <Reactant specieID="PP2BCaM1C" />
-    <Product specieID="PP2BCaMCa2C" />
+    <Product specieID="PP2BCaM2C" />
     <forwardRate>0.000955</forwardRate>
     <reverseRate>0.933</reverseRate>
   </Reaction>
@@ -167,7 +167,7 @@
   <Reaction name="PP2Breaction15" id="PP2Breaction15">
     <Reactant specieID="Ca" />
     <Reactant specieID="PP2BCaM1N" />
-    <Product specieID="PP2BCaMCa2N" />
+    <Product specieID="PP2BCaM2N" />
     <forwardRate>0.00195</forwardRate>
     <reverseRate>3.63</reverseRate>
   </Reaction>
@@ -187,7 +187,7 @@
   </Reaction>
   <Reaction name="PP2Breaction21" id="PP2Breaction21">
     <Reactant specieID="Ca" />
-    <Reactant specieID="PP2BCaMCa2C" />
+    <Reactant specieID="PP2BCaM2C" />
     <Product specieID="PP2BCaM2C1N" />
     <forwardRate>0.010715</forwardRate>
     <reverseRate>79.4328</reverseRate>
