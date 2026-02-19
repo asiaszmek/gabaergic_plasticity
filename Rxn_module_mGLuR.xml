@@ -1,4 +1,6 @@
 <?xml version="1.0"?>
+
+<!-- PKC phos neurogranin Km=150 nM, kCat = 3.571s-1 https://pubmed.ncbi.nlm.nih.gov/8424932/-->
 <ReactionScheme>
   <Specie name="Ca" id="Ca" kdiff="100" kdiffunit="mu2/s" />
  
