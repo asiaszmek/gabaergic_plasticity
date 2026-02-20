@@ -17,11 +17,17 @@
   <Specie name="CaMCa4pmca1aCa" id="CaMCa4pmca1aCa" kdiff="0" kdiffunit="mu2/s"/>
   <Specie name="CaMpmca1a" id="CaMpmca1a" kdiff="0" kdiffunit="mu2/s"/> 
 
-  
+  <Specie name="Pkc" id="Pkc" kdiff="6.61" kdiffunit="mu2/s"/>
+  <Specie name="PkcCa" id="PkcCa" kdiff="6.61" kdiffunit="mu2/s"/>
+  <Specie name="PkcCaNg" id="PkcCaNg" kdiff="6.61" kdiffunit="mu2/s"/>
+  <Specie name="PkcCaNgPA" id="PkcCaNgPA" kdiff="0" kdiffunit="mu2/s"/>
+
   <Specie name="Ng" id="Ng" kdiff="5" kdiffunit="mu2/s"/>
+  <Specie name="pNg" id="pNg" kdiff="5" kdiffunit="mu2/s"/>
   <Specie name="NgCaM" id="NgCaM" kdiff="3" kdiffunit="mu2/s"/>
   <Specie name="PA" id="PA" kdiff="0" kdiffunit="mu2/s"/>
   <Specie name="NgPA" id="NgPA" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="pNgPA" id="pNgPA" kdiff="0" kdiffunit="mu2/s"/>
   
   <Specie name="CaM" id="CaM" kdiff="4" kdiffunit="mu2/s"/>
   <Specie name="CaM1N" id="CaM1N" kdiff="4" kdiffunit="mu2/s"/>
@@ -258,10 +264,56 @@
     <Reactant specieID="PA"/>
     <Reactant specieID="Ng"/>
     <Product specieID="NgPA"/>
-    <forwardRate>28.e-6</forwardRate>
+    <forwardRate>0.00036</forwardRate>
     <reverseRate>36.e-3</reverseRate>
     <Q10>0.2</Q10>
   </Reaction>
+
+
+  <Reaction name="pNgPA_bind" id="pNgPA_bind">
+    <Reactant specieID="PA"/>
+    <Reactant specieID="pNg"/>
+    <Product specieID="pNgPA"/>
+    <forwardRate>0.00036e-2</forwardRate>
+    <reverseRate>36.e-2</reverseRate>
+    <Q10>0.2</Q10>
+  </Reaction>
+      
+
+<Reaction name="Pkc+Ca--PkcCa" id="Pkc+Ca--PkcCa">
+        <Reactant specieID="Ca"/>
+        <Reactant specieID="Pkc"/>
+        <Product specieID="PkcCa"/>
+
+        <forwardRate> 0.020e-03   </forwardRate>
+        <reverseRate> 50e-03        </reverseRate>
+    </Reaction>
+
+  <Reaction name="PkcCa +Ng--PkcCaNg" id="PkcCa+Ng--PkcCaNg">
+        <Reactant specieID="PkcCa"/>
+        <Reactant specieID="Ng"/>
+        <Product specieID="PkcCaNg"/>
+
+        <forwardRate> 2.48e-5   </forwardRate>
+        <reverseRate> 0.15e-03        </reverseRate>
+    </Reaction>
+    <Reaction name="PkcCaNgphos" id="PkcCaNgphos">
+        <Reactant specieID="PkcCaNg"/>
+        <Product specieID="pNg"/>
+        <Product specieID="PkcCa"/>
+
+        <forwardRate> 3.571e-3   </forwardRate>
+        <reverseRate> 0        </reverseRate>
+    </Reaction>
+  <Reaction name="PkcCaNgPAphos" id="PkcCaNgPAphos">
+        <Reactant specieID="PkcCaNgPA"/>
+        <Product specieID="pNgPA"/>
+        <Product specieID="PkcCa"/>
+
+        <forwardRate> 3.571e-3   </forwardRate>
+        <reverseRate> 0        </reverseRate>
+    </Reaction>
+    
 <Specie name="RyR2" id="RyR2" kdiff="100" kdiffunit="mu2/s"/>
   <Specie name="RyR2CaM" id="RyR2CaM" kdiff="0" kdiffunit="mu2/s"/>
   <Specie name="RyR2CaM1C" id="RyR2CaM1C" kdiff="0" kdiffunit="mu2/s"/>
