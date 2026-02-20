@@ -160,110 +160,85 @@
 <Reactant specieID="Ca" />
 <Reactant specieID="KCaM" />
 <Product specieID="KCaM1C" />
-<forwardRate>1.212e-05</forwardRate>
+<forwardRate>0.00221472878129035</forwardRate>
 <reverseRate>0.033</reverseRate>
 </Reaction>
 <Reaction name="reaction27" id="reaction27">
 <Reactant specieID="Ca" />
 <Reactant specieID="KCaM1N" />
 <Product specieID="KCaM1C1N" />
-<forwardRate>1.212e-05</forwardRate>
+<forwardRate>0.0242331251847473</forwardRate>
 <reverseRate>0.033</reverseRate>
 </Reaction>
 <Reaction name="reaction29" id="reaction29">
 <Reactant specieID="Ca" />
 <Reactant specieID="KCaM2N" />
 <Product specieID="KCaM1C2N" />
-<forwardRate>1.212e-05</forwardRate>
+<forwardRate>0.00301220351758794</forwardRate>
 <reverseRate>0.033</reverseRate>
 </Reaction>
 <Reaction name="reaction31" id="reaction31">
 <Reactant specieID="Ca" />
 <Reactant specieID="KCaM1C" />
 <Product specieID="KCaM2C" />
-<forwardRate>4.6e-05</forwardRate>
+<forwardRate>4.30944465638454E-05</forwardRate>
 <reverseRate>0.0027</reverseRate>
 </Reaction>
 <Reaction name="reaction33" id="reaction33">
 <Reactant specieID="Ca" />
 <Reactant specieID="KCaM1C1N" />
 <Product specieID="KCaM2C1N" />
-<forwardRate>4.6e-05</forwardRate>
+<forwardRate>3.89645994553762E-06</forwardRate>
 <reverseRate>0.0027</reverseRate>
 </Reaction>
 <Reaction name="reaction35" id="reaction35">
 <Reactant specieID="Ca" />
 <Reactant specieID="KCaM1C2N" />
 <Product specieID="KCaMCa4" />
-<forwardRate>4.6e-05</forwardRate>
+<forwardRate>4.8770569320976E-05</forwardRate>
 <reverseRate>0.0027</reverseRate>
 </Reaction>
 <Reaction name="reaction37" id="reaction37">
 <Reactant specieID="Ca" />
 <Reactant specieID="KCaM" />
 <Product specieID="KCaM1N" />
-<forwardRate>0.00022134</forwardRate>
+<forwardRate>4.15674744293578E-05</forwardRate>
 <reverseRate>0.3</reverseRate>
 </Reaction>
 <Reaction name="reaction39" id="reaction39">
 <Reactant specieID="Ca" />
 <Reactant specieID="KCaM1N" />
 <Product specieID="KCaM2N" />
-<forwardRate>2.8239999999999997e-05</forwardRate>
-</Reaction>
-<Reaction name="reaction40" id="reaction40">
-<Reactant specieID="KCaM2N" />
-<Product specieID="Ca" />
-<Product specieID="KCaM1N" />
-<forwardRate>0.033</forwardRate>
+<forwardRate>0.000146937287311619</forwardRate>
+<reverseRate>0.033</reverseRate>
 </Reaction>
 <Reaction name="reaction41" id="reaction41">
 <Reactant specieID="Ca" />
 <Reactant specieID="KCaM1C" />
 <Product specieID="KCaM1C1N" />
-<forwardRate>0.00022134</forwardRate>
-</Reaction>
-<Reaction name="reaction42" id="reaction42">
-<Reactant specieID="KCaM1C1N" />
-<Product specieID="Ca" />
-<Product specieID="KCaM1C" />
-<forwardRate>0.3</forwardRate>
+<forwardRate>0.000452694775449462</forwardRate>
+<reverseRate>0.3</reverseRate>
 </Reaction>
 <Reaction name="reaction43" id="reaction43">
 <Reactant specieID="Ca" />
 <Reactant specieID="KCaM1C1N" />
 <Product specieID="KCaM1C2N" />
-<forwardRate>2.8239999999999997e-05</forwardRate>
-</Reaction>
-<Reaction name="reaction44" id="reaction44">
-<Reactant specieID="KCaM1C2N" />
-<Product specieID="Ca" />
-<Product specieID="KCaM1C1N" />
-<forwardRate>0.033</forwardRate>
+<forwardRate>1.82644628099174E-05</forwardRate>
+<reverseRate>0.033</reverseRate>
 </Reaction>
 <Reaction name="reaction45" id="reaction45">
 <Reactant specieID="Ca" />
 <Reactant specieID="KCaM2C" />
 <Product specieID="KCaM2C1N" />
-<forwardRate>0.00022134</forwardRate>
-</Reaction>
-<Reaction name="reaction46" id="reaction46">
-<Reactant specieID="KCaM2C1N" />
-<Product specieID="Ca" />
-<Product specieID="KCaM2C" />
-<forwardRate>0.3</forwardRate>
+<forwardRate>4.09311918527532E-05</forwardRate>
+<reverseRate>0.3</reverseRate>
 </Reaction>
 <Reaction name="reaction47" id="reaction47">
 <Reactant specieID="Ca" />
 <Reactant specieID="KCaM2C1N" />
 <Product specieID="KCaMCa4" />
-<forwardRate>2.8239999999999997e-05</forwardRate>
-</Reaction>
-<Reaction name="reaction48" id="reaction48">
-<Reactant specieID="KCaMCa4" />
-<Product specieID="Ca" />
-<Product specieID="KCaM2C1N" />
-<forwardRate>0.033</forwardRate>
+<forwardRate>0.000228609625668449</forwardRate>
+<reverseRate>0.033</reverseRate>
 </Reaction>
 <Reaction name="reaction49" id="reaction49">
 <Reactant specieID="CaM" />
@@ -287,7 +262,7 @@
 <Reactant specieID="KCaM1N" />
 <Product specieID="CaM1N" />
 <Product specieID="KaMe" />
-<forwardRate>0.0031000000000000003</forwardRate>
+<forwardRate>0.0031</forwardRate>
 </Reaction>
 <Reaction name="reaction53" id="reaction53">
 <Reactant specieID="CaM2N" />
