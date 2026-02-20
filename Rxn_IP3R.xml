@@ -193,7 +193,7 @@
     <Reactant specieID="Ca"/>
     <Reactant specieID="CaM1C1N"/>
     <Product specieID="CaM2C1N"/>
-    <forwardRate>0.0009545</forwardRate>
+    <forwardRate>0.000955</forwardRate>
     <reverseRate>0.933</reverseRate>
   </Reaction>
   <Reaction name="reaction11" id="reaction11">
