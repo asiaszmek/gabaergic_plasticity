@@ -1,0 +1,3013 @@
+<ReactionScheme>
+  
+  <Specie name="CaM_0_1" id="CaM_0_1" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="CaM_0_2" id="CaM_0_2" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="CaM_1_0" id="CaM_1_0" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="CaM_1_1" id="CaM_1_1" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="CaM_1_2" id="CaM_1_2" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="CaM_2_0" id="CaM_2_0" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="CaM_2_1" id="CaM_2_1" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="CaM_2_2" id="CaM_2_2" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="KCaM_0_0" id="KCaM_0_0" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="KCaM_0_1" id="KCaM_0_1" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="KCaM_0_2" id="KCaM_0_2" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="KCaM_1_0" id="KCaM_1_0" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="KCaM_1_1" id="KCaM_1_1" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="KCaM_1_2" id="KCaM_1_2" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="KCaM_2_0" id="KCaM_2_0" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="KCaM_2_1" id="KCaM_2_1" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="KCaM_2_2" id="KCaM_2_2" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="KCaMcomplex_0_0_0_1" id="KCaMcomplex_0_0_0_1" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="KCaMcomplex_0_0_0_2" id="KCaMcomplex_0_0_0_2" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="KCaMcomplex_0_0_1_0" id="KCaMcomplex_0_0_1_0" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="KCaMcomplex_0_0_1_1" id="KCaMcomplex_0_0_1_1" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="KCaMcomplex_0_0_1_2" id="KCaMcomplex_0_0_1_2" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="KCaMcomplex_0_0_2_0" id="KCaMcomplex_0_0_2_0" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="KCaMcomplex_0_0_2_1" id="KCaMcomplex_0_0_2_1" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="KCaMcomplex_0_0_2_2" id="KCaMcomplex_0_0_2_2" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="KCaMcomplex_0_1_0_2" id="KCaMcomplex_0_1_0_2" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="KCaMcomplex_0_1_1_0" id="KCaMcomplex_0_1_1_0" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="KCaMcomplex_0_1_1_1" id="KCaMcomplex_0_1_1_1" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="KCaMcomplex_0_1_1_2" id="KCaMcomplex_0_1_1_2" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="KCaMcomplex_0_1_2_0" id="KCaMcomplex_0_1_2_0" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="KCaMcomplex_0_1_2_1" id="KCaMcomplex_0_1_2_1" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="KCaMcomplex_0_1_2_2" id="KCaMcomplex_0_1_2_2" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="KCaMcomplex_0_2_1_0" id="KCaMcomplex_0_2_1_0" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="KCaMcomplex_0_2_1_1" id="KCaMcomplex_0_2_1_1" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="KCaMcomplex_0_2_1_2" id="KCaMcomplex_0_2_1_2" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="KCaMcomplex_0_2_2_0" id="KCaMcomplex_0_2_2_0" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="KCaMcomplex_0_2_2_1" id="KCaMcomplex_0_2_2_1" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="KCaMcomplex_0_2_2_2" id="KCaMcomplex_0_2_2_2" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="KCaMcomplex_1_0_1_1" id="KCaMcomplex_1_0_1_1" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="KCaMcomplex_1_0_1_2" id="KCaMcomplex_1_0_1_2" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="KCaMcomplex_1_0_2_0" id="KCaMcomplex_1_0_2_0" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="KCaMcomplex_1_0_2_1" id="KCaMcomplex_1_0_2_1" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="KCaMcomplex_1_0_2_2" id="KCaMcomplex_1_0_2_2" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="KCaMcomplex_1_1_1_2" id="KCaMcomplex_1_1_1_2" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="KCaMcomplex_1_1_2_0" id="KCaMcomplex_1_1_2_0" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="KCaMcomplex_1_1_2_1" id="KCaMcomplex_1_1_2_1" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="KCaMcomplex_1_1_2_2" id="KCaMcomplex_1_1_2_2" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="KCaMcomplex_1_2_2_0" id="KCaMcomplex_1_2_2_0" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="KCaMcomplex_1_2_2_1" id="KCaMcomplex_1_2_2_1" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="KCaMcomplex_1_2_2_2" id="KCaMcomplex_1_2_2_2" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="KCaMcomplex_2_0_2_1" id="KCaMcomplex_2_0_2_1" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="KCaMcomplex_2_0_2_2" id="KCaMcomplex_2_0_2_2" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="KCaMcomplex_2_1_2_2" id="KCaMcomplex_2_1_2_2" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="KCaMcomplex_0_0_0_0" id="KCaMcomplex_0_0_0_0" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="KCaMcomplex_0_1_0_1" id="KCaMcomplex_0_1_0_1" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="KCaMcomplex_0_2_0_2" id="KCaMcomplex_0_2_0_2" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="KCaMcomplex_1_0_1_0" id="KCaMcomplex_1_0_1_0" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="KCaMcomplex_1_1_1_1" id="KCaMcomplex_1_1_1_1" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="KCaMcomplex_1_2_1_2" id="KCaMcomplex_1_2_1_2" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="KCaMcomplex_2_0_2_0" id="KCaMcomplex_2_0_2_0" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="KCaMcomplex_2_1_2_1" id="KCaMcomplex_2_1_2_1" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="KCaMcomplex_2_2_2_2" id="KCaMcomplex_2_2_2_2" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaM_0_0" id="pKCaM_0_0" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaM_0_1" id="pKCaM_0_1" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaM_0_2" id="pKCaM_0_2" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaM_1_0" id="pKCaM_1_0" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaM_1_1" id="pKCaM_1_1" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaM_1_2" id="pKCaM_1_2" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaM_2_0" id="pKCaM_2_0" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaM_2_1" id="pKCaM_2_1" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaM_2_2" id="pKCaM_2_2" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_0_0_0_0" id="pKCaMcomplex_0_0_0_0" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_0_0_0_1" id="pKCaMcomplex_0_0_0_1" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_0_0_0_2" id="pKCaMcomplex_0_0_0_2" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_0_0_1_0" id="pKCaMcomplex_0_0_1_0" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_0_0_1_1" id="pKCaMcomplex_0_0_1_1" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_0_0_1_2" id="pKCaMcomplex_0_0_1_2" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_0_0_2_0" id="pKCaMcomplex_0_0_2_0" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_0_0_2_1" id="pKCaMcomplex_0_0_2_1" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_0_0_2_2" id="pKCaMcomplex_0_0_2_2" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_0_1_0_0" id="pKCaMcomplex_0_1_0_0" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_0_1_0_1" id="pKCaMcomplex_0_1_0_1" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_0_1_0_2" id="pKCaMcomplex_0_1_0_2" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_0_1_1_0" id="pKCaMcomplex_0_1_1_0" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_0_1_1_1" id="pKCaMcomplex_0_1_1_1" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_0_1_1_2" id="pKCaMcomplex_0_1_1_2" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_0_1_2_0" id="pKCaMcomplex_0_1_2_0" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_0_1_2_1" id="pKCaMcomplex_0_1_2_1" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_0_1_2_2" id="pKCaMcomplex_0_1_2_2" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_0_2_0_0" id="pKCaMcomplex_0_2_0_0" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_0_2_0_1" id="pKCaMcomplex_0_2_0_1" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_0_2_0_2" id="pKCaMcomplex_0_2_0_2" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_0_2_1_0" id="pKCaMcomplex_0_2_1_0" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_0_2_1_1" id="pKCaMcomplex_0_2_1_1" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_0_2_1_2" id="pKCaMcomplex_0_2_1_2" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_0_2_2_0" id="pKCaMcomplex_0_2_2_0" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_0_2_2_1" id="pKCaMcomplex_0_2_2_1" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_0_2_2_2" id="pKCaMcomplex_0_2_2_2" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_1_0_0_0" id="pKCaMcomplex_1_0_0_0" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_1_0_0_1" id="pKCaMcomplex_1_0_0_1" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_1_0_0_2" id="pKCaMcomplex_1_0_0_2" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_1_0_1_0" id="pKCaMcomplex_1_0_1_0" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_1_0_1_1" id="pKCaMcomplex_1_0_1_1" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_1_0_1_2" id="pKCaMcomplex_1_0_1_2" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_1_0_2_0" id="pKCaMcomplex_1_0_2_0" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_1_0_2_1" id="pKCaMcomplex_1_0_2_1" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_1_0_2_2" id="pKCaMcomplex_1_0_2_2" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_1_1_0_0" id="pKCaMcomplex_1_1_0_0" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_1_1_0_1" id="pKCaMcomplex_1_1_0_1" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_1_1_0_2" id="pKCaMcomplex_1_1_0_2" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_1_1_1_0" id="pKCaMcomplex_1_1_1_0" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_1_1_1_1" id="pKCaMcomplex_1_1_1_1" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_1_1_1_2" id="pKCaMcomplex_1_1_1_2" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_1_1_2_0" id="pKCaMcomplex_1_1_2_0" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_1_1_2_1" id="pKCaMcomplex_1_1_2_1" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_1_1_2_2" id="pKCaMcomplex_1_1_2_2" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_1_2_0_0" id="pKCaMcomplex_1_2_0_0" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_1_2_0_1" id="pKCaMcomplex_1_2_0_1" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_1_2_0_2" id="pKCaMcomplex_1_2_0_2" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_1_2_1_0" id="pKCaMcomplex_1_2_1_0" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_1_2_1_1" id="pKCaMcomplex_1_2_1_1" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_1_2_1_2" id="pKCaMcomplex_1_2_1_2" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_1_2_2_0" id="pKCaMcomplex_1_2_2_0" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_1_2_2_1" id="pKCaMcomplex_1_2_2_1" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_1_2_2_2" id="pKCaMcomplex_1_2_2_2" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_2_0_0_0" id="pKCaMcomplex_2_0_0_0" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_2_0_0_1" id="pKCaMcomplex_2_0_0_1" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_2_0_0_2" id="pKCaMcomplex_2_0_0_2" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_2_0_1_0" id="pKCaMcomplex_2_0_1_0" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_2_0_1_1" id="pKCaMcomplex_2_0_1_1" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_2_0_1_2" id="pKCaMcomplex_2_0_1_2" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_2_0_2_0" id="pKCaMcomplex_2_0_2_0" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_2_0_2_1" id="pKCaMcomplex_2_0_2_1" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_2_0_2_2" id="pKCaMcomplex_2_0_2_2" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_2_1_0_0" id="pKCaMcomplex_2_1_0_0" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_2_1_0_1" id="pKCaMcomplex_2_1_0_1" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_2_1_0_2" id="pKCaMcomplex_2_1_0_2" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_2_1_1_0" id="pKCaMcomplex_2_1_1_0" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_2_1_1_1" id="pKCaMcomplex_2_1_1_1" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_2_1_1_2" id="pKCaMcomplex_2_1_1_2" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_2_1_2_0" id="pKCaMcomplex_2_1_2_0" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_2_1_2_1" id="pKCaMcomplex_2_1_2_1" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_2_1_2_2" id="pKCaMcomplex_2_1_2_2" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_2_2_0_0" id="pKCaMcomplex_2_2_0_0" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_2_2_0_1" id="pKCaMcomplex_2_2_0_1" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_2_2_0_2" id="pKCaMcomplex_2_2_0_2" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_2_2_1_0" id="pKCaMcomplex_2_2_1_0" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_2_2_1_1" id="pKCaMcomplex_2_2_1_1" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_2_2_1_2" id="pKCaMcomplex_2_2_1_2" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_2_2_2_0" id="pKCaMcomplex_2_2_2_0" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_2_2_2_1" id="pKCaMcomplex_2_2_2_1" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="pKCaMcomplex_2_2_2_2" id="pKCaMcomplex_2_2_2_2" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="CaM_0_0" id="CaM_0_0" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="KaMe" id="KaMe" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="Ca" id="Ca" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="KCaM2C_tot" id="KCaM2C_tot" kdiff="0" kdiffunit="mu2/s" />
+  <Reaction name="reaction1" id="reaction1">
+    <Reactant SpecieId="Ca" />
+    <Reactant SpecieId="CaM_0_0" />
+  <Product SpecieId="CaM_1_0" />
+  <forwardRate>4e-06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction2" id="reaction2">
+  <Reactant SpecieId="CaM_1_0" />
+  <Product SpecieId="Ca" />
+  <Product SpecieId="CaM_0_0" />
+  <forwardRate>0.04</forwardRate>
+  </Reaction>
+  <Reaction name="reaction3" id="reaction3">
+  <Reactant SpecieId="Ca" />
+  <Reactant SpecieId="CaM_0_1" />
+  <Product SpecieId="CaM_1_1" />
+  <forwardRate>4e-06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction4" id="reaction4">
+  <Reactant SpecieId="CaM_1_1" />
+  <Product SpecieId="Ca" />
+  <Product SpecieId="CaM_0_1" />
+  <forwardRate>0.04</forwardRate>
+  </Reaction>
+  <Reaction name="reaction5" id="reaction5">
+  <Reactant SpecieId="Ca" />
+  <Reactant SpecieId="CaM_0_2" />
+  <Product SpecieId="CaM_1_2" />
+  <forwardRate>4e-06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction6" id="reaction6">
+  <Reactant SpecieId="CaM_1_2" />
+  <Product SpecieId="Ca" />
+  <Product SpecieId="CaM_0_2" />
+  <forwardRate>0.04</forwardRate>
+  </Reaction>
+  <Reaction name="reaction7" id="reaction7">
+  <Reactant SpecieId="Ca" />
+  <Reactant SpecieId="CaM_1_0" />
+  <Product SpecieId="CaM_2_0" />
+  <forwardRate>9.999999999999999e-06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction8" id="reaction8">
+  <Reactant SpecieId="CaM_2_0" />
+  <Product SpecieId="Ca" />
+  <Product SpecieId="CaM_1_0" />
+  <forwardRate>0.00925</forwardRate>
+  </Reaction>
+  <Reaction name="reaction9" id="reaction9">
+  <Reactant SpecieId="Ca" />
+  <Reactant SpecieId="CaM_1_1" />
+  <Product SpecieId="CaM_2_1" />
+  <forwardRate>9.999999999999999e-06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction10" id="reaction10">
+  <Reactant SpecieId="CaM_2_1" />
+  <Product SpecieId="Ca" />
+  <Product SpecieId="CaM_1_1" />
+  <forwardRate>0.00925</forwardRate>
+  </Reaction>
+  <Reaction name="reaction11" id="reaction11">
+  <Reactant SpecieId="Ca" />
+  <Reactant SpecieId="CaM_1_2" />
+  <Product SpecieId="CaM_2_2" />
+  <forwardRate>9.999999999999999e-06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction12" id="reaction12">
+  <Reactant SpecieId="CaM_2_2" />
+  <Product SpecieId="Ca" />
+  <Product SpecieId="CaM_1_2" />
+  <forwardRate>0.00925</forwardRate>
+  </Reaction>
+  <Reaction name="reaction13" id="reaction13">
+  <Reactant SpecieId="Ca" />
+  <Reactant SpecieId="CaM_0_0" />
+  <Product SpecieId="CaM_0_1" />
+  <forwardRate>9.999999999999999e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction14" id="reaction14">
+  <Reactant SpecieId="CaM_0_1" />
+  <Product SpecieId="Ca" />
+  <Product SpecieId="CaM_0_0" />
+  <forwardRate>2.5</forwardRate>
+  </Reaction>
+  <Reaction name="reaction15" id="reaction15">
+  <Reactant SpecieId="Ca" />
+  <Reactant SpecieId="CaM_0_1" />
+  <Product SpecieId="CaM_0_2" />
+  <forwardRate>0.00015</forwardRate>
+  </Reaction>
+  <Reaction name="reaction16" id="reaction16">
+  <Reactant SpecieId="CaM_0_2" />
+  <Product SpecieId="Ca" />
+  <Product SpecieId="CaM_0_1" />
+  <forwardRate>0.75</forwardRate>
+  </Reaction>
+  <Reaction name="reaction17" id="reaction17">
+  <Reactant SpecieId="Ca" />
+  <Reactant SpecieId="CaM_1_0" />
+  <Product SpecieId="CaM_1_1" />
+  <forwardRate>9.999999999999999e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction18" id="reaction18">
+  <Reactant SpecieId="CaM_1_1" />
+  <Product SpecieId="Ca" />
+  <Product SpecieId="CaM_1_0" />
+  <forwardRate>2.5</forwardRate>
+  </Reaction>
+  <Reaction name="reaction19" id="reaction19">
+  <Reactant SpecieId="Ca" />
+  <Reactant SpecieId="CaM_1_1" />
+  <Product SpecieId="CaM_1_2" />
+  <forwardRate>0.00015</forwardRate>
+  </Reaction>
+  <Reaction name="reaction20" id="reaction20">
+  <Reactant SpecieId="CaM_1_2" />
+  <Product SpecieId="Ca" />
+  <Product SpecieId="CaM_1_1" />
+  <forwardRate>0.75</forwardRate>
+  </Reaction>
+  <Reaction name="reaction21" id="reaction21">
+  <Reactant SpecieId="Ca" />
+  <Reactant SpecieId="CaM_2_0" />
+  <Product SpecieId="CaM_2_1" />
+  <forwardRate>9.999999999999999e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction22" id="reaction22">
+  <Reactant SpecieId="CaM_2_1" />
+  <Product SpecieId="Ca" />
+  <Product SpecieId="CaM_2_0" />
+  <forwardRate>2.5</forwardRate>
+  </Reaction>
+  <Reaction name="reaction23" id="reaction23">
+  <Reactant SpecieId="Ca" />
+  <Reactant SpecieId="CaM_2_1" />
+  <Product SpecieId="CaM_2_2" />
+  <forwardRate>0.00015</forwardRate>
+  </Reaction>
+  <Reaction name="reaction24" id="reaction24">
+  <Reactant SpecieId="CaM_2_2" />
+  <Product SpecieId="Ca" />
+  <Product SpecieId="CaM_2_1" />
+  <forwardRate>0.75</forwardRate>
+  </Reaction>
+  <Reaction name="reaction25" id="reaction25">
+  <Reactant SpecieId="Ca" />
+  <Reactant SpecieId="KCaM_0_0" />
+  <Product SpecieId="KCaM_1_0" />
+  <forwardRate>4.4e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction26" id="reaction26">
+  <Reactant SpecieId="KCaM_1_0" />
+  <Product SpecieId="Ca" />
+  <Product SpecieId="KCaM_0_0" />
+  <forwardRate>0.033</forwardRate>
+  </Reaction>
+  <Reaction name="reaction27" id="reaction27">
+  <Reactant SpecieId="Ca" />
+  <Reactant SpecieId="KCaM_0_1" />
+  <Product SpecieId="KCaM_1_1" />
+  <forwardRate>4.4e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction28" id="reaction28">
+  <Reactant SpecieId="KCaM_1_1" />
+  <Product SpecieId="Ca" />
+  <Product SpecieId="KCaM_0_1" />
+  <forwardRate>0.033</forwardRate>
+  </Reaction>
+  <Reaction name="reaction29" id="reaction29">
+  <Reactant SpecieId="Ca" />
+  <Reactant SpecieId="KCaM_0_2" />
+  <Product SpecieId="KCaM_1_2" />
+  <forwardRate>4.4e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction30" id="reaction30">
+  <Reactant SpecieId="KCaM_1_2" />
+  <Product SpecieId="Ca" />
+  <Product SpecieId="KCaM_0_2" />
+  <forwardRate>0.033</forwardRate>
+  </Reaction>
+  <Reaction name="reaction31" id="reaction31">
+  <Reactant SpecieId="Ca" />
+  <Reactant SpecieId="KCaM_1_0" />
+  <Product SpecieId="KCaM_2_0" />
+  <forwardRate>4.4e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction32" id="reaction32">
+  <Reactant SpecieId="KCaM_2_0" />
+  <Product SpecieId="Ca" />
+  <Product SpecieId="KCaM_1_0" />
+  <forwardRate>0.0027</forwardRate>
+  </Reaction>
+  <Reaction name="reaction33" id="reaction33">
+  <Reactant SpecieId="Ca" />
+  <Reactant SpecieId="KCaM_1_1" />
+  <Product SpecieId="KCaM_2_1" />
+  <forwardRate>4.4e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction34" id="reaction34">
+  <Reactant SpecieId="KCaM_2_1" />
+  <Product SpecieId="Ca" />
+  <Product SpecieId="KCaM_1_1" />
+  <forwardRate>0.0027</forwardRate>
+  </Reaction>
+  <Reaction name="reaction35" id="reaction35">
+  <Reactant SpecieId="Ca" />
+  <Reactant SpecieId="KCaM_1_2" />
+  <Product SpecieId="KCaM_2_2" />
+  <forwardRate>4.4e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction36" id="reaction36">
+  <Reactant SpecieId="KCaM_2_2" />
+  <Product SpecieId="Ca" />
+  <Product SpecieId="KCaM_1_2" />
+  <forwardRate>0.0027</forwardRate>
+  </Reaction>
+  <Reaction name="reaction37" id="reaction37">
+  <Reactant SpecieId="Ca" />
+  <Reactant SpecieId="KCaM_0_0" />
+  <Product SpecieId="KCaM_0_1" />
+  <forwardRate>7.5e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction38" id="reaction38">
+  <Reactant SpecieId="KCaM_0_1" />
+  <Product SpecieId="Ca" />
+  <Product SpecieId="KCaM_0_0" />
+  <forwardRate>0.3</forwardRate>
+  </Reaction>
+  <Reaction name="reaction39" id="reaction39">
+  <Reactant SpecieId="Ca" />
+  <Reactant SpecieId="KCaM_0_1" />
+  <Product SpecieId="KCaM_0_2" />
+  <forwardRate>7.599999999999999e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction40" id="reaction40">
+  <Reactant SpecieId="KCaM_0_2" />
+  <Product SpecieId="Ca" />
+  <Product SpecieId="KCaM_0_1" />
+  <forwardRate>0.033</forwardRate>
+  </Reaction>
+  <Reaction name="reaction41" id="reaction41">
+  <Reactant SpecieId="Ca" />
+  <Reactant SpecieId="KCaM_1_0" />
+  <Product SpecieId="KCaM_1_1" />
+  <forwardRate>7.5e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction42" id="reaction42">
+  <Reactant SpecieId="KCaM_1_1" />
+  <Product SpecieId="Ca" />
+  <Product SpecieId="KCaM_1_0" />
+  <forwardRate>0.3</forwardRate>
+  </Reaction>
+  <Reaction name="reaction43" id="reaction43">
+  <Reactant SpecieId="Ca" />
+  <Reactant SpecieId="KCaM_1_1" />
+  <Product SpecieId="KCaM_1_2" />
+  <forwardRate>7.599999999999999e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction44" id="reaction44">
+  <Reactant SpecieId="KCaM_1_2" />
+  <Product SpecieId="Ca" />
+  <Product SpecieId="KCaM_1_1" />
+  <forwardRate>0.033</forwardRate>
+  </Reaction>
+  <Reaction name="reaction45" id="reaction45">
+  <Reactant SpecieId="Ca" />
+  <Reactant SpecieId="KCaM_2_0" />
+  <Product SpecieId="KCaM_2_1" />
+  <forwardRate>7.5e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction46" id="reaction46">
+  <Reactant SpecieId="KCaM_2_1" />
+  <Product SpecieId="Ca" />
+  <Product SpecieId="KCaM_2_0" />
+  <forwardRate>0.3</forwardRate>
+  </Reaction>
+  <Reaction name="reaction47" id="reaction47">
+  <Reactant SpecieId="Ca" />
+  <Reactant SpecieId="KCaM_2_1" />
+  <Product SpecieId="KCaM_2_2" />
+  <forwardRate>7.599999999999999e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction48" id="reaction48">
+  <Reactant SpecieId="KCaM_2_2" />
+  <Product SpecieId="Ca" />
+  <Product SpecieId="KCaM_2_1" />
+  <forwardRate>0.033</forwardRate>
+  </Reaction>
+  <Reaction name="reaction49" id="reaction49">
+  <Reactant SpecieId="CaM_0_0" />
+  <Reactant SpecieId="KaMe" />
+  <Product SpecieId="KCaM_0_0" />
+  <forwardRate>3.8e-09</forwardRate>
+  </Reaction>
+  <Reaction name="reaction50" id="reaction50">
+  <Reactant SpecieId="KCaM_0_0" />
+  <Product SpecieId="CaM_0_0" />
+  <Product SpecieId="KaMe" />
+  <forwardRate>0.0055</forwardRate>
+  </Reaction>
+  <Reaction name="reaction51" id="reaction51">
+  <Reactant SpecieId="CaM_0_1" />
+  <Reactant SpecieId="KaMe" />
+  <Product SpecieId="KCaM_0_1" />
+  <forwardRate>2.2e-08</forwardRate>
+  </Reaction>
+  <Reaction name="reaction52" id="reaction52">
+  <Reactant SpecieId="KCaM_0_1" />
+  <Product SpecieId="CaM_0_1" />
+  <Product SpecieId="KaMe" />
+  <forwardRate>0.0031000000000000003</forwardRate>
+  </Reaction>
+  <Reaction name="reaction53" id="reaction53">
+  <Reactant SpecieId="CaM_0_2" />
+  <Reactant SpecieId="KaMe" />
+  <Product SpecieId="KCaM_0_2" />
+  <forwardRate>1e-07</forwardRate>
+  </Reaction>
+  <Reaction name="reaction54" id="reaction54">
+  <Reactant SpecieId="KCaM_0_2" />
+  <Product SpecieId="CaM_0_2" />
+  <Product SpecieId="KaMe" />
+  <forwardRate>0.0017</forwardRate>
+  </Reaction>
+  <Reaction name="reaction55" id="reaction55">
+  <Reactant SpecieId="CaM_1_0" />
+  <Reactant SpecieId="KaMe" />
+  <Product SpecieId="KCaM_1_0" />
+  <forwardRate>5.899999999999999e-08</forwardRate>
+  </Reaction>
+  <Reaction name="reaction56" id="reaction56">
+  <Reactant SpecieId="KCaM_1_0" />
+  <Product SpecieId="CaM_1_0" />
+  <Product SpecieId="KaMe" />
+  <forwardRate>0.0068</forwardRate>
+  </Reaction>
+  <Reaction name="reaction57" id="reaction57">
+  <Reactant SpecieId="CaM_1_1" />
+  <Reactant SpecieId="KaMe" />
+  <Product SpecieId="KCaM_1_1" />
+  <forwardRate>3.2999999999999997e-06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction58" id="reaction58">
+  <Reactant SpecieId="KCaM_1_1" />
+  <Product SpecieId="CaM_1_1" />
+  <Product SpecieId="KaMe" />
+  <forwardRate>0.0034</forwardRate>
+  </Reaction>
+  <Reaction name="reaction59" id="reaction59">
+  <Reactant SpecieId="CaM_1_2" />
+  <Reactant SpecieId="KaMe" />
+  <Product SpecieId="KCaM_1_2" />
+  <forwardRate>1.8999999999999998e-06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction60" id="reaction60">
+  <Reactant SpecieId="KCaM_1_2" />
+  <Product SpecieId="CaM_1_2" />
+  <Product SpecieId="KaMe" />
+  <forwardRate>0.0019</forwardRate>
+  </Reaction>
+  <Reaction name="reaction61" id="reaction61">
+  <Reactant SpecieId="CaM_2_0" />
+  <Reactant SpecieId="KaMe" />
+  <Product SpecieId="KCaM_2_0" />
+  <forwardRate>9.2e-07</forwardRate>
+  </Reaction>
+  <Reaction name="reaction62" id="reaction62">
+  <Reactant SpecieId="KCaM_2_0" />
+  <Product SpecieId="CaM_2_0" />
+  <Product SpecieId="KaMe" />
+  <forwardRate>0.0068</forwardRate>
+  </Reaction>
+  <Reaction name="reaction63" id="reaction63">
+  <Reactant SpecieId="CaM_2_1" />
+  <Reactant SpecieId="KaMe" />
+  <Product SpecieId="KCaM_2_1" />
+  <forwardRate>5.2e-06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction64" id="reaction64">
+  <Reactant SpecieId="KCaM_2_1" />
+  <Product SpecieId="CaM_2_1" />
+  <Product SpecieId="KaMe" />
+  <forwardRate>0.0038</forwardRate>
+  </Reaction>
+  <Reaction name="reaction65" id="reaction65">
+  <Reactant SpecieId="CaM_2_2" />
+  <Reactant SpecieId="KaMe" />
+  <Product SpecieId="KCaM_2_2" />
+  <forwardRate>2.9999999999999997e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction66" id="reaction66">
+  <Reactant SpecieId="KCaM_2_2" />
+  <Product SpecieId="CaM_2_2" />
+  <Product SpecieId="KaMe" />
+  <forwardRate>0.0017</forwardRate>
+  </Reaction>
+  <Reaction name="reaction67" id="reaction67">
+  <Reactant SpecieId="KCaM_0_0" />
+  <Reactant SpecieId="KCaM_0_1" />
+  <Product SpecieId="KCaMcomplex_0_0_0_1" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction68" id="reaction68">
+  <Reactant SpecieId="KCaMcomplex_0_0_0_1" />
+  <Product SpecieId="KCaM_0_0" />
+  <Product SpecieId="KCaM_0_1" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction69" id="reaction69">
+  <Reactant SpecieId="KCaM_0_0" />
+  <Reactant SpecieId="KCaM_0_2" />
+  <Product SpecieId="KCaMcomplex_0_0_0_2" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction70" id="reaction70">
+  <Reactant SpecieId="KCaMcomplex_0_0_0_2" />
+  <Product SpecieId="KCaM_0_0" />
+  <Product SpecieId="KCaM_0_2" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction71" id="reaction71">
+  <Reactant SpecieId="KCaM_0_0" />
+  <Reactant SpecieId="KCaM_1_0" />
+  <Product SpecieId="KCaMcomplex_0_0_1_0" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction72" id="reaction72">
+  <Reactant SpecieId="KCaMcomplex_0_0_1_0" />
+  <Product SpecieId="KCaM_0_0" />
+  <Product SpecieId="KCaM_1_0" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction73" id="reaction73">
+  <Reactant SpecieId="KCaM_0_0" />
+  <Reactant SpecieId="KCaM_1_1" />
+  <Product SpecieId="KCaMcomplex_0_0_1_1" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction74" id="reaction74">
+  <Reactant SpecieId="KCaMcomplex_0_0_1_1" />
+  <Product SpecieId="KCaM_0_0" />
+  <Product SpecieId="KCaM_1_1" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction75" id="reaction75">
+  <Reactant SpecieId="KCaM_0_0" />
+  <Reactant SpecieId="KCaM_1_2" />
+  <Product SpecieId="KCaMcomplex_0_0_1_2" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction76" id="reaction76">
+  <Reactant SpecieId="KCaMcomplex_0_0_1_2" />
+  <Product SpecieId="KCaM_0_0" />
+  <Product SpecieId="KCaM_1_2" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction77" id="reaction77">
+  <Reactant SpecieId="KCaM_0_0" />
+  <Reactant SpecieId="KCaM_2_0" />
+  <Product SpecieId="KCaMcomplex_0_0_2_0" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction78" id="reaction78">
+  <Reactant SpecieId="KCaMcomplex_0_0_2_0" />
+  <Product SpecieId="KCaM_0_0" />
+  <Product SpecieId="KCaM_2_0" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction79" id="reaction79">
+  <Reactant SpecieId="KCaM_0_0" />
+  <Reactant SpecieId="KCaM_2_1" />
+  <Product SpecieId="KCaMcomplex_0_0_2_1" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction80" id="reaction80">
+  <Reactant SpecieId="KCaMcomplex_0_0_2_1" />
+  <Product SpecieId="KCaM_0_0" />
+  <Product SpecieId="KCaM_2_1" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction81" id="reaction81">
+  <Reactant SpecieId="KCaM_0_0" />
+  <Reactant SpecieId="KCaM_2_2" />
+  <Product SpecieId="KCaMcomplex_0_0_2_2" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction82" id="reaction82">
+  <Reactant SpecieId="KCaMcomplex_0_0_2_2" />
+  <Product SpecieId="KCaM_0_0" />
+  <Product SpecieId="KCaM_2_2" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction83" id="reaction83">
+  <Reactant SpecieId="KCaM_0_1" />
+  <Reactant SpecieId="KCaM_0_2" />
+  <Product SpecieId="KCaMcomplex_0_1_0_2" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction84" id="reaction84">
+  <Reactant SpecieId="KCaMcomplex_0_1_0_2" />
+  <Product SpecieId="KCaM_0_1" />
+  <Product SpecieId="KCaM_0_2" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction85" id="reaction85">
+  <Reactant SpecieId="KCaM_0_1" />
+  <Reactant SpecieId="KCaM_1_0" />
+  <Product SpecieId="KCaMcomplex_0_1_1_0" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction86" id="reaction86">
+  <Reactant SpecieId="KCaMcomplex_0_1_1_0" />
+  <Product SpecieId="KCaM_0_1" />
+  <Product SpecieId="KCaM_1_0" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction87" id="reaction87">
+  <Reactant SpecieId="KCaM_0_1" />
+  <Reactant SpecieId="KCaM_1_1" />
+  <Product SpecieId="KCaMcomplex_0_1_1_1" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction88" id="reaction88">
+  <Reactant SpecieId="KCaMcomplex_0_1_1_1" />
+  <Product SpecieId="KCaM_0_1" />
+  <Product SpecieId="KCaM_1_1" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction89" id="reaction89">
+  <Reactant SpecieId="KCaM_0_1" />
+  <Reactant SpecieId="KCaM_1_2" />
+  <Product SpecieId="KCaMcomplex_0_1_1_2" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction90" id="reaction90">
+  <Reactant SpecieId="KCaMcomplex_0_1_1_2" />
+  <Product SpecieId="KCaM_0_1" />
+  <Product SpecieId="KCaM_1_2" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction91" id="reaction91">
+  <Reactant SpecieId="KCaM_0_1" />
+  <Reactant SpecieId="KCaM_2_0" />
+  <Product SpecieId="KCaMcomplex_0_1_2_0" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction92" id="reaction92">
+  <Reactant SpecieId="KCaMcomplex_0_1_2_0" />
+  <Product SpecieId="KCaM_0_1" />
+  <Product SpecieId="KCaM_2_0" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction93" id="reaction93">
+  <Reactant SpecieId="KCaM_0_1" />
+  <Reactant SpecieId="KCaM_2_1" />
+  <Product SpecieId="KCaMcomplex_0_1_2_1" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction94" id="reaction94">
+  <Reactant SpecieId="KCaMcomplex_0_1_2_1" />
+  <Product SpecieId="KCaM_0_1" />
+  <Product SpecieId="KCaM_2_1" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction95" id="reaction95">
+  <Reactant SpecieId="KCaM_0_1" />
+  <Reactant SpecieId="KCaM_2_2" />
+  <Product SpecieId="KCaMcomplex_0_1_2_2" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction96" id="reaction96">
+  <Reactant SpecieId="KCaMcomplex_0_1_2_2" />
+  <Product SpecieId="KCaM_0_1" />
+  <Product SpecieId="KCaM_2_2" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction97" id="reaction97">
+  <Reactant SpecieId="KCaM_0_2" />
+  <Reactant SpecieId="KCaM_1_0" />
+  <Product SpecieId="KCaMcomplex_0_2_1_0" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction98" id="reaction98">
+  <Reactant SpecieId="KCaMcomplex_0_2_1_0" />
+  <Product SpecieId="KCaM_0_2" />
+  <Product SpecieId="KCaM_1_0" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction99" id="reaction99">
+  <Reactant SpecieId="KCaM_0_2" />
+  <Reactant SpecieId="KCaM_1_1" />
+  <Product SpecieId="KCaMcomplex_0_2_1_1" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction100" id="reaction100">
+  <Reactant SpecieId="KCaMcomplex_0_2_1_1" />
+  <Product SpecieId="KCaM_0_2" />
+  <Product SpecieId="KCaM_1_1" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction101" id="reaction101">
+  <Reactant SpecieId="KCaM_0_2" />
+  <Reactant SpecieId="KCaM_1_2" />
+  <Product SpecieId="KCaMcomplex_0_2_1_2" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction102" id="reaction102">
+  <Reactant SpecieId="KCaMcomplex_0_2_1_2" />
+  <Product SpecieId="KCaM_0_2" />
+  <Product SpecieId="KCaM_1_2" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction103" id="reaction103">
+  <Reactant SpecieId="KCaM_0_2" />
+  <Reactant SpecieId="KCaM_2_0" />
+  <Product SpecieId="KCaMcomplex_0_2_2_0" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction104" id="reaction104">
+  <Reactant SpecieId="KCaMcomplex_0_2_2_0" />
+  <Product SpecieId="KCaM_0_2" />
+  <Product SpecieId="KCaM_2_0" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction105" id="reaction105">
+  <Reactant SpecieId="KCaM_0_2" />
+  <Reactant SpecieId="KCaM_2_1" />
+  <Product SpecieId="KCaMcomplex_0_2_2_1" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction106" id="reaction106">
+  <Reactant SpecieId="KCaMcomplex_0_2_2_1" />
+  <Product SpecieId="KCaM_0_2" />
+  <Product SpecieId="KCaM_2_1" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction107" id="reaction107">
+  <Reactant SpecieId="KCaM_0_2" />
+  <Reactant SpecieId="KCaM_2_2" />
+  <Product SpecieId="KCaMcomplex_0_2_2_2" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction108" id="reaction108">
+  <Reactant SpecieId="KCaMcomplex_0_2_2_2" />
+  <Product SpecieId="KCaM_0_2" />
+  <Product SpecieId="KCaM_2_2" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction109" id="reaction109">
+  <Reactant SpecieId="KCaM_1_0" />
+  <Reactant SpecieId="KCaM_1_1" />
+  <Product SpecieId="KCaMcomplex_1_0_1_1" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction110" id="reaction110">
+  <Reactant SpecieId="KCaMcomplex_1_0_1_1" />
+  <Product SpecieId="KCaM_1_0" />
+  <Product SpecieId="KCaM_1_1" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction111" id="reaction111">
+  <Reactant SpecieId="KCaM_1_0" />
+  <Reactant SpecieId="KCaM_1_2" />
+  <Product SpecieId="KCaMcomplex_1_0_1_2" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction112" id="reaction112">
+  <Reactant SpecieId="KCaMcomplex_1_0_1_2" />
+  <Product SpecieId="KCaM_1_0" />
+  <Product SpecieId="KCaM_1_2" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction113" id="reaction113">
+  <Reactant SpecieId="KCaM_1_0" />
+  <Reactant SpecieId="KCaM_2_0" />
+  <Product SpecieId="KCaMcomplex_1_0_2_0" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction114" id="reaction114">
+  <Reactant SpecieId="KCaMcomplex_1_0_2_0" />
+  <Product SpecieId="KCaM_1_0" />
+  <Product SpecieId="KCaM_2_0" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction115" id="reaction115">
+  <Reactant SpecieId="KCaM_1_0" />
+  <Reactant SpecieId="KCaM_2_1" />
+  <Product SpecieId="KCaMcomplex_1_0_2_1" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction116" id="reaction116">
+  <Reactant SpecieId="KCaMcomplex_1_0_2_1" />
+  <Product SpecieId="KCaM_1_0" />
+  <Product SpecieId="KCaM_2_1" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction117" id="reaction117">
+  <Reactant SpecieId="KCaM_1_0" />
+  <Reactant SpecieId="KCaM_2_2" />
+  <Product SpecieId="KCaMcomplex_1_0_2_2" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction118" id="reaction118">
+  <Reactant SpecieId="KCaMcomplex_1_0_2_2" />
+  <Product SpecieId="KCaM_1_0" />
+  <Product SpecieId="KCaM_2_2" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction119" id="reaction119">
+  <Reactant SpecieId="KCaM_1_1" />
+  <Reactant SpecieId="KCaM_1_2" />
+  <Product SpecieId="KCaMcomplex_1_1_1_2" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction120" id="reaction120">
+  <Reactant SpecieId="KCaMcomplex_1_1_1_2" />
+  <Product SpecieId="KCaM_1_1" />
+  <Product SpecieId="KCaM_1_2" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction121" id="reaction121">
+  <Reactant SpecieId="KCaM_1_1" />
+  <Reactant SpecieId="KCaM_2_0" />
+  <Product SpecieId="KCaMcomplex_1_1_2_0" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction122" id="reaction122">
+  <Reactant SpecieId="KCaMcomplex_1_1_2_0" />
+  <Product SpecieId="KCaM_1_1" />
+  <Product SpecieId="KCaM_2_0" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction123" id="reaction123">
+  <Reactant SpecieId="KCaM_1_1" />
+  <Reactant SpecieId="KCaM_2_1" />
+  <Product SpecieId="KCaMcomplex_1_1_2_1" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction124" id="reaction124">
+  <Reactant SpecieId="KCaMcomplex_1_1_2_1" />
+  <Product SpecieId="KCaM_1_1" />
+  <Product SpecieId="KCaM_2_1" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction125" id="reaction125">
+  <Reactant SpecieId="KCaM_1_1" />
+  <Reactant SpecieId="KCaM_2_2" />
+  <Product SpecieId="KCaMcomplex_1_1_2_2" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction126" id="reaction126">
+  <Reactant SpecieId="KCaMcomplex_1_1_2_2" />
+  <Product SpecieId="KCaM_1_1" />
+  <Product SpecieId="KCaM_2_2" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction127" id="reaction127">
+  <Reactant SpecieId="KCaM_1_2" />
+  <Reactant SpecieId="KCaM_2_0" />
+  <Product SpecieId="KCaMcomplex_1_2_2_0" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction128" id="reaction128">
+  <Reactant SpecieId="KCaMcomplex_1_2_2_0" />
+  <Product SpecieId="KCaM_1_2" />
+  <Product SpecieId="KCaM_2_0" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction129" id="reaction129">
+  <Reactant SpecieId="KCaM_1_2" />
+  <Reactant SpecieId="KCaM_2_1" />
+  <Product SpecieId="KCaMcomplex_1_2_2_1" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction130" id="reaction130">
+  <Reactant SpecieId="KCaMcomplex_1_2_2_1" />
+  <Product SpecieId="KCaM_1_2" />
+  <Product SpecieId="KCaM_2_1" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction131" id="reaction131">
+  <Reactant SpecieId="KCaM_1_2" />
+  <Reactant SpecieId="KCaM_2_2" />
+  <Product SpecieId="KCaMcomplex_1_2_2_2" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction132" id="reaction132">
+  <Reactant SpecieId="KCaMcomplex_1_2_2_2" />
+  <Product SpecieId="KCaM_1_2" />
+  <Product SpecieId="KCaM_2_2" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction133" id="reaction133">
+  <Reactant SpecieId="KCaM_2_0" />
+  <Reactant SpecieId="KCaM_2_1" />
+  <Product SpecieId="KCaMcomplex_2_0_2_1" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction134" id="reaction134">
+  <Reactant SpecieId="KCaMcomplex_2_0_2_1" />
+  <Product SpecieId="KCaM_2_0" />
+  <Product SpecieId="KCaM_2_1" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction135" id="reaction135">
+  <Reactant SpecieId="KCaM_2_0" />
+  <Reactant SpecieId="KCaM_2_2" />
+  <Product SpecieId="KCaMcomplex_2_0_2_2" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction136" id="reaction136">
+  <Reactant SpecieId="KCaMcomplex_2_0_2_2" />
+  <Product SpecieId="KCaM_2_0" />
+  <Product SpecieId="KCaM_2_2" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction137" id="reaction137">
+  <Reactant SpecieId="KCaM_2_1" />
+  <Reactant SpecieId="KCaM_2_2" />
+  <Product SpecieId="KCaMcomplex_2_1_2_2" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction138" id="reaction138">
+  <Reactant SpecieId="KCaMcomplex_2_1_2_2" />
+  <Product SpecieId="KCaM_2_1" />
+  <Product SpecieId="KCaM_2_2" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction139" id="reaction139">
+  <Reactant SpecieId="KCaM_0_0" power="2.0" />
+  <Product SpecieId="KCaMcomplex_0_0_0_0" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction140" id="reaction140">
+  <Reactant SpecieId="KCaMcomplex_0_0_0_0" />
+  <Product SpecieId="KCaM_0_0" power="2.0" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction141" id="reaction141">
+  <Reactant SpecieId="KCaM_0_1" power="2.0" />
+  <Product SpecieId="KCaMcomplex_0_1_0_1" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction142" id="reaction142">
+  <Reactant SpecieId="KCaMcomplex_0_1_0_1" />
+  <Product SpecieId="KCaM_0_1" power="2.0" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction143" id="reaction143">
+  <Reactant SpecieId="KCaM_0_2" power="2.0" />
+  <Product SpecieId="KCaMcomplex_0_2_0_2" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction144" id="reaction144">
+  <Reactant SpecieId="KCaMcomplex_0_2_0_2" />
+  <Product SpecieId="KCaM_0_2" power="2.0" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction145" id="reaction145">
+  <Reactant SpecieId="KCaM_1_0" power="2.0" />
+  <Product SpecieId="KCaMcomplex_1_0_1_0" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction146" id="reaction146">
+  <Reactant SpecieId="KCaMcomplex_1_0_1_0" />
+  <Product SpecieId="KCaM_1_0" power="2.0" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction147" id="reaction147">
+  <Reactant SpecieId="KCaM_1_1" power="2.0" />
+  <Product SpecieId="KCaMcomplex_1_1_1_1" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction148" id="reaction148">
+  <Reactant SpecieId="KCaMcomplex_1_1_1_1" />
+  <Product SpecieId="KCaM_1_1" power="2.0" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction149" id="reaction149">
+  <Reactant SpecieId="KCaM_1_2" power="2.0" />
+  <Product SpecieId="KCaMcomplex_1_2_1_2" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction150" id="reaction150">
+  <Reactant SpecieId="KCaMcomplex_1_2_1_2" />
+  <Product SpecieId="KCaM_1_2" power="2.0" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction151" id="reaction151">
+  <Reactant SpecieId="KCaM_2_0" power="2.0" />
+  <Product SpecieId="KCaMcomplex_2_0_2_0" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction152" id="reaction152">
+  <Reactant SpecieId="KCaMcomplex_2_0_2_0" />
+  <Product SpecieId="KCaM_2_0" power="2.0" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction153" id="reaction153">
+  <Reactant SpecieId="KCaM_2_1" power="2.0" />
+  <Product SpecieId="KCaMcomplex_2_1_2_1" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction154" id="reaction154">
+  <Reactant SpecieId="KCaMcomplex_2_1_2_1" />
+  <Product SpecieId="KCaM_2_1" power="2.0" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction155" id="reaction155">
+  <Reactant SpecieId="KCaM_2_2" power="2.0" />
+  <Product SpecieId="KCaMcomplex_2_2_2_2" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction156" id="reaction156">
+  <Reactant SpecieId="KCaMcomplex_2_2_2_2" />
+  <Product SpecieId="KCaM_2_2" power="2.0" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction157" id="reaction157">
+  <Reactant SpecieId="KCaMcomplex_0_0_0_1" />
+  <Product SpecieId="KCaM_0_1" />
+  <Product SpecieId="pKCaM_0_0" />
+  <forwardRate>0.0</forwardRate>
+  </Reaction>
+  <Reaction name="reaction158" id="reaction158">
+  <Reactant SpecieId="KCaMcomplex_0_0_0_1" />
+  <Product SpecieId="KCaM_0_0" />
+  <Product SpecieId="pKCaM_0_1" />
+  <forwardRate>6e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction159" id="reaction159">
+  <Reactant SpecieId="KCaMcomplex_0_0_0_2" />
+  <Product SpecieId="KCaM_0_2" />
+  <Product SpecieId="pKCaM_0_0" />
+  <forwardRate>0.0</forwardRate>
+  </Reaction>
+  <Reaction name="reaction160" id="reaction160">
+  <Reactant SpecieId="KCaMcomplex_0_0_0_2" />
+  <Product SpecieId="KCaM_0_0" />
+  <Product SpecieId="pKCaM_0_2" />
+  <forwardRate>0.00012</forwardRate>
+  </Reaction>
+  <Reaction name="reaction161" id="reaction161">
+  <Reactant SpecieId="KCaMcomplex_0_0_1_0" />
+  <Product SpecieId="KCaM_1_0" />
+  <Product SpecieId="pKCaM_0_0" />
+  <forwardRate>0.0</forwardRate>
+  </Reaction>
+  <Reaction name="reaction162" id="reaction162">
+  <Reactant SpecieId="KCaMcomplex_0_0_1_0" />
+  <Product SpecieId="KCaM_0_0" />
+  <Product SpecieId="pKCaM_1_0" />
+  <forwardRate>3.2e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction163" id="reaction163">
+  <Reactant SpecieId="KCaMcomplex_0_0_1_1" />
+  <Product SpecieId="KCaM_1_1" />
+  <Product SpecieId="pKCaM_0_0" />
+  <forwardRate>0.0</forwardRate>
+  </Reaction>
+  <Reaction name="reaction164" id="reaction164">
+  <Reactant SpecieId="KCaMcomplex_0_0_1_1" />
+  <Product SpecieId="KCaM_0_0" />
+  <Product SpecieId="pKCaM_1_1" />
+  <forwardRate>9.400000000000001e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction165" id="reaction165">
+  <Reactant SpecieId="KCaMcomplex_0_0_1_2" />
+  <Product SpecieId="KCaM_1_2" />
+  <Product SpecieId="pKCaM_0_0" />
+  <forwardRate>0.0</forwardRate>
+  </Reaction>
+  <Reaction name="reaction166" id="reaction166">
+  <Reactant SpecieId="KCaMcomplex_0_0_1_2" />
+  <Product SpecieId="KCaM_0_0" />
+  <Product SpecieId="pKCaM_1_2" />
+  <forwardRate>0.000154</forwardRate>
+  </Reaction>
+  <Reaction name="reaction167" id="reaction167">
+  <Reactant SpecieId="KCaMcomplex_0_0_2_0" />
+  <Product SpecieId="KCaM_2_0" />
+  <Product SpecieId="pKCaM_0_0" />
+  <forwardRate>0.0</forwardRate>
+  </Reaction>
+  <Reaction name="reaction168" id="reaction168">
+  <Reactant SpecieId="KCaMcomplex_0_0_2_0" />
+  <Product SpecieId="KCaM_0_0" />
+  <Product SpecieId="pKCaM_2_0" />
+  <forwardRate>6.4e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction169" id="reaction169">
+  <Reactant SpecieId="KCaMcomplex_0_0_2_1" />
+  <Product SpecieId="KCaM_2_1" />
+  <Product SpecieId="pKCaM_0_0" />
+  <forwardRate>0.0</forwardRate>
+  </Reaction>
+  <Reaction name="reaction170" id="reaction170">
+  <Reactant SpecieId="KCaMcomplex_0_0_2_1" />
+  <Product SpecieId="KCaM_0_0" />
+  <Product SpecieId="pKCaM_2_1" />
+  <forwardRate>0.000124</forwardRate>
+  </Reaction>
+  <Reaction name="reaction171" id="reaction171">
+  <Reactant SpecieId="KCaMcomplex_0_0_2_2" />
+  <Product SpecieId="KCaM_2_2" />
+  <Product SpecieId="pKCaM_0_0" />
+  <forwardRate>0.0</forwardRate>
+  </Reaction>
+  <Reaction name="reaction172" id="reaction172">
+  <Reactant SpecieId="KCaMcomplex_0_0_2_2" />
+  <Product SpecieId="KCaM_0_0" />
+  <Product SpecieId="pKCaM_2_2" />
+  <forwardRate>0.00096</forwardRate>
+  </Reaction>
+  <Reaction name="reaction173" id="reaction173">
+  <Reactant SpecieId="KCaMcomplex_0_1_0_2" />
+  <Product SpecieId="KCaM_0_2" />
+  <Product SpecieId="pKCaM_0_1" />
+  <forwardRate>6e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction174" id="reaction174">
+  <Reactant SpecieId="KCaMcomplex_0_1_0_2" />
+  <Product SpecieId="KCaM_0_1" />
+  <Product SpecieId="pKCaM_0_2" />
+  <forwardRate>0.00012</forwardRate>
+  </Reaction>
+  <Reaction name="reaction175" id="reaction175">
+  <Reactant SpecieId="KCaMcomplex_0_1_1_0" />
+  <Product SpecieId="KCaM_1_0" />
+  <Product SpecieId="pKCaM_0_1" />
+  <forwardRate>6e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction176" id="reaction176">
+  <Reactant SpecieId="KCaMcomplex_0_1_1_0" />
+  <Product SpecieId="KCaM_0_1" />
+  <Product SpecieId="pKCaM_1_0" />
+  <forwardRate>3.2e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction177" id="reaction177">
+  <Reactant SpecieId="KCaMcomplex_0_1_1_1" />
+  <Product SpecieId="KCaM_1_1" />
+  <Product SpecieId="pKCaM_0_1" />
+  <forwardRate>6e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction178" id="reaction178">
+  <Reactant SpecieId="KCaMcomplex_0_1_1_1" />
+  <Product SpecieId="KCaM_0_1" />
+  <Product SpecieId="pKCaM_1_1" />
+  <forwardRate>9.400000000000001e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction179" id="reaction179">
+  <Reactant SpecieId="KCaMcomplex_0_1_1_2" />
+  <Product SpecieId="KCaM_1_2" />
+  <Product SpecieId="pKCaM_0_1" />
+  <forwardRate>6e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction180" id="reaction180">
+  <Reactant SpecieId="KCaMcomplex_0_1_1_2" />
+  <Product SpecieId="KCaM_0_1" />
+  <Product SpecieId="pKCaM_1_2" />
+  <forwardRate>0.000154</forwardRate>
+  </Reaction>
+  <Reaction name="reaction181" id="reaction181">
+  <Reactant SpecieId="KCaMcomplex_0_1_2_0" />
+  <Product SpecieId="KCaM_2_0" />
+  <Product SpecieId="pKCaM_0_1" />
+  <forwardRate>6e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction182" id="reaction182">
+  <Reactant SpecieId="KCaMcomplex_0_1_2_0" />
+  <Product SpecieId="KCaM_0_1" />
+  <Product SpecieId="pKCaM_2_0" />
+  <forwardRate>6.4e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction183" id="reaction183">
+  <Reactant SpecieId="KCaMcomplex_0_1_2_1" />
+  <Product SpecieId="KCaM_2_1" />
+  <Product SpecieId="pKCaM_0_1" />
+  <forwardRate>6e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction184" id="reaction184">
+  <Reactant SpecieId="KCaMcomplex_0_1_2_1" />
+  <Product SpecieId="KCaM_0_1" />
+  <Product SpecieId="pKCaM_2_1" />
+  <forwardRate>0.000124</forwardRate>
+  </Reaction>
+  <Reaction name="reaction185" id="reaction185">
+  <Reactant SpecieId="KCaMcomplex_0_1_2_2" />
+  <Product SpecieId="KCaM_2_2" />
+  <Product SpecieId="pKCaM_0_1" />
+  <forwardRate>6e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction186" id="reaction186">
+  <Reactant SpecieId="KCaMcomplex_0_1_2_2" />
+  <Product SpecieId="KCaM_0_1" />
+  <Product SpecieId="pKCaM_2_2" />
+  <forwardRate>0.00096</forwardRate>
+  </Reaction>
+  <Reaction name="reaction187" id="reaction187">
+  <Reactant SpecieId="KCaMcomplex_0_2_1_0" />
+  <Product SpecieId="KCaM_1_0" />
+  <Product SpecieId="pKCaM_0_2" />
+  <forwardRate>0.00012</forwardRate>
+  </Reaction>
+  <Reaction name="reaction188" id="reaction188">
+  <Reactant SpecieId="KCaMcomplex_0_2_1_0" />
+  <Product SpecieId="KCaM_0_2" />
+  <Product SpecieId="pKCaM_1_0" />
+  <forwardRate>3.2e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction189" id="reaction189">
+  <Reactant SpecieId="KCaMcomplex_0_2_1_1" />
+  <Product SpecieId="KCaM_1_1" />
+  <Product SpecieId="pKCaM_0_2" />
+  <forwardRate>0.00012</forwardRate>
+  </Reaction>
+  <Reaction name="reaction190" id="reaction190">
+  <Reactant SpecieId="KCaMcomplex_0_2_1_1" />
+  <Product SpecieId="KCaM_0_2" />
+  <Product SpecieId="pKCaM_1_1" />
+  <forwardRate>9.400000000000001e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction191" id="reaction191">
+  <Reactant SpecieId="KCaMcomplex_0_2_1_2" />
+  <Product SpecieId="KCaM_1_2" />
+  <Product SpecieId="pKCaM_0_2" />
+  <forwardRate>0.00012</forwardRate>
+  </Reaction>
+  <Reaction name="reaction192" id="reaction192">
+  <Reactant SpecieId="KCaMcomplex_0_2_1_2" />
+  <Product SpecieId="KCaM_0_2" />
+  <Product SpecieId="pKCaM_1_2" />
+  <forwardRate>0.000154</forwardRate>
+  </Reaction>
+  <Reaction name="reaction193" id="reaction193">
+  <Reactant SpecieId="KCaMcomplex_0_2_2_0" />
+  <Product SpecieId="KCaM_2_0" />
+  <Product SpecieId="pKCaM_0_2" />
+  <forwardRate>0.00012</forwardRate>
+  </Reaction>
+  <Reaction name="reaction194" id="reaction194">
+  <Reactant SpecieId="KCaMcomplex_0_2_2_0" />
+  <Product SpecieId="KCaM_0_2" />
+  <Product SpecieId="pKCaM_2_0" />
+  <forwardRate>6.4e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction195" id="reaction195">
+  <Reactant SpecieId="KCaMcomplex_0_2_2_1" />
+  <Product SpecieId="KCaM_2_1" />
+  <Product SpecieId="pKCaM_0_2" />
+  <forwardRate>0.00012</forwardRate>
+  </Reaction>
+  <Reaction name="reaction196" id="reaction196">
+  <Reactant SpecieId="KCaMcomplex_0_2_2_1" />
+  <Product SpecieId="KCaM_0_2" />
+  <Product SpecieId="pKCaM_2_1" />
+  <forwardRate>0.000124</forwardRate>
+  </Reaction>
+  <Reaction name="reaction197" id="reaction197">
+  <Reactant SpecieId="KCaMcomplex_0_2_2_2" />
+  <Product SpecieId="KCaM_2_2" />
+  <Product SpecieId="pKCaM_0_2" />
+  <forwardRate>0.00012</forwardRate>
+  </Reaction>
+  <Reaction name="reaction198" id="reaction198">
+  <Reactant SpecieId="KCaMcomplex_0_2_2_2" />
+  <Product SpecieId="KCaM_0_2" />
+  <Product SpecieId="pKCaM_2_2" />
+  <forwardRate>0.00096</forwardRate>
+  </Reaction>
+  <Reaction name="reaction199" id="reaction199">
+  <Reactant SpecieId="KCaMcomplex_1_0_1_1" />
+  <Product SpecieId="KCaM_1_1" />
+  <Product SpecieId="pKCaM_1_0" />
+  <forwardRate>3.2e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction200" id="reaction200">
+  <Reactant SpecieId="KCaMcomplex_1_0_1_1" />
+  <Product SpecieId="KCaM_1_0" />
+  <Product SpecieId="pKCaM_1_1" />
+  <forwardRate>9.400000000000001e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction201" id="reaction201">
+  <Reactant SpecieId="KCaMcomplex_1_0_1_2" />
+  <Product SpecieId="KCaM_1_2" />
+  <Product SpecieId="pKCaM_1_0" />
+  <forwardRate>3.2e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction202" id="reaction202">
+  <Reactant SpecieId="KCaMcomplex_1_0_1_2" />
+  <Product SpecieId="KCaM_1_0" />
+  <Product SpecieId="pKCaM_1_2" />
+  <forwardRate>0.000154</forwardRate>
+  </Reaction>
+  <Reaction name="reaction203" id="reaction203">
+  <Reactant SpecieId="KCaMcomplex_1_0_2_0" />
+  <Product SpecieId="KCaM_2_0" />
+  <Product SpecieId="pKCaM_1_0" />
+  <forwardRate>3.2e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction204" id="reaction204">
+  <Reactant SpecieId="KCaMcomplex_1_0_2_0" />
+  <Product SpecieId="KCaM_1_0" />
+  <Product SpecieId="pKCaM_2_0" />
+  <forwardRate>6.4e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction205" id="reaction205">
+  <Reactant SpecieId="KCaMcomplex_1_0_2_1" />
+  <Product SpecieId="KCaM_2_1" />
+  <Product SpecieId="pKCaM_1_0" />
+  <forwardRate>3.2e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction206" id="reaction206">
+  <Reactant SpecieId="KCaMcomplex_1_0_2_1" />
+  <Product SpecieId="KCaM_1_0" />
+  <Product SpecieId="pKCaM_2_1" />
+  <forwardRate>0.000124</forwardRate>
+  </Reaction>
+  <Reaction name="reaction207" id="reaction207">
+  <Reactant SpecieId="KCaMcomplex_1_0_2_2" />
+  <Product SpecieId="KCaM_2_2" />
+  <Product SpecieId="pKCaM_1_0" />
+  <forwardRate>3.2e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction208" id="reaction208">
+  <Reactant SpecieId="KCaMcomplex_1_0_2_2" />
+  <Product SpecieId="KCaM_1_0" />
+  <Product SpecieId="pKCaM_2_2" />
+  <forwardRate>0.00096</forwardRate>
+  </Reaction>
+  <Reaction name="reaction209" id="reaction209">
+  <Reactant SpecieId="KCaMcomplex_1_1_1_2" />
+  <Product SpecieId="KCaM_1_2" />
+  <Product SpecieId="pKCaM_1_1" />
+  <forwardRate>9.400000000000001e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction210" id="reaction210">
+  <Reactant SpecieId="KCaMcomplex_1_1_1_2" />
+  <Product SpecieId="KCaM_1_1" />
+  <Product SpecieId="pKCaM_1_2" />
+  <forwardRate>0.000154</forwardRate>
+  </Reaction>
+  <Reaction name="reaction211" id="reaction211">
+  <Reactant SpecieId="KCaMcomplex_1_1_2_0" />
+  <Product SpecieId="KCaM_2_0" />
+  <Product SpecieId="pKCaM_1_1" />
+  <forwardRate>9.400000000000001e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction212" id="reaction212">
+  <Reactant SpecieId="KCaMcomplex_1_1_2_0" />
+  <Product SpecieId="KCaM_1_1" />
+  <Product SpecieId="pKCaM_2_0" />
+  <forwardRate>6.4e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction213" id="reaction213">
+  <Reactant SpecieId="KCaMcomplex_1_1_2_1" />
+  <Product SpecieId="KCaM_2_1" />
+  <Product SpecieId="pKCaM_1_1" />
+  <forwardRate>9.400000000000001e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction214" id="reaction214">
+  <Reactant SpecieId="KCaMcomplex_1_1_2_1" />
+  <Product SpecieId="KCaM_1_1" />
+  <Product SpecieId="pKCaM_2_1" />
+  <forwardRate>0.000124</forwardRate>
+  </Reaction>
+  <Reaction name="reaction215" id="reaction215">
+  <Reactant SpecieId="KCaMcomplex_1_1_2_2" />
+  <Product SpecieId="KCaM_2_2" />
+  <Product SpecieId="pKCaM_1_1" />
+  <forwardRate>9.400000000000001e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction216" id="reaction216">
+  <Reactant SpecieId="KCaMcomplex_1_1_2_2" />
+  <Product SpecieId="KCaM_1_1" />
+  <Product SpecieId="pKCaM_2_2" />
+  <forwardRate>0.00096</forwardRate>
+  </Reaction>
+  <Reaction name="reaction217" id="reaction217">
+  <Reactant SpecieId="KCaMcomplex_1_2_2_0" />
+  <Product SpecieId="KCaM_2_0" />
+  <Product SpecieId="pKCaM_1_2" />
+  <forwardRate>0.000154</forwardRate>
+  </Reaction>
+  <Reaction name="reaction218" id="reaction218">
+  <Reactant SpecieId="KCaMcomplex_1_2_2_0" />
+  <Product SpecieId="KCaM_1_2" />
+  <Product SpecieId="pKCaM_2_0" />
+  <forwardRate>6.4e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction219" id="reaction219">
+  <Reactant SpecieId="KCaMcomplex_1_2_2_1" />
+  <Product SpecieId="KCaM_2_1" />
+  <Product SpecieId="pKCaM_1_2" />
+  <forwardRate>0.000154</forwardRate>
+  </Reaction>
+  <Reaction name="reaction220" id="reaction220">
+  <Reactant SpecieId="KCaMcomplex_1_2_2_1" />
+  <Product SpecieId="KCaM_1_2" />
+  <Product SpecieId="pKCaM_2_1" />
+  <forwardRate>0.000124</forwardRate>
+  </Reaction>
+  <Reaction name="reaction221" id="reaction221">
+  <Reactant SpecieId="KCaMcomplex_1_2_2_2" />
+  <Product SpecieId="KCaM_2_2" />
+  <Product SpecieId="pKCaM_1_2" />
+  <forwardRate>0.000154</forwardRate>
+  </Reaction>
+  <Reaction name="reaction222" id="reaction222">
+  <Reactant SpecieId="KCaMcomplex_1_2_2_2" />
+  <Product SpecieId="KCaM_1_2" />
+  <Product SpecieId="pKCaM_2_2" />
+  <forwardRate>0.00096</forwardRate>
+  </Reaction>
+  <Reaction name="reaction223" id="reaction223">
+  <Reactant SpecieId="KCaMcomplex_2_0_2_1" />
+  <Product SpecieId="KCaM_2_1" />
+  <Product SpecieId="pKCaM_2_0" />
+  <forwardRate>6.4e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction224" id="reaction224">
+  <Reactant SpecieId="KCaMcomplex_2_0_2_1" />
+  <Product SpecieId="KCaM_2_0" />
+  <Product SpecieId="pKCaM_2_1" />
+  <forwardRate>0.000124</forwardRate>
+  </Reaction>
+  <Reaction name="reaction225" id="reaction225">
+  <Reactant SpecieId="KCaMcomplex_2_0_2_2" />
+  <Product SpecieId="KCaM_2_2" />
+  <Product SpecieId="pKCaM_2_0" />
+  <forwardRate>6.4e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction226" id="reaction226">
+  <Reactant SpecieId="KCaMcomplex_2_0_2_2" />
+  <Product SpecieId="KCaM_2_0" />
+  <Product SpecieId="pKCaM_2_2" />
+  <forwardRate>0.00096</forwardRate>
+  </Reaction>
+  <Reaction name="reaction227" id="reaction227">
+  <Reactant SpecieId="KCaMcomplex_2_1_2_2" />
+  <Product SpecieId="KCaM_2_2" />
+  <Product SpecieId="pKCaM_2_1" />
+  <forwardRate>0.000124</forwardRate>
+  </Reaction>
+  <Reaction name="reaction228" id="reaction228">
+  <Reactant SpecieId="KCaMcomplex_2_1_2_2" />
+  <Product SpecieId="KCaM_2_1" />
+  <Product SpecieId="pKCaM_2_2" />
+  <forwardRate>0.00096</forwardRate>
+  </Reaction>
+  <Reaction name="reaction229" id="reaction229">
+  <Reactant SpecieId="KCaMcomplex_0_0_0_0" />
+  <Product SpecieId="KCaM_0_0" />
+  <Product SpecieId="pKCaM_0_0" />
+  <forwardRate>0.0</forwardRate>
+  </Reaction>
+  <Reaction name="reaction230" id="reaction230">
+  <Reactant SpecieId="KCaMcomplex_0_1_0_1" />
+  <Product SpecieId="KCaM_0_1" />
+  <Product SpecieId="pKCaM_0_1" />
+  <forwardRate>6e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction231" id="reaction231">
+  <Reactant SpecieId="KCaMcomplex_0_2_0_2" />
+  <Product SpecieId="KCaM_0_2" />
+  <Product SpecieId="pKCaM_0_2" />
+  <forwardRate>0.00012</forwardRate>
+  </Reaction>
+  <Reaction name="reaction232" id="reaction232">
+  <Reactant SpecieId="KCaMcomplex_1_0_1_0" />
+  <Product SpecieId="KCaM_1_0" />
+  <Product SpecieId="pKCaM_1_0" />
+  <forwardRate>3.2e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction233" id="reaction233">
+  <Reactant SpecieId="KCaMcomplex_1_1_1_1" />
+  <Product SpecieId="KCaM_1_1" />
+  <Product SpecieId="pKCaM_1_1" />
+  <forwardRate>9.400000000000001e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction234" id="reaction234">
+  <Reactant SpecieId="KCaMcomplex_1_2_1_2" />
+  <Product SpecieId="KCaM_1_2" />
+  <Product SpecieId="pKCaM_1_2" />
+  <forwardRate>0.000154</forwardRate>
+  </Reaction>
+  <Reaction name="reaction235" id="reaction235">
+  <Reactant SpecieId="KCaMcomplex_2_0_2_0" />
+  <Product SpecieId="KCaM_2_0" />
+  <Product SpecieId="pKCaM_2_0" />
+  <forwardRate>6.4e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction236" id="reaction236">
+  <Reactant SpecieId="KCaMcomplex_2_1_2_1" />
+  <Product SpecieId="KCaM_2_1" />
+  <Product SpecieId="pKCaM_2_1" />
+  <forwardRate>0.000124</forwardRate>
+  </Reaction>
+  <Reaction name="reaction237" id="reaction237">
+  <Reactant SpecieId="KCaMcomplex_2_2_2_2" />
+  <Product SpecieId="KCaM_2_2" />
+  <Product SpecieId="pKCaM_2_2" />
+  <forwardRate>0.00096</forwardRate>
+  </Reaction>
+  <Reaction name="reaction238" id="reaction238">
+  <Reactant SpecieId="KCaM_0_0" />
+  <Reactant SpecieId="pKCaM_0_0" />
+  <Product SpecieId="pKCaMcomplex_0_0_0_0" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction239" id="reaction239">
+  <Reactant SpecieId="pKCaMcomplex_0_0_0_0" />
+  <Product SpecieId="KCaM_0_0" />
+  <Product SpecieId="pKCaM_0_0" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction240" id="reaction240">
+  <Reactant SpecieId="KCaM_0_1" />
+  <Reactant SpecieId="pKCaM_0_0" />
+  <Product SpecieId="pKCaMcomplex_0_0_0_1" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction241" id="reaction241">
+  <Reactant SpecieId="pKCaMcomplex_0_0_0_1" />
+  <Product SpecieId="KCaM_0_1" />
+  <Product SpecieId="pKCaM_0_0" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction242" id="reaction242">
+  <Reactant SpecieId="KCaM_0_2" />
+  <Reactant SpecieId="pKCaM_0_0" />
+  <Product SpecieId="pKCaMcomplex_0_0_0_2" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction243" id="reaction243">
+  <Reactant SpecieId="pKCaMcomplex_0_0_0_2" />
+  <Product SpecieId="KCaM_0_2" />
+  <Product SpecieId="pKCaM_0_0" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction244" id="reaction244">
+  <Reactant SpecieId="KCaM_1_0" />
+  <Reactant SpecieId="pKCaM_0_0" />
+  <Product SpecieId="pKCaMcomplex_0_0_1_0" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction245" id="reaction245">
+  <Reactant SpecieId="pKCaMcomplex_0_0_1_0" />
+  <Product SpecieId="KCaM_1_0" />
+  <Product SpecieId="pKCaM_0_0" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction246" id="reaction246">
+  <Reactant SpecieId="KCaM_1_1" />
+  <Reactant SpecieId="pKCaM_0_0" />
+  <Product SpecieId="pKCaMcomplex_0_0_1_1" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction247" id="reaction247">
+  <Reactant SpecieId="pKCaMcomplex_0_0_1_1" />
+  <Product SpecieId="KCaM_1_1" />
+  <Product SpecieId="pKCaM_0_0" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction248" id="reaction248">
+  <Reactant SpecieId="KCaM_1_2" />
+  <Reactant SpecieId="pKCaM_0_0" />
+  <Product SpecieId="pKCaMcomplex_0_0_1_2" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction249" id="reaction249">
+  <Reactant SpecieId="pKCaMcomplex_0_0_1_2" />
+  <Product SpecieId="KCaM_1_2" />
+  <Product SpecieId="pKCaM_0_0" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction250" id="reaction250">
+  <Reactant SpecieId="KCaM_2_0" />
+  <Reactant SpecieId="pKCaM_0_0" />
+  <Product SpecieId="pKCaMcomplex_0_0_2_0" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction251" id="reaction251">
+  <Reactant SpecieId="pKCaMcomplex_0_0_2_0" />
+  <Product SpecieId="KCaM_2_0" />
+  <Product SpecieId="pKCaM_0_0" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction252" id="reaction252">
+  <Reactant SpecieId="KCaM_2_1" />
+  <Reactant SpecieId="pKCaM_0_0" />
+  <Product SpecieId="pKCaMcomplex_0_0_2_1" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction253" id="reaction253">
+  <Reactant SpecieId="pKCaMcomplex_0_0_2_1" />
+  <Product SpecieId="KCaM_2_1" />
+  <Product SpecieId="pKCaM_0_0" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction254" id="reaction254">
+  <Reactant SpecieId="KCaM_2_2" />
+  <Reactant SpecieId="pKCaM_0_0" />
+  <Product SpecieId="pKCaMcomplex_0_0_2_2" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction255" id="reaction255">
+  <Reactant SpecieId="pKCaMcomplex_0_0_2_2" />
+  <Product SpecieId="KCaM_2_2" />
+  <Product SpecieId="pKCaM_0_0" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction256" id="reaction256">
+  <Reactant SpecieId="KCaM_0_0" />
+  <Reactant SpecieId="pKCaM_0_1" />
+  <Product SpecieId="pKCaMcomplex_0_1_0_0" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction257" id="reaction257">
+  <Reactant SpecieId="pKCaMcomplex_0_1_0_0" />
+  <Product SpecieId="KCaM_0_0" />
+  <Product SpecieId="pKCaM_0_1" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction258" id="reaction258">
+  <Reactant SpecieId="KCaM_0_1" />
+  <Reactant SpecieId="pKCaM_0_1" />
+  <Product SpecieId="pKCaMcomplex_0_1_0_1" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction259" id="reaction259">
+  <Reactant SpecieId="pKCaMcomplex_0_1_0_1" />
+  <Product SpecieId="KCaM_0_1" />
+  <Product SpecieId="pKCaM_0_1" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction260" id="reaction260">
+  <Reactant SpecieId="KCaM_0_2" />
+  <Reactant SpecieId="pKCaM_0_1" />
+  <Product SpecieId="pKCaMcomplex_0_1_0_2" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction261" id="reaction261">
+  <Reactant SpecieId="pKCaMcomplex_0_1_0_2" />
+  <Product SpecieId="KCaM_0_2" />
+  <Product SpecieId="pKCaM_0_1" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction262" id="reaction262">
+  <Reactant SpecieId="KCaM_1_0" />
+  <Reactant SpecieId="pKCaM_0_1" />
+  <Product SpecieId="pKCaMcomplex_0_1_1_0" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction263" id="reaction263">
+  <Reactant SpecieId="pKCaMcomplex_0_1_1_0" />
+  <Product SpecieId="KCaM_1_0" />
+  <Product SpecieId="pKCaM_0_1" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction264" id="reaction264">
+  <Reactant SpecieId="KCaM_1_1" />
+  <Reactant SpecieId="pKCaM_0_1" />
+  <Product SpecieId="pKCaMcomplex_0_1_1_1" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction265" id="reaction265">
+  <Reactant SpecieId="pKCaMcomplex_0_1_1_1" />
+  <Product SpecieId="KCaM_1_1" />
+  <Product SpecieId="pKCaM_0_1" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction266" id="reaction266">
+  <Reactant SpecieId="KCaM_1_2" />
+  <Reactant SpecieId="pKCaM_0_1" />
+  <Product SpecieId="pKCaMcomplex_0_1_1_2" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction267" id="reaction267">
+  <Reactant SpecieId="pKCaMcomplex_0_1_1_2" />
+  <Product SpecieId="KCaM_1_2" />
+  <Product SpecieId="pKCaM_0_1" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction268" id="reaction268">
+  <Reactant SpecieId="KCaM_2_0" />
+  <Reactant SpecieId="pKCaM_0_1" />
+  <Product SpecieId="pKCaMcomplex_0_1_2_0" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction269" id="reaction269">
+  <Reactant SpecieId="pKCaMcomplex_0_1_2_0" />
+  <Product SpecieId="KCaM_2_0" />
+  <Product SpecieId="pKCaM_0_1" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction270" id="reaction270">
+  <Reactant SpecieId="KCaM_2_1" />
+  <Reactant SpecieId="pKCaM_0_1" />
+  <Product SpecieId="pKCaMcomplex_0_1_2_1" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction271" id="reaction271">
+  <Reactant SpecieId="pKCaMcomplex_0_1_2_1" />
+  <Product SpecieId="KCaM_2_1" />
+  <Product SpecieId="pKCaM_0_1" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction272" id="reaction272">
+  <Reactant SpecieId="KCaM_2_2" />
+  <Reactant SpecieId="pKCaM_0_1" />
+  <Product SpecieId="pKCaMcomplex_0_1_2_2" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction273" id="reaction273">
+  <Reactant SpecieId="pKCaMcomplex_0_1_2_2" />
+  <Product SpecieId="KCaM_2_2" />
+  <Product SpecieId="pKCaM_0_1" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction274" id="reaction274">
+  <Reactant SpecieId="KCaM_0_0" />
+  <Reactant SpecieId="pKCaM_0_2" />
+  <Product SpecieId="pKCaMcomplex_0_2_0_0" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction275" id="reaction275">
+  <Reactant SpecieId="pKCaMcomplex_0_2_0_0" />
+  <Product SpecieId="KCaM_0_0" />
+  <Product SpecieId="pKCaM_0_2" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction276" id="reaction276">
+  <Reactant SpecieId="KCaM_0_1" />
+  <Reactant SpecieId="pKCaM_0_2" />
+  <Product SpecieId="pKCaMcomplex_0_2_0_1" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction277" id="reaction277">
+  <Reactant SpecieId="pKCaMcomplex_0_2_0_1" />
+  <Product SpecieId="KCaM_0_1" />
+  <Product SpecieId="pKCaM_0_2" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction278" id="reaction278">
+  <Reactant SpecieId="KCaM_0_2" />
+  <Reactant SpecieId="pKCaM_0_2" />
+  <Product SpecieId="pKCaMcomplex_0_2_0_2" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction279" id="reaction279">
+  <Reactant SpecieId="pKCaMcomplex_0_2_0_2" />
+  <Product SpecieId="KCaM_0_2" />
+  <Product SpecieId="pKCaM_0_2" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction280" id="reaction280">
+  <Reactant SpecieId="KCaM_1_0" />
+  <Reactant SpecieId="pKCaM_0_2" />
+  <Product SpecieId="pKCaMcomplex_0_2_1_0" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction281" id="reaction281">
+  <Reactant SpecieId="pKCaMcomplex_0_2_1_0" />
+  <Product SpecieId="KCaM_1_0" />
+  <Product SpecieId="pKCaM_0_2" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction282" id="reaction282">
+  <Reactant SpecieId="KCaM_1_1" />
+  <Reactant SpecieId="pKCaM_0_2" />
+  <Product SpecieId="pKCaMcomplex_0_2_1_1" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction283" id="reaction283">
+  <Reactant SpecieId="pKCaMcomplex_0_2_1_1" />
+  <Product SpecieId="KCaM_1_1" />
+  <Product SpecieId="pKCaM_0_2" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction284" id="reaction284">
+  <Reactant SpecieId="KCaM_1_2" />
+  <Reactant SpecieId="pKCaM_0_2" />
+  <Product SpecieId="pKCaMcomplex_0_2_1_2" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction285" id="reaction285">
+  <Reactant SpecieId="pKCaMcomplex_0_2_1_2" />
+  <Product SpecieId="KCaM_1_2" />
+  <Product SpecieId="pKCaM_0_2" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction286" id="reaction286">
+  <Reactant SpecieId="KCaM_2_0" />
+  <Reactant SpecieId="pKCaM_0_2" />
+  <Product SpecieId="pKCaMcomplex_0_2_2_0" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction287" id="reaction287">
+  <Reactant SpecieId="pKCaMcomplex_0_2_2_0" />
+  <Product SpecieId="KCaM_2_0" />
+  <Product SpecieId="pKCaM_0_2" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction288" id="reaction288">
+  <Reactant SpecieId="KCaM_2_1" />
+  <Reactant SpecieId="pKCaM_0_2" />
+  <Product SpecieId="pKCaMcomplex_0_2_2_1" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction289" id="reaction289">
+  <Reactant SpecieId="pKCaMcomplex_0_2_2_1" />
+  <Product SpecieId="KCaM_2_1" />
+  <Product SpecieId="pKCaM_0_2" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction290" id="reaction290">
+  <Reactant SpecieId="KCaM_2_2" />
+  <Reactant SpecieId="pKCaM_0_2" />
+  <Product SpecieId="pKCaMcomplex_0_2_2_2" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction291" id="reaction291">
+  <Reactant SpecieId="pKCaMcomplex_0_2_2_2" />
+  <Product SpecieId="KCaM_2_2" />
+  <Product SpecieId="pKCaM_0_2" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction292" id="reaction292">
+  <Reactant SpecieId="KCaM_0_0" />
+  <Reactant SpecieId="pKCaM_1_0" />
+  <Product SpecieId="pKCaMcomplex_1_0_0_0" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction293" id="reaction293">
+  <Reactant SpecieId="pKCaMcomplex_1_0_0_0" />
+  <Product SpecieId="KCaM_0_0" />
+  <Product SpecieId="pKCaM_1_0" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction294" id="reaction294">
+  <Reactant SpecieId="KCaM_0_1" />
+  <Reactant SpecieId="pKCaM_1_0" />
+  <Product SpecieId="pKCaMcomplex_1_0_0_1" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction295" id="reaction295">
+  <Reactant SpecieId="pKCaMcomplex_1_0_0_1" />
+  <Product SpecieId="KCaM_0_1" />
+  <Product SpecieId="pKCaM_1_0" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction296" id="reaction296">
+  <Reactant SpecieId="KCaM_0_2" />
+  <Reactant SpecieId="pKCaM_1_0" />
+  <Product SpecieId="pKCaMcomplex_1_0_0_2" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction297" id="reaction297">
+  <Reactant SpecieId="pKCaMcomplex_1_0_0_2" />
+  <Product SpecieId="KCaM_0_2" />
+  <Product SpecieId="pKCaM_1_0" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction298" id="reaction298">
+  <Reactant SpecieId="KCaM_1_0" />
+  <Reactant SpecieId="pKCaM_1_0" />
+  <Product SpecieId="pKCaMcomplex_1_0_1_0" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction299" id="reaction299">
+  <Reactant SpecieId="pKCaMcomplex_1_0_1_0" />
+  <Product SpecieId="KCaM_1_0" />
+  <Product SpecieId="pKCaM_1_0" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction300" id="reaction300">
+  <Reactant SpecieId="KCaM_1_1" />
+  <Reactant SpecieId="pKCaM_1_0" />
+  <Product SpecieId="pKCaMcomplex_1_0_1_1" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction301" id="reaction301">
+  <Reactant SpecieId="pKCaMcomplex_1_0_1_1" />
+  <Product SpecieId="KCaM_1_1" />
+  <Product SpecieId="pKCaM_1_0" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction302" id="reaction302">
+  <Reactant SpecieId="KCaM_1_2" />
+  <Reactant SpecieId="pKCaM_1_0" />
+  <Product SpecieId="pKCaMcomplex_1_0_1_2" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction303" id="reaction303">
+  <Reactant SpecieId="pKCaMcomplex_1_0_1_2" />
+  <Product SpecieId="KCaM_1_2" />
+  <Product SpecieId="pKCaM_1_0" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction304" id="reaction304">
+  <Reactant SpecieId="KCaM_2_0" />
+  <Reactant SpecieId="pKCaM_1_0" />
+  <Product SpecieId="pKCaMcomplex_1_0_2_0" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction305" id="reaction305">
+  <Reactant SpecieId="pKCaMcomplex_1_0_2_0" />
+  <Product SpecieId="KCaM_2_0" />
+  <Product SpecieId="pKCaM_1_0" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction306" id="reaction306">
+  <Reactant SpecieId="KCaM_2_1" />
+  <Reactant SpecieId="pKCaM_1_0" />
+  <Product SpecieId="pKCaMcomplex_1_0_2_1" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction307" id="reaction307">
+  <Reactant SpecieId="pKCaMcomplex_1_0_2_1" />
+  <Product SpecieId="KCaM_2_1" />
+  <Product SpecieId="pKCaM_1_0" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction308" id="reaction308">
+  <Reactant SpecieId="KCaM_2_2" />
+  <Reactant SpecieId="pKCaM_1_0" />
+  <Product SpecieId="pKCaMcomplex_1_0_2_2" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction309" id="reaction309">
+  <Reactant SpecieId="pKCaMcomplex_1_0_2_2" />
+  <Product SpecieId="KCaM_2_2" />
+  <Product SpecieId="pKCaM_1_0" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction310" id="reaction310">
+  <Reactant SpecieId="KCaM_0_0" />
+  <Reactant SpecieId="pKCaM_1_1" />
+  <Product SpecieId="pKCaMcomplex_1_1_0_0" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction311" id="reaction311">
+  <Reactant SpecieId="pKCaMcomplex_1_1_0_0" />
+  <Product SpecieId="KCaM_0_0" />
+  <Product SpecieId="pKCaM_1_1" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction312" id="reaction312">
+  <Reactant SpecieId="KCaM_0_1" />
+  <Reactant SpecieId="pKCaM_1_1" />
+  <Product SpecieId="pKCaMcomplex_1_1_0_1" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction313" id="reaction313">
+  <Reactant SpecieId="pKCaMcomplex_1_1_0_1" />
+  <Product SpecieId="KCaM_0_1" />
+  <Product SpecieId="pKCaM_1_1" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction314" id="reaction314">
+  <Reactant SpecieId="KCaM_0_2" />
+  <Reactant SpecieId="pKCaM_1_1" />
+  <Product SpecieId="pKCaMcomplex_1_1_0_2" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction315" id="reaction315">
+  <Reactant SpecieId="pKCaMcomplex_1_1_0_2" />
+  <Product SpecieId="KCaM_0_2" />
+  <Product SpecieId="pKCaM_1_1" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction316" id="reaction316">
+  <Reactant SpecieId="KCaM_1_0" />
+  <Reactant SpecieId="pKCaM_1_1" />
+  <Product SpecieId="pKCaMcomplex_1_1_1_0" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction317" id="reaction317">
+  <Reactant SpecieId="pKCaMcomplex_1_1_1_0" />
+  <Product SpecieId="KCaM_1_0" />
+  <Product SpecieId="pKCaM_1_1" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction318" id="reaction318">
+  <Reactant SpecieId="KCaM_1_1" />
+  <Reactant SpecieId="pKCaM_1_1" />
+  <Product SpecieId="pKCaMcomplex_1_1_1_1" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction319" id="reaction319">
+  <Reactant SpecieId="pKCaMcomplex_1_1_1_1" />
+  <Product SpecieId="KCaM_1_1" />
+  <Product SpecieId="pKCaM_1_1" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction320" id="reaction320">
+  <Reactant SpecieId="KCaM_1_2" />
+  <Reactant SpecieId="pKCaM_1_1" />
+  <Product SpecieId="pKCaMcomplex_1_1_1_2" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction321" id="reaction321">
+  <Reactant SpecieId="pKCaMcomplex_1_1_1_2" />
+  <Product SpecieId="KCaM_1_2" />
+  <Product SpecieId="pKCaM_1_1" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction322" id="reaction322">
+  <Reactant SpecieId="KCaM_2_0" />
+  <Reactant SpecieId="pKCaM_1_1" />
+  <Product SpecieId="pKCaMcomplex_1_1_2_0" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction323" id="reaction323">
+  <Reactant SpecieId="pKCaMcomplex_1_1_2_0" />
+  <Product SpecieId="KCaM_2_0" />
+  <Product SpecieId="pKCaM_1_1" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction324" id="reaction324">
+  <Reactant SpecieId="KCaM_2_1" />
+  <Reactant SpecieId="pKCaM_1_1" />
+  <Product SpecieId="pKCaMcomplex_1_1_2_1" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction325" id="reaction325">
+  <Reactant SpecieId="pKCaMcomplex_1_1_2_1" />
+  <Product SpecieId="KCaM_2_1" />
+  <Product SpecieId="pKCaM_1_1" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction326" id="reaction326">
+  <Reactant SpecieId="KCaM_2_2" />
+  <Reactant SpecieId="pKCaM_1_1" />
+  <Product SpecieId="pKCaMcomplex_1_1_2_2" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction327" id="reaction327">
+  <Reactant SpecieId="pKCaMcomplex_1_1_2_2" />
+  <Product SpecieId="KCaM_2_2" />
+  <Product SpecieId="pKCaM_1_1" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction328" id="reaction328">
+  <Reactant SpecieId="KCaM_0_0" />
+  <Reactant SpecieId="pKCaM_1_2" />
+  <Product SpecieId="pKCaMcomplex_1_2_0_0" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction329" id="reaction329">
+  <Reactant SpecieId="pKCaMcomplex_1_2_0_0" />
+  <Product SpecieId="KCaM_0_0" />
+  <Product SpecieId="pKCaM_1_2" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction330" id="reaction330">
+  <Reactant SpecieId="KCaM_0_1" />
+  <Reactant SpecieId="pKCaM_1_2" />
+  <Product SpecieId="pKCaMcomplex_1_2_0_1" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction331" id="reaction331">
+  <Reactant SpecieId="pKCaMcomplex_1_2_0_1" />
+  <Product SpecieId="KCaM_0_1" />
+  <Product SpecieId="pKCaM_1_2" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction332" id="reaction332">
+  <Reactant SpecieId="KCaM_0_2" />
+  <Reactant SpecieId="pKCaM_1_2" />
+  <Product SpecieId="pKCaMcomplex_1_2_0_2" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction333" id="reaction333">
+  <Reactant SpecieId="pKCaMcomplex_1_2_0_2" />
+  <Product SpecieId="KCaM_0_2" />
+  <Product SpecieId="pKCaM_1_2" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction334" id="reaction334">
+  <Reactant SpecieId="KCaM_1_0" />
+  <Reactant SpecieId="pKCaM_1_2" />
+  <Product SpecieId="pKCaMcomplex_1_2_1_0" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction335" id="reaction335">
+  <Reactant SpecieId="pKCaMcomplex_1_2_1_0" />
+  <Product SpecieId="KCaM_1_0" />
+  <Product SpecieId="pKCaM_1_2" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction336" id="reaction336">
+  <Reactant SpecieId="KCaM_1_1" />
+  <Reactant SpecieId="pKCaM_1_2" />
+  <Product SpecieId="pKCaMcomplex_1_2_1_1" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction337" id="reaction337">
+  <Reactant SpecieId="pKCaMcomplex_1_2_1_1" />
+  <Product SpecieId="KCaM_1_1" />
+  <Product SpecieId="pKCaM_1_2" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction338" id="reaction338">
+  <Reactant SpecieId="KCaM_1_2" />
+  <Reactant SpecieId="pKCaM_1_2" />
+  <Product SpecieId="pKCaMcomplex_1_2_1_2" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction339" id="reaction339">
+  <Reactant SpecieId="pKCaMcomplex_1_2_1_2" />
+  <Product SpecieId="KCaM_1_2" />
+  <Product SpecieId="pKCaM_1_2" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction340" id="reaction340">
+  <Reactant SpecieId="KCaM_2_0" />
+  <Reactant SpecieId="pKCaM_1_2" />
+  <Product SpecieId="pKCaMcomplex_1_2_2_0" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction341" id="reaction341">
+  <Reactant SpecieId="pKCaMcomplex_1_2_2_0" />
+  <Product SpecieId="KCaM_2_0" />
+  <Product SpecieId="pKCaM_1_2" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction342" id="reaction342">
+  <Reactant SpecieId="KCaM_2_1" />
+  <Reactant SpecieId="pKCaM_1_2" />
+  <Product SpecieId="pKCaMcomplex_1_2_2_1" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction343" id="reaction343">
+  <Reactant SpecieId="pKCaMcomplex_1_2_2_1" />
+  <Product SpecieId="KCaM_2_1" />
+  <Product SpecieId="pKCaM_1_2" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction344" id="reaction344">
+  <Reactant SpecieId="KCaM_2_2" />
+  <Reactant SpecieId="pKCaM_1_2" />
+  <Product SpecieId="pKCaMcomplex_1_2_2_2" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction345" id="reaction345">
+  <Reactant SpecieId="pKCaMcomplex_1_2_2_2" />
+  <Product SpecieId="KCaM_2_2" />
+  <Product SpecieId="pKCaM_1_2" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction346" id="reaction346">
+  <Reactant SpecieId="KCaM_0_0" />
+  <Reactant SpecieId="pKCaM_2_0" />
+  <Product SpecieId="pKCaMcomplex_2_0_0_0" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction347" id="reaction347">
+  <Reactant SpecieId="pKCaMcomplex_2_0_0_0" />
+  <Product SpecieId="KCaM_0_0" />
+  <Product SpecieId="pKCaM_2_0" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction348" id="reaction348">
+  <Reactant SpecieId="KCaM_0_1" />
+  <Reactant SpecieId="pKCaM_2_0" />
+  <Product SpecieId="pKCaMcomplex_2_0_0_1" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction349" id="reaction349">
+  <Reactant SpecieId="pKCaMcomplex_2_0_0_1" />
+  <Product SpecieId="KCaM_0_1" />
+  <Product SpecieId="pKCaM_2_0" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction350" id="reaction350">
+  <Reactant SpecieId="KCaM_0_2" />
+  <Reactant SpecieId="pKCaM_2_0" />
+  <Product SpecieId="pKCaMcomplex_2_0_0_2" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction351" id="reaction351">
+  <Reactant SpecieId="pKCaMcomplex_2_0_0_2" />
+  <Product SpecieId="KCaM_0_2" />
+  <Product SpecieId="pKCaM_2_0" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction352" id="reaction352">
+  <Reactant SpecieId="KCaM_1_0" />
+  <Reactant SpecieId="pKCaM_2_0" />
+  <Product SpecieId="pKCaMcomplex_2_0_1_0" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction353" id="reaction353">
+  <Reactant SpecieId="pKCaMcomplex_2_0_1_0" />
+  <Product SpecieId="KCaM_1_0" />
+  <Product SpecieId="pKCaM_2_0" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction354" id="reaction354">
+  <Reactant SpecieId="KCaM_1_1" />
+  <Reactant SpecieId="pKCaM_2_0" />
+  <Product SpecieId="pKCaMcomplex_2_0_1_1" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction355" id="reaction355">
+  <Reactant SpecieId="pKCaMcomplex_2_0_1_1" />
+  <Product SpecieId="KCaM_1_1" />
+  <Product SpecieId="pKCaM_2_0" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction356" id="reaction356">
+  <Reactant SpecieId="KCaM_1_2" />
+  <Reactant SpecieId="pKCaM_2_0" />
+  <Product SpecieId="pKCaMcomplex_2_0_1_2" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction357" id="reaction357">
+  <Reactant SpecieId="pKCaMcomplex_2_0_1_2" />
+  <Product SpecieId="KCaM_1_2" />
+  <Product SpecieId="pKCaM_2_0" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction358" id="reaction358">
+  <Reactant SpecieId="KCaM_2_0" />
+  <Reactant SpecieId="pKCaM_2_0" />
+  <Product SpecieId="pKCaMcomplex_2_0_2_0" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction359" id="reaction359">
+  <Reactant SpecieId="pKCaMcomplex_2_0_2_0" />
+  <Product SpecieId="KCaM_2_0" />
+  <Product SpecieId="pKCaM_2_0" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction360" id="reaction360">
+  <Reactant SpecieId="KCaM_2_1" />
+  <Reactant SpecieId="pKCaM_2_0" />
+  <Product SpecieId="pKCaMcomplex_2_0_2_1" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction361" id="reaction361">
+  <Reactant SpecieId="pKCaMcomplex_2_0_2_1" />
+  <Product SpecieId="KCaM_2_1" />
+  <Product SpecieId="pKCaM_2_0" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction362" id="reaction362">
+  <Reactant SpecieId="KCaM_2_2" />
+  <Reactant SpecieId="pKCaM_2_0" />
+  <Product SpecieId="pKCaMcomplex_2_0_2_2" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction363" id="reaction363">
+  <Reactant SpecieId="pKCaMcomplex_2_0_2_2" />
+  <Product SpecieId="KCaM_2_2" />
+  <Product SpecieId="pKCaM_2_0" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction364" id="reaction364">
+  <Reactant SpecieId="KCaM_0_0" />
+  <Reactant SpecieId="pKCaM_2_1" />
+  <Product SpecieId="pKCaMcomplex_2_1_0_0" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction365" id="reaction365">
+  <Reactant SpecieId="pKCaMcomplex_2_1_0_0" />
+  <Product SpecieId="KCaM_0_0" />
+  <Product SpecieId="pKCaM_2_1" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction366" id="reaction366">
+  <Reactant SpecieId="KCaM_0_1" />
+  <Reactant SpecieId="pKCaM_2_1" />
+  <Product SpecieId="pKCaMcomplex_2_1_0_1" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction367" id="reaction367">
+  <Reactant SpecieId="pKCaMcomplex_2_1_0_1" />
+  <Product SpecieId="KCaM_0_1" />
+  <Product SpecieId="pKCaM_2_1" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction368" id="reaction368">
+  <Reactant SpecieId="KCaM_0_2" />
+  <Reactant SpecieId="pKCaM_2_1" />
+  <Product SpecieId="pKCaMcomplex_2_1_0_2" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction369" id="reaction369">
+  <Reactant SpecieId="pKCaMcomplex_2_1_0_2" />
+  <Product SpecieId="KCaM_0_2" />
+  <Product SpecieId="pKCaM_2_1" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction370" id="reaction370">
+  <Reactant SpecieId="KCaM_1_0" />
+  <Reactant SpecieId="pKCaM_2_1" />
+  <Product SpecieId="pKCaMcomplex_2_1_1_0" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction371" id="reaction371">
+  <Reactant SpecieId="pKCaMcomplex_2_1_1_0" />
+  <Product SpecieId="KCaM_1_0" />
+  <Product SpecieId="pKCaM_2_1" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction372" id="reaction372">
+  <Reactant SpecieId="KCaM_1_1" />
+  <Reactant SpecieId="pKCaM_2_1" />
+  <Product SpecieId="pKCaMcomplex_2_1_1_1" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction373" id="reaction373">
+  <Reactant SpecieId="pKCaMcomplex_2_1_1_1" />
+  <Product SpecieId="KCaM_1_1" />
+  <Product SpecieId="pKCaM_2_1" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction374" id="reaction374">
+  <Reactant SpecieId="KCaM_1_2" />
+  <Reactant SpecieId="pKCaM_2_1" />
+  <Product SpecieId="pKCaMcomplex_2_1_1_2" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction375" id="reaction375">
+  <Reactant SpecieId="pKCaMcomplex_2_1_1_2" />
+  <Product SpecieId="KCaM_1_2" />
+  <Product SpecieId="pKCaM_2_1" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction376" id="reaction376">
+  <Reactant SpecieId="KCaM_2_0" />
+  <Reactant SpecieId="pKCaM_2_1" />
+  <Product SpecieId="pKCaMcomplex_2_1_2_0" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction377" id="reaction377">
+  <Reactant SpecieId="pKCaMcomplex_2_1_2_0" />
+  <Product SpecieId="KCaM_2_0" />
+  <Product SpecieId="pKCaM_2_1" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction378" id="reaction378">
+  <Reactant SpecieId="KCaM_2_1" />
+  <Reactant SpecieId="pKCaM_2_1" />
+  <Product SpecieId="pKCaMcomplex_2_1_2_1" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction379" id="reaction379">
+  <Reactant SpecieId="pKCaMcomplex_2_1_2_1" />
+  <Product SpecieId="KCaM_2_1" />
+  <Product SpecieId="pKCaM_2_1" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction380" id="reaction380">
+  <Reactant SpecieId="KCaM_2_2" />
+  <Reactant SpecieId="pKCaM_2_1" />
+  <Product SpecieId="pKCaMcomplex_2_1_2_2" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction381" id="reaction381">
+  <Reactant SpecieId="pKCaMcomplex_2_1_2_2" />
+  <Product SpecieId="KCaM_2_2" />
+  <Product SpecieId="pKCaM_2_1" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction382" id="reaction382">
+  <Reactant SpecieId="KCaM_0_0" />
+  <Reactant SpecieId="pKCaM_2_2" />
+  <Product SpecieId="pKCaMcomplex_2_2_0_0" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction383" id="reaction383">
+  <Reactant SpecieId="pKCaMcomplex_2_2_0_0" />
+  <Product SpecieId="KCaM_0_0" />
+  <Product SpecieId="pKCaM_2_2" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction384" id="reaction384">
+  <Reactant SpecieId="KCaM_0_1" />
+  <Reactant SpecieId="pKCaM_2_2" />
+  <Product SpecieId="pKCaMcomplex_2_2_0_1" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction385" id="reaction385">
+  <Reactant SpecieId="pKCaMcomplex_2_2_0_1" />
+  <Product SpecieId="KCaM_0_1" />
+  <Product SpecieId="pKCaM_2_2" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction386" id="reaction386">
+  <Reactant SpecieId="KCaM_0_2" />
+  <Reactant SpecieId="pKCaM_2_2" />
+  <Product SpecieId="pKCaMcomplex_2_2_0_2" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction387" id="reaction387">
+  <Reactant SpecieId="pKCaMcomplex_2_2_0_2" />
+  <Product SpecieId="KCaM_0_2" />
+  <Product SpecieId="pKCaM_2_2" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction388" id="reaction388">
+  <Reactant SpecieId="KCaM_1_0" />
+  <Reactant SpecieId="pKCaM_2_2" />
+  <Product SpecieId="pKCaMcomplex_2_2_1_0" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction389" id="reaction389">
+  <Reactant SpecieId="pKCaMcomplex_2_2_1_0" />
+  <Product SpecieId="KCaM_1_0" />
+  <Product SpecieId="pKCaM_2_2" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction390" id="reaction390">
+  <Reactant SpecieId="KCaM_1_1" />
+  <Reactant SpecieId="pKCaM_2_2" />
+  <Product SpecieId="pKCaMcomplex_2_2_1_1" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction391" id="reaction391">
+  <Reactant SpecieId="pKCaMcomplex_2_2_1_1" />
+  <Product SpecieId="KCaM_1_1" />
+  <Product SpecieId="pKCaM_2_2" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction392" id="reaction392">
+  <Reactant SpecieId="KCaM_1_2" />
+  <Reactant SpecieId="pKCaM_2_2" />
+  <Product SpecieId="pKCaMcomplex_2_2_1_2" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction393" id="reaction393">
+  <Reactant SpecieId="pKCaMcomplex_2_2_1_2" />
+  <Product SpecieId="KCaM_1_2" />
+  <Product SpecieId="pKCaM_2_2" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction394" id="reaction394">
+  <Reactant SpecieId="KCaM_2_0" />
+  <Reactant SpecieId="pKCaM_2_2" />
+  <Product SpecieId="pKCaMcomplex_2_2_2_0" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction395" id="reaction395">
+  <Reactant SpecieId="pKCaMcomplex_2_2_2_0" />
+  <Product SpecieId="KCaM_2_0" />
+  <Product SpecieId="pKCaM_2_2" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction396" id="reaction396">
+  <Reactant SpecieId="KCaM_2_1" />
+  <Reactant SpecieId="pKCaM_2_2" />
+  <Product SpecieId="pKCaMcomplex_2_2_2_1" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction397" id="reaction397">
+  <Reactant SpecieId="pKCaMcomplex_2_2_2_1" />
+  <Product SpecieId="KCaM_2_1" />
+  <Product SpecieId="pKCaM_2_2" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction398" id="reaction398">
+  <Reactant SpecieId="KCaM_2_2" />
+  <Reactant SpecieId="pKCaM_2_2" />
+  <Product SpecieId="pKCaMcomplex_2_2_2_2" />
+  <forwardRate>4.9999999999999996e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction399" id="reaction399">
+  <Reactant SpecieId="pKCaMcomplex_2_2_2_2" />
+  <Product SpecieId="KCaM_2_2" />
+  <Product SpecieId="pKCaM_2_2" />
+  <forwardRate>0.06</forwardRate>
+  </Reaction>
+  <Reaction name="reaction400" id="reaction400">
+  <Reactant SpecieId="pKCaMcomplex_0_0_0_0" />
+  <Product SpecieId="pKCaM_0_0" power="2.0" />
+  <forwardRate>0.0</forwardRate>
+  </Reaction>
+  <Reaction name="reaction401" id="reaction401">
+  <Reactant SpecieId="pKCaMcomplex_0_0_0_1" />
+  <Product SpecieId="pKCaM_0_0" />
+  <Product SpecieId="pKCaM_0_1" />
+  <forwardRate>6e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction402" id="reaction402">
+  <Reactant SpecieId="pKCaMcomplex_0_0_0_2" />
+  <Product SpecieId="pKCaM_0_0" />
+  <Product SpecieId="pKCaM_0_2" />
+  <forwardRate>0.00012</forwardRate>
+  </Reaction>
+  <Reaction name="reaction403" id="reaction403">
+  <Reactant SpecieId="pKCaMcomplex_0_0_1_0" />
+  <Product SpecieId="pKCaM_0_0" />
+  <Product SpecieId="pKCaM_1_0" />
+  <forwardRate>3.2e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction404" id="reaction404">
+  <Reactant SpecieId="pKCaMcomplex_0_0_1_1" />
+  <Product SpecieId="pKCaM_0_0" />
+  <Product SpecieId="pKCaM_1_1" />
+  <forwardRate>9.400000000000001e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction405" id="reaction405">
+  <Reactant SpecieId="pKCaMcomplex_0_0_1_2" />
+  <Product SpecieId="pKCaM_0_0" />
+  <Product SpecieId="pKCaM_1_2" />
+  <forwardRate>0.000154</forwardRate>
+  </Reaction>
+  <Reaction name="reaction406" id="reaction406">
+  <Reactant SpecieId="pKCaMcomplex_0_0_2_0" />
+  <Product SpecieId="pKCaM_0_0" />
+  <Product SpecieId="pKCaM_2_0" />
+  <forwardRate>6.4e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction407" id="reaction407">
+  <Reactant SpecieId="pKCaMcomplex_0_0_2_1" />
+  <Product SpecieId="pKCaM_0_0" />
+  <Product SpecieId="pKCaM_2_1" />
+  <forwardRate>0.000124</forwardRate>
+  </Reaction>
+  <Reaction name="reaction408" id="reaction408">
+  <Reactant SpecieId="pKCaMcomplex_0_0_2_2" />
+  <Product SpecieId="pKCaM_0_0" />
+  <Product SpecieId="pKCaM_2_2" />
+  <forwardRate>0.00096</forwardRate>
+  </Reaction>
+  <Reaction name="reaction409" id="reaction409">
+  <Reactant SpecieId="pKCaMcomplex_0_1_0_0" />
+  <Product SpecieId="pKCaM_0_0" />
+  <Product SpecieId="pKCaM_0_1" />
+  <forwardRate>0.0</forwardRate>
+  </Reaction>
+  <Reaction name="reaction410" id="reaction410">
+  <Reactant SpecieId="pKCaMcomplex_0_1_0_1" />
+  <Product SpecieId="pKCaM_0_1" power="2.0" />
+  <forwardRate>6e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction411" id="reaction411">
+  <Reactant SpecieId="pKCaMcomplex_0_1_0_2" />
+  <Product SpecieId="pKCaM_0_1" />
+  <Product SpecieId="pKCaM_0_2" />
+  <forwardRate>0.00012</forwardRate>
+  </Reaction>
+  <Reaction name="reaction412" id="reaction412">
+  <Reactant SpecieId="pKCaMcomplex_0_1_1_0" />
+  <Product SpecieId="pKCaM_0_1" />
+  <Product SpecieId="pKCaM_1_0" />
+  <forwardRate>3.2e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction413" id="reaction413">
+  <Reactant SpecieId="pKCaMcomplex_0_1_1_1" />
+  <Product SpecieId="pKCaM_0_1" />
+  <Product SpecieId="pKCaM_1_1" />
+  <forwardRate>9.400000000000001e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction414" id="reaction414">
+  <Reactant SpecieId="pKCaMcomplex_0_1_1_2" />
+  <Product SpecieId="pKCaM_0_1" />
+  <Product SpecieId="pKCaM_1_2" />
+  <forwardRate>0.000154</forwardRate>
+  </Reaction>
+  <Reaction name="reaction415" id="reaction415">
+  <Reactant SpecieId="pKCaMcomplex_0_1_2_0" />
+  <Product SpecieId="pKCaM_0_1" />
+  <Product SpecieId="pKCaM_2_0" />
+  <forwardRate>6.4e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction416" id="reaction416">
+  <Reactant SpecieId="pKCaMcomplex_0_1_2_1" />
+  <Product SpecieId="pKCaM_0_1" />
+  <Product SpecieId="pKCaM_2_1" />
+  <forwardRate>0.000124</forwardRate>
+  </Reaction>
+  <Reaction name="reaction417" id="reaction417">
+  <Reactant SpecieId="pKCaMcomplex_0_1_2_2" />
+  <Product SpecieId="pKCaM_0_1" />
+  <Product SpecieId="pKCaM_2_2" />
+  <forwardRate>0.00096</forwardRate>
+  </Reaction>
+  <Reaction name="reaction418" id="reaction418">
+  <Reactant SpecieId="pKCaMcomplex_0_2_0_0" />
+  <Product SpecieId="pKCaM_0_0" />
+  <Product SpecieId="pKCaM_0_2" />
+  <forwardRate>0.0</forwardRate>
+  </Reaction>
+  <Reaction name="reaction419" id="reaction419">
+  <Reactant SpecieId="pKCaMcomplex_0_2_0_1" />
+  <Product SpecieId="pKCaM_0_1" />
+  <Product SpecieId="pKCaM_0_2" />
+  <forwardRate>6e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction420" id="reaction420">
+  <Reactant SpecieId="pKCaMcomplex_0_2_0_2" />
+  <Product SpecieId="pKCaM_0_2" power="2.0" />
+  <forwardRate>0.00012</forwardRate>
+  </Reaction>
+  <Reaction name="reaction421" id="reaction421">
+  <Reactant SpecieId="pKCaMcomplex_0_2_1_0" />
+  <Product SpecieId="pKCaM_0_2" />
+  <Product SpecieId="pKCaM_1_0" />
+  <forwardRate>3.2e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction422" id="reaction422">
+  <Reactant SpecieId="pKCaMcomplex_0_2_1_1" />
+  <Product SpecieId="pKCaM_0_2" />
+  <Product SpecieId="pKCaM_1_1" />
+  <forwardRate>9.400000000000001e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction423" id="reaction423">
+  <Reactant SpecieId="pKCaMcomplex_0_2_1_2" />
+  <Product SpecieId="pKCaM_0_2" />
+  <Product SpecieId="pKCaM_1_2" />
+  <forwardRate>0.000154</forwardRate>
+  </Reaction>
+  <Reaction name="reaction424" id="reaction424">
+  <Reactant SpecieId="pKCaMcomplex_0_2_2_0" />
+  <Product SpecieId="pKCaM_0_2" />
+  <Product SpecieId="pKCaM_2_0" />
+  <forwardRate>6.4e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction425" id="reaction425">
+  <Reactant SpecieId="pKCaMcomplex_0_2_2_1" />
+  <Product SpecieId="pKCaM_0_2" />
+  <Product SpecieId="pKCaM_2_1" />
+  <forwardRate>0.000124</forwardRate>
+  </Reaction>
+  <Reaction name="reaction426" id="reaction426">
+  <Reactant SpecieId="pKCaMcomplex_0_2_2_2" />
+  <Product SpecieId="pKCaM_0_2" />
+  <Product SpecieId="pKCaM_2_2" />
+  <forwardRate>0.00096</forwardRate>
+  </Reaction>
+  <Reaction name="reaction427" id="reaction427">
+  <Reactant SpecieId="pKCaMcomplex_1_0_0_0" />
+  <Product SpecieId="pKCaM_0_0" />
+  <Product SpecieId="pKCaM_1_0" />
+  <forwardRate>0.0</forwardRate>
+  </Reaction>
+  <Reaction name="reaction428" id="reaction428">
+  <Reactant SpecieId="pKCaMcomplex_1_0_0_1" />
+  <Product SpecieId="pKCaM_0_1" />
+  <Product SpecieId="pKCaM_1_0" />
+  <forwardRate>6e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction429" id="reaction429">
+  <Reactant SpecieId="pKCaMcomplex_1_0_0_2" />
+  <Product SpecieId="pKCaM_0_2" />
+  <Product SpecieId="pKCaM_1_0" />
+  <forwardRate>0.00012</forwardRate>
+  </Reaction>
+  <Reaction name="reaction430" id="reaction430">
+  <Reactant SpecieId="pKCaMcomplex_1_0_1_0" />
+  <Product SpecieId="pKCaM_1_0" power="2.0" />
+  <forwardRate>3.2e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction431" id="reaction431">
+  <Reactant SpecieId="pKCaMcomplex_1_0_1_1" />
+  <Product SpecieId="pKCaM_1_0" />
+  <Product SpecieId="pKCaM_1_1" />
+  <forwardRate>9.400000000000001e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction432" id="reaction432">
+  <Reactant SpecieId="pKCaMcomplex_1_0_1_2" />
+  <Product SpecieId="pKCaM_1_0" />
+  <Product SpecieId="pKCaM_1_2" />
+  <forwardRate>0.000154</forwardRate>
+  </Reaction>
+  <Reaction name="reaction433" id="reaction433">
+  <Reactant SpecieId="pKCaMcomplex_1_0_2_0" />
+  <Product SpecieId="pKCaM_1_0" />
+  <Product SpecieId="pKCaM_2_0" />
+  <forwardRate>6.4e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction434" id="reaction434">
+  <Reactant SpecieId="pKCaMcomplex_1_0_2_1" />
+  <Product SpecieId="pKCaM_1_0" />
+  <Product SpecieId="pKCaM_2_1" />
+  <forwardRate>0.000124</forwardRate>
+  </Reaction>
+  <Reaction name="reaction435" id="reaction435">
+  <Reactant SpecieId="pKCaMcomplex_1_0_2_2" />
+  <Product SpecieId="pKCaM_1_0" />
+  <Product SpecieId="pKCaM_2_2" />
+  <forwardRate>0.00096</forwardRate>
+  </Reaction>
+  <Reaction name="reaction436" id="reaction436">
+  <Reactant SpecieId="pKCaMcomplex_1_1_0_0" />
+  <Product SpecieId="pKCaM_0_0" />
+  <Product SpecieId="pKCaM_1_1" />
+  <forwardRate>0.0</forwardRate>
+  </Reaction>
+  <Reaction name="reaction437" id="reaction437">
+  <Reactant SpecieId="pKCaMcomplex_1_1_0_1" />
+  <Product SpecieId="pKCaM_0_1" />
+  <Product SpecieId="pKCaM_1_1" />
+  <forwardRate>6e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction438" id="reaction438">
+  <Reactant SpecieId="pKCaMcomplex_1_1_0_2" />
+  <Product SpecieId="pKCaM_0_2" />
+  <Product SpecieId="pKCaM_1_1" />
+  <forwardRate>0.00012</forwardRate>
+  </Reaction>
+  <Reaction name="reaction439" id="reaction439">
+  <Reactant SpecieId="pKCaMcomplex_1_1_1_0" />
+  <Product SpecieId="pKCaM_1_0" />
+  <Product SpecieId="pKCaM_1_1" />
+  <forwardRate>3.2e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction440" id="reaction440">
+  <Reactant SpecieId="pKCaMcomplex_1_1_1_1" />
+  <Product SpecieId="pKCaM_1_1" power="2.0" />
+  <forwardRate>9.400000000000001e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction441" id="reaction441">
+  <Reactant SpecieId="pKCaMcomplex_1_1_1_2" />
+  <Product SpecieId="pKCaM_1_1" />
+  <Product SpecieId="pKCaM_1_2" />
+  <forwardRate>0.000154</forwardRate>
+  </Reaction>
+  <Reaction name="reaction442" id="reaction442">
+  <Reactant SpecieId="pKCaMcomplex_1_1_2_0" />
+  <Product SpecieId="pKCaM_1_1" />
+  <Product SpecieId="pKCaM_2_0" />
+  <forwardRate>6.4e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction443" id="reaction443">
+  <Reactant SpecieId="pKCaMcomplex_1_1_2_1" />
+  <Product SpecieId="pKCaM_1_1" />
+  <Product SpecieId="pKCaM_2_1" />
+  <forwardRate>0.000124</forwardRate>
+  </Reaction>
+  <Reaction name="reaction444" id="reaction444">
+  <Reactant SpecieId="pKCaMcomplex_1_1_2_2" />
+  <Product SpecieId="pKCaM_1_1" />
+  <Product SpecieId="pKCaM_2_2" />
+  <forwardRate>0.00096</forwardRate>
+  </Reaction>
+  <Reaction name="reaction445" id="reaction445">
+  <Reactant SpecieId="pKCaMcomplex_1_2_0_0" />
+  <Product SpecieId="pKCaM_0_0" />
+  <Product SpecieId="pKCaM_1_2" />
+  <forwardRate>0.0</forwardRate>
+  </Reaction>
+  <Reaction name="reaction446" id="reaction446">
+  <Reactant SpecieId="pKCaMcomplex_1_2_0_1" />
+  <Product SpecieId="pKCaM_0_1" />
+  <Product SpecieId="pKCaM_1_2" />
+  <forwardRate>6e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction447" id="reaction447">
+  <Reactant SpecieId="pKCaMcomplex_1_2_0_2" />
+  <Product SpecieId="pKCaM_0_2" />
+  <Product SpecieId="pKCaM_1_2" />
+  <forwardRate>0.00012</forwardRate>
+  </Reaction>
+  <Reaction name="reaction448" id="reaction448">
+  <Reactant SpecieId="pKCaMcomplex_1_2_1_0" />
+  <Product SpecieId="pKCaM_1_0" />
+  <Product SpecieId="pKCaM_1_2" />
+  <forwardRate>3.2e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction449" id="reaction449">
+  <Reactant SpecieId="pKCaMcomplex_1_2_1_1" />
+  <Product SpecieId="pKCaM_1_1" />
+  <Product SpecieId="pKCaM_1_2" />
+  <forwardRate>9.400000000000001e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction450" id="reaction450">
+  <Reactant SpecieId="pKCaMcomplex_1_2_1_2" />
+  <Product SpecieId="pKCaM_1_2" power="2.0" />
+  <forwardRate>0.000154</forwardRate>
+  </Reaction>
+  <Reaction name="reaction451" id="reaction451">
+  <Reactant SpecieId="pKCaMcomplex_1_2_2_0" />
+  <Product SpecieId="pKCaM_1_2" />
+  <Product SpecieId="pKCaM_2_0" />
+  <forwardRate>6.4e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction452" id="reaction452">
+  <Reactant SpecieId="pKCaMcomplex_1_2_2_1" />
+  <Product SpecieId="pKCaM_1_2" />
+  <Product SpecieId="pKCaM_2_1" />
+  <forwardRate>0.000124</forwardRate>
+  </Reaction>
+  <Reaction name="reaction453" id="reaction453">
+  <Reactant SpecieId="pKCaMcomplex_1_2_2_2" />
+  <Product SpecieId="pKCaM_1_2" />
+  <Product SpecieId="pKCaM_2_2" />
+  <forwardRate>0.00096</forwardRate>
+  </Reaction>
+  <Reaction name="reaction454" id="reaction454">
+  <Reactant SpecieId="pKCaMcomplex_2_0_0_0" />
+  <Product SpecieId="pKCaM_0_0" />
+  <Product SpecieId="pKCaM_2_0" />
+  <forwardRate>0.0</forwardRate>
+  </Reaction>
+  <Reaction name="reaction455" id="reaction455">
+  <Reactant SpecieId="pKCaMcomplex_2_0_0_1" />
+  <Product SpecieId="pKCaM_0_1" />
+  <Product SpecieId="pKCaM_2_0" />
+  <forwardRate>6e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction456" id="reaction456">
+  <Reactant SpecieId="pKCaMcomplex_2_0_0_2" />
+  <Product SpecieId="pKCaM_0_2" />
+  <Product SpecieId="pKCaM_2_0" />
+  <forwardRate>0.00012</forwardRate>
+  </Reaction>
+  <Reaction name="reaction457" id="reaction457">
+  <Reactant SpecieId="pKCaMcomplex_2_0_1_0" />
+  <Product SpecieId="pKCaM_1_0" />
+  <Product SpecieId="pKCaM_2_0" />
+  <forwardRate>3.2e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction458" id="reaction458">
+  <Reactant SpecieId="pKCaMcomplex_2_0_1_1" />
+  <Product SpecieId="pKCaM_1_1" />
+  <Product SpecieId="pKCaM_2_0" />
+  <forwardRate>9.400000000000001e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction459" id="reaction459">
+  <Reactant SpecieId="pKCaMcomplex_2_0_1_2" />
+  <Product SpecieId="pKCaM_1_2" />
+  <Product SpecieId="pKCaM_2_0" />
+  <forwardRate>0.000154</forwardRate>
+  </Reaction>
+  <Reaction name="reaction460" id="reaction460">
+  <Reactant SpecieId="pKCaMcomplex_2_0_2_0" />
+  <Product SpecieId="pKCaM_2_0" power="2.0" />
+  <forwardRate>6.4e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction461" id="reaction461">
+  <Reactant SpecieId="pKCaMcomplex_2_0_2_1" />
+  <Product SpecieId="pKCaM_2_0" />
+  <Product SpecieId="pKCaM_2_1" />
+  <forwardRate>0.000124</forwardRate>
+  </Reaction>
+  <Reaction name="reaction462" id="reaction462">
+  <Reactant SpecieId="pKCaMcomplex_2_0_2_2" />
+  <Product SpecieId="pKCaM_2_0" />
+  <Product SpecieId="pKCaM_2_2" />
+  <forwardRate>0.00096</forwardRate>
+  </Reaction>
+  <Reaction name="reaction463" id="reaction463">
+  <Reactant SpecieId="pKCaMcomplex_2_1_0_0" />
+  <Product SpecieId="pKCaM_0_0" />
+  <Product SpecieId="pKCaM_2_1" />
+  <forwardRate>0.0</forwardRate>
+  </Reaction>
+  <Reaction name="reaction464" id="reaction464">
+  <Reactant SpecieId="pKCaMcomplex_2_1_0_1" />
+  <Product SpecieId="pKCaM_0_1" />
+  <Product SpecieId="pKCaM_2_1" />
+  <forwardRate>6e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction465" id="reaction465">
+  <Reactant SpecieId="pKCaMcomplex_2_1_0_2" />
+  <Product SpecieId="pKCaM_0_2" />
+  <Product SpecieId="pKCaM_2_1" />
+  <forwardRate>0.00012</forwardRate>
+  </Reaction>
+  <Reaction name="reaction466" id="reaction466">
+  <Reactant SpecieId="pKCaMcomplex_2_1_1_0" />
+  <Product SpecieId="pKCaM_1_0" />
+  <Product SpecieId="pKCaM_2_1" />
+  <forwardRate>3.2e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction467" id="reaction467">
+  <Reactant SpecieId="pKCaMcomplex_2_1_1_1" />
+  <Product SpecieId="pKCaM_1_1" />
+  <Product SpecieId="pKCaM_2_1" />
+  <forwardRate>9.400000000000001e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction468" id="reaction468">
+  <Reactant SpecieId="pKCaMcomplex_2_1_1_2" />
+  <Product SpecieId="pKCaM_1_2" />
+  <Product SpecieId="pKCaM_2_1" />
+  <forwardRate>0.000154</forwardRate>
+  </Reaction>
+  <Reaction name="reaction469" id="reaction469">
+  <Reactant SpecieId="pKCaMcomplex_2_1_2_0" />
+  <Product SpecieId="pKCaM_2_0" />
+  <Product SpecieId="pKCaM_2_1" />
+  <forwardRate>6.4e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction470" id="reaction470">
+  <Reactant SpecieId="pKCaMcomplex_2_1_2_1" />
+  <Product SpecieId="pKCaM_2_1" power="2.0" />
+  <forwardRate>0.000124</forwardRate>
+  </Reaction>
+  <Reaction name="reaction471" id="reaction471">
+  <Reactant SpecieId="pKCaMcomplex_2_1_2_2" />
+  <Product SpecieId="pKCaM_2_1" />
+  <Product SpecieId="pKCaM_2_2" />
+  <forwardRate>0.00096</forwardRate>
+  </Reaction>
+  <Reaction name="reaction472" id="reaction472">
+  <Reactant SpecieId="pKCaMcomplex_2_2_0_0" />
+  <Product SpecieId="pKCaM_0_0" />
+  <Product SpecieId="pKCaM_2_2" />
+  <forwardRate>0.0</forwardRate>
+  </Reaction>
+  <Reaction name="reaction473" id="reaction473">
+  <Reactant SpecieId="pKCaMcomplex_2_2_0_1" />
+  <Product SpecieId="pKCaM_0_1" />
+  <Product SpecieId="pKCaM_2_2" />
+  <forwardRate>6e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction474" id="reaction474">
+  <Reactant SpecieId="pKCaMcomplex_2_2_0_2" />
+  <Product SpecieId="pKCaM_0_2" />
+  <Product SpecieId="pKCaM_2_2" />
+  <forwardRate>0.00012</forwardRate>
+  </Reaction>
+  <Reaction name="reaction475" id="reaction475">
+  <Reactant SpecieId="pKCaMcomplex_2_2_1_0" />
+  <Product SpecieId="pKCaM_1_0" />
+  <Product SpecieId="pKCaM_2_2" />
+  <forwardRate>3.2e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction476" id="reaction476">
+  <Reactant SpecieId="pKCaMcomplex_2_2_1_1" />
+  <Product SpecieId="pKCaM_1_1" />
+  <Product SpecieId="pKCaM_2_2" />
+  <forwardRate>9.400000000000001e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction477" id="reaction477">
+  <Reactant SpecieId="pKCaMcomplex_2_2_1_2" />
+  <Product SpecieId="pKCaM_1_2" />
+  <Product SpecieId="pKCaM_2_2" />
+  <forwardRate>0.000154</forwardRate>
+  </Reaction>
+  <Reaction name="reaction478" id="reaction478">
+  <Reactant SpecieId="pKCaMcomplex_2_2_2_0" />
+  <Product SpecieId="pKCaM_2_0" />
+  <Product SpecieId="pKCaM_2_2" />
+  <forwardRate>6.4e-05</forwardRate>
+  </Reaction>
+  <Reaction name="reaction479" id="reaction479">
+  <Reactant SpecieId="pKCaMcomplex_2_2_2_1" />
+  <Product SpecieId="pKCaM_2_1" />
+  <Product SpecieId="pKCaM_2_2" />
+  <forwardRate>0.000124</forwardRate>
+  </Reaction>
+  <Reaction name="reaction480" id="reaction480">
+  <Reactant SpecieId="pKCaMcomplex_2_2_2_2" />
+  <Product SpecieId="pKCaM_2_2" power="2.0" />
+  <forwardRate>0.00096</forwardRate>
+  </Reaction>
+</ReactionScheme>
+  

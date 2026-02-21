@@ -18,13 +18,15 @@
   <Specie name="CaMpmca1a" id="CaMpmca1a" kdiff="0" kdiffunit="mu2/s"/> 
 
   <Specie name="Pkc" id="Pkc" kdiff="6.61" kdiffunit="mu2/s"/>
-  <Specie name="PP2BCaMCa4" id="PP2BCaMCa4" kdiff="6.61" kdiffunit="mu2/s"/>
+  <Specie name="PP2BCaMCa4" id="PP2BCaMCa4" kdiff=".61" kdiffunit="mu2/s"/>
   <Specie name="PkcCa" id="PkcCa" kdiff="6.61" kdiffunit="mu2/s"/>
   <Specie name="PkcCaNg" id="PkcCaNg" kdiff="6.61" kdiffunit="mu2/s"/>
   <Specie name="PkcCaNgPA" id="PkcCaNgPA" kdiff="0" kdiffunit="mu2/s"/>
 
   <Specie name="Ng" id="Ng" kdiff="5" kdiffunit="mu2/s"/>
   <Specie name="pNg" id="pNg" kdiff="5" kdiffunit="mu2/s"/>
+  <Specie name="pNgPP2BCaMCa4" id="pNgPP2BCaMCa4" kdiff="0" kdiffunit="mu2/s"/>
+
   <Specie name="NgCaM" id="NgCaM" kdiff="3" kdiffunit="mu2/s"/>
   <Specie name="PA" id="PA" kdiff="0" kdiffunit="mu2/s"/>
   <Specie name="NgPA" id="NgPA" kdiff="0" kdiffunit="mu2/s"/>
