@@ -4140,7 +4140,6 @@
         <Reactant specieID="GluMgluRGq"/>
         <Product specieID="GqaGTP"/>
         <Product specieID="GluMgluR"/> 
-        <Product specieID="Gbg"/>
  
         <forwardRate>  1.5e-03 </forwardRate>
         <reverseRate>   0  </reverseRate>
