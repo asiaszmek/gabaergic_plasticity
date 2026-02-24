@@ -25,9 +25,14 @@
   <Specie name="Ca2PKC" id="Ca2PKC" kdiff="6.61" kdiffunit="mu2/s"/>
 
   <Specie name="Ca2PKC_act" id="Ca2PKC_act" kdiff="6.61" kdiffunit="mu2/s"/>
-  <Specie name="Ca2PKC_actNg" id="PKCCa2Ng" kdiff="6.61" kdiffunit="mu2/s"/>
-  <Specie name="Ca2PKC_actNgPA" id="PKCCa2NgPA" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="CaPKC_act" id="CaPKC_act" kdiff="6.61" kdiffunit="mu2/s"/>
+ 
+  <Specie name="Ca2PKC_actNg" id="Ca2PKC_actNg" kdiff="6.61" kdiffunit="mu2/s"/>
+  <Specie name="Ca2PKC_actNgPA" id="Ca2PKC_actNgPA" kdiff="0" kdiffunit="mu2/s"/>
 
+  <Specie name="CaPKC_actNg" id="CaPKC_actNg" kdiff="6.61" kdiffunit="mu2/s"/>
+  <Specie name="CaPKC_actNgPA" id="CaPKC_actNgPA" kdiff="0" kdiffunit="mu2/s"/>
+  
   <Specie name="Ng" id="Ng" kdiff="5" kdiffunit="mu2/s"/>
   <Specie name="pNg" id="pNg" kdiff="5" kdiffunit="mu2/s"/>
   <Specie name="pNgPP2BCaMCa4" id="pNgPP2BCaMCa4" kdiff="0" kdiffunit="mu2/s"/>
@@ -319,6 +324,22 @@
         <forwardRate> 3e-3   </forwardRate>
         <reverseRate> 5e-3       </reverseRate>
     </Reaction>
+    <Reaction name="CaPKC_act+Ca--Ca2PKC_act" id="CaPKC_act+Ca--Ca2PKC_act">
+        <Reactant specieID="CaPKC_act"/>
+        <Reactant specieID="Ca"/>
+        <Product specieID="Ca2PKC_act"/>
+
+        <forwardRate> 1e-6   </forwardRate>
+        <reverseRate> 12e-3       </reverseRate>
+    </Reaction>
+
+    <Reaction name="CaPKC_act--CaPKC" id="CaPKC_act--CaPKC">
+        <Reactant specieID="CaPKC_act"/>
+        <Product specieID="CaPKC"/>
+
+        <forwardRate> 5e-6   </forwardRate>
+        <reverseRate> 0 </reverseRate>
+    </Reaction>
     
   <Reaction name="Ca2PKC_act +Ng--Ca2PKC_actNg" id="Ca2PKC_act+Ng--Ca2PKC_actNg">
         <Reactant specieID="Ca2PKC_act"/>
@@ -348,6 +369,31 @@
         <Reactant specieID="Ca2PKC_actNgPA"/>
         <Product specieID="pNgPA"/>
         <Product specieID="Ca2PKC_act"/>
+
+        <forwardRate> 3.571e-3   </forwardRate>
+        <reverseRate> 0        </reverseRate>
+    </Reaction>
+
+ <Reaction name="CaPKC_actNgphos" id="CaPKC_actNgphos">
+        <Reactant specieID="CaPKC_actNg"/>
+        <Product specieID="pNg"/>
+        <Product specieID="CaPKC_act"/>
+
+        <forwardRate> 3.571e-3   </forwardRate>
+        <reverseRate> 0        </reverseRate>
+    </Reaction>
+  <Reaction name="CaPKC_act +NgPA--CaPKC_actNg" id="CaPKC_act+NgPA--CaPKC_actNg">
+        <Reactant specieID="CaPKC_act"/>
+        <Reactant specieID="NgPA"/>
+        <Product specieID="CaPKC_actNgPA"/>
+
+        <forwardRate> 2.48e-5   </forwardRate>
+        <reverseRate> 0.15e-03        </reverseRate>
+    </Reaction>
+    <Reaction name="CaPKC_actNgPAphos" id="CaPKC_actNgPAphos">
+        <Reactant specieID="CaPKC_actNgPA"/>
+        <Product specieID="pNgPA"/>
+        <Product specieID="CaPKC_act"/>
 
         <forwardRate> 3.571e-3   </forwardRate>
         <reverseRate> 0        </reverseRate>
