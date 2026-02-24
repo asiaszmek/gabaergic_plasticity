@@ -4113,6 +4113,22 @@
   <Specie name="Pip2" id="Pip2" kdiff="0" kdiffunit="mu2/s"/>
   <Specie name="PlcCaPip2" id="PlcCaPip2" kdiff="0" kdiffunit="mu2/s"/>
   <Specie name="PlcCaGqaGTPPip2" id="PlcCaGqaGTPPip2" kdiff="0" kdiffunit="mu2/s"/>
+
+  <Specie name="Dag" id="Dag" kdiff="0" kdiffunit="mu2/s"/>
+
+  <Specie name="DagK" id="DagK" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="DagKdag" id="DagKdag" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="PAP" id="PAP" kdiff="0" kdiffunit="mu2/s"/>
+
+  <Specie name="PAPAP" id="PAPAP" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="NgPAPAP" id="NgPAPAP" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="Dgl" id="Dgl" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="pDgl" id="pDgl" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="CaDgl" id="CaDgl" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="CapDgl" id="CapDgl" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="DagCaDgl" id="DagCaDgl" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="DagCapDgl" id="DagCapDgl" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="2ag" id="2ag" kdiff="88.6" kdiffunit="mu2/s"/>
  
   
   <Specie name="PIkinase" id="PIkinase" kdiff="0" kdiffunit="mu2/s"/>
@@ -4127,7 +4143,10 @@
   <Specie name="IP5P_IP3" id="IP5P_IP3" kdiff="10." kdiffunit="mu2/s"/>
   <Specie name="IP3K_Ca2_IP3" id="IP3K_Ca2_IP3" kdiff="10." kdiffunit="mu2/s"/>
 
-<Reaction name="Glu--GluOut" id="Glu--GluOut">
+
+  <Specie name="Ca2PKC_actDag" id="Ca2PKC_actDag" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="CaPKC_actDag" id="CaPKC_actDag" kdiff="0" kdiffunit="mu2/s"/>
+  <Reaction name="Glu--GluOut" id="Glu--GluOut">
   	<Reactant specieID="Glu"/>
 	<Product specieID="GluOut"/>
 
@@ -4151,7 +4170,7 @@
         <Reactant specieID="MgluR"/>
         <Product specieID="GluMgluR"/>
 
-        <forwardRate> 0.001e-03 </forwardRate>
+        <forwardRate> 2e-7 </forwardRate>
         <reverseRate> 0.5e-03      </reverseRate>
     </Reaction>
 
@@ -4169,7 +4188,7 @@
         <Reactant specieID="MgluR"/>
         <Product specieID="MgluRGq"/>
 
-        <forwardRate> 0.225e-06 </forwardRate>
+        <forwardRate> 4.5e-8 </forwardRate>
         <reverseRate> 0.68e-03 </reverseRate>
    </Reaction>
 
@@ -4186,7 +4205,7 @@
         <Reactant specieID="GluMgluRGq"/>
         <Product specieID="GqaGTP"/>
         <Product specieID="GluMgluR"/> 
- 
+  
         <forwardRate>  1.5e-03 </forwardRate>
         <reverseRate>   0  </reverseRate>
     </Reaction>
@@ -4249,11 +4268,12 @@
     <Reactant specieID="PlcCaPip2"/>
     <Product specieID="PlcCa"/>
     <Product specieID="IP3"/>
-    
+    <Product specieID="Dag"/>
     <forwardRate> 0.45e-03     </forwardRate>
     <reverseRate> 0e-03    </reverseRate>
     <Q10>         0.2           </Q10>
   </Reaction>
+
   
   <Reaction name="PlcCaGqaGTP+Pip2--PlcCaGqaGTPPip2" id="PlcCaGqaGTP+Pip2--PlcCaGqaGTPPip2">
     <Reactant specieID="PlcCaGqaGTP"/>
@@ -4269,11 +4289,54 @@
     <Reactant specieID="PlcCaGqaGTPPip2"/>
     <Product specieID="PlcCaGqaGTP"/>
     <Product specieID="IP3"/>
-
+    <Product specieID="Dag"/>
     <forwardRate> 30e-03     </forwardRate>
     <reverseRate> 0e-03    </reverseRate>
   </Reaction>
+  <Reaction name="DagKdag1" id="DagKdag1">
+    <Reactant specieID="Dag"/>
+    <Reactant specieID="DagK"/>
+    <Product specieID="DagKdag"/>
+    
+    <forwardRate> 0.00007e-03      </forwardRate>
+    <reverseRate> 0.8e-3         </reverseRate>
+  </Reaction>
+  
+  <Reaction name="DagKdag2" id="DagKdag2">
+    <Reactant specieID="DagKdag"/>
+    <Product specieID="PA"/>
+    <Product specieID="DagK"/>
+    
+    <forwardRate> 0.2e-03      </forwardRate>
+    <reverseRate> 0.0e-03      </reverseRate>
+  </Reaction>
 
+<Reaction name="PAPAP1" id="PAPAP1">
+    <Reactant specieID="PA"/>
+    <Reactant specieID="PAP"/>
+    <Product specieID="PAPAP"/>
+    
+    <forwardRate> 0.132e-08      </forwardRate>
+    <reverseRate> 0.02e-3         </reverseRate>
+  </Reaction>
+  
+  <Reaction name="PA_PAP2" id="PA_PAP2">
+    <Reactant specieID="PAPAP"/>
+    <Product specieID="Dag"/>
+    <Product specieID="PAP"/>
+    
+    <forwardRate> 0.112e-03      </forwardRate>
+    <reverseRate> 0.0e-03      </reverseRate>
+  </Reaction>
+
+  <Reaction name="NgPAPAP1" id="NgPAPAP1">
+    <Reactant specieID="NgPA"/>
+    <Reactant specieID="PAP"/>
+    <Product specieID="NgPAPAP"/>
+    
+    <forwardRate> 0.132e-08      </forwardRate>
+    <reverseRate> 0.02e-3         </reverseRate>
+  </Reaction>
   
   <Reaction name="IP3--IP5P" id="IP3--IP5P">
     <Reactant specieID="IP3"/>
@@ -4384,10 +4447,34 @@
 
 
 
+<Reaction name="Ca2PKC_act+Dag--Ca2PKC_actDag" id="Ca2PKC_act+Dag--Ca2PKC_actDag">
+        <Reactant specieID="Ca2PKC_act"/>
+        <Reactant specieID="Dag"/>
+        <Product specieID="Ca2PKC_actDag"/>
 
-    
+        <forwardRate> 0.8e-6   </forwardRate>
+        <reverseRate> 1e-3       </reverseRate>
+    </Reaction>
 
-<Specie name="IP3R" id="IP3R" kdiff="0" kdiffunit="mu2/s"/>
+    <Reaction name="CaPKC_actDag+Ca--Ca2PKC_actDag" id="CaPKC_actDag+Ca--Ca2PKC_actDag">
+        <Reactant specieID="CaPKC_actDag"/>
+        <Reactant specieID="Ca"/>
+        <Product specieID="Ca2PKC_actDag"/>
+
+        <forwardRate> 1e-6   </forwardRate>
+        <reverseRate> 12e-3       </reverseRate>
+    </Reaction>
+
+
+      <Reaction name="CaPKC_act+Dag--CaPKC_actDag" id="CaPKC_act+Dag--CaPKC_actDag">
+        <Reactant specieID="CaPKC_act"/>
+        <Reactant specieID="Dag"/>
+        <Product specieID="CaPKC_actDag"/>
+
+        <forwardRate> 0.8e-6   </forwardRate>
+        <reverseRate> 1e-3       </reverseRate>
+    </Reaction>
+    <Specie name="IP3R" id="IP3R" kdiff="0" kdiffunit="mu2/s"/>
   <Specie name="IP3RIP3" id="IP3RIP3" kdiff="0" kdiffunit="mu2/s"/>
   <Specie name="IP3RO" id="IP3RO" kdiff="0" kdiffunit="mu2/s"/>
   <Specie name="IP3RC" id="IP3RC" kdiff="0" kdiffunit="mu2/s"/>
