@@ -3,15 +3,6 @@
        and Linkevicius et al 2025-->
  <Specie name="KaMe" id="KaMe" kdiff="4" kdiffunit="mu2/s" />
  <Specie name="pKaMe" id="pKaMe" kdiff="4" kdiffunit="mu2/s" />
- <Specie name="CaM" id="CaM" kdiff="10" kdiffunit="mu2/s" />
- <Specie name="CaM1N" id="CaM1N" kdiff="10" kdiffunit="mu2/s" />
- <Specie name="CaM2N" id="CaM2N" kdiff="10" kdiffunit="mu2/s" />
- <Specie name="CaM1C" id="CaM1C" kdiff="10" kdiffunit="mu2/s" />
- <Specie name="CaM1C1N" id="CaM1C1N" kdiff="10" kdiffunit="mu2/s" />
- <Specie name="CaM1C2N" id="CaM1C2N" kdiff="10" kdiffunit="mu2/s" />
- <Specie name="CaM2C" id="CaM2C" kdiff="10" kdiffunit="mu2/s" />
- <Specie name="CaM2C1N" id="CaM2C1N" kdiff="10" kdiffunit="mu2/s" />
- <Specie name="CaMCa4" id="CaMCa4" kdiff="10" kdiffunit="mu2/s" />
  <Specie name="KCaM" id="KCaM" kdiff="0.2" kdiffunit="mu2/s" />
  <Specie name="KCaM1N" id="KCaM1N" kdiff="0.2" kdiffunit="mu2/s" />
  <Specie name="KCaM2N" id="KCaM2N" kdiff="0.2" kdiffunit="mu2/s" />

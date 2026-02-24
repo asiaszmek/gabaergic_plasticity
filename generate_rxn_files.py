@@ -10,7 +10,7 @@ def read_in_files(flist):
     specie_diff = {}
     rxn_ids = set()
     my_rxn_file = etree.Element("ReactionScheme")
-
+    species_from_rxn = set()
     for fname_xml in flist:
         print(fname_xml)
         tree = etree.parse(fname_xml)
@@ -32,6 +32,13 @@ def read_in_files(flist):
                 else:
                     rxn_ids.add(son.attrib["id"])
                     my_rxn_file.append(son)
+                for grandson in son:
+                    if grandson.tag in ("Reactant", "Product"):
+                        species_from_rxn.add(grandson.attrib["specieID"])
+    for specie in species_from_rxn:
+        if specie not in species:
+            print("Unregistered specie %s" % specie)
+                
     return my_rxn_file
 
 flist_ER_no_IP3 = [
