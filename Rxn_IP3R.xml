@@ -17,7 +17,7 @@
   <Specie name="CaMCa4pmca1aCa" id="CaMCa4pmca1aCa" kdiff="0" kdiffunit="mu2/s"/>
   <Specie name="CaMpmca1a" id="CaMpmca1a" kdiff="0" kdiffunit="mu2/s"/> 
 
-  <Specie name="PP2BCaMCa4" id="PP2BCaMCa4" kdiff=".61" kdiffunit="mu2/s"/>
+  <Specie name="PP2BCaMCa4" id="PP2BCaMCa4" kdiff="0.61" kdiffunit="mu2/s"/>
   <Specie name="PKCc" id="PKCc" kdiff="6.61" kdiffunit="mu2/s"/>
   <Specie name="CaPKCc" id="CaPKCc" kdiff="6.61" kdiffunit="mu2/s"/>
 
