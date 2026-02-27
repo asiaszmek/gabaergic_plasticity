@@ -29,10 +29,10 @@
     <NanoMolarity specieID="PP2BCaM" value="4" />
     <NanoMolarity specieID="PP2BCaM1C" value="27" />
     <NanoMolarity specieID="PP2BCaM2C" value="18" />
-    <NanoMolarity specieID="PPP2BCaM1C1N" value="1"/>
-    <NanoMolarity specieID="PPP2BCaM1C2N" value="3"/>
-    <NanoMolarity specieID="PPP2BCaM2C1N" value="2"/>
-    <NanoMolarity specieID="PPP2BCaMCa4" value="4"/>
+    <NanoMolarity specieID="PP2BCaM1C1N" value="1"/>
+    <NanoMolarity specieID="PP2BCaM1C2N" value="3"/>
+    <NanoMolarity specieID="PP2BCaM2C1N" value="2"/>
+    <NanoMolarity specieID="PP2BCaMCa4" value="4"/>
 
   </ConcentrationSet>
 
