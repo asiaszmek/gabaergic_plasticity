@@ -8,9 +8,14 @@
     <NanoMolarity specieID="fixedbuffer" value="1997089"/>
     <NanoMolarity specieID="fixedbufferCa" value="2911"/>
     
-    <NanoMolarity specieID="CaM" value="37522"/>
-    <NanoMolarity specieID="Ng" value="2555"/>
-    <NanoMolarity specieID="NgCaM" value="62444"/>
+    <NanoMolarity specieID="CaM" value="35449"/>
+    <NanoMolarity specieID="CaM1N" value="35"/>
+    <NanoMolarity specieID="CaM2N" value="1"/>
+    <NanoMolarity specieID="CaM1C" value="1382"/>
+    <NanoMolarity specieID="CaM1C1N" value="1"/>
+    <NanoMolarity specieID="CaM2C" value="103"/>
+    <NanoMolarity specieID="Ng" value="2272"/>
+    <NanoMolarity specieID="NgCaM" value="62726"/>
 
     <NanoMolarity specieID="CaER"         value="0.8e5"     />
     <NanoMolarity       specieID="CRTP" value="88750"/>
@@ -22,14 +27,16 @@
     <!-- <NanoMolarity specieID="PKCc"         value="4e3"     />   -->
     <NanoMolarity specieID="LeakER" value="340" />
 
-    <NanoMolarity specieID="PP2B" value="3945" />
-    <NanoMolarity specieID="PP2BCaM" value="4" />
-    <NanoMolarity specieID="PP2BCaM1C" value="24" />
-    <NanoMolarity specieID="PP2BCaM2C" value="17" />
-    <NanoMolarity specieID="PP2BCaM1C1N" value="1.2"/>
-    <NanoMolarity specieID="PP2BCaM1C2N" value="2.9"/>
-    <NanoMolarity specieID="PP2BCaM2C1N" value="1.38"/>
-    <NanoMolarity specieID="PP2BCaMCa4" value="3.4"/>
+    <NanoMolarity specieID="PP2B" value="3678" />
+    <NanoMolarity specieID="PP2BCaM" value="22" />
+    <NanoMolarity specieID="PP2BCaM1C" value="143" />
+    <NanoMolarity specieID="PP2BCaM1N" value="2" />
+    <NanoMolarity specieID="PP2BCaM2N" value="4" />
+    <NanoMolarity specieID="PP2BCaM2C" value="98" />
+    <NanoMolarity specieID="PP2BCaM1C1N" value="6"/>
+    <NanoMolarity specieID="PP2BCaM1C2N" value="17"/>
+    <NanoMolarity specieID="PP2BCaM2C1N" value="8"/>
+    <NanoMolarity specieID="PP2BCaMCa4" value="20"/>
    </ConcentrationSet>
 
 
