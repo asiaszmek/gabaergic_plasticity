@@ -23,6 +23,7 @@
   <Specie name="pNg" id="pNg" kdiff="5" kdiffunit="mu2/s" />
   <Specie name="pNgPP2BCaMCa4"            id="pNgPP2BCaMCa4"           kdiff="0"    kdiffunit="mu2/s"/>
 
+  <Specie name="pNgPAPP2BCaMCa4"            id="pNgPAPP2BCaMCa4"           kdiff="0"    kdiffunit="mu2/s"/>
   <Specie name="NgCaM" id="NgCaM" kdiff="3" kdiffunit="mu2/s" />
   <Specie name="PA" id="PA" kdiff="0" kdiffunit="mu2/s" />
   <Specie name="NgPA" id="NgPA" kdiff="0" kdiffunit="mu2/s" />
@@ -210,15 +211,15 @@ https://doi.org/10.1042/BJ20061483
         <Reactant specieID="PP2BCaMCa4"              />
         <Product  specieID="pNgPP2BCaMCa4"               />
 
-        <forwardRate> 2.46e-05   </forwardRate>
-        <reverseRate> 0.33        </reverseRate>
+        <forwardRate>  1.318e-06   </forwardRate>
+        <reverseRate> 0.33e-3        </reverseRate>
     </Reaction>
     <Reaction name = "pNgPP2BCaMCa4 dephos" id="pNgPP2bCaMCa4 dephos">
         <Reactant specieID="pNgPP2BCaMCa4"           />
         <Product  specieID="Ng"              />
         <Product  specieID="PP2BCaMCa4"               />
 
-        <forwardRate> 0.182e-3  </forwardRate>
+        <forwardRate> 17.33e-3  </forwardRate>
         <reverseRate> 0        </reverseRate>
     </Reaction>
 
@@ -240,6 +241,24 @@ https://doi.org/10.1042/BJ20061483
     <!--     <forwardRate> 0.09e-3  </forwardRate> -->
     <!--     <reverseRate> 0        </reverseRate> -->
     <!-- </Reaction> -->
+       <!-- pNgPA dephos -->
+    <!-- DOI:10.1006/abbi.1995.1090 -->
+    <Reaction name = "pNgPA +PP2CaMC4--pNgPAPP2BCaMCa4" id="pNgPA +PP2CaMC4--pNgPAPP2BCaMCa4" >
+        <Reactant specieID="pNgPA"           />
+        <Reactant specieID="PP2BCaMCa4"              />
+        <Product  specieID="pNgPAPP2BCaMCa4"               />
+
+        <forwardRate>  1.318e-06   </forwardRate>
+        <reverseRate> 0.33e-3        </reverseRate>
+    </Reaction>
+    <Reaction name = "pNgPAPP2BCaMCa4 dephos" id="pNgPAPP2bCaMCa4 dephos">
+        <Reactant specieID="pNgPAPP2BCaMCa4"           />
+        <Product  specieID="Ng"              />
+        <Product  specieID="PP2BCaMCa4"               />
+
+        <forwardRate> 17.3e-3  </forwardRate>
+        <reverseRate> 0        </reverseRate>
+    </Reaction>
 
     
     
