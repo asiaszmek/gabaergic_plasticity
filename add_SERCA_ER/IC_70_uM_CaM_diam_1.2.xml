@@ -26,7 +26,7 @@
     <!-- <NanoMolarity specieID="PKCc"         value="4e3"     />   -->
 
     <NanoMolarity specieID="LeakER" value="340" />
-    <NanoMolarity specieID="CK" value="20000" />
+    <NanoMolarity specieID="KaMe" value="20000" />
     
     <NanoMolarity specieID="PP1" value="4000" />
     <NanoMolarity specieID="PP2B" value="3823" />
