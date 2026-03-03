@@ -53,6 +53,7 @@ flist_ER_SERCA = [
     "Rxn_module_Ca.xml",
     "Rxn_module_SERCA2.xml",
     "Rxn_module_CK.xml",
+    "Rxn_module_PKC.xml",
     "Rxn_module_PP2B.xml",
     "Rxn_module_CaCbuf.xml"
     ]
