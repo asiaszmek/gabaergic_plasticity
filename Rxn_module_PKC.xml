@@ -23,12 +23,9 @@
   <Specie name="pNg" id="pNg" kdiff="5" kdiffunit="mu2/s" />
   <Specie name="pNgPP2BCaMCa4"            id="pNgPP2BCaMCa4"           kdiff="0"    kdiffunit="mu2/s"/>
   <Specie name="pNgPP1"            id="pNgPP1"           kdiff="0"    kdiffunit="mu2/s"/>
-  <Specie name="pNgPAPP2BCaMCa4"            id="pNgPAPP2BCaMCa4"           kdiff="0"    kdiffunit="mu2/s"/>
-  <Specie name="pNgPAPP1"            id="pNgPAPP1"           kdiff="0"    kdiffunit="mu2/s"/>
   <Specie name="NgCaM" id="NgCaM" kdiff="3" kdiffunit="mu2/s" />
   <Specie name="PA" id="PA" kdiff="0" kdiffunit="mu2/s" />
   <Specie name="NgPA" id="NgPA" kdiff="0" kdiffunit="mu2/s" />
-  <Specie name="pNgPA" id="pNgPA" kdiff="0" kdiffunit="mu2/s" />
   
   <!--Calmodulin-->
   
@@ -72,16 +69,6 @@ https://doi.org/10.1042/BJ20061483
     <Q10>0.2</Q10>
   </Reaction>
 
-
-  <Reaction name="pNgPA_bind" id="pNgPA_bind">
-    <Reactant specieID="PA" />
-    <Reactant specieID="pNg" />
-    <Product specieID="pNgPA" />
-    <forwardRate>0.0000036e-2</forwardRate>
-    <reverseRate>36.e-2</reverseRate>
-    <Q10>0.2</Q10>
-  </Reaction>
-      
 
 <!-- From Gallimore's model
 -->
@@ -162,7 +149,8 @@ https://doi.org/10.1042/BJ20061483
     </Reaction>
     <Reaction name = "Ca2PKC_actNgPAphos" id="Ca2PKC_actNgPAphos">
         <Reactant specieID="Ca2PKC_actNgPA"           />
-        <Product  specieID="pNgPA"              />
+        <Product  specieID="pNg"              />
+	<Product  specieID="PA"              />
         <Product  specieID="Ca2PKC_act"               />
 
         <forwardRate> 3.571e-3   </forwardRate>
@@ -198,7 +186,8 @@ https://doi.org/10.1042/BJ20061483
     </Reaction>
     <Reaction name = "CaPKC_actNgPAphos" id="CaPKC_actNgPAphos">
         <Reactant specieID="CaPKC_actNgPA"           />
-        <Product  specieID="pNgPA"              />
+        <Product  specieID="pNg"              />
+	<Product  specieID="PA"              />
         <Product  specieID="CaPKC_act"               />
 
         <forwardRate> 3.571e-3   </forwardRate>
@@ -248,43 +237,7 @@ https://doi.org/10.1042/BJ20061483
 
        <!-- pNgPA dephos -->
     <!-- DOI:10.1006/abbi.1995.1090 -->
-    <Reaction name = "pNgPA +PP2CaMC4--pNgPAPP2BCaMCa4" id="pNgPA +PP2CaMC4--pNgPAPP2BCaMCa4" >
-        <Reactant specieID="pNgPA"           />
-        <Reactant specieID="PP2BCaMCa4"              />
-        <Product  specieID="pNgPAPP2BCaMCa4"               />
 
-        <forwardRate>  1.5395522388059703e-06   </forwardRate>
-        <reverseRate> 3.3e-3        </reverseRate>
-    </Reaction>
-    <Reaction name = "pNgPAPP2BCaMCa4 dephos" id="pNgPAPP2bCaMCa4 dephos">
-      <Reactant specieID="pNgPAPP2BCaMCa4"           />
-      <Product specieID="PA"           />
-      <Product  specieID="Ng"              />
-      <Product  specieID="PP2BCaMCa4"               />
-
-        <forwardRate> 17.3e-3  </forwardRate>
-        <reverseRate> 0        </reverseRate>
-    </Reaction>
-
-    <!-- pNgPA dephos -->
-    <!-- DOI:10.1006/abbi.1995.1090 -->
-    <Reaction name = "pNgPA +PP1--pNgPAPP1" id="pNgPA +PP1--pNgPAPP1" >
-        <Reactant specieID="pNgPA"           />
-        <Reactant specieID="PP1"              />
-        <Product  specieID="pNgPAPP1"               />
-
-        <forwardRate>  8.45e-7  </forwardRate>
-        <reverseRate> 3.3e-3       </reverseRate>
-    </Reaction>
-    <Reaction name = "pNgPAPP1 dephos" id="pNgPAPP1 dephos">
-        <Reactant specieID="pNgPAPP1"           />
-        <Product  specieID="Ng"              />
-        <Product  specieID="PA"              />
-        <Product  specieID="PP1"               />
-
-        <forwardRate> 6e-3  </forwardRate>
-        <reverseRate> 0        </reverseRate>
-    </Reaction>
 
     
     
