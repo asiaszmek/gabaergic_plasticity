@@ -21,10 +21,13 @@
   
   <Specie name="Ng" id="Ng" kdiff="5" kdiffunit="mu2/s" />
   <Specie name="pNg" id="pNg" kdiff="5" kdiffunit="mu2/s" />
+  <!-- https://doi.org/10.1016/0014-5793(96)00612-6Digital Object Identifier (DOI) there is much more Ng than pNg in western blotts -->
   <Specie name="pNgPP2BCaMCa4"            id="pNgPP2BCaMCa4"           kdiff="0"    kdiffunit="mu2/s"/>
   <Specie name="pNgPP1"            id="pNgPP1"           kdiff="0"    kdiffunit="mu2/s"/>
   <Specie name="NgCaM" id="NgCaM" kdiff="3" kdiffunit="mu2/s" />
   <Specie name="PA" id="PA" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="Dag" id="Dag" kdiff="0" kdiffunit="mu2/s" />
+  <Specie name="PAPP1" id="PAPP1" kdiff="0" kdiffunit="mu2/s" />
   <Specie name="NgPA" id="NgPA" kdiff="0" kdiffunit="mu2/s" />
   
   <!--Calmodulin-->
@@ -64,8 +67,8 @@ https://doi.org/10.1042/BJ20061483
     <Reactant specieID="PA" />
     <Reactant specieID="Ng" />
     <Product specieID="NgPA" />
-    <forwardRate>0.00036</forwardRate>
-    <reverseRate>36.e-3</reverseRate>
+    <forwardRate>0.000036</forwardRate>
+    <reverseRate>36.e-4</reverseRate>
     <Q10>0.2</Q10>
   </Reaction>
 
@@ -238,9 +241,41 @@ https://doi.org/10.1042/BJ20061483
        <!-- pNgPA dephos -->
     <!-- DOI:10.1006/abbi.1995.1090 -->
 
+<!-- use Koff from 10.1021/bi0505159 (PP1 gamma) and Kd from https://doi.org/10.1074/jbc.274.30.21335 (PP1 alpha) 83 nM-->
+    <Reaction name = "PA +PP1--PAPP1" id="PA +PP1--PAPP1" >
+        <Reactant specieID="PA"           />
+        <Reactant specieID="PP1"              />
+        <Product  specieID="PAPP1"               />
 
-    
-    
+        <forwardRate> 7.03e-11   </forwardRate>
+        <reverseRate> 5.84e-9     </reverseRate>
+    </Reaction>
+
+    <Reaction name = "Dag - PA cycling" id="Dag PA cycling" >
+        <Reactant specieID="PA"           />
+        <Product  specieID="Dag"               />
+
+        <forwardRate> 2e-6  </forwardRate>
+        <reverseRate> 2e-6     </reverseRate>
+    </Reaction>
+
+     <Reaction name = "Dag - PA cycling2" id="Dag PA cycling2" >
+        <Reactant specieID="PAPP1"           />
+        <Product  specieID="Dag"               />
+	<Product  specieID="PP1"               />
+
+        <forwardRate> 2e-6  </forwardRate>
+
+     </Reaction>
+     <Reaction name = "Dag - PA cycling3" id="Dag PA cycling3" >
+        <Reactant specieID="NgPA"           />
+        <Product  specieID="Dag"               />
+	<Product  specieID="Ng"               />
+
+        <forwardRate> 2e-6  </forwardRate>
+
+    </Reaction>
+
 
 </ReactionScheme>
  

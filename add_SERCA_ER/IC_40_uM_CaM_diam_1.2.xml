@@ -49,10 +49,11 @@
     <PicoSD specieID="pmca1aCa" value="70"/>
     <PicoSD specieID="ncx" value="2785"/>
     <PicoSD specieID="ncxCa" value="215"/>
-    <!--lipids density 5x10^6 mol/um2, phosphatidic acid comprises 1% of membrane lipids
+    <!--lipids density 5x10^6 mol/um2, phosphatidic acid comprises 0.4% of inner membrane lipids 10.1016/j.bpj.2017.10.017, Dag similarily
 	https://doi.org/10.1042/BST20231511
     -->
-    <PicoSD specieID="PA" value="2.8e4"/>
+    <PicoSD specieID="PA" value="16000"/>
+    <PicoSD specieID="Dag" value="16000"/>
     
   </SurfaceDensitySet>
 

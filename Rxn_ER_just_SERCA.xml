@@ -3335,14 +3335,16 @@
   <Specie name="pNgPP2BCaMCa4" id="pNgPP2BCaMCa4" kdiff="0" kdiffunit="mu2/s"/>
   <Specie name="pNgPP1" id="pNgPP1" kdiff="0" kdiffunit="mu2/s"/>
   <Specie name="PA" id="PA" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="Dag" id="Dag" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="PAPP1" id="PAPP1" kdiff="0" kdiffunit="mu2/s"/>
   <Specie name="NgPA" id="NgPA" kdiff="0" kdiffunit="mu2/s"/>
   
   <Reaction name="NgPA_bind" id="NgPA_bind">
     <Reactant specieID="PA"/>
     <Reactant specieID="Ng"/>
     <Product specieID="NgPA"/>
-    <forwardRate>0.00036</forwardRate>
-    <reverseRate>36.e-3</reverseRate>
+    <forwardRate>0.000036</forwardRate>
+    <reverseRate>36.e-4</reverseRate>
     <Q10>0.2</Q10>
   </Reaction>
 
@@ -3500,7 +3502,42 @@
     </Reaction>
 
 
-       <Specie name="PP2B" id="PP2B" kdiff="0.61" kdiffunit="mu2/s"/>
+       <Reaction name="PA +PP1--PAPP1" id="PA +PP1--PAPP1">
+        <Reactant specieID="PA"/>
+        <Reactant specieID="PP1"/>
+        <Product specieID="PAPP1"/>
+
+        <forwardRate> 7.03e-11   </forwardRate>
+        <reverseRate> 5.84e-9     </reverseRate>
+    </Reaction>
+
+    <Reaction name="Dag - PA cycling" id="Dag PA cycling">
+        <Reactant specieID="PA"/>
+        <Product specieID="Dag"/>
+
+        <forwardRate> 2e-6  </forwardRate>
+        <reverseRate> 2e-6     </reverseRate>
+    </Reaction>
+
+     <Reaction name="Dag - PA cycling2" id="Dag PA cycling2">
+        <Reactant specieID="PAPP1"/>
+        <Product specieID="Dag"/>
+	<Product specieID="PP1"/>
+
+        <forwardRate> 2e-6  </forwardRate>
+
+     </Reaction>
+     <Reaction name="Dag - PA cycling3" id="Dag PA cycling3">
+        <Reactant specieID="NgPA"/>
+        <Product specieID="Dag"/>
+	<Product specieID="Ng"/>
+
+        <forwardRate> 2e-6  </forwardRate>
+
+    </Reaction>
+
+
+<Specie name="PP2B" id="PP2B" kdiff="0.61" kdiffunit="mu2/s"/>
   <Specie name="PP2BCaM" id="PP2BCaM" kdiff="0.61" kdiffunit="mu2/s"/>
   <Specie name="PP2BCaM1C" id="PP2BCaM1C" kdiff="0.61" kdiffunit="mu2/s"/>
   <Specie name="PP2BCaM1N" id="PP2BCaM1N" kdiff="0.61" kdiffunit="mu2/s"/>
