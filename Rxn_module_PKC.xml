@@ -394,6 +394,23 @@ https://doi.org/10.1042/BJ20061483
 
         <forwardRate> 2e-6  </forwardRate>
 
+     </Reaction>
+
+     <Reaction name = "Dag - PA cycling4" id="Dag PA cycling4" >
+        <Reactant specieID="Dag_CaPKC_act"           />
+        <Product  specieID="CaPKC_act"               />
+	<Product  specieID="PA"               />
+
+        <forwardRate> 2e-6  </forwardRate>
+
+     </Reaction>
+     <Reaction name = "Dag - PA cycling5" id="Dag PA cycling5" >
+        <Reactant specieID="Dag_Ca2PKC_act"           />
+        <Product  specieID="PA"               />
+	<Product  specieID="Ca2PKC_act"               />
+
+        <forwardRate> 2e-6  </forwardRate>
+
     </Reaction>
 
 
