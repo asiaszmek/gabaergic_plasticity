@@ -82,7 +82,7 @@
     <PicoSD specieID="CaPKC_actNgPA" value="90"/>
     <PicoSD specieID="Ca2PKC_actNgPA" value="21"/>
     <PicoSD specieID="Dag_Ca2PKC_actNgPA" value="27"/>
-    <PicoSD specieID="Dag_CaPKC_actNgPA" value=""/>
+
   </SurfaceDensitySet>
 
  </InitialConditions>
