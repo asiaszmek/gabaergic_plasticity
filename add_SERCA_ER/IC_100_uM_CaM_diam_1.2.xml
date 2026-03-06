@@ -54,7 +54,7 @@
     -->
     <PicoSD specieID="PA" value="16000"/>
     <PicoSD specieID="Dag" value="16000"/>
-
+    <PicoSD specieID="PM" value="16000"/>
   </SurfaceDensitySet>
 
  </InitialConditions>

@@ -15,7 +15,7 @@
     <NanoMolarity specieID="CaM2N" value="2"/>
     <NanoMolarity specieID="CaM1C" value="94"/>
     <NanoMolarity specieID="CaM2C" value="5"/>
-    <NanoMolarity specieID="Ng" value="18390"/>
+    <NanoMolarity specieID="Ng" value="37135"/>
     <NanoMolarity specieID="NgCaM" value="27865"/>
     <NanoMolarity specieID="CaER"         value="0.8e5"     />
     <NanoMolarity       specieID="CRTP" value="88750"/>
@@ -40,7 +40,7 @@
     <NanoMolarity specieID="pKCaM1CCPP1" value="1"/>
     <NanoMolarity specieID="pKCaM2C" value="1"/>
 
-    <NanoMolarity specieID="PP1" value="9004" />
+    <NanoMolarity specieID="PP1" value="11e3" />
     <NanoMolarity specieID="PP2B" value="3969"/>
     <NanoMolarity specieID="PP2BCaM" value="5"/>
     <NanoMolarity specieID="PP2BCaM1C" value="14"/>
@@ -48,14 +48,7 @@
     <NanoMolarity specieID="PP2BCaMCa4" value="2"/>
     <NanoMolarity specieID="PP2BCaM2C1N" value="2"/>
     
-    <NanoMolarity specieID="CaPKCc" value="14"/>
-    <NanoMolarity specieID="CaPKC" value="530"/>
-    <NanoMolarity specieID="Ca2PKC" value="2.6"/>
-    <NanoMolarity specieID="CaPKC_act" value="5"/>
-    <NanoMolarity specieID="Ca2PKC_actNg" value="44"/>
-    <NanoMolarity specieID="CaPKC_actNg" value="201"/>
-    <NanoMolarity specieID="pNg" value="2414"/>
-    <NanoMolarity specieID="pNgPP1" value="1983"/>
+    <NanoMolarity specieID="PKCc" value="4e3"/>
 
     
   </ConcentrationSet>
@@ -71,18 +64,9 @@
     <!--lipids density 5x10^6 mol/um2, phosphatidic acid comprises 0.4% of inner membrane lipids 10.1016/j.bpj.2017.10.017, Dag similarily
 	https://doi.org/10.1042/BST20231511
     -->
-    <PicoSD specieID="PA" value="77"/>
-    <PicoSD specieID="NgPA" value="11172"/>
-    <PicoSD specieID="PAPP1" value="14"/>
-    <PicoSD specieID="Dag" value="13600"/>
-    <PicoSD specieID="Dag_CaPKC_act" value="28"/>
-    <PicoSD specieID="Dag_Ca2PKC_actNg" value="23"/>
-    <PicoSD specieID="Dag_CaPKC_actNg" value="1670"/>
-    <PicoSD specieID="Dag_CaPKC_actNgPA" value="1098"/>
-    <PicoSD specieID="CaPKC_actNgPA" value="90"/>
-    <PicoSD specieID="Ca2PKC_actNgPA" value="21"/>
-    <PicoSD specieID="Dag_Ca2PKC_actNgPA" value="27"/>
-    <PicoSD specieID="Dag_CaPKC_actNgPA" value=""/>
+    <PicoSD specieID="PA" value="16000"/>
+    <PicoSD specieID="Dag" value="16000"/>
+    <PicoSD specieID="PM" value="16000"/>
   </SurfaceDensitySet>
 
  </InitialConditions>
