@@ -3372,7 +3372,7 @@
       <Reactant specieID="CaPKCc"/>
       <Reactant specieID="PM"/>
       <Product specieID="CaPKC"/>
-      <forwardRate> 4e-3   </forwardRate>
+      <forwardRate> 4e-6   </forwardRate>
       <reverseRate> 17e-3       </reverseRate>
     </Reaction>
 
