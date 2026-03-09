@@ -77,8 +77,8 @@ https://doi.org/10.1042/BJ20061483
     <Reactant specieID="PA" />
     <Reactant specieID="Ng" />
     <Product specieID="NgPA" />
-    <forwardRate>0.000036</forwardRate>
-    <reverseRate>36.e-4</reverseRate>
+    <forwardRate>0.0000036</forwardRate>
+    <reverseRate>36.e-5</reverseRate>
     <Q10>0.2</Q10>
   </Reaction>
 
