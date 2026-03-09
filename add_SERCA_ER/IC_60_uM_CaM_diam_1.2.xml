@@ -18,7 +18,7 @@
     <NanoMolarity specieID="Ng" value="4605"/>
     <NanoMolarity specieID="pNg" value="266"/>
     <NanoMolarity specieID="pNgPP1" value="258"/>
-    <NanoMolarity specieID="pNgPP2CaMCa4" value="0.3"/>
+    <NanoMolarity specieID="pNgPP2BCaMCa4" value="0.3"/>
     <NanoMolarity specieID="NgCaM" value="46669"/>
     <NanoMolarity specieID="CaER"         value="0.8e5"     />
     <NanoMolarity       specieID="CRTP" value="88750"/>
