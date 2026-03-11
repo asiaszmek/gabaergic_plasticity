@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<InitialConditions>
+  <ConcentrationSet>
+    <NanoMolarity specieID="Ca" value="75"/>
+    <NanoMolarity specieID="CaOut" value="2000000"/>
+    <!--Using NMDARs expressed by CA1 pyramidal cells in acute hippocampal slices to monitor extracellular glutamate, we find that its baseline concentration is much lower, near 25 nm.  doi: 10.1523/JNEUROSCI.3009-07.2007-->    <!-- total calbindin = 160 uM -->
+    <NanoMolarity specieID="Calbin" value="134038"/>
+    <NanoMolarity specieID="CalbinC" value="13964"/>
+    <NanoMolarity specieID="fixedbuffer" value="1997089"/>
+    <NanoMolarity specieID="fixedbufferCa" value="2911"/>
+    
+    <NanoMolarity specieID="CaM" value="19207"/>
+    <NanoMolarity specieID="CaM1N" value="19"/>
+    <NanoMolarity specieID="CaM2N" value="0.77"/>
+    <NanoMolarity specieID="CaM1C" value="779"/>
+    <NanoMolarity specieID="CaM2C" value="58"/>
+    
+    <NanoMolarity specieID="Ng" value="3225"/>
+    <NanoMolarity specieID="pNg" value="240"/>
+    <NanoMolarity specieID="pNgPP1" value="232"/>
+    <NanoMolarity specieID="NgCaM" value="48158"/>
+    <NanoMolarity specieID="CaER"         value="0.8e5"     />
+    <NanoMolarity       specieID="CRTP" value="88750"/>
+    <NanoMolarity       specieID="CRT" value="11250"/>
+    <!-- Bartol et al 2015-->
+    <NanoMolarity specieID="Cyt_SERCA" value="2377" />
+    <NanoMolarity specieID="Cyt_SERCA_Ca" value="350" />
+    <NanoMolarity specieID="Cyt_SERCA_Ca2" value="50" />
+    <NanoMolarity specieID="PKCc"         value="2741"     />
+    <NanoMolarity specieID="CaPKCc"         value="222"     />
+    <NanoMolarity specieID="LeakER" value="340" />
+    <NanoMolarity specieID="KaMe" value="18767" />
+    <NanoMolarity specieID="KCaM" value="56"/>
+    <NanoMolarity specieID="KCaM1N" value="0.5"/>
+    <NanoMolarity specieID="KCaM1C" value="241"/>
+    <NanoMolarity specieID="KCaM1C1N" value="26"/>
+    <NanoMolarity specieID="KCaM1C2N" value="1."/>
+    <NanoMolarity specieID="KCaM2C" value="187"/>
+    <NanoMolarity specieID="KCaM2C1N" value="2"/>
+    <NanoMolarity specieID="KCaMCa4" value="1"/>
+    <NanoMolarity specieID="KCaMcomplex_0_0_1_0" value="11"/>
+    <NanoMolarity specieID="KCaMcomplex_0_0_1_1" value="1"/>
+    <NanoMolarity specieID="KCaMcomplex_0_0_2_0" value="9"/>
+    <NanoMolarity specieID="KCaMcomplex_1_0_1_1" value="5"/>
+    <NanoMolarity specieID="KCaMcomplex_1_0_2_0" value="37"/>
+    <NanoMolarity specieID="KCaMcomplex_1_1_2_0" value="4"/>
+    <NanoMolarity specieID="KCaMcomplex_1_0_1_0" value="48"/>
+    <NanoMolarity specieID="KCaMcomplex_0_0_0_0" value="3"/>
+    <NanoMolarity specieID="KCaMcomplex_2_0_2_0" value="28"/>
+    <NanoMolarity specieID="pKCaM1C" value="50"/>
+    <NanoMolarity specieID="pKCaM1C1N" value="15"/>
+    <NanoMolarity specieID="pKCaM1C2N" value="1"/>
+    <NanoMolarity specieID="pKCaM2C" value="72"/>
+    <NanoMolarity specieID="pKCaM2C1N" value="2"/>
+    <NanoMolarity specieID="pKCaMCa4" value="5"/>
+    <NanoMolarity specieID="pKCaMcomplex_1_0_0_0" value="2"/>
+    <NanoMolarity specieID="pKCaMcomplex_1_0_1_0" value="10"/>
+    <NanoMolarity specieID="pKCaMcomplex_1_0_1_1" value="1"/>
+    <NanoMolarity specieID="pKCaMcomplex_1_0_2_0" value="9"/>
+    <NanoMolarity specieID="pKCaMcomplex_1_1_1_0" value="3"/>
+    <NanoMolarity specieID="pKCaMcomplex_2_0_0_0" value="4"/>
+    <NanoMolarity specieID="pKCaMcomplex_2_2_1_0" value="1"/>
+    <NanoMolarity specieID="pKCaMcomplex_2_0_1_0" value="14"/>
+    <NanoMolarity specieID="pKCaMcomplex_2_0_1_1" value="2"/>
+    <NanoMolarity specieID="pKCaMcomplex_2_0_1_2" value="2"/>
+    <NanoMolarity specieID="pKCaMcomplex_2_0_2_0" value="11"/>
+    <NanoMolarity specieID="pKCaMCa4PP1" value="6"/>
+    <NanoMolarity specieID="pKCaM2CPP1" value="74"/>
+    <NanoMolarity specieID="pKCaM1CCPP1" value="49"/>
+    <NanoMolarity specieID="pKCaM1C1NPP1" value="16"/>
+    <NanoMolarity specieID="pKCaM1C2NPP1" value="1"/>
+    <NanoMolarity specieID="pKCaM2C1NPP1" value="1"/>
+
+
+    <NanoMolarity specieID="PP1" value="10619" />
+    <NanoMolarity specieID="PP2B" value="3646" />
+    <NanoMolarity specieID="PP2BCaM" value="18" />
+    <NanoMolarity specieID="PP2BCaM1C" value="115"/>
+    <NanoMolarity specieID="PP2BCaM1N" value="1"/>
+    <NanoMolarity specieID="PP2BCaM2C" value="79"/>
+    <NanoMolarity specieID="PP2BCaM2N" value="2"/>
+    <NanoMolarity specieID="PP2BCaM1C1N" value="4"/>
+    <NanoMolarity specieID="PP2BCaM1C2N" value="13"/>
+    <NanoMolarity specieID="PP2BCaM2C1N" value="6"/>
+    <NanoMolarity specieID="PP2BCaMCa4" value="15"/>
+  </ConcentrationSet>
+
+
+  <SurfaceDensitySet>
+    <PicoSD specieID="Leak" value="5"/>
+    <PicoSD specieID="CaOutLeak" value="1750"/>
+    <PicoSD specieID="pmca1a" value="5565"/> 
+    <PicoSD specieID="pmca1aCa" value="65"/>
+    <PicoSD specieID="ncx" value="2797"/>
+    <PicoSD specieID="ncxCa" value="203"/>
+    <!--lipids density 5x10^6 mol/um2, phosphatidic acid comprises 0.4% of inner membrane lipids 10.1016/j.bpj.2017.10.017, Dag similarily
+	https://doi.org/10.1042/BST20231511
+    -->
+    <PicoSD specieID="PA" value="508"/>
+    <PicoSD specieID="NgPA" value="15187"/>
+    <PicoSD specieID="Dag" value="15714"/>
+    <PicoSD specieID="PM" value="14755"/>
+    <PicoSD specieID="CaPKC" value="768"/>
+    <PicoSD specieID="Ca2PKC" value="4"/>
+    <PicoSD specieID="CaPKC_act" value="2"/>
+    <PicoSD specieID="Dag_CaPKC_act" value="2"/>
+
+    <PicoSD specieID="Ca2PKC_actNg" value="14"/>
+    <PicoSD specieID="Ca2PKC_actNgPA" value="57"/>
+    <PicoSD specieID="CaPKC_actNg" value="37"/>
+    <PicoSD specieID="CaPKC_actNgPA" value="145"/>
+    <PicoSD specieID="Dag_Ca2PKC_actNg" value="1"/>
+    <PicoSD specieID="Dag_Ca2PKC_actNgPA" value="5.5"/>
+    <PicoSD specieID="Dag_CaPKC_actNg" value="42"/>
+    <PicoSD specieID="Dag_CaPKC_actNgPA" value="166"/>
+
+  </SurfaceDensitySet>
+ <ConcentrationSet region="PSD">
+    <NanoMolarity specieID="CaOutLeak" value="2500"/>
+    <NanoMolarity specieID="Cyt_SERCA"       value="0"     />
+    <NanoMolarity specieID="Cyt_SERCA_Ca"       value="0"     />
+    <NanoMolarity specieID="Cyt_SERCA_Ca2"       value="0"     />
+    <NanoMolarity specieID="LeakER" value="0" />
+    <NanoMolarity specieID="NMDARCB" value="1801"/>
+    <NanoMolarity specieID="pmca2b"      value="22674"    />
+    <NanoMolarity specieID="pmca2bCa"      value="1326"    />
+
+   </ConcentrationSet>
+
+  <ConcentrationSet region="head">
+    <NanoMolarity specieID="Leak" value="0"/>
+    <NanoMolarity specieID="CaOutLeak" value="2500"/>
+    <NanoMolarity specieID="pmca1a" value="26040"/>
+    <NanoMolarity specieID="pmca1aCa" value="60"/>
+    <NanoMolarity specieID="ncx" value="1000"/>
+    <NanoMolarity specieID="ncxCa" value="0"/>
+
+    <NanoMolarity specieID="Cyt_SERCA"       value="0"     />
+    <NanoMolarity specieID="Cyt_SERCA_Ca"       value="0"     />
+    <NanoMolarity specieID="Cyt_SERCA_Ca2"       value="0"     />
+    <NanoMolarity specieID="LeakER" value="0" />
+    
+  </ConcentrationSet>
+ 
+  <ConcentrationSet region="neck">
+    <NanoMolarity specieID="Leak" value="0"/>
+    <NanoMolarity specieID="CaOutLeak" value="2500"/>
+    <NanoMolarity specieID="pmca1a" value="2170"/>
+    <NanoMolarity specieID="pmca1aCa" value="30"/>
+    <NanoMolarity specieID="ncx" value="1000"/>
+    <NanoMolarity specieID="ncxCa" value="0"/>
+    
+    <NanoMolarity specieID="Cyt_SERCA"       value="0"     />
+    <NanoMolarity specieID="Cyt_SERCA_Ca"       value="0"     />
+    <NanoMolarity specieID="Cyt_SERCA_Ca2"       value="0"     />
+    <NanoMolarity specieID="LeakER" value="0" />
+    
+  </ConcentrationSet>
+ </InitialConditions>

@@ -8,7 +8,7 @@ Adjust Ca binding to PP2BCaMiCjN according to the thermodynamic principle of mic
   <Specie name="PP2BCaM1C" id="PP2BCaM1C" kdiff="0.61" kdiffunit="mu2/s" />
   <Specie name="PP2BCaM1N" id="PP2BCaM1N" kdiff="0.61" kdiffunit="mu2/s" />
   <Specie name="PP2BCaM2C" id="PP2BCaM2C" kdiff="0.61" kdiffunit="mu2/s" />
-  <Specie name="PP2CaM2N" id="PP2BCaM2N" kdiff="0.61"
+  <Specie name="PP2BCaM2N" id="PP2BCaM2N" kdiff="0.61"
 	  kdiffunit="mu2/s" />
   <Specie name="PP2BCaM1C1N" id="PP2BCaM1C1N" kdiff="0.61" kdiffunit="mu2/s" />
   <Specie name="PP2BCaM1C2N" id="PP2BCaM1C2N" kdiff="0.61" kdiffunit="mu2/s" />
