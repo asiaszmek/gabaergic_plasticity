@@ -3815,7 +3815,7 @@
   <Reaction name="GluOut+GlubufNULL" id="GluOut_GlubufNULL">
     <Reactant specieID="GluOut"/>
     <Reactant specieID="Glubuf"/>
-    <forwardRate>1e-06</forwardRate>
+    <forwardRate>1e-05</forwardRate>
     <reverseRate>0</reverseRate>
   </Reaction>
 
