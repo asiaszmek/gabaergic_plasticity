@@ -9,9 +9,9 @@
 
    <InjectionStim injectionSite="sa1[0].pointA" specieID="V">
      <onset>10000</onset>
-     <duration>15</duration>
+     <duration>1000</duration>
      <rate>1</rate>
-     <period>10</period>
+     
      <end>11000</end>
    </InjectionStim>
    
