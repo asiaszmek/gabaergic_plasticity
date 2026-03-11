@@ -1,17 +1,24 @@
 <StimulationSet>
   <InjectionStim specieID="GluGlubuf" injectionSite="sa1[0].pointA">
     <onset>               10000          </onset>
-    <duration>        2         </duration>
-    <rate>         45            </rate>
+    <duration>        1         </duration>
+    <rate>         40000            </rate>
+    <period>        10             </period>
+    <end>         11000           </end>
+  </InjectionStim>
+   <InjectionStim specieID="GluBuf" injectionSite="sa1[0].pointA">
+    <onset>               10005          </onset>
+    <duration>        1         </duration>
+    <rate>         20000            </rate>
     <period>        10             </period>
     <end>         11000           </end>
   </InjectionStim>
 
    <InjectionStim injectionSite="sa1[0].pointA" specieID="V">
      <onset>10000</onset>
-     <duration>1000</duration>
-     <rate>1</rate>
-     
+     <duration>1</duration>
+     <rate>15</rate>
+     <period>10</period>
      <end>11000</end>
    </InjectionStim>
    
