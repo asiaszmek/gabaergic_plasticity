@@ -12,8 +12,9 @@
      <duration>15</duration>
      <rate>1</rate>
      <period>10</period>
-     <end>10010</end>
+     <end>11000</end>
    </InjectionStim>
+   
   
   <!-- <InjectionStim injectionSite="sa1[0].pointA" specieID="CaCbuf"> -->
   <!--   <onset>3000</onset> -->
