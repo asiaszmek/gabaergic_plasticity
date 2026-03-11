@@ -23,6 +23,7 @@
     <OutputSpecie name="NMDARO"/>
     <OutputSpecie name="V"/>
     <OutputSpecie name="Glu"/>
+    <OutputSpecie name="GluOut"/>
     <OutputSpecie name="CaMCa4"/>
     <OutputSpecie name="pmca2b"/>
     <OutputSpecie name="pmca2bCa"/>
@@ -34,7 +35,8 @@
   
   <OutputSet filename = "head" region="head"  dt="1.0">
     <OutputSpecie name="Ca"/>
-  
+    <OutputSpecie name="Glu"/>
+    <OutputSpecie name="GluOut"/>
     <OutputSpecie name="CaOut"/>
     <OutputSpecie name="CaMCa4"/>
     <OutputSpecie name="pmca1a"/>
@@ -47,6 +49,8 @@
 
   <OutputSet filename = "neck" region="neck"  dt="1.0">
     <OutputSpecie name="Ca"/>
+    <OutputSpecie name="Glu"/>
+    <OutputSpecie name="GluOut"/>
     
     <OutputSpecie name="CaOut"/>
     <OutputSpecie name="CaMCa4"/>
