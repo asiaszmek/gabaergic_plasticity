@@ -58,7 +58,8 @@ flist_ER_SERCA = [
     "Rxn_module_CaCbuf.xml"
     ]
 
-flist_ER_SERCA_NMDAR = flist_ER_SERCA + ["Rxn_module_NMDAR.xml"]
+flist_ER_SERCA_NMDAR = flist_ER_SERCA + ["Rxn_module_NMDAR.xml",
+                                         "Rxn_module_GluBuf.xml"]
 
 
 flist_ER_IP3 = [
