@@ -29,8 +29,8 @@ Adjust Ca binding to PP2BCaMiCjN according to the thermodynamic principle of mic
     <Reactant specieID="PP2B"                   />
     <Product  specieID="PP2BCaM"             />
     
-    <forwardRate> 7.98e-13 </forwardRate>
-    <reverseRate>  3.19e-6    </reverseRate>
+    <forwardRate> 4.6e-6 </forwardRate>
+    <reverseRate>  1.2e-6    </reverseRate>
   </Reaction>
 
 
@@ -40,8 +40,8 @@ Adjust Ca binding to PP2BCaMiCjN according to the thermodynamic principle of mic
     <Reactant specieID="PP2B"                   />
     <Product  specieID="PP2BCaM1C"             />
     
-    <forwardRate> 1.334e-10       </forwardRate>
-    <reverseRate> 3.19e-6  </reverseRate>
+    <forwardRate> 4.6e-6       </forwardRate>
+    <reverseRate> 1.2e-6  </reverseRate>
   </Reaction>
 
     <!--4C) CaM2C    +   PP2B    <->  PP2BCaM2C (in xpp: k33c=1 k_33c=0.3) -->
@@ -50,8 +50,8 @@ Adjust Ca binding to PP2BCaMiCjN according to the thermodynamic principle of mic
     <Reactant specieID="PP2B"                   />
     <Product  specieID="PP2BCaM2C"             />
     
-    <forwardRate>   1.23e-9     </forwardRate>
-    <reverseRate>  3.19e-6     </reverseRate>
+    <forwardRate>   4.6e-6     </forwardRate>
+    <reverseRate>  1.2e-6     </reverseRate>
   </Reaction>
   
   <!--4N) CaM1N    +   PP2B    <->  PP2BCaM1N (in xpp: k33c=1 k_33c=0.3) -->
@@ -60,8 +60,8 @@ Adjust Ca binding to PP2BCaMiCjN according to the thermodynamic principle of mic
     <Reactant specieID="PP2B"                   />
     <Product  specieID="PP2BCaM1N"             />
     
-    <forwardRate> 6.65e-11     </forwardRate>
-    <reverseRate>  3.19e-6     </reverseRate>
+    <forwardRate> 4.6e-6     </forwardRate>
+    <reverseRate>  1.2e-6     </reverseRate>
   </Reaction>
 
   <!--4N) CaM2N    +   PP2B    <->  PP2BCaM2N (in xpp: k33c=1 k_33c=0.3) -->
@@ -70,8 +70,8 @@ Adjust Ca binding to PP2BCaMiCjN according to the thermodynamic principle of mic
     <Reactant specieID="PP2B"                   />
     <Product  specieID="PP2BCaM2N"             />
     
-    <forwardRate> 4.16e-9  </forwardRate>
-    <reverseRate> 3.19e-6 </reverseRate>
+    <forwardRate> 4.6e-6  </forwardRate>
+    <reverseRate> 1.2e-6 </reverseRate>
   </Reaction>
 
 
@@ -81,8 +81,8 @@ Adjust Ca binding to PP2BCaMiCjN according to the thermodynamic principle of mic
     <Reactant specieID="PP2B"                   />
     <Product  specieID="PP2BCaM1C1N"             />
     
-    <forwardRate> 6.65e-9       </forwardRate>
-    <reverseRate>  3.19e-6     </reverseRate>
+    <forwardRate> 4.2e-6       </forwardRate>
+    <reverseRate>  1.2e-6     </reverseRate>
   </Reaction>
 
   <!--7x) CaM2C1N    +  PP2B    <->  PP2BCaM2C1N -->
@@ -91,8 +91,8 @@ Adjust Ca binding to PP2BCaMiCjN according to the thermodynamic principle of mic
     <Reactant specieID="PP2B"                   />
     <Product  specieID="PP2BCaM2C1N"             />
     
-    <forwardRate> 1.02e-7       </forwardRate>
-    <reverseRate>  3.19e-6     </reverseRate>
+    <forwardRate> 4.2e-6       </forwardRate>
+    <reverseRate>  1.2e-6     </reverseRate>
   </Reaction>
 
   <!--7x) CaM1C2N    +  PP2B    <->  PP2BCaM1C2N -->
@@ -101,8 +101,8 @@ Adjust Ca binding to PP2BCaMiCjN according to the thermodynamic principle of mic
     <Reactant specieID="PP2B"                   />
     <Product  specieID="PP2BCaM1C2N"             />
     
-    <forwardRate> 4.16e-7 </forwardRate>
-    <reverseRate>  3.19e-6</reverseRate>
+    <forwardRate> 4.2e-6 </forwardRate>
+    <reverseRate>  1.2e-6</reverseRate>
   </Reaction>
 
   <!--7x) CaMCa4    +  PP2B    <->  PP2BCaMCa4 -->
@@ -111,8 +111,8 @@ Adjust Ca binding to PP2BCaMiCjN according to the thermodynamic principle of mic
     <Reactant specieID="PP2B"                   />
     <Product  specieID="PP2BCaMCa4"             />
     
-    <forwardRate> 6.4e-6       </forwardRate>
-    <reverseRate> 3.19e-6      </reverseRate>
+    <forwardRate> 4.2e-6       </forwardRate>
+    <reverseRate> 1.2e-6      </reverseRate>
   </Reaction>
 
   <!-- PP2BCaM +  Ca2     <->  PP2BCaM, either N site or C site -->
@@ -122,14 +122,14 @@ Adjust Ca binding to PP2BCaMiCjN according to the thermodynamic principle of mic
     <Reactant specieID="Ca" />
     <Reactant specieID="PP2BCaM" />
     <Product specieID="PP2BCaM1C" />
-    <forwardRate>0.00356</forwardRate>
+    <forwardRate>0.00002137</forwardRate>
     <reverseRate>0.0398</reverseRate>
   </Reaction>
   <Reaction name="PP2Breaction3" id="PP2Breaction3">
     <Reactant specieID="Ca" />
     <Reactant specieID="PP2BCaM1N" />
     <Product specieID="PP2BCaM1C1N" />
-    <forwardRate>0.002137</forwardRate>
+    <forwardRate>0.00002137</forwardRate>
     <reverseRate>0.0398</reverseRate>
   </Reaction>
   
@@ -137,70 +137,70 @@ Adjust Ca binding to PP2BCaMiCjN according to the thermodynamic principle of mic
     <Reactant specieID="Ca" />
     <Reactant specieID="PP2BCaM2N" />
     <Product specieID="PP2BCaM1C2N" />
-    <forwardRate>0.0021375</forwardRate>
+    <forwardRate>0.000021375</forwardRate>
     <reverseRate>0.0398</reverseRate>
   </Reaction>
   <Reaction name="PP2Breaction7" id="PP2Breaction7">
     <Reactant specieID="Ca" />
     <Reactant specieID="PP2BCaM1C" />
     <Product specieID="PP2BCaM2C" />
-    <forwardRate>0.0088055</forwardRate>
+    <forwardRate>0.000955</forwardRate>
     <reverseRate>0.933</reverseRate>
   </Reaction>
   <Reaction name="PP2Breaction9" id="PP2Breaction9">
     <Reactant specieID="Ca" />
     <Reactant specieID="PP2BCaM1C1N" />
     <Product specieID="PP2BCaM2C1N" />
-    <forwardRate>0.01465</forwardRate>
+    <forwardRate>0.000955</forwardRate>
     <reverseRate>0.933</reverseRate>
   </Reaction>
   <Reaction name="PP2Breaction11" id="PP2Breaction11">
     <Reactant specieID="Ca" />
     <Reactant specieID="PP2BCaM1C2N" />
     <Product specieID="PP2BCaMCa4" />
-    <forwardRate>0.01469</forwardRate>
+    <forwardRate>0.000955</forwardRate>
     <reverseRate>0.933</reverseRate>
   </Reaction>
   <Reaction name="PP2Breaction13" id="PP2Breaction13">
     <Reactant specieID="Ca" />
     <Reactant specieID="PP2BCaM" />
     <Product specieID="PP2BCaM1N" />
-    <forwardRate>0.89292</forwardRate>
+    <forwardRate>0.010715</forwardRate>
     <reverseRate>794.328</reverseRate>
   </Reaction>
   <Reaction name="PP2Breaction15" id="PP2Breaction15">
     <Reactant specieID="Ca" />
     <Reactant specieID="PP2BCaM1N" />
     <Product specieID="PP2BCaM2N" />
-    <forwardRate>0.12199</forwardRate>
+    <forwardRate>0.010715</forwardRate>
     <reverseRate>3.63</reverseRate>
   </Reaction>
   <Reaction name="PP2Breaction17" id="PP2Breaction17">
     <Reactant specieID="Ca" />
     <Reactant specieID="PP2BCaM1C" />
     <Product specieID="PP2BCaM1C1N" />
-    <forwardRate>0.5341</forwardRate>
+    <forwardRate>0.010715</forwardRate>
     <reverseRate>794.328</reverseRate>
   </Reaction>
   <Reaction name="PP2Breaction19" id="PP2Breaction19">
     <Reactant specieID="Ca" />
     <Reactant specieID="PP2BCaM1C1N" />
     <Product specieID="PP2BCaM1C2N" />
-    <forwardRate>0.12199</forwardRate>
+    <forwardRate>0.00195</forwardRate>
     <reverseRate>3.63</reverseRate>
   </Reaction>
   <Reaction name="PP2Breaction21" id="PP2Breaction21">
     <Reactant specieID="Ca" />
     <Reactant specieID="PP2BCaM2C" />
     <Product specieID="PP2BCaM2C1N" />
-    <forwardRate>0.8886</forwardRate>
+    <forwardRate>0.00195</forwardRate>
     <reverseRate>794.328</reverseRate>
   </Reaction>
   <Reaction name="PP2Breaction23" id="PP2Breaction23">
     <Reactant specieID="Ca" />
     <Reactant specieID="PP2BCaM2C1N" />
     <Product specieID="PP2BCaMCa4" />
-    <forwardRate>0.122</forwardRate>
+    <forwardRate>0.00195</forwardRate>
     <reverseRate>3.63</reverseRate>
   </Reaction>
 
